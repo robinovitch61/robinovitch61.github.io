@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"styles.scss",
+		"_sass/main.css"
+	],
+	"sourcesContent": [
+		"@import \"main\";",
+		"\n.flexwrap {\n    display: flex;\n    justify-content: center;\n}\n\n.contentwrap {\n    margin: 10px;\n    width: 70%;\n    max-width: 700px;\n}\n\n.h1-text {\n    color: darkslategrey;\n    font-size: 3rem;\n    margin: 20px;\n    margin-left: 2px;\n}\n\n.h2-text {\n    color: darkslategrey;\n    font-size: 1.5rem;\n    margin: 20px;\n    margin-left: 2px;\n}\n\n.h3-text {\n    color: darkslategrey;\n    font-size: 1rem;\n    margin: 20px;\n    margin-left: 2px;\n}\n\n.current {\n    color: red;\n  }\n"
+	],
+	"names": [],
+	"mappings": "ACCA,AAAA,SAAS,CAAC,EACN,OAAO,EAAE,IAAI,EACb,eAAe,EAAE,MAAM,GAC1B;;AAED,AAAA,YAAY,CAAC,EACT,MAAM,EAAE,IAAI,EACZ,KAAK,EAAE,GAAG,EACV,SAAS,EAAE,KAAK,GACnB;;AAED,AAAA,QAAQ,CAAC,EACL,KAAK,EAAE,aAAa,EACpB,SAAS,EAAE,IAAI,EACf,MAAM,EAAE,IAAI,EACZ,WAAW,EAAE,GAAG,GACnB;;AAED,AAAA,QAAQ,CAAC,EACL,KAAK,EAAE,aAAa,EACpB,SAAS,EAAE,MAAM,EACjB,MAAM,EAAE,IAAI,EACZ,WAAW,EAAE,GAAG,GACnB;;AAED,AAAA,QAAQ,CAAC,EACL,KAAK,EAAE,aAAa,EACpB,SAAS,EAAE,IAAI,EACf,MAAM,EAAE,IAAI,EACZ,WAAW,EAAE,GAAG,GACnB;;AAED,AAAA,QAAQ,CAAC,EACL,KAAK,EAAE,GAAG,GACX"
+}
