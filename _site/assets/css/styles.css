@@ -1,3 +1,5 @@
+ul li { padding: 5px 0px; }
+
 .flexwrap { display: flex; justify-content: center; }
 
 .contentwrap { margin: 10px; width: 70%; max-width: 700px; }
@@ -8,7 +10,7 @@
 
 .h3-text { color: darkslategrey; font-size: 1rem; margin: 20px; margin-left: 2px; }
 
-.list-text { color: darkslategrey; font-size: 1rem; margin-left: 30px; }
+.list-text { color: darkslategrey; font-size: 1rem; margin-left: 30px; margin-bottom: 0px; }
 
 .figcaption-text { color: darkslategrey; font-size: 1rem; margin-left: 2px; font-style: italic; }
 
