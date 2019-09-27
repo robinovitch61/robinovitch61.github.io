@@ -1,0 +1,16 @@
+---
+layout: default
+title: Blog
+---
+
+<h1 class="h2-text">plog bosts</h1>
+<h3 class="h4-text">hopefully cool tidbits</h3>
+
+<ul>
+  {% for post in site.posts %}
+    {% assign lower_title = post.title | downcase %}
+      {% unless lower_title contains "recurse" %}
+        <li><i>{{ post.date | date_to_string }} - </i><a href="{{ post.url }}">{{ post.title | downcase }}</a></li>
+      {% endunless %}
+  {% endfor %}
+</ul>

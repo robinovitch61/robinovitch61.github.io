@@ -18,6 +18,8 @@ ul li { padding: 5px 0px; }
 
 .log-text { font-size: 1.3rem; }
 
+.blog-text { font-size: 1.3rem; }
+
 .inline-img { margin-top: 20px; margin-bottom: 20px; display: flex; justify-content: center; flex-direction: column; align-items: center; }
 
 .custom-nav { display: flex; justify-content: space-between; }
