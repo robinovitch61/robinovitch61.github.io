@@ -1,5 +1,7 @@
 ul li { padding: 5px 0px; }
 
+img { max-width: 100%; }
+
 .flexwrap { display: flex; justify-content: center; }
 
 .contentwrap { margin: 10px; width: 70%; max-width: 700px; }
@@ -17,6 +19,8 @@ ul li { padding: 5px 0px; }
 .figcaption-text { color: darkslategrey; font-size: 1rem; margin-left: 2px; font-style: italic; }
 
 .log-text { font-size: 1.3rem; }
+
+.blog-text { font-size: 1.3rem; }
 
 .inline-img { margin-top: 20px; margin-bottom: 20px; display: flex; justify-content: center; flex-direction: column; align-items: center; }
 
