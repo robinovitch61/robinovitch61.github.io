@@ -3,7 +3,7 @@
 
 body {
     margin: 0;
-    font-family: 'Zilla Slab', serif;
+	font-family: Geneva,Tahoma,Verdana,sans-serif; 
     font-size: 18px;
     color: black;
 }
@@ -25,7 +25,34 @@ h2 {
     margin: 15px 0px 0px;
 }
 
+.post h2 {
+    margin: 50px 0px 0px;
+    padding: 0;
+    border-color: black;
+    border-style: groove none none;
+    border-width: 1px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover,
+a:focus,
+a:active {
+    font-style: italic;
+}
+
+.post-date {
+    font-style: italic;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
 // Buttons
+
 .btn {
     display: inline-block;
     padding: 8px 15px;
@@ -48,6 +75,10 @@ h2 {
     margin-top: 23px;
 }
 
+.btn-text:hover {
+    font-style: italic;
+}
+
 #github, #linkedin {
     height: 27px;
     width: 30px;
@@ -63,6 +94,29 @@ h2 {
 }
 
 // Layout
+
+header {
+    background: rgb(122, 255, 166);
+}
+
+figure {
+    margin-top:20px;
+    margin-bottom:20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-style: italic;
+    font-size: 15px;
+}
+
+img {
+    max-width: 95%;
+}
+
+footer {
+    margin-top: 100px;
+}
 
 .container {
     max-width: 700px;
@@ -84,102 +138,10 @@ h2 {
     margin-bottom: 5px;
 }
 
+.no-bull-list {
+    margin: 10px 10px 30px 70px;
+}
 
-// #big-title {
-//     display: inline-block;
-// }
-
-// ul li { padding: 5px 0px; }
-// img {max-width:100%;}
-
-// a {
-//     text-decoration: underline;
-// }
-
-// a:hover, a:active, a:focus {
-//     color: red;
-// }
-
-// .flexwrap {
-//     display: flex;
-//     justify-content: center;
-// }
-
-// .contentwrap {
-//     margin: 10px;
-//     width: 70%;
-//     max-width: 700px;
-// }
-
-// .h1-text {
-//     color: darkslategrey;
-//     font-size: 3rem;
-//     margin: 20px;
-//     margin-left: 2px;
-// }
-
-// .h2-text {
-//     color: darkslategrey;
-//     font-size: 2rem;
-//     margin: 20px;
-//     margin-left: 2px;
-// }
-
-// .h3-text {
-//     color: darkslategrey;
-//     font-size: 1.5rem;
-//     margin: 20px;
-//     margin-left: 2px;
-// }
-
-// .h4-text {
-//     color: darkslategrey;
-//     font-size: 1rem;
-//     margin: 20px;
-//     margin-left: 2px;
-// }
-
-// .list-text {
-//     color: darkslategrey;
-//     font-size: 1rem;
-//     margin-left: 30px;
-//     margin-bottom: 0px;
-// }
-
-// .figcaption-text {
-//     color: darkslategrey;
-//     font-size: 1rem;
-//     margin-left: 2px;
-//     font-style: italic;
-// }
-
-// .log-text {
-//     font-size: 1.3rem;
-// }
-
-// .blog-text {
-//     font-size: 1.3rem;
-// }
-
-// .inline-img {
-//     margin-top:20px;
-//     margin-bottom:20px;
-//     display: flex;
-//     justify-content: center;
-//     flex-direction: column;
-//     align-items: center;
-// }
-
-
-
-// .nav-buttons {
-//     margin-top: 20px;
-//     margin-bottom: 20px;
-//     font-size: 20px;
-//     display: flex;
-//     flex-direction: column;
-// }
-
-// .nav-buttons a {
-//     color: slategray;
-// }
+.fake-quote {
+    text-indent: 40px;
+}

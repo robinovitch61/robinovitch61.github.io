@@ -2,16 +2,23 @@
 layout: default
 title: Blog
 ---
-<div class="container">
-  <h2>plog bosts</h2>
-  <h3>(aspirationally cool tidbits)</h3>
+<header>
+    <div class="container">
+        <h2>plog bosts</h2>
+    </div>
+</header>
 
-  <ul>
-    {% for post in site.posts %}
-      {% assign lower_title = post.title | downcase %}
-        {% unless lower_title contains "recurse" %}
-          <li><i>{{ post.date | date_to_string }} - </i><a href="{{ post.url }}">{{ post.title | downcase }}</a></li>
-        {% endunless %}
-    {% endfor %}
-  </ul>
-</div>
+<section>
+    <div class="container">
+        <h3>(aspirationally cool tidbits)</h3>
+
+        <ul>
+            {% for post in site.posts %}
+                {% assign lower_title = post.title | downcase %}
+                    {% unless lower_title contains "recurse" %}
+                        <li><i>{{ post.date | date_to_string }} - </i><a href="{{ post.url }}">{{ post.title | downcase }}</a></li>
+                    {% endunless %}
+            {% endfor %}
+        </ul>
+    </div>
+</section>
