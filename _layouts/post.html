@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<header>
+    <div class="container">
+        <h2>{{ page.title | downcase }}</h2>
+    </div>
+</header>
+
+<section>
+    <div class="container">
+        <p class="post-date">{{ page.date | date_to_string }} - Leo Robinovitch</p>
+        {{ content }}
+    </div>
+</section>
+
+<footer></footer>

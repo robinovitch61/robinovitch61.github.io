@@ -1,47 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-28T09:54:34-04:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Jupyter With Docker</title><link href="http://localhost:4000/2019/09/27/jupyter-with-docker.html" rel="alternate" type="text/html" title="Jupyter With Docker" /><published>2019-09-27T00:00:00-04:00</published><updated>2019-09-27T00:00:00-04:00</updated><id>http://localhost:4000/2019/09/27/jupyter-with-docker</id><content type="html" xml:base="http://localhost:4000/2019/09/27/jupyter-with-docker.html">I love &lt;a href=&quot;https://www.docker.com&quot;&gt;docker&lt;/a&gt;. It makes environments:
-&lt;ul&gt;
-    &lt;li&gt;portable across any machine&lt;/i&gt;&lt;/li&gt;
-    &lt;li&gt;subject to version control (retraceable history)&lt;/li&gt;
-    &lt;li&gt;easily deployed and discarded with simple commands&lt;/li&gt;
-&lt;/ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-03T17:31:04-04:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Jupyter With Docker</title><link href="http://localhost:4000/2019/09/27/jupyter-with-docker.html" rel="alternate" type="text/html" title="Jupyter With Docker" /><published>2019-09-27T00:00:00-04:00</published><updated>2019-09-27T00:00:00-04:00</updated><id>http://localhost:4000/2019/09/27/jupyter-with-docker</id><content type="html" xml:base="http://localhost:4000/2019/09/27/jupyter-with-docker.html">&lt;div class=&quot;post&quot;&gt;
+&lt;p&gt;I love &lt;a href=&quot;https://www.docker.com&quot;&gt;docker&lt;/a&gt;. It makes environments:&lt;/p&gt;
+&lt;div class=&quot;no-bull-list&quot;&gt;
+    &lt;p&gt;&lt;li&gt;portable across any machine&lt;/i&gt;&lt;/li&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;li&gt;subject to version control (retraceable and recoverable history)&lt;/li&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;li&gt;easily deployed and discarded with simple commands&lt;/li&gt;&lt;/p&gt;
+&lt;/div&gt;
 
-Jupyter is a great tool that allows for the creation of nice looking documents consisting of ordered code chunks with inline output. It is a fantastic way to get started with programming, clearly step through your workflow, and/or create stories and presentations out of your work. It runs in the browser after you install it on your machine (i.e. you access it with a URL in your web browser).
+&lt;p&gt;Jupyter is a great tool that allows for the creation of nice looking documents consisting of ordered code chunks with inline output. It is a fantastic way to get started with programming, clearly step through your workflow, and/or create stories and presentations out of your work. It runs in the browser after you install it on your machine (i.e. you access it with a URL in your web browser).&lt;/p&gt;
 
-&lt;figure class=&quot;inline-img&quot;&gt;
+&lt;figure&gt;
     &lt;img src=&quot;/assets/images/jupyterlab_ex.png&quot; alt=&quot;Jupyterlab example.&quot;&gt;
     &lt;figcaption class=&quot;figcaption-text&quot;&gt;From the &lt;a href=&quot;https://jupyterlab.readthedocs.io/en/stable/&quot;&gt;Jupyterlab Docs&lt;/a&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-This walkthrough will get you set up with a jupyter lab (or jupyter notebooks classic) environment that is fully customizable, isolated, version controllable and portable using docker.
+&lt;p&gt;This walkthrough will get you set up with a jupyter lab (or jupyter notebooks classic) environment that is fully customizable, isolated, version controllable and portable using docker.&lt;/p&gt;
 
-&lt;br&gt;&lt;br&gt;
-If you don't want to use docker, you can always &lt;a href=&quot;https://jupyter.org/install&quot;&gt;install jupyter the classic way&lt;/a&gt;. I like docker for the reasons outlined above (isolation, portability, version controllable, easily deployed/discarded).
+&lt;p&gt;If you don't want to use docker, you can always &lt;a href=&quot;https://jupyter.org/install&quot;&gt;install jupyter the classic way&lt;/a&gt;. I like docker for the reasons outlined above (isolation, portability, version controllable, easily deployed/discarded).&lt;/p&gt;
 
-&lt;h2 class=&quot;h2-text&quot;&gt;1: Install Docker&lt;/h2&gt;
-To install Docker, you'll have to open up a terminal/command prompt and follow the commands below:
-&lt;ul&gt;
-    &lt;li&gt;&lt;a href=&quot;https://docs.docker.com/docker-for-mac/install/&quot;&gt;Install docker for Mac&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;https://docs.docker.com/install/linux/docker-ce/ubuntu/&quot;&gt;Install docker for Ubuntu&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;https://docs.docker.com/docker-for-windows/install/&quot;&gt;Install docker for Windows 10&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2&gt;1: Install Docker&lt;/h2&gt;
+&lt;p&gt;To install Docker, you'll have to follow the instructions below:&lt;/p&gt;
+&lt;div class=&quot;no-bull-list&quot;&gt;
+    &lt;p&gt;&lt;li&gt;&lt;a href=&quot;https://docs.docker.com/docker-for-mac/install/&quot;&gt;Install docker for Mac&lt;/a&gt;&lt;/li&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;li&gt;&lt;a href=&quot;https://docs.docker.com/install/linux/docker-ce/ubuntu/&quot;&gt;Install docker for Ubuntu&lt;/a&gt;&lt;/li&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;li&gt;&lt;a href=&quot;https://docs.docker.com/docker-for-windows/install/&quot;&gt;Install docker for Windows 10&lt;/a&gt;&lt;/li&gt;&lt;/p&gt;
+&lt;/div&gt;
 
-Once installed, you'll want to open a terminal (or cmd.exe for windows) and enter &lt;code&gt;docker&lt;/code&gt;. You should see a long list of options and commands and not something like &lt;code&gt;command 'docker' not found&lt;/code&gt;. If you see the long list, you're ready to proceed!
+&lt;p&gt;Once installed, you'll want to open a terminal (or cmd.exe for windows) and enter &lt;code&gt;docker&lt;/code&gt;. You should see a long list of options and commands and not something like &lt;code&gt;command 'docker' not found&lt;/code&gt;. If you see the long list, you're ready to proceed!&lt;/p&gt;
 
-&lt;br&gt;&lt;br&gt;
-&lt;i&gt;Quick note:&lt;/i&gt; docker uses the language of images (&lt;i&gt;recipes for containers&lt;/i&gt;) and containers (&lt;i&gt;instances of images&lt;/i&gt;). In this specific case, things like &lt;code&gt;jupyter/minimal-notebook&lt;/code&gt; and &lt;code&gt;jupyter/pyspark-notebook&lt;/code&gt; are &lt;b&gt;images&lt;/b&gt; while our &lt;b&gt;container&lt;/b&gt; will just be called &lt;code&gt;juptyer&lt;/code&gt;.
+&lt;p&gt;Docker uses the language of images (&lt;i&gt;recipes for containers&lt;/i&gt;) and containers (&lt;i&gt;instances of images&lt;/i&gt;). In this specific case, things like &lt;code&gt;jupyter/minimal-notebook&lt;/code&gt; and &lt;code&gt;jupyter/pyspark-notebook&lt;/code&gt; are &lt;b&gt;images&lt;/b&gt; while our &lt;b&gt;container&lt;/b&gt; will just be called &lt;code&gt;juptyer&lt;/code&gt;.&lt;/p&gt;
 
-&lt;h2 class=&quot;h2-text&quot;&gt;2: Clone the Repo&lt;/h2&gt;
-You'll need git for this step, which you can &lt;a href=&quot;https://git-scm.com/book/en/v2/Getting-Started-Installing-Git&quot;&gt;install here&lt;/a&gt; if you don't already have it. You can check by typing &lt;code&gt;git&lt;/code&gt; in to the terminal and seeing if the command is found.
+&lt;p&gt;I like to think of a container as an isolated environment that my app/service (in this case, jupyter) will run in, almost entirely isolated from the rest of my host machine.&lt;/p&gt;
 
-&lt;br&gt;&lt;br&gt;
-What you'll clone is &lt;a href=&quot;https://github.com/jupyter/docker-stacks&quot;&gt;Project Jupyter's docker-stacks&lt;/a&gt;. You can also &lt;a href=&quot;https://help.github.com/en/articles/fork-a-repo&quot;&gt;fork&lt;/a&gt; this repo and clone your fork. We'll go through adding a couple files to this repo that will make deployment and customizing things easy. You can use &lt;a href=&quot;https://github.com/robinovitch61/docker-stacks&quot;&gt;my fork&lt;/a&gt; or this tutorial as a reference. To clone the &lt;code&gt;docker-stacks&lt;/code&gt; repo, run the following command in terminal/command prompt:
+&lt;figure&gt;
+    &lt;img src=&quot;/assets/images/docker-infrastructure.png&quot; alt=&quot;Docker Infrastructure.&quot;&gt;
+    &lt;figcaption class=&quot;figcaption-text&quot;&gt;From Docker's &lt;a href=&quot;https://www.docker.com/resources/what-container&quot;&gt;What is a Container?&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 class=&quot;h2-text&quot;&gt;2: Clone the &lt;code&gt;docker-stacks&lt;/code&gt; Repo&lt;/h2&gt;
+&lt;p&gt;You'll need git for this step, which you can &lt;a href=&quot;https://git-scm.com/book/en/v2/Getting-Started-Installing-Git&quot;&gt;install here&lt;/a&gt; if you don't already have it. You can check by typing &lt;code&gt;git&lt;/code&gt; in to the terminal and seeing if the command is found.&lt;/p&gt;
+
+&lt;p&gt;What you'll clone is &lt;a href=&quot;https://github.com/jupyter/docker-stacks&quot;&gt;Project Jupyter's docker-stacks&lt;/a&gt;. You can also &lt;a href=&quot;https://help.github.com/en/articles/fork-a-repo&quot;&gt;fork&lt;/a&gt; this repo and clone your fork. We'll go through adding a couple files to this repo that will make deployment and customizing things easy. You can use &lt;a href=&quot;https://github.com/robinovitch61/docker-stacks&quot;&gt;my fork&lt;/a&gt; or this tutorial as a reference. To clone the &lt;code&gt;docker-stacks&lt;/code&gt; repo, run the following command in terminal/command prompt:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# run in the desired directory, e.g. ~/projects 
 git clone https://github.com/jupyter/docker-stacks.git
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;br&gt;
-The &lt;code&gt;docker-stacks&lt;/code&gt; directory we just cloned contains a lot of stuff. We're going to look at just a few bits of a few important files. First, the &lt;code&gt;Dockerfile&lt;/code&gt; in the &quot;base-notebook&quot; directory:
+&lt;p&gt;The &lt;code&gt;docker-stacks&lt;/code&gt; directory we just cloned contains a lot of stuff. Open the folder in your favorite editor or just look at the repo &lt;a href=&quot;https://github.com/jupyter/docker-stacks&quot;&gt;here&lt;/a&gt;. We're going to look at just a few bits of a few important files. First, the &lt;code&gt;Dockerfile&lt;/code&gt; in the &lt;code&gt;/base-notebook&lt;/code&gt; directory:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;############################################
 ## docker-stacks/base-notebook/Dockerfile ##
@@ -62,10 +66,9 @@ ARG NB_GID=&quot;100&quot;
 # ...
 &lt;/code&gt;&lt;/pre&gt;
 
-I like to think of a container as an isolated environment that my app/service (in this case, jupyter) will run in, almost entirely isolated from the rest of my host machine. This &lt;code&gt;Dockerfile&lt;/code&gt; specifies that all jupyter containers will derive from a Linux Ubuntu &quot;bionic&quot; OS (&lt;code&gt;BASE_CONTAINER=ubuntu...&lt;/code&gt;).
+&lt;p&gt; This &lt;code&gt;Dockerfile&lt;/code&gt; specifies that all jupyter containers will derive from a Linux Ubuntu &quot;bionic&quot; OS (&lt;code&gt;BASE_CONTAINER=ubuntu...&lt;/code&gt;).
 
-&lt;br&gt;&lt;br&gt;
-If you examine the &lt;code&gt;Dockerfile&lt;/code&gt;s for other directories, you'll see there's a chain of derivations that end in the base-notebook:
+&lt;p&gt;If you examine the &lt;code&gt;Dockerfile&lt;/code&gt;s for other directories, you'll see there's a chain of derivations that end in the base-notebook:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# minimal-notebook/Dockerfile, top section:
 ARG BASE_CONTAINER=jupyter/base-notebook
@@ -80,15 +83,13 @@ ARG BASE_CONTAINER=jupyter/scipy-notebook
 ARG BASE_CONTAINER=jupyter/scipy-notebook
 &lt;/code&gt;&lt;/pre&gt;
 
-The docker-stacks team has structured the project so you can specify how complicated of a setup you want out of the box based on what image you select. The &lt;code&gt;jupyter/minimal-notebook&lt;/code&gt; image will contain the simplest installation you need for jupyter to run at all. The &lt;code&gt;jupyter/pyspark-notebook&lt;/code&gt; image will come with a lot more, like a spark installation in the jupyter container file system (likely overkill unless you're using pyspark!). Higher up images in the inheritance tree will include everything below them (e.g. pyspark-notebook contains everything from scipy-notebook, minimal-notebook, and base-notebook).
+&lt;p&gt;The docker-stacks team has structured the project so you can specify how complicated of a setup you want out of the box based on what image you select. The &lt;code&gt;jupyter/minimal-notebook&lt;/code&gt; image will contain the simplest installation you need for jupyter to run at all. The &lt;code&gt;jupyter/pyspark-notebook&lt;/code&gt; image will come with a lot more, like a spark installation in the jupyter container file system (likely overkill unless you're using pyspark!). Higher up images in the inheritance tree will include everything below them (e.g. pyspark-notebook contains everything from scipy-notebook, minimal-notebook, and base-notebook).&lt;/p&gt;
 
-&lt;br&gt;
-&lt;h3 class=&quot;h3-text&quot;&gt;&lt;i&gt;Custom File 1: Docker Compose&lt;/i&gt;&lt;/h2&gt;
+&lt;h3&gt;&lt;i&gt;Custom File 1: Docker Compose&lt;/i&gt;&lt;/h2&gt;
 
-The first file we add to the &lt;code&gt;docker-stacks&lt;/code&gt; base repo is &lt;code&gt;docker-compose.yml&lt;/code&gt;. The &lt;code&gt;docker-compose&lt;/code&gt; tool is often used for orchestrating many containers (e.g. &quot;bring up an nginx container and a jupyter container together so nginx can act as a reverse proxy and make the jupyter URL more user-friendly&quot;), but here we only have one container (&lt;code&gt;jupyter&lt;/code&gt;). I like to use &lt;code&gt;docker-compose.yml&lt;/code&gt; as a way of version controlling a &lt;code&gt;docker run&lt;/code&gt; command, which is typically used to bring single containers up. All &lt;code&gt;docker-run&lt;/code&gt; commands can be translated into &lt;code&gt;docker-compose&lt;/code&gt; files and vice versa.
+&lt;p&gt;The first file we add to the &lt;code&gt;docker-stacks&lt;/code&gt; base repo is &lt;code&gt;docker-compose.yml&lt;/code&gt;. The &lt;code&gt;docker-compose&lt;/code&gt; tool is often used for orchestrating many containers (e.g. &quot;bring up an nginx container and a jupyter container together so nginx can act as a reverse proxy and make the jupyter URL more user-friendly&quot;), but here we only have one container (&lt;code&gt;jupyter&lt;/code&gt;). I like to use &lt;code&gt;docker-compose.yml&lt;/code&gt; as a way of version controlling a &lt;code&gt;docker run&lt;/code&gt; command, which is typically used to bring single containers up. All &lt;code&gt;docker-run&lt;/code&gt; commands can be translated into &lt;code&gt;docker-compose&lt;/code&gt; files and vice versa.&lt;/p&gt;
 
-&lt;br&gt;&lt;br&gt;
-You'll create a &lt;code&gt;docker-stacks/docker-compose.yml&lt;/code&gt; file that looks something like this (totally up to you to customize!):
+&lt;p&gt;You'll create a &lt;code&gt;docker-stacks/docker-compose.yml&lt;/code&gt; file that looks something like this (totally up to you to customize!):&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;############################################
 ## docker-stacks/docker-compose.yml ##
 ############################################
@@ -96,48 +97,48 @@ version: '3'
 
 services:
 
-  jupyter:
+    jupyter:
     container_name: jupyter
     image: jupyter/minimal-notebook # always get `latest` image on docker hub
     # image: jupyter/pyspark-notebook:1386e2046833 # tagged/pinned image example. check for updates here: https://hub.docker.com/r/jupyter/pyspark-notebook/tags.
     volumes:
-      - ~/:/home/jovyan/work/
-      - ./setup_envs.sh:/usr/local/bin/before-notebook.d/setup_envs.sh
+        - ~/:/home/jovyan/work/
+        - ./setup_envs.sh:/usr/local/bin/before-notebook.d/setup_envs.sh
     ports:
-      - 9999:9999
+        - 9999:9999
     restart: unless-stopped
     environment:
-      JUPYTER_ENABLE_LAB: 'yes'
+        JUPYTER_ENABLE_LAB: 'yes'
     command: &gt;
-      sh -c &quot;bash start-notebook.sh\
-                 --NotebookApp.token=$JUPYTER_PASSWORD\
-                 --NotebookApp.notebook_dir=/home/jovyan/work/\
-                 --port 9999&quot;
+        sh -c &quot;bash start-notebook.sh\
+                --NotebookApp.token=$JUPYTER_PASSWORD\
+                --NotebookApp.notebook_dir=/home/jovyan/work/\
+                --port 9999&quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-Meaning of this witchcraft:
-&lt;ul&gt;
-    &lt;li&gt;&lt;code&gt;version '3'&lt;/code&gt;: docker-compose specifies versions. They have slightly different syntax between them&lt;/li&gt;
-    &lt;li&gt;&lt;code&gt;services&lt;/code&gt;: our list of services here is just one service called jupyter that will create a container called jupyter&lt;/li&gt;
-    &lt;li&gt;&lt;code&gt;image&lt;/code&gt;: here is where you call out which image you want to use, as discussed above&lt;/li&gt;
-    &lt;li&gt;&lt;code&gt;volumes&lt;/code&gt;: this is how you break isolation between the container and host environment, linking directories and/or files from the host to the container filesystems. This is important because otherwise when you destroy your container, your files would be lost with it. Syntax is &lt;code&gt;host_path:container_path&lt;/code&gt;. Changes made in either host or container will reflect in the other&lt;/li&gt;
-    &lt;li&gt;&lt;code&gt;ports&lt;/code&gt;: jupyter will run on a port in the container. &lt;code&gt;ports&lt;/code&gt; binds the host port to the container port. Syntax is &lt;code&gt;host_port:container_port&lt;/code&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;code&gt;restart: unless-stopped&lt;/code&gt;: if your container fails, it will auto-restart unless you stop it with e.g. &lt;code&gt;docker-compose down&lt;/code&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;code&gt;environment&lt;/code&gt;: specify environment variables. &lt;code&gt;JUPYTER_ENABLE_LAB&lt;/code&gt; enables jupyter lab by default&lt;/li&gt;
-    &lt;li&gt;&lt;code&gt;command&lt;/code&gt;: this is the final command docker will run in the container upon build. &lt;code&gt;NotebookApp.token&lt;/code&gt; password-protects your jupyter instance. The port here should also match the container port in &lt;code&gt;ports&lt;/code&gt; above&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Meaning of this witchcraft:&lt;/p&gt;
+&lt;div class=&quot;no-bull-list&quot;&gt;
+    &lt;p&gt;&lt;code&gt;version '3'&lt;/code&gt;: docker-compose specifies versions. They have slightly different syntax between them&lt;/p&gt;
+    &lt;p&gt;&lt;code&gt;services&lt;/code&gt;: our list of services here is just one service called jupyter that will create a container called jupyter&lt;/p&gt;
+    &lt;p&gt;&lt;code&gt;image&lt;/code&gt;: here is where you call out which image you want to use, as discussed above&lt;/p&gt;
+    &lt;p&gt;&lt;code&gt;volumes&lt;/code&gt;: this is how you break isolation between the container and host environment, linking directories and/or files from the host to the container filesystems. This is important because otherwise when you destroy your container, your files would be lost with it. Syntax is &lt;code&gt;host_path:container_path&lt;/code&gt;. Changes made in either host or container will reflect in the other&lt;/p&gt;
+    &lt;p&gt;&lt;code&gt;ports&lt;/code&gt;: jupyter will run on a port in the container. &lt;code&gt;ports&lt;/code&gt; binds the host port to the container port. Syntax is &lt;code&gt;host_port:container_port&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;code&gt;restart: unless-stopped&lt;/code&gt;: if your container fails, it will auto-restart unless you stop it with e.g. &lt;code&gt;docker-compose down&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;code&gt;environment&lt;/code&gt;: specify environment variables. &lt;code&gt;JUPYTER_ENABLE_LAB&lt;/code&gt; enables jupyter lab by default&lt;/p&gt;
+    &lt;p&gt;&lt;code&gt;command&lt;/code&gt;: this is the final command docker will run in the container upon build. &lt;code&gt;NotebookApp.token&lt;/code&gt; password-protects your jupyter instance. The port here should also match the container port in &lt;code&gt;ports&lt;/code&gt; above&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;h3 class=&quot;h3-text&quot;&gt;&lt;i&gt;Custom File 2: Setup Script&lt;/i&gt;&lt;/h2&gt;
+&lt;h3&gt;&lt;i&gt;Custom File 2: Setup Script&lt;/i&gt;&lt;/h2&gt;
 
-You may have noticed that the second volume specified in the &lt;code&gt;docker-compose.yml&lt;/code&gt; file is called &lt;code&gt;./setup_envs.sh&lt;/code&gt;. This is a custom startup script that I use to do the following:
-&lt;ul&gt;
-    &lt;li&gt;Create environment variables that are accessible in jupyter&lt;/li&gt;
-    &lt;li&gt;Add jupyterlab extensions&lt;/li&gt;
-    &lt;li&gt;Create custom conda environments and link them to jupyter kernels&lt;/li&gt;
-    &lt;li&gt;Run other useful commands in the container upon startup (e.g. configure git, install &lt;code&gt;vim&lt;/code&gt; or &lt;code&gt;svn&lt;/code&gt;, etc.)&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;You may have noticed that the second volume specified in the &lt;code&gt;docker-compose.yml&lt;/code&gt; file is called &lt;code&gt;./setup_envs.sh&lt;/code&gt;. This is a custom startup script that I use to do the following:&lt;/p&gt;
+&lt;div class=&quot;no-bull-list&quot;&gt;
+    &lt;p&gt;&lt;li&gt;Create environment variables that are accessible in jupyter&lt;/li&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;li&gt;Add jupyterlab extensions&lt;/li&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;li&gt;Create custom conda environments and link them to jupyter kernels&lt;/li&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;li&gt;Run other useful commands in the container upon startup (e.g. configure git, install &lt;code&gt;vim&lt;/code&gt; or &lt;code&gt;svn&lt;/code&gt;, etc.)&lt;/li&gt;&lt;/p&gt;
+&lt;/div&gt;
 
-You'll create a &lt;code&gt;docker-stacks/setup_envs.sh&lt;/code&gt; file that looks something like this (totally up to you to customize!):
+&lt;p&gt;You'll create a &lt;code&gt;docker-stacks/setup_envs.sh&lt;/code&gt; file that looks something like this (totally up to you to customize!):&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;############################################
 ## example docker-stacks/setup_envs.sh ##
 ############################################
@@ -197,105 +198,94 @@ WELCOME!
      ██║██║   ██║██████╔╝ ╚████╔╝    ██║   █████╗  ██████╔╝
 ██   ██║██║   ██║██╔═══╝   ╚██╔╝     ██║   ██╔══╝  ██╔══██╗
 ╚█████╔╝╚██████╔╝██║        ██║      ██║   ███████╗██║  ██║
- ╚════╝  ╚═════╝ ╚═╝        ╚═╝      ╚═╝   ╚══════╝╚═╝  ╚═╝
+╚════╝  ╚═════╝ ╚═╝        ╚═╝      ╚═╝   ╚══════╝╚═╝  ╚═╝
 
 Take it from here...
 
 EOF
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;u&gt;Dirty details on how this runs just by placing it in the container:&lt;/u&gt; the &lt;code&gt;start-notebook.sh&lt;/code&gt; script run by the &lt;code&gt;docker-compose&lt;/code&gt; command will subsequently run &lt;code&gt;start.sh&lt;/code&gt;. Both these shell scripts are in the &lt;code&gt;base-notebook&lt;/code&gt; directory. The &lt;code&gt;start.sh&lt;/code&gt; script has &quot;hooks&quot; for running scripts that are in the &lt;code&gt;/usr/local/bin/before-notebook.d&lt;/code&gt;. &lt;b&gt;All this to say that &lt;code&gt;setup_envs.sh&lt;/code&gt; will be run as part of your jupyter setup&lt;/b&gt; (at the end) because we put it in the &lt;code&gt;/usr/local/bin/before-notebook.d&lt;/code&gt; directory in the jupyter container!
+&lt;p&gt;&lt;u&gt;Dirty details on how this runs just by placing it in the container:&lt;/u&gt; the &lt;code&gt;start-notebook.sh&lt;/code&gt; script run by the &lt;code&gt;docker-compose&lt;/code&gt; command will subsequently run &lt;code&gt;start.sh&lt;/code&gt;. Both these shell scripts are in the &lt;code&gt;base-notebook&lt;/code&gt; directory. The &lt;code&gt;start.sh&lt;/code&gt; script has &quot;hooks&quot; for running scripts that are in the &lt;code&gt;/usr/local/bin/before-notebook.d&lt;/code&gt;. &lt;b&gt;All this to say that &lt;code&gt;setup_envs.sh&lt;/code&gt; will be run as part of your jupyter setup&lt;/b&gt; because we put it in the &lt;code&gt;/usr/local/bin/before-notebook.d&lt;/code&gt; directory in the jupyter container!&lt;/p&gt;
 
-&lt;br&gt;&lt;br&gt;
-Note that you could totally exclude the &lt;code&gt;setup_envs.sh&lt;/code&gt; script and volume and your deployment would work 100%. I like to use this method as a way of customizing my jupyter setup in a version-controlled manner. Rather than installing a new python package in my base environment or installing a system package every time manually and trying to remember what I did when I port to a new machine, I'll edit the &lt;code&gt;setup_envs.sh&lt;/code&gt; script and redeploy the jupyter container with &lt;code&gt;docker-compose restart&lt;/code&gt;!
+&lt;p&gt;Note that you could totally exclude the &lt;code&gt;setup_envs.sh&lt;/code&gt; script and volume and your deployment would be fully functioning. I like to use this method as a way of customizing my jupyter setup in a version-controlled manner. Rather than installing a new python package in my base environment or installing a system package every time manually and trying to remember what I did when I port to a new machine, I'll edit the &lt;code&gt;setup_envs.sh&lt;/code&gt; script, commit and push to my fork, then redeploy on whatever machine I want and get the exact same setup.
 
-&lt;br&gt;
-&lt;h2 class=&quot;h2-text&quot;&gt;3: Bring Up the Jupyter Container&lt;/h2&gt;
+&lt;h2&gt;3: Bring Up the Jupyter Container&lt;/h2&gt;
 
-If you've gotten this far, you're basically done! The one thing we're missing is to set a password/token. In terminal, run this command with your custom password. If you don't do this, &lt;code&gt;docker-compose&lt;/code&gt; will warn you at the next step.
+&lt;p&gt;If you've gotten this far, you're basically done! The one thing we're missing is to set a password/token. In terminal, run this command with your custom password. If you don't do this, &lt;code&gt;docker-compose&lt;/code&gt; will warn you at the next step.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;export JUPYTER_PASSWORD=$MY_CUSTOM_PASSWORD
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;br&gt;
-You can now navigate to the &lt;code&gt;docker-stacks&lt;/code&gt; directory in a terminal and run
+&lt;p&gt;You can now navigate to the &lt;code&gt;docker-stacks&lt;/code&gt; directory in a terminal and run&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;docker-compose up -d
 &lt;/code&gt;&lt;/pre&gt;
-The &lt;code&gt;-d&lt;/code&gt; flag stands for &quot;detached&quot;, and ensures that container will stay running even if you exit the terminal you ran it in.
+&lt;p&gt;The &lt;code&gt;-d&lt;/code&gt; flag stands for &quot;detached&quot;, and ensures the &lt;code&gt;jupyter&lt;/code&gt; container will stay running even if you exit the terminal.&lt;/p&gt;
 
-&lt;br&gt;&lt;br&gt;
-You can now run
+&lt;p&gt;You can now run:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;docker logs -f jupyter
 &lt;/code&gt;&lt;/pre&gt;
-The &lt;code&gt;-f&lt;/code&gt; flag standing for &quot;follow&quot;. Watch the progress in your terminal as your jupyter container is instantiated and your &lt;code&gt;setup_envs.sh&lt;/code&gt; script is run (if you have one and copied it to the right directory as a volume).
+&lt;p&gt;The &lt;code&gt;-f&lt;/code&gt; flag standing for &quot;follow&quot;. Watch the progress in your terminal as your jupyter container is instantiated and your &lt;code&gt;setup_envs.sh&lt;/code&gt; script is run (if you made one).&lt;/p&gt;
 
-&lt;br&gt;&lt;br&gt;
-Once you see something like the following:
+&lt;p&gt;Once you see something like the following:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;[I 16:19:04.574 LabApp] The Jupyter Notebook is running at:
 [I 16:19:04.574 LabApp] http://3204808557f5:9999/?token=...
 [I 16:19:04.575 LabApp]  or http://127.0.0.1:9999/?token=...
 [I 16:19:04.575 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
 &lt;/code&gt;&lt;/pre&gt;
-You're ready to go! Navigate to &lt;a href=&quot;http://127.0.0.1:9999&quot;&gt;http://127.0.0.1:9999&lt;/a&gt; (or whatever port you specified if different than 9999) where you should see a page that prompts you for your token!
+&lt;p&gt;You're ready to go! Navigate to &lt;a href=&quot;http://127.0.0.1:9999&quot;&gt;http://127.0.0.1:9999&lt;/a&gt; (or whatever port you specified if different than 9999) where you should see a page that prompts you for your password (set with the &lt;code&gt;JUPYTER_PASSWORD&lt;/code&gt; environment variable earlier).&lt;/p&gt;
 
-&lt;br&gt;&lt;br&gt;
+&lt;p&gt;You have a fully functioning and replicable jupyter environment, portable to any machine that runs docker! Remember that even though your container has access to your host file system through the volume we created, your file system isn't (and shouldn't be) version controlled with the &lt;code&gt;docker-stacks&lt;/code&gt; directory. Version control your projects separately.&lt;/p&gt;
+
 &lt;i&gt;Further thoughts:
-&lt;ul&gt;
-    &lt;li&gt;Another approach to version controlled customization could be to modify the Dockerfiles themselves. I prefer the &lt;code&gt;setup_envs.sh&lt;/code&gt; script approach as rebuilding the Dockerfiles is time and disc-space intensive, but this is a totally valid approach.&lt;/li&gt;
-    &lt;li&gt;If you get stuck on anything in this process or see that I've been wrong/unclear about something, please open an issue on the source of this website &lt;a href=&quot;https://github.com/robinovitch61/robinovitch61.github.io&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;div class=&quot;no-bull-list&quot;&gt;
+    &lt;p&gt;&lt;li&gt;Another approach to version controlled customization could be to modify the Dockerfiles themselves. I prefer the &lt;code&gt;setup_envs.sh&lt;/code&gt; script approach as rebuilding the images is time and disk space intensive. Modifying Dockerfiles, though, is a totally valid approach.&lt;/li&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;li&gt;If you get stuck on anything in this process or see that I've been wrong/unclear about something, please open an issue on the source of this website &lt;a href=&quot;https://github.com/robinovitch61/robinovitch61.github.io&quot;&gt;here&lt;/a&gt;&lt;/li&gt;&lt;/p&gt;
+&lt;/div&gt;
 &lt;/i&gt;
-&lt;br&gt;&lt;br&gt;
-&lt;br&gt;&lt;br&gt;</content><author><name></name></author><summary type="html">I love docker. It makes environments: portable across any machine subject to version control (retraceable history) easily deployed and discarded with simple commands</summary></entry><entry><title type="html">Recurse Update 00 (it Begins)</title><link href="http://localhost:4000/2019/09/25/recurse-update-00-(it-begins).html" rel="alternate" type="text/html" title="Recurse Update 00 (it Begins)" /><published>2019-09-25T00:00:00-04:00</published><updated>2019-09-25T00:00:00-04:00</updated><id>http://localhost:4000/2019/09/25/recurse-update-00-(it-begins)</id><content type="html" xml:base="http://localhost:4000/2019/09/25/recurse-update-00-(it-begins).html">It is day 3 at the Recurse Center (RC)!
+&lt;/div&gt;</content><author><name></name></author><summary type="html">I love docker. It makes environments: portable across any machine subject to version control (retraceable and recoverable history) easily deployed and discarded with simple commands</summary></entry><entry><title type="html">Recurse Update 00 (it Begins)</title><link href="http://localhost:4000/2019/09/25/recurse-update-00-(it-begins).html" rel="alternate" type="text/html" title="Recurse Update 00 (it Begins)" /><published>2019-09-25T00:00:00-04:00</published><updated>2019-09-25T00:00:00-04:00</updated><id>http://localhost:4000/2019/09/25/recurse-update-00-(it-begins)</id><content type="html" xml:base="http://localhost:4000/2019/09/25/recurse-update-00-(it-begins).html">&lt;div class=&quot;post&quot;&gt;
+&lt;p&gt;It is day 3 at the Recurse Center (RC)!&lt;/p&gt;
 
-&lt;figure class=&quot;inline-img&quot;&gt;
+&lt;figure&gt;
     &lt;img src=&quot;/assets/images/me-rust-haskell.gif&quot; alt=&quot;Me using Rust/Haskell&quot;&gt;
     &lt;figcaption class=&quot;figcaption-text&quot;&gt;Me experimenting with Haskell and Rust&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-It has been a whirlwind of orientation, meeting awesome people, learning about (and about the existence of) new cool things, set up, and settling in.
+&lt;p&gt;It has been a whirlwind of orientation, meeting awesome people, learning about (and about the existence of) new cool things, setting up and settling in.&lt;/p&gt;
 
-&lt;br&gt;&lt;br&gt;
-This was my second day here:
-&lt;div class=&quot;list-text&quot;&gt;
-    &lt;br&gt;&lt;i&gt;8-9am: &lt;/i&gt;Research blogging tools to create this very website. Decide on Jekyll + github pages + namecheap domain as a good solution&lt;br&gt;
-    &lt;br&gt;&lt;i&gt;9-10am: &lt;/i&gt;Update MacOS to Mojave after experiencing ruby-related jekyll issues&lt;br&gt;
-    &lt;br&gt;&lt;i&gt;10-11am: &lt;/i&gt;Using &lt;a href=&quot;https://jekyllrb.com/docs/step-by-step/01-setup/&quot;&gt;this great tutorial&lt;/a&gt;, get &lt;code&gt;jekyll&lt;/code&gt; and &lt;code&gt;bundler&lt;/code&gt; installed. Get &lt;code&gt;jekyll serve&lt;/code&gt; working and start developing this blog&lt;br&gt;
-    &lt;br&gt;&lt;i&gt;11-12pm: &lt;/i&gt;Pair programming workshop! Create a version of &lt;a href=&quot;https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life&quot;&gt;Conway's Game of Life&lt;/a&gt; in python. &lt;a href=&quot;https://gist.github.com/robinovitch61/8a094c15f8cc28ec9218a1baf6b211c6#file-game_of_life-py&quot;&gt;Gist here.&lt;/a&gt;&lt;br&gt;
-    &lt;br&gt;&lt;i&gt;12-12:15pm: &lt;/i&gt;Discuss wind speed measurements using an arduino with someone working on an auto-steering sailboat. Yay mech eng knowledge!&lt;br&gt;
-    &lt;br&gt;&lt;i&gt;12:15-1pm: &lt;/i&gt;Lunch chat with someone, discuss what Rust is and why people are excited about it (memory and type safety)&lt;br&gt;
-    &lt;br&gt;&lt;i&gt;1-2pm: &lt;/i&gt;Participated in an &quot;Intro to Haskell&quot; workshop. No loops, variables don't vary, unclear code execution order...what is this language??&lt;br&gt;
-    &lt;br&gt;&lt;i&gt;2-3pm: &lt;/i&gt;Continue site development&lt;br&gt;
-    &lt;br&gt;&lt;i&gt;3-4pm: &lt;/i&gt;Category theory discussion group. First foray into theoretical math in a long time. Approachable intro by the few folks with deeper knowledge on the topic&lt;br&gt;
-    &lt;br&gt;&lt;i&gt;4-5:30pm: &lt;/i&gt;Further introductory Haskell chat, help solidify some core concepts intro'd earlier&lt;br&gt;
-    &lt;br&gt;&lt;i&gt;5:30-6:30pm: &lt;/i&gt;Non-technical presentations (7 mins max) - folks did them on cross stitching, rube goldberg machine demo, cats, contact juggling, architecture, and the origin of the English language&lt;br&gt;
+&lt;p&gt;This was my second day here:&lt;/p&gt;
+&lt;div class=&quot;no-bull-list&quot;&gt;
+    &lt;p&gt;&lt;i&gt;8-9am: &lt;/i&gt;Research blogging tools to create this very website. Decide on Jekyll + github pages + namecheap domain as a good solution&lt;/p&gt;
+    &lt;p&gt;&lt;i&gt;9-10am: &lt;/i&gt;Update MacOS to Mojave after experiencing ruby-related jekyll issues&lt;/p&gt;
+    &lt;p&gt;&lt;i&gt;10-11am: &lt;/i&gt;Using &lt;a href=&quot;https://jekyllrb.com/docs/step-by-step/01-setup/&quot;&gt;this great tutorial&lt;/a&gt;, get &lt;code&gt;jekyll&lt;/code&gt; and &lt;code&gt;bundler&lt;/code&gt; installed. Get &lt;code&gt;jekyll serve&lt;/code&gt; working and start developing this blog&lt;/p&gt;
+    &lt;p&gt;&lt;i&gt;11-12pm: &lt;/i&gt;Pair programming workshop! Create a version of &lt;a href=&quot;https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life&quot;&gt;Conway's Game of Life&lt;/a&gt; in python. &lt;a href=&quot;https://gist.github.com/robinovitch61/8a094c15f8cc28ec9218a1baf6b211c6#file-game_of_life-py&quot;&gt;Gist here.&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;i&gt;12-12:15pm: &lt;/i&gt;Discuss wind speed measurements using an arduino with someone working on an auto-steering sailboat. Yay mech eng knowledge!&lt;/p&gt;
+    &lt;p&gt;&lt;i&gt;12:15-1pm: &lt;/i&gt;Lunch chat with someone, discuss what Rust is and why people are excited about it (memory and type safety)&lt;/p&gt;
+    &lt;p&gt;&lt;i&gt;1-2pm: &lt;/i&gt;Participated in an &quot;Intro to Haskell&quot; workshop. No loops, variables don't vary, unclear code execution order...what is this language??&lt;/p&gt;
+    &lt;p&gt;&lt;i&gt;2-3pm: &lt;/i&gt;Continue site development&lt;/p&gt;
+    &lt;p&gt;&lt;i&gt;3-4pm: &lt;/i&gt;Category theory discussion group. First foray into theoretical math in a long time. Approachable intro by the few folks with deeper knowledge on the topic&lt;/p&gt;
+    &lt;p&gt;&lt;i&gt;4-5:30pm: &lt;/i&gt;Further introductory Haskell chat, help solidify some core concepts intro'd earlier&lt;/p&gt;
+    &lt;p&gt;&lt;i&gt;5:30-6:30pm: &lt;/i&gt;Non-technical presentations (7 mins max) - folks did them on cross stitching, rube goldberg machine demo, cats, contact juggling, architecture, and the origin of the English language&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;br&gt;&lt;br&gt;
-It's everything I had hoped for and more.
+&lt;p&gt;It's everything I had hoped for and more.&lt;/p&gt;
 
-&lt;br&gt;&lt;br&gt;
-The space is incredible, with tons of work stations, a large library, 5 or 6 super vintage but functioning computers to play with, breakout rooms, an LED project you can control via your computer, a nap space, and clean and functional kitchen/lunch area.
+&lt;p&gt;The space is incredible, with tons of work stations, a large library, 5 or 6 super vintage but functioning computers to play with, breakout rooms, an LED project you can control via your computer, a nap space, and clean and functional kitchen/lunch area.&lt;/p&gt;
 
-&lt;br&gt;&lt;br&gt;
-My goals here are (in no particular order):
-&lt;ul class=&quot;list-text&quot;&gt;
-    &lt;li&gt;Gain a stronger foundation in computer science theory (algorithms, data structures, complexity management, etc.)&lt;/li&gt;
-    &lt;li&gt;Continue to build on my statistics and probability knowledge, likely with some forays in to AI projects&lt;/li&gt;
-    &lt;li&gt;Learn of more &quot;unknown unkowns&quot; - concepts that I didn't know existed but are incredibly interesting and/or useful&lt;/li&gt;
-    &lt;li&gt;Reshape my assumptions about education and what the learning process looks like&lt;/li&gt;
-    &lt;li&gt;Become a much more effective programmer so I can kick ass at my next role&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;My goals here are (in no particular order):&lt;/p&gt;
+&lt;div class=&quot;no-bull-list&quot;&gt;
+    &lt;p&gt;&lt;li&gt;Gain a stronger foundation in computer science theory (algorithms, data structures, complexity management, etc.)&lt;/li&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;li&gt;Continue to build on my statistics and probability knowledge, likely with some forays in to AI projects&lt;/li&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;li&gt;Learn of more &quot;unknown unkowns&quot; - concepts that I didn't know existed but are incredibly interesting and/or useful&lt;/li&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;li&gt;Reshape my assumptions about education and what the learning process looks like&lt;/li&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;li&gt;Become a much more effective programmer so I can kick ass at my next role&lt;/li&gt;&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;br&gt;
-Some pitfalls I'd like to avoid:
-&lt;ul class=&quot;list-text&quot;&gt;
-    &lt;li&gt;Have my time dominated by learning tools rather than understanding concepts and theory. Learning a tool (e.g. a new programming language, framework, library, etc.) can be done when it's time to implement conceptually complete visions&lt;/li&gt;
-    &lt;li&gt;Stretch myself too thin by trying to learn everything and then feeling like I'm not really learning anything&lt;/li&gt;
-    &lt;li&gt;Get sucked in by &quot;the hype&quot; around a language or domain without properly evaluating whether or not it is the best way to spend my time at my current stage of development&lt;/li&gt;
-    &lt;li&gt;Lose steam by pushing too hard, feeling like I'm not succeeding, or failing to achieve my incremental goals&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Some pitfalls I'd like to avoid:&lt;/p&gt;
+&lt;div class=&quot;no-bull-list&quot;&gt;
+    &lt;p&gt;&lt;li&gt;Have my time dominated by learning tools rather than understanding concepts and theory. Learning a tool (e.g. a new programming language, framework, library, etc.) can be done when it's time to implement conceptually complete visions&lt;/li&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;li&gt;Stretch myself too thin by trying to learn everything and then feeling like I'm not really learning anything&lt;/li&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;li&gt;Get sucked in by &quot;the hype&quot; around a language or domain without properly evaluating whether or not it is the best way to spend my time at my current stage of development&lt;/li&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;li&gt;Lose steam by pushing too hard, feeling like I'm not succeeding, or failing to achieve my incremental goals&lt;/li&gt;&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;br&gt;
-I'm so excited! Pitter patter...
-&lt;br&gt;&lt;br&gt;
-&lt;br&gt;&lt;br&gt;</content><author><name></name></author><summary type="html">It is day 3 at the Recurse Center (RC)!</summary></entry></feed>
+&lt;p&gt;I'm so excited! Pitter patter...&lt;/p&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">It is day 3 at the Recurse Center (RC)!</summary></entry></feed>

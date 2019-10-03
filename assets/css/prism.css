@@ -5,12 +5,13 @@ https://prismjs.com/download.html#themes=prism-twilight&languages=markup+css+cli
  * Based (more or less) on the Twilight theme originally of Textmate fame.
  * @author Remy Bach
  */
+
 code[class*="language-"],
 pre[class*="language-"] {
 	color: white;
 	background: none;
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-	font-size: 0.85em;
+	font-size: 15px; /* added by Leo */
 	text-align: left;
 	text-shadow: 0 -.1em .2em black;
 	white-space: pre;
@@ -68,6 +69,10 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 }
 
 /* Inline code */
+:not(pre) > code { /* added by Leo */
+	font-weight: bold;
+}
+
 :not(pre) > code[class*="language-"] {
 	border-radius: .3em;
 	border: .13em solid hsl(0, 0%, 33%); /* #545454 */
