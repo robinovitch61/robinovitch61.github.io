@@ -1,33 +1,27 @@
-ul li { padding: 5px 0px; }
+body { margin: 0; font-family: 'Zilla Slab', serif; font-size: 18px; color: black; }
 
-img { max-width: 100%; }
+h1, h2, h3 { color: darkslategray; }
 
-.flexwrap { display: flex; justify-content: center; }
+h1 { margin: 25px 0px 0px; padding: 0; }
 
-.contentwrap { margin: 10px; width: 70%; max-width: 700px; }
+h2 { margin: 15px 0px 0px; }
 
-.h1-text { color: darkslategrey; font-size: 3rem; margin: 20px; margin-left: 2px; }
+.btn { display: inline-block; padding: 8px 15px; color: darkslategray; background: #e3e3e3; text-decoration: none; border-radius: 2px; margin-right: 5px; }
 
-.h2-text { color: darkslategrey; font-size: 2rem; margin: 20px; margin-left: 2px; }
+.btn:hover, .btn:focus, .btn:active { color: #e3e3e3; background: black; }
 
-.h3-text { color: darkslategrey; font-size: 1.5rem; margin: 20px; margin-left: 2px; }
+.btn-top { float: right; margin-top: 23px; }
 
-.h4-text { color: darkslategrey; font-size: 1rem; margin: 20px; margin-left: 2px; }
+#github, #linkedin { height: 27px; width: 30px; margin: 5px 5px 0px; }
 
-.list-text { color: darkslategrey; font-size: 1rem; margin-left: 30px; margin-bottom: 0px; }
+#github { margin-bottom: 1px; }
 
-.figcaption-text { color: darkslategrey; font-size: 1rem; margin-left: 2px; font-style: italic; }
+#linkedin { height: 30px; }
 
-.log-text { font-size: 1.3rem; }
+.container { max-width: 700px; margin: 0 auto; padding: 0 10px; }
 
-.blog-text { font-size: 1.3rem; }
+.nav { display: flex; justify-content: space-between; align-items: flex-end; margin-top: 20px; }
 
-.inline-img { margin-top: 20px; margin-bottom: 20px; display: flex; justify-content: center; flex-direction: column; align-items: center; }
-
-.custom-nav { display: flex; justify-content: space-between; }
-
-.nav-buttons { margin-top: 20px; margin-bottom: 20px; font-size: 20px; display: flex; flex-direction: column; }
-
-.nav-buttons a { color: slategray; }
+.nav-buttons { display: flex; justify-content: right; align-items: flex-end; margin-bottom: 5px; }
 
 /*# sourceMappingURL=styles.css.map */
