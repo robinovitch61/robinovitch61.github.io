@@ -10,11 +10,11 @@ h2 { margin: 15px 0px 0px; }
 
 a { text-decoration: none; color: blue; }
 
-a:hover, a:focus, a:active { font-style: italic; }
+a:not(.btn):hover, a:not(.btn):focus, a:not(.btn):active { font-style: italic; }
 
 .post-date { font-style: italic; font-size: 15px; margin-top: 10px; margin-bottom: 25px; }
 
-.btn { display: inline-block; padding: 8px 15px; color: darkslategray; background: #e3e3e3; text-decoration: none; border-radius: 2px; margin-right: 5px; }
+.btn { display: inline-block; padding: 8px 15px; color: darkslategray; background: #e3e3e3; text-decoration: none; border-radius: 2px; margin-right: 5px; margin-top: 5px; }
 
 .btn:hover, .btn:focus, .btn:active { color: #e3e3e3; background: black; }
 
@@ -22,11 +22,11 @@ a:hover, a:focus, a:active { font-style: italic; }
 
 .btn-text:hover { font-style: italic; }
 
-#github, #linkedin { height: 27px; width: 30px; margin: 5px 5px 0px; }
+#github, #linkedin { max-height: 27px; max-width: 30px; width: auto; height: auto; margin: 5px 5px 0px; }
 
 #github { margin-bottom: 1px; }
 
-#linkedin { height: 30px; }
+#linkedin { max-height: 30px; }
 
 header { background: #7affa6; }
 
@@ -38,9 +38,9 @@ footer { margin-top: 100px; }
 
 .container { max-width: 700px; margin: 0 auto; padding: 0 10px; }
 
-.nav { display: flex; justify-content: space-between; align-items: flex-end; margin-top: 20px; }
+.nav { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; margin-top: 20px; }
 
-.nav-buttons { display: flex; justify-content: right; align-items: flex-end; margin-bottom: 5px; }
+.nav-buttons { display: flex; justify-content: right; align-items: flex-end; flex-wrap: wrap; margin-bottom: 5px; }
 
 .no-bull-list { margin: 10px 10px 30px 70px; }
 

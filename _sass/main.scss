@@ -38,9 +38,9 @@ a {
     color: blue;
 }
 
-a:hover,
-a:focus,
-a:active {
+a:not(.btn):hover,
+a:not(.btn):focus,
+a:not(.btn):active {
     font-style: italic;
 }
 
@@ -61,6 +61,7 @@ a:active {
     text-decoration: none;
     border-radius: 2px;
     margin-right: 5px;
+    margin-top: 5px;
 }
 
 .btn:hover,
@@ -80,8 +81,10 @@ a:active {
 }
 
 #github, #linkedin {
-    height: 27px;
-    width: 30px;
+    max-height: 27px;
+    max-width: 30px;
+    width: auto;
+    height: auto;
     margin: 5px 5px 0px;
 }
 
@@ -90,7 +93,7 @@ a:active {
 }
 
 #linkedin {
-    height: 30px;
+    max-height: 30px;
 }
 
 // Layout
@@ -128,6 +131,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    flex-wrap: wrap;
     margin-top: 20px;
 }
 
@@ -135,6 +139,7 @@ footer {
     display: flex;
     justify-content: right;
     align-items: flex-end;
+    flex-wrap: wrap;
     margin-bottom: 5px;
 }
 
