@@ -30,7 +30,7 @@ a:not(.btn):hover, a:not(.btn):focus, a:not(.btn):active { font-style: italic; }
 
 header { background: #7affa6; }
 
-figure { margin-top: 20px; margin-bottom: 20px; display: flex; justify-content: center; flex-direction: column; align-items: center; font-style: italic; font-size: 15px; }
+figure { margin: 20px 0px; display: flex; justify-content: center; flex-direction: column; align-items: center; font-style: italic; font-size: 15px; }
 
 img { max-width: 95%; }
 
