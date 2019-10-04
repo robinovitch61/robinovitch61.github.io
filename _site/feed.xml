@@ -1,4 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-04T11:23:00-04:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Jupyter With Docker</title><link href="http://localhost:4000/2019/09/27/jupyter-with-docker.html" rel="alternate" type="text/html" title="Jupyter With Docker" /><published>2019-09-27T00:00:00-04:00</published><updated>2019-09-27T00:00:00-04:00</updated><id>http://localhost:4000/2019/09/27/jupyter-with-docker</id><content type="html" xml:base="http://localhost:4000/2019/09/27/jupyter-with-docker.html">&lt;div class=&quot;post&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-04T19:08:06-04:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Recurse Update 01 (logic Immunity)</title><link href="http://localhost:4000/2019/10/04/recurse-update-01-(logic-immunity).html" rel="alternate" type="text/html" title="Recurse Update 01 (logic Immunity)" /><published>2019-10-04T00:00:00-04:00</published><updated>2019-10-04T00:00:00-04:00</updated><id>http://localhost:4000/2019/10/04/recurse-update-01-(logic-immunity)</id><content type="html" xml:base="http://localhost:4000/2019/10/04/recurse-update-01-(logic-immunity).html">&lt;div class=&quot;post&quot;&gt;
+&lt;p&gt;I have been learning about basic computer architecture (logic gates) and working on a herd immunity simulation.&lt;/p&gt;
+
+&lt;p&gt;Computer architecture work has come from the awesome &lt;a href=&quot;https://www.nand2tetris.org/&quot;&gt;Nand2Tetris course&lt;/a&gt; by Shimon Schocken and Noam Nisan. Shimon has &lt;a href=&quot;https://www.ted.com/talks/shimon_schocken_the_self_organizing_computer_course?language=pt&quot;&gt;a fantastic Ted Talk about the course&lt;/a&gt; and many Recursers have done it in the past. I'm 2 projects in to the first half of the course (&lt;a href=&quot;https://www.coursera.org/learn/build-a-computer/home/welcome&quot;&gt;Coursera link&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;The premise is that you start with a &lt;code&gt;Nand&lt;/code&gt; (&quot;Not And&quot;) logic gate. The first project, you build other elementary logic gates from the &lt;code&gt;Nand&lt;/code&gt; gate (e.g. &lt;code&gt;Not(x) = x Nand x&lt;/code&gt;, furthermore &lt;code&gt;x And y = Not(x Nand y)&lt;/code&gt;; etc.) The 12th and last project, you complete the operating system that you have built up from the &lt;code&gt;Nand&lt;/code&gt; gate, with the 10 projects in between filling in all the gaps. You could build tetris (or any similar game) in the completed computer you have built &quot;from scratch&quot;.&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/assets/images/nand2tetris_overview.png&quot; alt=&quot;nand2tetris overview&quot;&gt;
+    &lt;figcaption class=&quot;figcaption-text&quot;&gt;The Nand2Tetris Overview&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I am excited to keep digging in to the course. At 1 project per week, I'll complete the course just in time! I've heard the last 6 projects are more time intensive than the first 6, so I'm trying to budget time accordingly.&lt;/p&gt;
+
+&lt;p&gt;The other thing I've been sinking time into is a prototype herd immunity simulation in python. &lt;a href=&quot;https://github.com/haack&quot;&gt;Alex Haak&lt;/a&gt; and I are both excited about interactive data visualization and illustrating concepts through interactive online experiences. Our ultimate goal is to publish something on &lt;a href=&quot;https://explorabl.es/&quot;&gt;explorabl.es - Explorable Explanations&lt;/a&gt;. This site is mind blowing. Don't visit it if you don't have a couple hours to kill.&lt;/p&gt;
+
+&lt;p&gt;Initial results for the simulator are really interesting! I came up with a simplified set of rules that give a certain level of complexity while still massively simplifying the real world. &lt;a href=&quot;https://github.com/robinovitch61/herd_immunity&quot;&gt;All the code is here.&lt;/a&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/assets/images/good_immunity.gif&quot; alt=&quot;good immunity simulation&quot;&gt;
+    &lt;figcaption class=&quot;figcaption-text&quot;&gt;90% Immunity - Blue Immunity Protec&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/assets/images/bad_immunity.gif&quot; alt=&quot;good immunity simulation&quot;&gt;
+    &lt;figcaption class=&quot;figcaption-text&quot;&gt;80% Immunity - Red Sickness Attac&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Alex and I will be working on porting a modified version of this logic in to an awesome interactive data visualization - Alex is great with React, javascript, html, css, and general design so I'm excited to learn a lot from him!&lt;/p&gt;
+
+&lt;p&gt;A mostly complete set of rules for the model:&lt;/p&gt;
+
+&lt;i&gt;
+&lt;p&gt;1. Number of agents is &lt;code&gt;GRID_WIDTH * GRID_HEIGHT = NUM_AGENTS&lt;/code&gt;. Each point in the rectangular grid is occupied by an agent.&lt;/p&gt;
+
+&lt;p&gt;2. Agents are randomly assigned an &lt;code&gt;IMMUNE&lt;/code&gt; status, either 0 (susceptible) or 1 (immune), at the beginning. &lt;code&gt;NUM_IMMUNE_START = PERC_IMMUNE_START * NUM_AGENTS&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;3. Agents are initially randomly flagged as sick, with &lt;code&gt;NUM_SICK_START = PERC_SICK_START * NUM_AGENTS.&lt;/code&gt; Immune agents cannot be initially flagged as sick.&lt;/p&gt;
+
+&lt;p&gt;4. All agents that aren't immune or sick are set as initially healthy.&lt;/p&gt;
+
+&lt;p&gt;5. At each timestep, agents connect with some of the agents around them, with probability of connecting to each agent within their &lt;code&gt;CONNECTION_DISTANCE&lt;/code&gt; being &lt;code&gt;PROB_SOCIAL&lt;/code&gt; . This determines the candidate pool a given agent could connect with:&lt;/p&gt;
+
+&lt;p class=&quot;indent&quot;&gt;If &lt;code&gt;CONNECTION_DISTANCE = 1&lt;/code&gt;, agents have a candidate pool of  &lt;= 8, that is, the agents directly around them in a square with themself at the center.&lt;/p&gt;
+
+&lt;p class=&quot;indent&quot;&gt;If &lt;code&gt;CONNECTION_DISTANCE = 2,&lt;/code&gt; agents have a candidate pool of &lt;= 16, that is, the agents directly around them in 2 concentric squares with themself at the center.&lt;/p&gt;
+
+&lt;p class=&quot;indent&quot;&gt;etc. with &lt;br&gt;&lt;code&gt;CONNECTION_DISTANCE &lt;= MAX(GRID_WIDTH, GRID_HEIGHT) - 1&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;6. If a sick agent connects with a healthy agent who is not immune, probability of infection is &lt;code&gt;PROB_INFECTION.&lt;/code&gt; If a sick agent connects with an immune agent, probability of infection is zero (could change later accounting for imperfect vaccination success rate).&lt;/p&gt;
+
+&lt;p&gt;7. After infections occur, each agent has a chance to recover with &lt;code&gt;PROB_RECOVERY&lt;/code&gt;. Sick agents then have a chance to die with &lt;code&gt;PROB_DEATH&lt;/code&gt;.&lt;/p&gt;
+&lt;/i&gt;
+
+&lt;p&gt;Recurse continues to be a fantastic experience, albeit a little overwhelming in the sheer volume of knowledge and opportunities it presents! This is a great problem to have. I am trying to stay focused on diving in to items of greatest interest while not burning myself out before the 12 weeks are up. It's also FLYING by.&lt;/p&gt;</content><author><name></name></author><summary type="html">I have been learning about basic computer architecture (logic gates) and working on a herd immunity simulation.</summary></entry><entry><title type="html">Jupyter With Docker</title><link href="http://localhost:4000/2019/09/27/jupyter-with-docker.html" rel="alternate" type="text/html" title="Jupyter With Docker" /><published>2019-09-27T00:00:00-04:00</published><updated>2019-09-27T00:00:00-04:00</updated><id>http://localhost:4000/2019/09/27/jupyter-with-docker</id><content type="html" xml:base="http://localhost:4000/2019/09/27/jupyter-with-docker.html">&lt;div class=&quot;post&quot;&gt;
 &lt;p&gt;I love &lt;a href=&quot;https://www.docker.com&quot;&gt;docker&lt;/a&gt;. It makes environments:&lt;/p&gt;
 &lt;div class=&quot;no-bull-list&quot;&gt;
     &lt;p&gt;&lt;li&gt;portable across any machine&lt;/i&gt;&lt;/li&gt;&lt;/p&gt;
