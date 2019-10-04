@@ -17,7 +17,7 @@ title: RC
             {% for post in site.posts %}
                 {% assign lower_title = post.title | downcase %}
                     {% if lower_title contains "recurse" %}
-                        <li><i>{{ post.date | date_to_string }} - </i><a href="{{ post.url }}">{{ post.title | downcase }}</a></li>
+                        <li class="post"><i>{{ post.date | date_to_string }} - </i><a href="{{ post.url }}">{{ post.title | downcase }}</a></li>
                     {% endif %}
             {% endfor %}
         </ul>
