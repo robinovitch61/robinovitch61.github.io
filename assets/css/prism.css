@@ -71,6 +71,7 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 /* Inline code */
 :not(pre) > code { /* added by Leo */
 	font-weight: bold;
+	overflow-wrap: break-word;
 }
 
 :not(pre) > code[class*="language-"] {
