@@ -52,10 +52,17 @@ a:not(.btn):active {
 }
 
 @media (prefers-color-scheme: dark) {
+    h1,
+    h2,
+    h3,
     body {
-        background-color: #444;
         color: #e4e4e4;
     }
+
+    body {
+        background-color: #444;
+    }
+
     a {
         color: #e39777;
     }
@@ -139,7 +146,7 @@ ul .post {
 
 .container {
     max-width: 700px;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
 }
 
