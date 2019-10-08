@@ -17,7 +17,7 @@ a:not(.btn):hover, a:not(.btn):focus, a:not(.btn):active { font-style: italic; }
 .post-date { font-style: italic; font-size: 15px; margin-top: 10px; margin-bottom: 25px; }
 
 @media (prefers-color-scheme: dark) { h1, h2, h3, body { color: #e4e4e4; }
-  header h2 { color: #444; }
+  header h2 { color: #1a1a1a; }
   body { background-color: #444; }
   a { color: #e39777; }
   img { filter: grayscale(30%); } }
