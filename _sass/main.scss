@@ -51,6 +51,19 @@ a:not(.btn):active {
     margin-bottom: 25px;
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #444;
+        color: #e4e4e4;
+    }
+    a {
+        color: #e39777;
+    }
+    img {
+        filter: grayscale(30%);
+    }
+}
+
 // Buttons
 
 .btn {
@@ -126,8 +139,8 @@ ul .post {
 
 .container {
     max-width: 700px;
+    width: 90%;
     margin: 0 auto;
-    padding: 0 10px;
 }
 
 .nav {
