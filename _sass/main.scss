@@ -59,6 +59,10 @@ a:not(.btn):active {
         color: #e4e4e4;
     }
 
+    header {
+        color: #444;
+    }
+
     body {
         background-color: #444;
     }
@@ -146,7 +150,7 @@ ul .post {
 
 .container {
     max-width: 700px;
-    width: 95%;
+    padding: 0 10px;
     margin: 0 auto;
 }
 
