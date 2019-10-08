@@ -14,6 +14,10 @@ a:not(.btn):hover, a:not(.btn):focus, a:not(.btn):active { font-style: italic; }
 
 .post-date { font-style: italic; font-size: 15px; margin-top: 10px; margin-bottom: 25px; }
 
+@media (prefers-color-scheme: dark) { body { background-color: #444; color: #e4e4e4; }
+  a { color: #e39777; }
+  img { filter: grayscale(30%); } }
+
 .btn { display: inline-block; padding: 8px 15px; color: darkslategray; background: #e3e3e3; text-decoration: none; border-radius: 2px; margin-right: 5px; margin-top: 5px; }
 
 .btn:hover, .btn:focus, .btn:active { color: #e3e3e3; background: black; }
@@ -38,7 +42,7 @@ footer { margin-top: 100px; }
 
 ul .post { margin: 10px 0; }
 
-.container { max-width: 700px; margin: 0 auto; padding: 0 10px; }
+.container { max-width: 700px; width: 90%; margin: 0 auto; }
 
 .nav { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; margin-top: 20px; }
 
