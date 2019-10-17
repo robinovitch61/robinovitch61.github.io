@@ -9,9 +9,12 @@ title: default
 
         <meta name="theme-color" content="#000000">
 
-        <!-- <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,500&display=swap" rel="stylesheet"> -->
         <link href="/assets/css/styles.css" rel="stylesheet">
         <link href="/assets/css/prism.css"/ rel="stylesheet">
+
+        <script src="/assets/js/prism.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
         <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
         {% feed_meta %}
@@ -22,8 +25,19 @@ title: default
     
     <body>
         {{ content }}
-        <footer></footer>
-        <script src="/assets/js/prism.js"></script>
+        <footer>
+            <!-- <form style="border:1px solid #ccc;padding:3px;text-align:center;" action="https://tinyletter.com/robinovitch61" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/robinovitch61', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+                <p>
+                    <label for="tlemail">Subscribe If Ya Wanna</label>
+                </p>
+                <p>
+                    <input type="text" style="width:140px" name="email" id="tlemail" />
+                </p>
+                <input type="hidden" value="1" name="embed"/>
+                <input type="submit" value="Subscribe" />
+            </form>
+        <br><br> -->
+        </footer>
     </body>
 
 </html>
