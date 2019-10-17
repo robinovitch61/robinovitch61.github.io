@@ -8,16 +8,13 @@
     <meta name="description" content="Leo Robinovitch">
     <meta name="keywords" content="hire,me,please">
   <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/vnd.microsoft.icon">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600&display=swap" rel="stylesheet">
   <style type="text/css">
-
-    html {
-      font-size: 16px;
-    }
 
     body {
       margin: 0;
       color: black;
-      font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif; 
+      font-family: 'Quicksand', sans-serif;
     }
 
     .container {
@@ -47,7 +44,7 @@
     }
 
     section {
-      margin-top: 1.5625em;
+      margin-bottom: 1.5625em;
     }
     
     a {
@@ -62,7 +59,7 @@
 
     .a-contact {
       padding: 0.25em 0.5em;
-      border: 1px solid grey;
+      /* border: 1px solid grey; */
     }
 
     a:active,
@@ -108,24 +105,35 @@
       overflow-wrap: break-word;
     }
 
-    .ul-container {
+    .doc-subtitle,
+    .ul-container,
+    .item-subtitle,
+    .footer {
       display: flex;
       flex-wrap: wrap;
-      align-items: flex-start;
       justify-content: space-between;
     }
     
+    .ul-container {
+      align-items: flex-start;
+    }
+    
     .item-subtitle {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
       margin: 0 0.05em;
+    }
+
+    .footer {
+      margin-bottom: 3.125em;
+    }
+
+    .doc-subtitle {
+      justify-content: space-around;
     }
 
     @media screen and (max-width:800px) {
 
-      .ul-container {
-        flex-direction: column;
+      header {
+        margin-bottom: 0;
       }
 
       .ul-third {
@@ -145,20 +153,23 @@
         margin-top: 0;
       }
 
-      .item-subtitle {
+      .ul-container,
+      .item-subtitle,
+      .doc-subtitle {
         flex-direction: column;
+      }
+
+      .item-subtitle {
         align-items: flex-start;
+      }
+
+      .doc-subtitle {
+        align-items: center;
       }
 
       .p-contact {
         margin: 1em 0;
       }
-    }
-
-    .doc-subtitle {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
     }
 
     .doc-subtitle p {
@@ -177,13 +188,6 @@
       font-weight: normal;
     }
 
-    .footer {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-bottom: 3.125em;
-    }
-
     .footer p {
       font-size: 0.75rem;
       font-style: italic;
@@ -196,29 +200,11 @@
       <header>
           <h1><a href="https://leorobinovitch.com">Leo J. Robinovitch</a></h1>
           <div class="doc-subtitle">
-            <p class="p-contact"><a class="a-contact" href="mailto:leorobinovitch@gmail.com">Email Me</a></p>
+            <p class="p-contact"><a class="a-contact a-highlight" href="mailto:leorobinovitch@gmail.com">Email Me</a></p>
             <p>¸.·´¯`·.´¯`·.¸¸.·´¯`·.¸><(((º></p>
+            <p class="p-contact"><a class="a-highlight" href="https://leorobinovitch.com">leorobinovitch.com</a></p>
           </div>
       </header>
-
-      <!-- EDUCATION -->
-      <section>
-        <h2>Education</h2>
-        
-        <!-- UBC -->
-        <div class="item-subtitle"><h3>UBC</h3><h3>Vancouver, BC</h3></div>
-        <div class="item-subtitle"><h3 class="role">BAS, Mechanical Engineering</h3><h3 class='date'>2012 – 2017</h3></div>
-        <ul>
-          <li>Dean’s Honor List 2012 – 2017</li>
-        </ul>
-
-        <!-- Recurse -->
-        <div class="item-subtitle"><h3>RECURSE CENTER</h3><h3>Brooklyn, NY</h3></div>
-        <div class="item-subtitle"><h3 class="role">Recurser</h3><h3 class='date'>Fall 2019</h3></div>
-        <ul>
-          <li>Forever learning computer science and programming. Documented at <a class="a-highlight" href="https://leorobinovitch.com">leorobinovitch.com</a></li>
-        </ul>
-      </section>
 
       <!-- SELECTED EMPLOYMENT -->
       <section>
@@ -226,7 +212,7 @@
         
         <!-- Tesla -->
         <div class="item-subtitle"><h3>TESLA</h3><h3>Palo Alto, CA</h3></div>
-        <div class="item-subtitle"><h3 class="role">Data Scientist</h3><h3 class='date'>Winter 2017-Fall 2019</h3></div>
+        <div class="item-subtitle"><h3 class="role">Data Scientist</h3><h3 class='date'>Sept 2017 - Aug 2019</h3></div>
         <ul>
           <li>Full-stack data science; data storage, transport, cleaning, modeling, visualization, and presentation</li>
           <li>Leveraged data to inform electromechanical design decisions for Model 3/Y/Semi Truck drive inverters</li>
@@ -234,9 +220,17 @@
           <li>Created packages and tools used daily by a variety of teams to leverage complex data sets for decision making</li>
         </ul>
 
+        <!-- Tesla Internship -->
+        <div class="item-subtitle"><h3>TESLA</h3><h3>Palo Alto, CA</h3></div>
+        <div class="item-subtitle"><h3 class="role">Mechanical Drive Systems Intern</h3><h3 class='date'>June 2016 - Sept 2016</h3></div>
+        <ul>
+          <li>Implemented reliability-driven driver data transform model in Python, simulating driver behavior in unreleased vehicles based on existing data</li>
+          <li>Conducted various material, fatigue failure, mass property, and mechanical analyses for drive unit components</li>
+        </ul>
+
         <!-- Landyachtz -->
         <div class="item-subtitle"><h3>LANDYACHTZ LONGBOARDS</h3><h3>Vancouver, BC</h3></div>
-        <div class="item-subtitle"><h3 class="role">Engineering Design Intern</h3><h3 class='date'>Winter 2016</h3></div>
+        <div class="item-subtitle"><h3 class="role">Engineering Design Intern</h3><h3 class='date'>Jan 2016 - June 2016</h3></div>
         <ul>
           <li>Designed and manufactured testing apparatus and prototyping hardware, including Arduino-controlled force applicator, 3D printer, axle torsion testing rig, and bike frame welding rig</li>
           <li>Implemented new standards of quality control for skateboard components, used on 4k+ products/yr</li>
@@ -244,30 +238,49 @@
 
         <!-- Microsoft -->
         <div class="item-subtitle"><h3>MICROSOFT</h3><h3>Tel Aviv, Israel</h3></div>
-        <div class="item-subtitle"><h3 class="role">M&S / R&D Intern</h3><h3 class='date'>Summer 2015</h3></div>
+        <div class="item-subtitle"><h3 class="role">M&S / R&D Intern</h3><h3 class='date'>June 2015 - Aug 2015</h3></div>
         <ul>
           <li>Selected as one of 44 out of ~1700 applicants to "Excel" internship program for international business and high-tech</li>
           <li>Helped manage $75k budget to build maker lab serving design and fabrication needs for 2k+ employees</li>
         </ul>
       </section>
 
+      <!-- EDUCATION -->
+      <section>
+          <h2>Education</h2>
+          
+          <!-- UBC -->
+          <div class="item-subtitle"><h3>The University of British Columbia</h3><h3>Vancouver, BC</h3></div>
+          <div class="item-subtitle"><h3 class="role">B.AS., Mechanical Engineering</h3><h3 class='date'>2012 – 2017</h3></div>
+          <ul>
+            <li>Dean’s Honor List 2012 – 2017</li>
+          </ul>
+  
+          <!-- Recurse -->
+          <div class="item-subtitle"><h3>RECURSE CENTER</h3><h3>Brooklyn, NY</h3></div>
+          <div class="item-subtitle"><h3 class="role">Recurser</h3><h3 class='date'>Sept 2019 - Current</h3></div>
+          <ul>
+            <li>Forever learning computer science and programming. Documented at <a class="a-highlight" href="https://leorobinovitch.com">leorobinovitch.com</a></li>
+          </ul>
+        </section>
+
       <!-- SKILLS AND INTERESTS -->
       <section>
         <h2>Skills and Interests</h2>
 
         <!-- Software -->
-        <div class="item-subtitle"><h3>SOFTWARE</h3></div>
+        <div class="item-subtitle"><h3>SOFTWARE (<a class="a-highlight" href="https://github.com/robinovitch61">My Github</a>)</h3></div>
         <div class="ul-container">
           <ul class="ul-third ul-third-top">
             <li>Data Science & Engineering</li>
             <li>Python, Pandas, Numpy, Scipy</li>
             <li>Git, SVN</li>
             <li>Hadoop, Spark, Pyspark</li>
-            <li>SQL (MySQL, Presto, SparkSQL)</li>
+            <li>Bash/Shell</li>
           </ul>
 
           <ul class="ul-third ul-third-mid">
-            <li>Bash/Shell</li>
+            <li>SQL (MySQL, Presto, SparkSQL)</li>
             <li>Docker, Docker Compose</li>
             <li>Ansible</li>
             <li>NoSQL, MongoDB</li>
@@ -283,9 +296,31 @@
           </ul>
         </div>
 
+        <!-- Personal Projects -->
+        <div class="item-subtitle"><h3>PERSONAL PROJECTS</h3></div>
+        <ul>
+          <li>MOOC/Online Course fan: Nand2Tetris, Machine Learning, Responsive Design</li>
+          <li>Built web scraper in Python that emailed me when good apartments were posted. Helped me find an apartment in SF</li>
+          <li>Created my own mini version of Mint in Python to assist in my financial planning and budgeting</li>
+        </ul>
+
         <!-- Mechanical Engineering -->
         <div class="item-subtitle"><h3>MECHANICAL ENGINEERING</h3></div>
         <div class="ul-container">
+          <ul class="ul-third ul-third-bottom">
+            <li>Parts & Fastener Specification</li>
+            <li>Machining</li>
+            <li>MIG Welding</li>
+            <li>CAD/CAM/G-Code</li>
+          </ul>
+
+          <ul class="ul-third ul-third-mid">
+            <li>Soldering</li>
+            <li>3D Printing</li>
+            <li>CNC Machining</li>
+            <li>Arduino/C++</li>
+          </ul>
+
           <ul class="ul-third ul-third-top">
             <li>CATIA</li>
             <li>Solidworks</li>
@@ -293,28 +328,7 @@
             <li>FreeCAD</li>
           </ul>
 
-          <ul class="ul-third ul-third-mid">
-            <li>Parts & Fastener Specification</li>
-            <li>3D Printing</li>
-            <li>CNC Machining</li>
-            <li>Arduino/C++</li>
-          </ul>
-
-          <ul class="ul-third ul-third-bottom">
-            <li>Soldering</li>
-            <li>Machining</li>
-            <li>MIG Welding</li>
-            <li>CAD/CAM/G-Code</li>
-          </ul>
         </div>
-
-        <!-- Personal Projects -->
-        <div class="item-subtitle"><h3>PERSONAL PROJECTS</h3></div>
-        <ul>
-          <li>MOOC/Online Course fan: Nand2Tetris, Machine Learning, Responsive Design</li>
-          <li>Built web scraper in python that emailed me when good apartments were posted. Helped me find an apartment in SF</li>
-          <li>Created my own mini version of Mint to assist in my financial planning and budgeting</li>
-        </ul>
 
         <!-- Interests -->
         <div class="item-subtitle"><h3>INTERESTS</h3></div>
@@ -332,7 +346,7 @@
 
           <ul class="ul-third ul-third-bottom">
             <li>Yoga</li>
-            <li>Travel</li>
+            <li>Hiking</li>
           </ul>
         </div>
 
