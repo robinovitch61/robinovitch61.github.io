@@ -37,6 +37,10 @@
         width: 100%;
         max-width: none;
       }
+
+      .no-print {
+        display: none;
+      }
     }
 
     header {
@@ -75,7 +79,7 @@
     }
 
     h1 {
-      font-size: 1.8rem;
+      font-size: 2.4rem;
     }
     
     h2 {
@@ -187,6 +191,7 @@
     .role-date {
       font-style: italic;
       padding-left: 1em;
+      padding-right: 0.1em;
       font-size: 1.05rem;
     }
     
@@ -210,9 +215,9 @@
       <header>
           <h1><a href="https://leorobinovitch.com">Leo J. Robinovitch</a></h1>
           <div class="doc-subtitle">
-            <p class="p-contact"><a class="a-contact a-indicate" href="mailto:leorobinovitch@gmail.com">Email Me</a></p>
-            <p>¸.·´¯`·.´¯`·.¸¸.·´¯`·.¸><(((º></p>
             <p class="p-contact"><a class="a-indicate" href="https://leorobinovitch.com">Website</a></p>
+            <p>¸.·´¯`·.´¯`·.¸¸.·´¯`·.¸><(((º></p>
+            <p class="p-contact"><a class="a-contact a-indicate" href="mailto:leorobinovitch@gmail.com">Email Me</a></p>
           </div>
       </header>
 
@@ -222,35 +227,35 @@
         
         <!-- Tesla -->
         <div class="item-subtitle title-place"><h3>TESLA</h3><h3>Palo Alto, CA</h3></div>
-        <div class="item-subtitle role-date"><h3>Data Scientist</h3><h3><span class="date">Sept 2017 - Aug 2019</span></h3></div>
+        <div class="item-subtitle role-date"><h3>Data Scientist, Power Electronics</h3><h3><span class="date">Sept 2017 - Aug 2019</span></h3></div>
         <ul>
-          <li>Full-stack data science; data storage, transport, cleaning, modeling, visualization, and presentation</li>
-          <li>Leveraged data to inform electromechanical design decisions for Model 3/Y/Semi Truck drive inverters</li>
-          <li>Completed numerous modeling workflows to inform critical reliability-oriented design decisions for Model 3</li>
-          <li>Created packages and tools used daily by a variety of teams to leverage complex data sets for decision making</li>
+          <li>Lead python-based statistical analysis on the Model 3 drive inverter, contributing to a 3x improvement in semiconductor reliability</li>
+          <li>Drove a 20% improvement in weekly yield by creating and automating detailed visibility reports into problem areas on the drive inverter manufacturing line using python, matplotlib, bokeh, and airflow</li>
+          <li>Created and maintained an application suite for reliability, manufacturing, and design tooling used by Power Electronics, Reliability, Manufacturing and Firmware teams using python, flask, html/css, mysql, mongodb, docker, and ansible 
+          <li>Hosted aggregate views in to the terabytes of relevant engineering data from the vehicle fleet by using pyspark, spark SQL, presto, and apache superset</li>
+          <li>Created and maintained python packages for Weibull reliability analysis, state space thermal modeling, and quantification of wear accumulation for specific vehicle failure modes</li>
         </ul>
 
         <!-- Tesla Internship -->
-        <div class="item-subtitle role-date"><h3>Drive Systems Intern</h3><span class="date">June 2016 - Sept 2016</span></h3></div>
+        <div class="item-subtitle role-date"><h3>Drive Systems Intern</h3><h3><span class="date">June 2016 - Sept 2016</span></h3></div>
         <ul>
-          <li>Implemented reliability-driven driver data transform model in Python, simulating driver behavior in unreleased vehicles based on existing data</li>
-          <li>Conducted various material, fatigue failure, mass property, and mechanical analyses for drive unit components</li>
+          <li>Implemented reliability-driven driver data transform model in python, simulating driver behavior in unreleased vehicles using behavior in existing vehicles</li>
+          <li>Created final exploded views for the Model 3 drivetrain using CATIA</li>
         </ul>
 
         <!-- Landyachtz -->
         <div class="item-subtitle title-place"><h3>LANDYACHTZ LONGBOARDS</h3><h3>Vancouver, BC</h3></div>
-        <div class="item-subtitle role-date"><h3>Engineering Design Intern</h3><span class="date">Jan 2016 - June 2016</span></h3></div>
+        <div class="item-subtitle role-date"><h3>Engineering Design Intern</h3><h3><span class="date">Jan 2016 - June 2016</span></h3></div>
         <ul>
-          <li>Designed and manufactured testing apparatus and prototyping hardware, including Arduino-controlled force applicator, 3D printer, axle torsion testing rig, and bike frame welding rig</li>
-          <li>Implemented new standards of quality control for skateboard components, used on 4k+ products/yr</li>
+          <li>Designed and manufactured testing apparatus and prototyping hardware, including Arduino-controlled force applicator, 3D printer, and standards of quality control applied to 4k+ products/yr</li>
         </ul>
 
         <!-- Microsoft -->
-        <div class="item-subtitle title-place"><h3>MICROSOFT</h3><h3>Tel Aviv, Israel</h3></div>
+        <div class="item-subtitle title-place"><h3>MICROSOFT</h3><h3>Tel Aviv, IS</h3></div>
         <div class="item-subtitle role-date"><h3>M&S / R&D Intern</h3><h3><span class="date">June 2015 - Aug 2015</span></h3></div>
         <ul>
           <li>Selected as one of 44 out of ~1700 applicants to "Excel" internship program for international business and high-tech</li>
-          <li>Helped manage $75k budget to build maker lab serving design and fabrication needs for 2k+ employees</li>
+          <li>Managed $75k budget to build maker lab serving design and fabrication needs for 2k+ employees</li>
         </ul>
       </section>
 
@@ -260,16 +265,17 @@
           
           <!-- UBC -->
           <div class="item-subtitle title-place"><h3>THE UNIVERSITY OF BRITISH COLUMBIA</h3><h3>Vancouver, BC</h3></div>
-          <div class="item-subtitle role-date"><h3>B.AS., Mechanical Engineering</h3><span class="date">Sept 2012 – May 2017</span></h3></div>
+          <div class="item-subtitle role-date"><h3>B.AS., Mechanical Engineering</h3><h3><span class="date">Sept 2012 – May 2017</span></h3></div>
           <ul>
-            <li>Dean’s Honor List 2012 – 2017</li>
+            <li>Dean’s Honor List every year; co-created and lead a Data Science club 2016 - 2017</li>
           </ul>
   
           <!-- Recurse -->
           <div class="item-subtitle title-place"><h3>RECURSE CENTER</h3><h3>Brooklyn, NY</h3></div>
           <div class="item-subtitle role-date"><h3>Recurser</h3><h3><span class="date">Sept 2019 - Current</span></h3></div>
           <ul>
-            <li>Forever learning computer science and programming. Documented at <a class="a-indicate" href="https://leorobinovitch.com">leorobinovitch.com</a></li>
+            <li>12-week self driven programming retreat focusing on foundations of computer science, statistics, probability and software engineering</li>
+            <li>Documented at <a class="a-indicate" href="https://leorobinovitch.com">leorobinovitch.com</a></li>
           </ul>
         </section>
 
@@ -308,12 +314,13 @@
         <!-- Personal Projects -->
         <div class="item-subtitle title-place"><h3>PERSONAL PROJECTS</h3></div>
         <ul>
+          <li>Built web scraper in python that emailed me when apartments within my price range and location preferences were posted</li>
+          <li>Created my own mini version of Mint in python to assist in my financial planning and budgeting</li>
           <li>MOOC/Online Course fan: Nand2Tetris, Machine Learning, Responsive Design</li>
-          <li>Built web scraper in Python that emailed me when good apartments were posted. Helped me find an apartment in SF</li>
-          <li>Created my own mini version of Mint in Python to assist in my financial planning and budgeting</li>
         </ul>
 
         <!-- Mechanical Engineering -->
+        <div class="no-print">
         <div class="item-subtitle title-place"><h3>MECHANICAL ENGINEERING</h3></div>
         <div class="ul-container">
           <ul class="ul-third ul-third-top">
@@ -338,8 +345,10 @@
           </ul>
 
         </div>
+        </div>
 
         <!-- Interests -->
+        <div class="no-print">
         <div class="item-subtitle title-place"><h3>INTERESTS</h3></div>
         <div class="ul-container">
           <ul class="ul-third ul-third-top">
@@ -358,13 +367,14 @@
             <li>Hiking</li>
           </ul>
         </div>
+        </div>
 
       </section>
 
       <footer>
         <div class="footer">
           <p>Leo Robinovitch <script type="text/JavaScript">document.write(new Date().getFullYear());</script></p>
-          <p><a class="a-indicate" href="mailto:leorobinovitch@gmail.com">Click me (^.^) to get in touch</a></p>
+          <p><a class="a-indicate" href="mailto:leorobinovitch@gmail.com">click me (^.^) to get in touch</a></p>
         </div>
       </footer>
     </div>
