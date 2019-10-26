@@ -257,17 +257,31 @@ layout: post
 
     And note how this (satisfyingly) resembles the population variance formula for a normal distribution:
     \[ \sigma^2_x = E[(x - \mu_x)^2] \]
-
-    Unfortunately, the MLE variance is actually a biased estimate of the population variance, i.e. \( E[\sigma^{2MLE}] \neq \sigma^2 \)! For an empirical proof, see <a href="/ols_vs_mle_bias.html">here</a>. TODO: THE UNBIASED FORMULA FOR ERROR VARIANCE COMES FROM THE (QUITE COMPLEX) PROOF LINK_TO_HERE:
-    INSERT FORMULA HERE.
-
 </p>
 
-<!-- MLE Derivation -->
+<!-- Confidence Bounds -->
 <h2>Confidence in Estimated Parameters</h2>
-<p>TODO: INSERT DERIVATION OF VARIANCE OF BETA HERE</p>
 
-<p><span class="italic">To be included soon: standard errors, confidence bounds, hypothesis tests, maximum likelihood formulation, numerical methods.</span></p>
+<p>INSERT JUSTIFICATION FOR SEARCHING FOR UNBIASED sigma^2 AND VARIANCE OF BETA HERE.</p>
+
+<p>
+    Unfortunately, the MLE variance is actually a biased estimate of the population variance, i.e. \( E[\sigma^{2MLE}] \neq \sigma^2 \)! For a discussion around this and empirical proof, see <a href="/2019-10-25-statistical-bias.html">here</a>. 
+</p>
+
+<figure>
+    <img src="/assets/images/biased_mle_error_var.png" alt="MLE estimate is biased">
+    <figcaption class="figcaption-text">MLE (left) mean estimate differs from the true value</figcaption>
+</figure>
+
+<p>
+    The unbiased formula for estimated error variance comes from <a href="http://lukesonnet.com/teaching/inference/200d_standard_errors.pdf">here</a> and the rigorous proof <a href="https://stats.stackexchange.com/questions/20227/why-is-rss-distributed-chi-square-times-n-p">here:</a>
+    \[ \sigma^{2OLS} = \frac{1}{m-n} (y-\mathbf{X}\beta)^T (y-\mathbf{X}\beta) \]
+</p>
+
+<p>To be continued with variance of beta...</p>
+
+
+<p><span class="italic">To be included soon: standard errors, confidence bounds, hypothesis tests, numerical methods.</span></p>
 
 <!-- Sources -->
 <h2>References:</h2>
@@ -291,8 +305,8 @@ layout: post
     <p><a href="https://en.wikipedia.org/wiki/Variance">https://en.wikipedia.org/wiki/Variance</a></p>
     <p><a href="https://en.wikipedia.org/wiki/Covariance">https://en.wikipedia.org/wiki/Covariance</a></p>
     <p><a href="https://brilliant.org/wiki/linearity-of-expectation/">https://brilliant.org/wiki/linearity-of-expectation/</a></p>
-    <p><a href=""></a></p>
-    <p><a href=""></a></p>
+    <p><a href="http://lukesonnet.com/teaching/inference/200d_standard_errors.pdf">http://lukesonnet.com/teaching/inference/200d_standard_errors.pdf</a></p>
+    <p><a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/matrix_OLS_NYU_notes.pdf">https://web.stanford.edu/~mrosenfe/soc_meth_proj3/matrix_OLS_NYU_notes.pdf</a></p>
     <p><a href=""></a></p>
     <p><a href=""></a></p>
     <p><a href=""></a></p>
