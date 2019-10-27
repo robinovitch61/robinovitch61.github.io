@@ -3,13 +3,12 @@
 
 body {
     margin: 0;
-	font-family: Geneva,Tahoma,Verdana,sans-serif; 
+    font-family: Geneva, Tahoma, Verdana, sans-serif;
     font-size: 18px;
     color: black;
 }
 
 // Typography
-
 h1,
 h2,
 h3 {
@@ -17,16 +16,16 @@ h3 {
 }
 
 h1 {
-    margin: 25px 0px 0px;
-    padding: 0;
+    margin: 0 0 0;
 }
 
 h2 {
-    margin: 15px 0px 0px;
+    padding: 1em 0px 0px;
+    margin: 0;
 }
 
-header h2 {
-    padding: 10px 0;
+div.top-title h2 {
+    padding: 0.5em 0;
 }
 
 .post h2 {
@@ -40,11 +39,25 @@ header h2 {
 a {
     text-decoration: none;
     color: blue;
+    overflow-wrap: break-word;
 }
 
 a:not(.btn):hover,
 a:not(.btn):focus,
 a:not(.btn):active {
+    font-style: italic;
+}
+
+a.a-menu-item {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 0.25em 1em;
+}
+
+a.a-menu-item:hover,
+a.a-menu-item:focus,
+a.a-menu-item:active {
     font-style: italic;
 }
 
@@ -62,26 +75,129 @@ a:not(.btn):active {
     body {
         color: #e4e4e4;
     }
-
-    header h2 {
+    div.top-title h2 {
         color: rgb(26, 26, 26);
     }
-
     body {
         background-color: #444;
     }
-
     a {
         color: #e39777;
     }
-
     img {
         filter: grayscale(30%);
     }
 }
 
-// Buttons
+blockquote {
+    border-left: 0.25em solid lightgray;
+    padding-left: 1em;
+    font-style: italic;
+}
 
+@media screen and (max-width:800px) {
+    .block-math,
+    .inline-math {
+        font-size: 1rem !important;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .block-math,
+    .inline-math {
+        font-size: 0.65rem !important;
+    }
+}
+
+// Navbar
+.header {
+    padding: 0;
+    width: 100%;
+}
+
+.nav-container {
+    max-width: 100%;
+    height: 4rem;
+    margin-top: 1rem;
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+// Button and navicon animation
+.nav-text-and-pics {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0.5em 0;
+}
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.header .menu-icon .navicon-top,
+.header .menu-icon .navicon-mid,
+.header .menu-icon .navicon-bottom {
+    background:black;
+    height: 3px;
+    width: 40px;
+    display: block;
+    margin: 3px 0;
+    transition: all .2s ease-out;
+}
+
+.header .menu-icon .navicon-mid {
+    transition: background .2s ease-out;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon-mid {
+    background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon-bottom {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon-top {
+    transform: translateY(9px) rotate(45deg);
+}
+
+// Open menu if checked
+.menu {
+    z-index: 5; // stack order, greater in front
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    padding: 0;
+    margin-top: 0.5em;
+    border: 0.5px solid grey;
+    transition: visibility 0.25s, opacity 0.25s ease-in-out;
+}
+
+.header .menu-btn:checked ~ .menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+// Buttons
 .btn {
     display: inline-block;
     padding: 8px 15px;
@@ -109,25 +225,23 @@ a:not(.btn):active {
     font-style: italic;
 }
 
-#github, #linkedin {
+#github,
+#linkedin {
     max-height: 27px;
     max-width: 30px;
-    width: auto;
-    height: auto;
-    margin: 5px 5px 0px;
+    margin: 0.25em 0.5em 0;
 }
 
 #github {
-    margin-bottom: 1px;
+    margin-left: 1em;
 }
 
 #linkedin {
-    max-height: 30px;
+    // max-height: 30px;
 }
 
 // Layout
-
-header {
+div.top-title {
     background: rgb(122, 255, 166);
 }
 
@@ -146,16 +260,29 @@ img {
 }
 
 footer {
-    margin-top: 100px;
+    margin-top: 2em;
 }
 
-ul .post {
-    margin: 10px 0;
+ul {
+    list-style: none;
+    margin-left: 1em;
+    padding-left: 0;
+}
+
+ul li {
+    margin: 1em 1em 1em 0;
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+ul li:before {
+    content: ">";
+    padding-right: 5px;
 }
 
 .container {
     max-width: 700px;
-    padding: 0 10px;
+    padding: 0 1em;
     margin: 0 auto;
 }
 
@@ -164,7 +291,6 @@ ul .post {
     justify-content: space-between;
     align-items: flex-end;
     flex-wrap: wrap;
-    margin-top: 20px;
 }
 
 .nav-buttons {
@@ -172,7 +298,6 @@ ul .post {
     justify-content: right;
     align-items: flex-end;
     flex-wrap: wrap;
-    margin-bottom: 5px;
 }
 
 .no-bull-list {
@@ -196,5 +321,6 @@ span.underline {
 }
 
 .figcaption-text {
-    margin-top: 1em;
+    margin: 1em 1em 0;
+    text-align: center;
 }

@@ -32,7 +32,10 @@ layout: post
 
 <p>
     Note that MSE can be mathematically decomposed in to bias and variance terms. Assume for some data sample/training set, it came from same "data generating function" \(y = f(x) + \epsilon \) where \( \epsilon \sim N(0, \sigma^2) \). We want to find the \( \hat{f}(x) \) that results in predictions for \( y \) that minimize MSE for data even outside our sample.
-    \[ E[(y - \hat{f}(x))^2] = MSE = Bias[\hat{f}(x)]^2 + Var(\hat{f}(x)) + \sigma^2 \]
+    <div style="font-size: 0.9rem !important;">
+        \[ E[(y - \hat{f}(x))^2] = MSE \]
+        \[ = Bias[\hat{f}(x)]^2 + Var(\hat{f}(x)) + \sigma^2 \]
+    </div>
 
     Proofs for this exist <a href="https://towardsdatascience.com/mse-and-bias-variance-decomposition-77449dd2ff55">here</a> and <a href="https://www.inf.ed.ac.uk/teaching/courses/mlsc/Notes/Lecture4/BiasVariance.pdf">here</a>.
 </p>
