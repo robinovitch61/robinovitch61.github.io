@@ -52,7 +52,8 @@ a.a-menu-item {
     text-align: center;
     text-decoration: none;
     color: black;
-    padding: 0.25em 1em;
+    padding: 0.5em 1em;
+    font-size: 1.2rem;
 }
 
 a.a-menu-item:hover,
@@ -127,7 +128,8 @@ blockquote {
 
 @media screen and (max-width:400px) {
     .nav-container {
-        padding: 0 0.25em;
+        padding-left: 0.1em;
+        padding-right: 0.2em;
     }
 }
 
@@ -240,10 +242,6 @@ blockquote {
 
 #github {
     margin-left: 1em;
-}
-
-#linkedin {
-    // max-height: 30px;
 }
 
 // Layout
