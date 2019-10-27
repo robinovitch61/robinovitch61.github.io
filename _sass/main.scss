@@ -125,6 +125,12 @@ blockquote {
     align-items: flex-start;
 }
 
+@media screen and (max-width:400px) {
+    .nav-container {
+        padding: 0 0.25em;
+    }
+}
+
 // Button and navicon animation
 .nav-text-and-pics {
     display: flex;
