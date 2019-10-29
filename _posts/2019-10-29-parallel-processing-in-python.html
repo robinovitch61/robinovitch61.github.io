@@ -18,15 +18,18 @@ layout: post
 
 <p>Unfortunately, this means that multi-threading for CPU-intensive tasks in Python doesn't actually expediate computation - you can write code that implies threads are helping to speed up a high CPU task, but the GIL will ensure that only one thread runs at a time anyway! In fact, multi-threading on high CPU tasks will actually be SLOWER than a single thread, as the GIL has decently high overhead when locking/unlocking threads. The one place multithreading is advantageous is IO operations, as IO operations <a href="https://stackoverflow.com/questions/29270818/why-is-a-python-i-o-bound-task-not-blocked-by-the-gil">do not require the lock from the GIL</a>.</p>
 
-<p>INSERT EXAMPLES</p>
+<p>The degredation of performance with threaded compute and improvement in performance with threaded IO is demonstrated in the following static notebook:</p>
 
+<script src="https://gist.github.com/robinovitch61/e9f94dabc8d46b269a279759676596a6.js"></script>
+
+<p>That's all well and good, but what if we need to parallelize a compute-limited operation? That's where the <code>multiprocessing</code> Python module comes in. Processes have more overhead than threads by definition, but get around the GIL-caused limitations of multithreading in CPython, allowing actual compute performance improvements. Additionally, processes don't share global variables the same way threads do. Data sharing between processes is possible but explicitly specified in the code, making them generally safer.</p>
 
 <h2>References:</h2>
 <div class="no-bull-list">
     <p><a href="https://realpython.com/python-gil/">https://realpython.com/python-gil/</a></p>
-    <p><a href=""></a></p>
-    <p><a href=""></a></p>
-    <p><a href=""></a></p>
+    <p><a href="https://medium.com/practo-engineering/threading-vs-multiprocessing-in-python-7b57f224eadb">https://medium.com/practo-engineering/threading-vs-multiprocessing-in-python-7b57f224eadb</a></p>
+    <p><a href="https://wiki.python.org/moin/GlobalInterpreterLock">https://wiki.python.org/moin/GlobalInterpreterLock</a></p>
+    <p><a href="https://medium.com/towards-artificial-intelligence/the-why-when-and-how-of-using-python-multi-threading-and-multi-processing-afd1b8a8ecca">https://medium.com/towards-artificial-intelligence/the-why-when-and-how-of-using-python-multi-threading-and-multi-processing-afd1b8a8ecca</a></p>
     <p><a href=""></a></p>
     <p><a href=""></a></p>
     <p><a href=""></a></p>
