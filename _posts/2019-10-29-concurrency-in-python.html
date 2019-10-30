@@ -31,13 +31,13 @@ layout: post
 
 <script src="https://gist.github.com/robinovitch61/8bf045f09ab77e26527139b914fa55d9.js"></script>
 
-<p>Threading is all well and good, but what if we need true parallel operation on CPU bound computation to speed up a general task? That's where the <code>multiprocessing</code> builtin package comes in. Processes have more overhead than threads, but get around the GIL-caused limitations of multithreading in CPython, allowing real compute performance improvements. Additionally, processes don't share global variables the same way threads do. Data sharing between processes is possible but explicitly specified in the code, making them generally safer. Threads are subject to race conditions and deadlocks, but these are more easily avoided with processes.</p>
+<p>Threading is all well and good, but what if we need true parallel operation on CPU bound computation to speed up a general task? That's where the <code>multiprocessing</code> built in package comes in. Processes have more overhead than threads, but get around the GIL-caused limitations of multithreading in CPython, allowing real compute performance improvements. Additionally, processes don't share global variables the same way threads do. Data sharing between processes is possible but explicitly specified in the code, making them generally safer. Threads are subject to race conditions and deadlocks, but these are more easily avoided with processes.</p>
 
 <p>An example of how multiprocessing can speed up a CPU bound operation is as follows:</p>
 
 <script src="https://gist.github.com/robinovitch61/380dc5af7c1bf684d5dbd64cac966f7c.js"></script>
 
-<p>I don't cover <code>asyncio</code> here, but that's a topic for another day! I hope <code>threading</code> and <code>multiprocessing</code> was made more clear from the above discussion and examples.</p>
+<p>I don't cover <code>asyncio</code> here, but that's a topic for another day! I hope <code>threading</code> and <code>multiprocessing</code> were made more clear from the above discussion and examples.</p>
 
 <h2>References:</h2>
 <div class="no-bull-list">
