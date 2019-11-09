@@ -100,14 +100,14 @@ layout: post
 <p>Collinearity occurs when 2 or more predictors are highly related. This reduces the accuracy of the estimates of the weights, as it becomes hard to parse out which predictor is having an effect on the response. Detecting collinearity can be done by calculating the <a href="https://en.wikipedia.org/wiki/Variance_inflation_factor">Variance Inflation Factor</a>, and solved by either removing one of the collinear predictors or combining collinear predictors together.</p>
 
 <h3>Endogeneity</h3>
-<p>Endogeneity occurs when there is correlation between model predictor(s) and the true error term \( \epsilon \). Note that the error term here is NOT the estimated error term \( \hat{\epsilon} \) as a result of the fitted values \( \hat{Y} \), but the true error term in the population regression line \( Y = \mathbf{X}\beta + \epsilon \). An example I found explained it well was the burger regression <a href="https://stats.stackexchange.com/questions/263324/how-can-the-regression-error-term-ever-be-correlated-with-the-explanatory-variab">here</a>. Upon suspicion that a predictor is endogenous, a way to test for it is outlined <a href="https://www.youtube.com/watch?v=61I-8tDgwag">here</a>.</p>
+<p>Endogeneity occurs when there is correlation between model predictor(s) and the true error term \( \epsilon \). Note that the error term here is NOT the estimated error term \( \hat{\epsilon} \) as a result of the fitted values \( \hat{Y} \), but the true error term in the population regression line \( Y = \mathbf{X}\beta + \epsilon \). An example I found explained it well was the burger regression <a href="https://stats.stackexchange.com/questions/263324/how-can-the-regression-error-term-ever-be-correlated-with-the-explanatory-variab">here</a>. Upon suspicion that a predictor is endogenous, a way to test for it is outlined <a href="https://www.youtube.com/watch?v=61I-8tDgwag">here</a>. Enogeneity is different than heteroscedasticity, as explained <a href="https://stats.stackexchange.com/questions/261329/ols-difference-between-exogeneity-and-homoscedasticity">here</a>.</p>
 
 <h3>Notes on \( R^2 \) (coefficient of determination)</h3>
 <figure>
     <img src="/assets/images/rsquared.png" alt="R squared">
     <figcaption class="figcaption-text">Increasing \( R^2 \) from left to right</figcaption>
 </figure>
-<p>\( R^2 \) does nothing except measure the proportion of variability in Y that can be explained using X. It can always be made closer to 1 by adding more features/variables into the linear model, which at a certain point likely results in a too-flexible (overfit) model that fails to minimize test error. Where \( R^2 \) can be useful is in confirming previously held beliefs about what you are modeling. For example, modeling something in physics that theoretically should be extremely linear, an \( R^2 \) much smaller than 1 indicates something may be off with the model or data. Conversely, a low \( R^2 \) would actually be expected when modeling a complex situation with high residual errors due to other factors.
+<p>\( R^2 \) does nothing except measure the proportion of variability in Y that can be explained using X. It can always be made closer to 1 by adding more features/variables into the linear model, which at a certain point likely results in a too-flexible (overfit) model that fails to minimize test error. Where \( R^2 \) can be useful is in confirming previously held beliefs about what you are modeling. For example, modeling something in physics that theoretically should be extremely linear, an \( R^2 \) much smaller than 1 indicates something may be off with the model or data. Conversely, a low \( R^2 \) would actually be expected when modeling a complex situation with high residual errors due to other factors.</p>
 
 <!-- OLS Closed Form Derivation -->
 <h2>Normal Equation for Estimated Weights \( \hat{\beta} \)</h2>
@@ -205,7 +205,7 @@ layout: post
     <div class="block-math">\[ Var(\mathbf{X}\beta + \epsilon) = Var(\mathbf{X}\beta) + Var(\epsilon) + 2Cov(\mathbf{X}\beta, \epsilon) \]</div>
     <div class="block-math">\[ = 0 + \sigma^2 + 2Cov(\mathbf{X}\beta, \epsilon) \]</div>
     
-    WILLIAM CHECK: Since by definition in defining our population regression line, the correlation between \(\mathbf{X}\beta\) and \(\epsilon\) is zero, we conclude
+   Due to the assumptions of linear regression outlined above (exogeneity and homoscedasticity), the correlation between \(\mathbf{X}\beta\) and \(\epsilon\) is zero. We conclude:
     <div class="block-math">\[ Var(Y) = \sigma^2 \]</div>
 
     so
@@ -264,7 +264,7 @@ layout: post
 <!-- Confidence Bounds -->
 <h2>Confidence in Estimated Parameters</h2>
 
-<p>INSERT JUSTIFICATION FOR SEARCHING FOR UNBIASED sigma^2 AND VARIANCE OF BETA HERE.</p>
+<p>(Insert justification for searching for unbiased sigma^2 and variance of beta in the first place here)</p>
 
 <p>
     Unfortunately, the MLE variance is actually a biased estimate of the population variance, i.e. \( E[\sigma^{2MLE}] \neq \sigma^2 \)! For a discussion around this and empirical proof, see <a href="/2019-10-25-statistical-bias.html">here</a>. 
@@ -280,7 +280,7 @@ layout: post
     <div class="block-math">\[ \sigma^{2OLS} = \frac{1}{m-n} (y-\mathbf{X}\beta)^T (y-\mathbf{X}\beta) \]</div>
 </p>
 
-<p>To be continued with variance of beta...</p>
+<p>(Variance of beta here)</p>
 
 
 <p><span class="italic">To be included soon: standard errors, confidence bounds, hypothesis tests, numerical methods.</span></p>
