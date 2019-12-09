@@ -126,13 +126,6 @@ blockquote {
     align-items: flex-start;
 }
 
-@media screen and (max-width:400px) {
-    .nav-container {
-        padding-left: 0.1em;
-        padding-right: 0.2em;
-    }
-}
-
 // Button and navicon animation
 .nav-text-and-pics {
     display: flex;
@@ -152,7 +145,6 @@ blockquote {
 
 .header .menu-icon {
     cursor: pointer;
-    display: flex;
     flex-direction: column;
     padding: 0;
 }
@@ -184,25 +176,44 @@ blockquote {
     transform: translateY(9px) rotate(45deg);
 }
 
-// Open menu if checked
-.menu {
-    z-index: 5; // stack order, greater in front
-    width: 100%;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    visibility: hidden;
-    opacity: 0;
-    padding: 0;
-    margin-top: 0.5em;
-    border: 0.5px solid grey;
-    transition: visibility 0.25s, opacity 0.25s ease-in-out;
+.hamburger {
+    display: none;
 }
 
-.header .menu-btn:checked ~ .menu {
-    visibility: visible;
-    opacity: 1;
+
+@media screen and (max-width:600px) {
+    h2 {
+        font-size: 1.4em;
+    }
+    .nav-container {
+        padding: 0em;
+    }
+
+    // show hamburger button
+    .hamburger {
+        display: flex;
+    }
+
+    // Open menu if checked
+    .menu {
+        z-index: 5; // stack order, greater in front
+        width: 100%;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        visibility: hidden;
+        opacity: 0;
+        padding: 0;
+        margin-top: 0.5em;
+        border: 0.5px solid grey;
+        transition: visibility 0.25s, opacity 0.25s ease-in-out;
+    }
+
+    .header .menu-btn:checked ~ .menu {
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
 // Buttons
