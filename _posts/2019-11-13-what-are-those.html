@@ -4,23 +4,7 @@ layout: post
 <div class="post">
 <p>A continually updating brain dump. What things are in three points or less.</p>
 
-<div class="toc_list">
-    <a href="#gateway">Gateway</a>
-    <a href="#api">API</a>
-    <a href="#url">URL</a>
-    <a href="#http">HTTP</a>
-    <a href="#rest_api">REST API</a>
-    <a href="#crud">CRUD</a>
-    <a href="#ipc">IPC</a>
-    <a href="#tcp/ip">TCP/IP</a>
-    <a href="#throughput/latency">Throughput/Latency</a>
-    <a href="#stack_ds">Stack (Data Structure)</a>
-    <a href="#queue_ds">Queue (Data Structure)</a>
-    <a href="#heap_ds">Heap (Data Structure)</a>
-    <a href="#stack_mem">Stack (Memory)</a>
-    <a href="#heap_mem">Heap (Memory)</a>
-    <a href="#cache">Cache</a>
-</div>
+<div class="toc_list"></div>
 
 <div id="gateway">
     <h3>Gateway</h3>
@@ -148,7 +132,46 @@ layout: post
         <li>Used to avoid rereqeusting or recomputing a resource</li>
     </ul>
 </div>
-    
+
+<div id="kernel">
+    <h3>Kernel</h3>
+    <ul>
+        <li>The portion of the operating system code that is always resident in memory</li>
+        <li>Has complete control over everything in the system</li>
+    </ul>
+</div>
+
+<div id="linux_process">
+    <h3>Linux Process</h3>
+    <ul>
+        <li>A running instance of a program, identified by a process ID</li>
+        <li>Foreground/interactive and background processes</li>
+    </ul>
+</div>
+
+<div id="daemon">
+    <h3>Daemon</h3>
+    <ul>
+        <li>Background processes that start at system startup and run forever</li>
+    </ul>
+</div>
+
+<script>
+    const tocParent = document.querySelector("div > .toc_list")
+    document.querySelectorAll("div")
+        .forEach(elem => {
+            if (elem.id === "") { return }
+            const titleElem = elem.children[0]
+            if (titleElem.nodeName !== "H3") { return }
+            const title = titleElem.innerHTML
+            if (title === "") { return }
+
+            const tocItem = document.createElement("a")
+            tocItem.href = "#" + elem.id
+            tocItem.innerHTML = title
+            tocParent.append(tocItem)
+        })
+</script>
 
 </ul>
 </div>
