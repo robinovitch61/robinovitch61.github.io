@@ -52,7 +52,7 @@ a.a-menu-item {
     text-align: center;
     text-decoration: none;
     color: black;
-    padding: 0.5em 1em;
+    padding: 0.25em 0.5em;
     font-size: 1.2rem;
 }
 
@@ -213,6 +213,10 @@ blockquote {
     .header .menu-btn:checked ~ .menu {
         visibility: visible;
         opacity: 1;
+    }
+
+    a.a-menu-item {
+        padding: 0.5em 1em;
     }
 }
 
