@@ -2,8 +2,6 @@
 layout: post
 title: Recurse 06 (intermediate representations)
 ---
-<div class="post">
-
 <p>I wrapped up Nand2Tetris project 6 and completed project 7 this week. One satisfying thing about this course has been consistently connecting the "simple" implementations that the course outlines to the hyper complex implementations in the real world.</p>
 
 <p>Project 7 outlined the idea of multi-stage compilation. Take a high level language and compile it to a "Virtual Machine Code", with readable but lower level syntax. This "intermediate representation" can then be compiled further through assembly to machine code (the 1s and 0s) for a specific hardware platform (e.g. MacOS x86-64). Writing a compiler that does things in a few steps like this (high level programming language -> VM code -> assembly -> machine code) allows parts of the compiler to stay the same across hardware platforms!</p>
