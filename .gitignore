@@ -2,3 +2,4 @@
 .idea
 .DS_Store
 .jekyll-cache
+Gemfile.lock
