@@ -1,40 +1,146 @@
----
-layout: default
-title: Leo
----
-<div class="top-title">
-    <div class="container">
-        <h2>i like coding, surfing, and friendship</h2>
-    </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">  
+  <head>
+	<meta name="generator" content="Hugo 0.76.5" />
+    <meta charset="utf-8">
+    <title>The Leo Zone</title>
+    <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<section>
-    <div class="container">
-            <div class="container">
-                <h3>plog bosts</h3>
-        
-                <ul>
-                    {% for post in site.posts %}
-                        {% assign lower_title = post.title | downcase %}
-                            {% unless lower_title contains "recurse" %}
-                                <li class="post"><i>{{ post.date | date_to_string }} - </i><a href="{{ post.url }}">{{ post.title | downcase }}</a></li>
-                            {% endunless %}
-                    {% endfor %}
-                </ul>
-            </div>
-            
-            <div class="container">
-                <h3>recurse center (<a href="https://www.recurse.com">RC</a>) log</h3>
-        
-                <ul>
-                    {% for post in site.posts %}
-                        {% assign lower_title = post.title | downcase %}
-                            {% if lower_title contains "recurse" %}
-                                <li class="post"><i>{{ post.date | date_to_string }} - </i><a href="{{ post.url }}">{{ post.title | downcase }}</a></li>
-                            {% endif %}
-                    {% endfor %}
-                </ul>
-            </div>
-            <!-- <a class="btn" href="/blog.html">blog</a> -->
+    
+    <link rel="stylesheet" href="https://robinovitch61.github.io/sass/main.min.1d0cdd118b7221f50dec8ff7d76afcb00a0b97f9be3d63b60df207f247f634a0.css">
+
+    
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+  });
+</script>
+
+<script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  </head>
+
+  <body>
+    <header>
+  <div class="container">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a class="btn-text" href="/"><h1>Leo</h1></a>
+      </div>
+
+      <div class="dropdown">
+        <input class="hamburger menu-btn" type="checkbox" id="menu-btn" />
+        <label class="hamburger menu-icon" for="menu-btn">
+          <span class="navicon-top"></span>
+          <span class="navicon-mid"></span>
+          <span class="navicon-bottom"></span>
+        </label>
+        <div class="menu">
+          <a class="menu-item" href="/">Home</a>
+          <a class="menu-item" href="/about">About</a>
+          <a class="menu-item" href="https://github.com/robinovitch61" target="_blank">
+            <img id="github" src="/img/github.png" alt="github" title="github" />
+          </a>
+        </div>
+      </div>
     </div>
-</section>
+  </div>
+</header>
+
+    
+    <div class="top-title">
+      <div class="container">
+        <h2>i like computers, surfing, and friendship</h2>
+      </div>
+    </div>
+
+    <div class="post-date">
+      <div class="container">
+        <p></p>
+      </div>
+    </div>
+
+    <div class="container">
+      
+<h3>writing</h3>
+<ul>
+  
+  <li class="post"><i>May 25, 2020</i> - <a href="https://robinovitch61.github.io/posts/covid-projects/">covid projects</a></li>
+  
+  <li class="post"><i>Mar 08, 2020</i> - <a href="https://robinovitch61.github.io/posts/gifting-websites/">gifting websites</a></li>
+  
+  <li class="post"><i>Nov 23, 2019</i> - <a href="https://robinovitch61.github.io/posts/givewell-is-awesome/">givewell is awesome</a></li>
+  
+  <li class="post"><i>Oct 29, 2019</i> - <a href="https://robinovitch61.github.io/posts/concurrency-in-python/">concurrency in python</a></li>
+  
+  <li class="post"><i>Oct 25, 2019</i> - <a href="https://robinovitch61.github.io/posts/statistical-bias/">statistical bias</a></li>
+  
+  <li class="post"><i>Oct 18, 2019</i> - <a href="https://robinovitch61.github.io/posts/linear-regression/">linear regression</a></li>
+  
+  <li class="post"><i>Sep 27, 2019</i> - <a href="https://robinovitch61.github.io/posts/jupyter-with-docker/">jupyter with docker</a></li>
+  
+</ul>
+
+<h3>recurse center log</h3>
+<ul>
+  
+  <li class="post"><i>Dec 16, 2019</i> - <a href="https://robinovitch61.github.io/recurse/recurse-11-fin/">Recurse 11 (fin)</a></li>
+  
+  <li class="post"><i>Dec 09, 2019</i> - <a href="https://robinovitch61.github.io/recurse/recurse-10-work/">Recurse 10 (work)</a></li>
+  
+  <li class="post"><i>Nov 30, 2019</i> - <a href="https://robinovitch61.github.io/recurse/recurse-09-%CE%BB%CE%B5%CE%BE%CE%B9%CE%BA%CF%8C%CE%BD/">Recurse 09 (λεξικόν)</a></li>
+  
+  <li class="post"><i>Nov 25, 2019</i> - <a href="https://robinovitch61.github.io/recurse/recurse-08-mooninites/">Recurse 08 (mooninites)</a></li>
+  
+  <li class="post"><i>Nov 19, 2019</i> - <a href="https://robinovitch61.github.io/recurse/recurse-07-fib-5-ways/">Recurse 07 (fib 5 ways)</a></li>
+  
+  <li class="post"><i>Nov 09, 2019</i> - <a href="https://robinovitch61.github.io/recurse/recurse-06-intermediate-representations/">Recurse 06 (intermediate representations)</a></li>
+  
+  <li class="post"><i>Nov 04, 2019</i> - <a href="https://robinovitch61.github.io/recurse/recurse-05-your-biggest-weakness/">Recurse 05 (your biggest weakness)</a></li>
+  
+  <li class="post"><i>Oct 26, 2019</i> - <a href="https://robinovitch61.github.io/recurse/recurse-04-all-the-wrong-type/">Recurse 04 (all the wrong type)</a></li>
+  
+  <li class="post"><i>Oct 18, 2019</i> - <a href="https://robinovitch61.github.io/recurse/recurse-03-regressing-linearly/">Recurse 03 (regressing linearly)</a></li>
+  
+  <li class="post"><i>Oct 11, 2019</i> - <a href="https://robinovitch61.github.io/recurse/recurse-02-r-wavey/">Recurse 02 (R, wavey!)</a></li>
+  
+  <li class="post"><i>Oct 04, 2019</i> - <a href="https://robinovitch61.github.io/recurse/recurse-01-logic-immunity/">Recurse 01 (logic immunity)</a></li>
+  
+  <li class="post"><i>Sep 25, 2019</i> - <a href="https://robinovitch61.github.io/recurse/recurse-00-it-begins/">Recurse 00 (it begins)</a></li>
+  
+</ul>
+
+<h3>lists</h3>
+<ul>
+  
+  <li class="post"><a href="https://robinovitch61.github.io/lists/lynx/">lynx</a></li>
+  
+  <li class="post"><a href="https://robinovitch61.github.io/lists/what-are-those/">what are those</a></li>
+  
+</ul>
+
+    </div>
+    
+    <footer>
+  <div class="container">
+  </div>
+</footer>
+
+  </body>
+</html>
