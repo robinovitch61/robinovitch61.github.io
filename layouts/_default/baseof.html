@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">  
+  <head>
+    <meta charset="utf-8">
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+    {{ partial "mathjax_support.html" . }}
+  </head>
+
+  <body>
+    {{ partial "header" . }}
+    
+    <div class="top-title">
+      <div class="container">
+        <h2>{{ .Title }}</h2>
+      </div>
+    </div>
+
+    <div class="post-date">
+      <div class="container">
+        <p>{{ block "subtitle" . }}{{ end }}</p>
+      </div>
+    </div>
+
+    <div class="container">
+      {{ block "main" . }}
+      {{ end }}
+    </div>
+    
+    {{ block "footer" . }}{{ partial "footer" . }}{{ end }}
+  </body>
+</html>
