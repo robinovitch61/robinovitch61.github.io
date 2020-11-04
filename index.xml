@@ -234,7 +234,7 @@ A human figure squatted near the massive rhino, stroking its head to comfort it 
       
       <guid>https://robinovitch61.github.io/lists/what-are-those/</guid>
       <description>What things are in three points or less. A continually updating brain dump.
- gateway  A key stopping point for data traveling between networks Can be a computer routing traffic (workplace) or router (at home) Checks IPs of messages and forwards accordingly   API  Application Program Interface The specification for how a service is to be interacted with   URL  Uniform Resource Locator, i.e. web address, endpoint A reference to a web resource   HTTP  HyperText Transfer Protocol Defines how messages are formatted and transmitted on the web Common methods: GET, PUT (idempotent), POST, DELETE, etc.</description>
+ MAC address  Media Access Control Unique to device; hard-coded into a network adapter/network interface card   gateway  A key stopping point for data traveling between networks Can be a computer routing traffic (workplace) or router (at home) Checks IPs of messages and forwards accordingly   API  Application Program Interface The specification for how a service is to be interacted with   URL  Uniform Resource Locator, i.</description>
     </item>
     
   </channel>
