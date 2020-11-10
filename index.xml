@@ -181,7 +181,7 @@ Nand2Tetris project 4 breaks away from the Hardware Description Language of the 
       
       <guid>https://robinovitch61.github.io/recurse/recurse-02-r-wavey/</guid>
       <description>This week, I completed project 3 of Nand2Tetris, learned some deeper fundamentals of statistical learning in R, and wrote my first interactive thing in D3.
-D3.js is a widely used javascript library for creating beautiful, interactive visualizations on the web. I made quite a simple interactive sine wave plotter, but the exercise took hours and really helped me gain insight in to D3&amp;rsquo;s declarative approach to data-centric object manipulation. Code for the thing [here](https://gist.</description>
+D3.js is a widely used javascript library for creating beautiful, interactive visualizations on the web. I made quite a simple interactive sine wave plotter, but the exercise took hours and really helped me gain insight in to D3&amp;rsquo;s declarative approach to data-centric object manipulation. Code for the thing here.</description>
     </item>
     
     <item>
