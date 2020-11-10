@@ -10,7 +10,7 @@ linear regression
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
-    <link rel="stylesheet" href="https://robinovitch61.github.io/sass/main.min.549b91dd7e571958da7fe9b5cf91185abd57d9dbfffe341f377ffa3a286c2adf.css">
+    <link rel="stylesheet" href="https://robinovitch61.github.io/sass/main.min.7c8f9b07fe2470794e355f32679422ff44f092c4a151d630b1ef8df26c6f6481.css">
 
     
 
@@ -253,7 +253,11 @@ $$ \hat{\beta} = (\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^Ty$$</p>
 $$ = E[\mathbf{X}\beta] + E[\epsilon] $$
 $$ = E[\mathbf{X}\beta] + 0 $$
 $$ = \mathbf{X}\beta $$</p>
-<p>And for variance, since $Var(X) = E[X^2] - (E[X])^2 $ (from <a href="https://en.wikipedia.org/wiki/Variance">here</a>) and $ Cov(X,Y) = E[XY] - E[X]E[Y] $ (from <a href="https://en.wikipedia.org/wiki/Covariance">here</a>), then:</p>
+<p>And for variance, since</p>
+<p>$$ Var(X) = E[X^2] - (E[X])^2 $$</p>
+<p>from <a href="https://en.wikipedia.org/wiki/Variance">here</a> and</p>
+<p>$$ Cov(X,Y) = E[XY] - E[X]E[Y] $$</p>
+<p>from <a href="https://en.wikipedia.org/wiki/Covariance">here</a>, then:</p>
 <p>$$ Var(A + B) = E[(A + B)^2] - (E[A + B])^2 $$
 $$ = E[A^2 + 2AB + B^2] - (E[A] + E[B])^2 $$
 $$ = E[A^2] + E[2AB] + E[B^2] $$
