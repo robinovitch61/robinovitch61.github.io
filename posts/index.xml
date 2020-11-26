@@ -6,7 +6,17 @@
     <description>Recent content in Posts on The Leo Zone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2020 09:42:53 -0800</lastBuildDate><atom:link href="https://robinovitch61.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Nov 2020 14:03:25 -0800</lastBuildDate><atom:link href="https://robinovitch61.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>css shapes</title>
+      <link>https://robinovitch61.github.io/posts/css-shapes/</link>
+      <pubDate>Thu, 26 Nov 2020 14:03:25 -0800</pubDate>
+      
+      <guid>https://robinovitch61.github.io/posts/css-shapes/</guid>
+      <description>Today I spent some time learning more about how to draw with css. You can make a lot of shapes and designs with only css! I went off of https://css-tricks.com/the-shapes-of-css/.
+ .wrapper { display: flex; flex-wrap: wrap; } .shape { margin: 40px; height: max-content; } /* #circle { width: 0; height: 0; border: 50px solid black; border-radius: 50%; } */ #circle { width: 100px; height: 100px; background-color: black; border-radius: 50%; } #oval { width: 200px; height: 100px; background-color: black; border-radius: 50%; } #triangle-up { width: 0; height: 0; border-bottom: 100px solid black; border-left: 60px solid transparent; border-right: 60px solid transparent; } #triangle-down { width: 0; height: 0; border-top: 100px solid black; border-left: 60px solid transparent; border-right: 60px solid transparent; } #triangle-left { width: 0; height: 0; border-right: 100px solid black; border-top: 60px solid transparent; border-bottom: 60px solid transparent; } #triangle-right { width: 0; height: 0; border-left: 100px solid black; border-top: 60px solid transparent; border-bottom: 60px solid transparent; } #border-explainer-middle { width: 50px; height: 50px; background-color: blue; border-top: 25px solid red; border-right: 25px solid green; border-left: 25px solid black; border-bottom: 25px solid orange; } #border-explainer { width: 50px; height: 50px; background-color: blue; border-top: 20px solid red; border-right: 20px solid green; border-left: 50px solid black; border-bottom: 50px solid orange; } #triangle-top-left { width: 0; height: 0; border-left: 100px solid black; border-bottom: 100px solid transparent; } #triangle-top-right { width: 0; height: 0; border-right: 100px solid black; border-bottom: 100px solid transparent; } #triangle-bottom-left { width: 0; height: 0; border-left: 100px solid black; border-top: 100px solid transparent; } #triangle-bottom-right { width: 0; height: 0; border-right: 100px solid black; border-top: 100px solid transparent; } #trapezoid-explainer { width: 50px; border-left: 40px solid red; border-right: 40px solid blue; border-bottom: 80px solid black; } #trapezoid { width: 50px; border-left: 40px solid transparent; border-right: 40px solid transparent; border-bottom: 80px solid black; } #parallelogram { width: 120px; height: 80px; background-color: black; transform: skew(20deg); } #star-of-david { width: 0; height: 0; border-bottom: 80px solid black; border-left: 45px solid transparent; border-right: 45px solid transparent; position: relative; } #star-of-david::after { content: &#34;</description>
+    </item>
+    
     <item>
       <title>color commentary</title>
       <link>https://robinovitch61.github.io/posts/color-commentary/</link>
