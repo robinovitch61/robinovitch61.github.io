@@ -6,7 +6,17 @@
     <description>Recent content in i like computers, surfing, and friendship on The Leo Zone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Jan 2021 16:48:23 -0800</lastBuildDate><atom:link href="https://robinovitch61.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://robinovitch61.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>code and plant advents</title>
+      <link>https://robinovitch61.github.io/posts/code-and-plant-advents/</link>
+      <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://robinovitch61.github.io/posts/code-and-plant-advents/</guid>
+      <description>Last month, I participated in advent of code for the first time. Everyday from Dec 1st through 25th, a problem is released. Each problem requires some programming to solve, and is split into two separate but related parts.
+The problem statements link to an overarching narrative involving a character going on vacation and encountering a number of technical difficulties, e.g. implementing a ticket reader for the train or a fixing the boot code in your neighbours airplane video game console.</description>
+    </item>
+    
     <item>
       <title>giving what we can pledge</title>
       <link>https://robinovitch61.github.io/posts/the-giving-pledge/</link>
