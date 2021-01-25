@@ -8,11 +8,11 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 16 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://robinovitch61.github.io/recurse/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Recurse 11 (fin)</title>
-      <link>https://robinovitch61.github.io/recurse/recurse-11-fin/</link>
+      <title>RC 11 (fin)</title>
+      <link>https://robinovitch61.github.io/recurse/rc-11-fin/</link>
       <pubDate>Mon, 16 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://robinovitch61.github.io/recurse/recurse-11-fin/</guid>
+      <guid>https://robinovitch61.github.io/recurse/rc-11-fin/</guid>
       <description>In the last few days, I&amp;rsquo;ve gone from RC in Brooklyn to moving back to San Francisco to currently sitting on a plane to the Dominican Republic.
 Recurse is over! It happened! What an excellent time.
 I got a lot out of projects, reading, meet ups, interviewing and online courses. The study and research was varied and rewarding.
@@ -20,43 +20,43 @@ In the end, though, I got as much or more from being around the people at RC as 
     </item>
     
     <item>
-      <title>Recurse 10 (work)</title>
-      <link>https://robinovitch61.github.io/recurse/recurse-10-work/</link>
+      <title>RC 10 (work)</title>
+      <link>https://robinovitch61.github.io/recurse/rc-10-work/</link>
       <pubDate>Mon, 09 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://robinovitch61.github.io/recurse/recurse-10-work/</guid>
+      <guid>https://robinovitch61.github.io/recurse/rc-10-work/</guid>
       <description>&amp;#39;Chad, destroyer of worlds&amp;#39; - circa 2015  My second to last week at RC was first spent in San Francisco at onsite interviews for positions in the city. Interviews went well and I had a nice time seeing some friends while there.
 Unfortunately, there wasn&amp;rsquo;t enough time to finish the compiler of nand2tetris! The first week where I haven&amp;rsquo;t finished my nand2tetris project :&#39;(. I&amp;rsquo;m going to try my best to finish up both the compiler and OS this final week, though!</description>
     </item>
     
     <item>
-      <title>Recurse 09 (λεξικόν)</title>
-      <link>https://robinovitch61.github.io/recurse/recurse-09-%CE%BB%CE%B5%CE%BE%CE%B9%CE%BA%CF%8C%CE%BD/</link>
+      <title>RC 09 (λεξικόν)</title>
+      <link>https://robinovitch61.github.io/recurse/rc-09-%CE%BB%CE%B5%CE%BE%CE%B9%CE%BA%CF%8C%CE%BD/</link>
       <pubDate>Sat, 30 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://robinovitch61.github.io/recurse/recurse-09-%CE%BB%CE%B5%CE%BE%CE%B9%CE%BA%CF%8C%CE%BD/</guid>
+      <guid>https://robinovitch61.github.io/recurse/rc-09-%CE%BB%CE%B5%CE%BE%CE%B9%CE%BA%CF%8C%CE%BD/</guid>
       <description>In my third to last week of RC (!!!), I learned about Nix, Jest for Test Driven Development in Javascript, completed project 10 of nand2tetris, and continued interview prep.
 Project 10 consists of the first half of the Jack compiler. The overall compiler is split in to tokenization + lexical analysis (project 10) and VM code generation (project 11).
 The first half of the compiler was the most time consuming project of the course so far.</description>
     </item>
     
     <item>
-      <title>Recurse 08 (mooninites)</title>
-      <link>https://robinovitch61.github.io/recurse/recurse-08-mooninites/</link>
+      <title>RC 08 (mooninites)</title>
+      <link>https://robinovitch61.github.io/recurse/rc-08-mooninites/</link>
       <pubDate>Mon, 25 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://robinovitch61.github.io/recurse/recurse-08-mooninites/</guid>
+      <guid>https://robinovitch61.github.io/recurse/rc-08-mooninites/</guid>
       <description>Aqua Teen Hunger Force&amp;#39;s Mooninites  This week, I completed Nand2Tetris project 9, wrote about Givewell, and continued interview prep.
 Nand2Tetris&#39; gets you used to programming in the high-level &amp;ldquo;Jack&amp;rdquo; programming language. It would be difficult (or at least, less meaningful) to write a compiler for a high level language that you don&amp;rsquo;t really understand.
 I found it useful in that it solidified the rules of Jack and allowed me to project my thoughts of what the compiler would be doing to translate Jack code to VM Code.</description>
     </item>
     
     <item>
-      <title>Recurse 07 (fib 5 ways)</title>
-      <link>https://robinovitch61.github.io/recurse/recurse-07-fib-5-ways/</link>
+      <title>RC 07 (fib 5 ways)</title>
+      <link>https://robinovitch61.github.io/recurse/rc-07-fib-5-ways/</link>
       <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://robinovitch61.github.io/recurse/recurse-07-fib-5-ways/</guid>
+      <guid>https://robinovitch61.github.io/recurse/rc-07-fib-5-ways/</guid>
       <description>Recurse continues!
 Each successive number in the Fibonacci Sequence is the sum of the two prior numbers:
 0, 1, 1, 2, 3, 5, 8, 13...
@@ -65,72 +65,72 @@ Method 1: Recursion Recursion is when a function calls itself. Intuitively, it&a
     </item>
     
     <item>
-      <title>Recurse 06 (intermediate representations)</title>
-      <link>https://robinovitch61.github.io/recurse/recurse-06-intermediate-representations/</link>
+      <title>RC 06 (intermediate representations)</title>
+      <link>https://robinovitch61.github.io/recurse/rc-06-intermediate-representations/</link>
       <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://robinovitch61.github.io/recurse/recurse-06-intermediate-representations/</guid>
+      <guid>https://robinovitch61.github.io/recurse/rc-06-intermediate-representations/</guid>
       <description>I wrapped up Nand2Tetris project 6 and completed project 7 this week. One satisfying thing about this course has been consistently connecting the &amp;ldquo;simple&amp;rdquo; implementations that the course outlines to the hyper complex implementations in the real world.
 Project 7 outlined the idea of multi-stage compilation. Take a high level language and compile it to a &amp;ldquo;Virtual Machine Code&amp;rdquo;, with readable but lower level syntax. This &amp;ldquo;intermediate representation&amp;rdquo; can then be compiled further through assembly to machine code (the 1s and 0s) for a specific hardware platform (e.</description>
     </item>
     
     <item>
-      <title>Recurse 05 (your biggest weakness)</title>
-      <link>https://robinovitch61.github.io/recurse/recurse-05-your-biggest-weakness/</link>
+      <title>RC 05 (your biggest weakness)</title>
+      <link>https://robinovitch61.github.io/recurse/rc-05-your-biggest-weakness/</link>
       <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://robinovitch61.github.io/recurse/recurse-05-your-biggest-weakness/</guid>
+      <guid>https://robinovitch61.github.io/recurse/rc-05-your-biggest-weakness/</guid>
       <description>80,000 Hours is a non-profit that researches the world&amp;rsquo;s most pressing problems and provides guidance on how to make an impact on them with your career. Apart from the whole &amp;ldquo;saving the world&amp;rdquo; focus, what I love about their basic premise is that your career matters.
 Not only does it matter to you, who will be the one living it out every day and week and month for approximately 80,000 hours, but it matters to the world what you do.</description>
     </item>
     
     <item>
-      <title>Recurse 04 (all the wrong type)</title>
-      <link>https://robinovitch61.github.io/recurse/recurse-04-all-the-wrong-type/</link>
+      <title>RC 04 (all the wrong type)</title>
+      <link>https://robinovitch61.github.io/recurse/rc-04-all-the-wrong-type/</link>
       <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://robinovitch61.github.io/recurse/recurse-04-all-the-wrong-type/</guid>
+      <guid>https://robinovitch61.github.io/recurse/rc-04-all-the-wrong-type/</guid>
       <description>This week, the hack computer&amp;rsquo;s hardware was completed with project 5 of Nand2Tetris! I decided to write the remaining software portion of the course (projects 6-12) in Rust, feeding two birds with one scone.
  The Mandelbrot set with Rust Source: http://downloads.codecoding.com/rust/Programming%20Rust.pdf  While I started learning Rust with the the O&amp;rsquo;Reilly Book, I&amp;rsquo;ve found The Rust Programming Language and Rustlings to be great resources as well. It was also incredibly helpful when Evan installed Rust Language Server (RLS) in my VSCode environment, making it easy to view source code and highlighting errors before compile time.</description>
     </item>
     
     <item>
-      <title>Recurse 03 (regressing linearly)</title>
-      <link>https://robinovitch61.github.io/recurse/recurse-03-regressing-linearly/</link>
+      <title>RC 03 (regressing linearly)</title>
+      <link>https://robinovitch61.github.io/recurse/rc-03-regressing-linearly/</link>
       <pubDate>Fri, 18 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://robinovitch61.github.io/recurse/recurse-03-regressing-linearly/</guid>
+      <guid>https://robinovitch61.github.io/recurse/rc-03-regressing-linearly/</guid>
       <description>This week, I completed project 4 of Nand2Tetris, updated my resume and converted it to a responsive web page, and learned a whole lot about linear regression.
 Nand2Tetris project 4 breaks away from the Hardware Description Language of the first three projects and moves in to a pseudo assembly code. This assembly language is specifically written for the &amp;ldquo;Hack&amp;rdquo; computer that the class builds up through the first six projects. Writing in &amp;ldquo;assembly&amp;rdquo; is one step down from writing in something like C - there is no automatic memory management, only a couple registers to play with, lots of referencing addresses with pointers and semi-roundabout ways of doing things.</description>
     </item>
     
     <item>
-      <title>Recurse 02 (R, wavey!)</title>
-      <link>https://robinovitch61.github.io/recurse/recurse-02-r-wavey/</link>
+      <title>RC 02 (R, wavey!)</title>
+      <link>https://robinovitch61.github.io/recurse/rc-02-r-wavey/</link>
       <pubDate>Fri, 11 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://robinovitch61.github.io/recurse/recurse-02-r-wavey/</guid>
+      <guid>https://robinovitch61.github.io/recurse/rc-02-r-wavey/</guid>
       <description>This week, I completed project 3 of Nand2Tetris, learned some deeper fundamentals of statistical learning in R, and wrote my first interactive thing in D3.
 D3.js is a widely used javascript library for creating beautiful, interactive visualizations on the web. I made quite a simple interactive sine wave plotter, but the exercise took hours and really helped me gain insight in to D3&amp;rsquo;s declarative approach to data-centric object manipulation. Code for the thing here.</description>
     </item>
     
     <item>
-      <title>Recurse 01 (logic immunity)</title>
-      <link>https://robinovitch61.github.io/recurse/recurse-01-logic-immunity/</link>
+      <title>RC 01 (logic immunity)</title>
+      <link>https://robinovitch61.github.io/recurse/rc-01-logic-immunity/</link>
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://robinovitch61.github.io/recurse/recurse-01-logic-immunity/</guid>
+      <guid>https://robinovitch61.github.io/recurse/rc-01-logic-immunity/</guid>
       <description>I have been learning about basic computer architecture (logic gates) and working on a herd immunity simulation.
 Computer architecture work has come from the awesome Nand2Tetris course by Shimon Schocken and Noam Nisan. Shimon has a fantastic Ted Talk about the course and many Recursers have done it in the past. I&amp;rsquo;m 2 projects in to the first half of the course (Coursera link)
 The premise is that you start with a Nand (&amp;ldquo;Not And&amp;rdquo;) logic gate.</description>
     </item>
     
     <item>
-      <title>Recurse 00 (it begins)</title>
-      <link>https://robinovitch61.github.io/recurse/recurse-00-it-begins/</link>
+      <title>RC 00 (it begins)</title>
+      <link>https://robinovitch61.github.io/recurse/rc-00-it-begins/</link>
       <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://robinovitch61.github.io/recurse/recurse-00-it-begins/</guid>
+      <guid>https://robinovitch61.github.io/recurse/rc-00-it-begins/</guid>
       <description>It is day 3 at the Recurse Center (RC)!
  Me experimenting with Haskell and Rust  It has been a whirlwind of orientation, meeting awesome people, learning about (and about the existence of) new cool things, setting up and settling in.
 This was my second day here:
