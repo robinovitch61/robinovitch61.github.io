@@ -6,7 +6,17 @@
     <description>Recent content in i like computers, surfing, and friendship on The Leo Zone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://robinovitch61.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 May 2021 21:47:48 -0700</lastBuildDate><atom:link href="https://robinovitch61.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>react html5 zoom/pan canvas</title>
+      <link>https://robinovitch61.github.io/posts/html-canvas-pan-zoom-react/</link>
+      <pubDate>Sun, 02 May 2021 21:47:48 -0700</pubDate>
+      
+      <guid>https://robinovitch61.github.io/posts/html-canvas-pan-zoom-react/</guid>
+      <description>A pannable, mouse-centered zoomable, HTML5 canvas template in React + Typescript. You&amp;rsquo;d think this would be a solved problem, but despite the plethora of solutions out there, I couldn&amp;rsquo;t get quite what I wanted for some time. Finally, here it all is in one place for future me and others to use as boilerplate for their embedded interactive canvases in their apps.
+If you see any bugs or possible improvements, please comment on the gist here:</description>
+    </item>
+    
     <item>
       <title>code and plant advents</title>
       <link>https://robinovitch61.github.io/posts/code-and-plant-advents/</link>
