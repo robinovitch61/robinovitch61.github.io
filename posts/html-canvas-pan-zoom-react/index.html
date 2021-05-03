@@ -337,6 +337,8 @@ May 02, 2021 &ndash; Leo Robinovitch
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">241
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">242
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">243
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">244
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">245
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#008000;font-weight:bold">import</span> {
@@ -399,7 +401,7 @@ May 02, 2021 &ndash; Leo Robinovitch
         context.canvas.width <span style="color:#666">=</span> props.canvasWidth <span style="color:#666">*</span> ratio;
         context.canvas.height <span style="color:#666">=</span> props.canvasHeight <span style="color:#666">*</span> ratio;
         context.scale(ratio, ratio);
-        setScale(ratio);
+        setScale(<span style="color:#666">1</span>);
 
         <span style="color:#408080;font-style:italic">// reset state and refs
 </span><span style="color:#408080;font-style:italic"></span>        setContext(context);
@@ -573,10 +575,12 @@ May 02, 2021 &ndash; Leo Robinovitch
         <span style="color:#7d9029">id</span><span style="color:#666">=</span><span style="color:#ba2121">&#34;canvas&#34;</span>
         <span style="color:#7d9029">onMouseDown</span><span style="color:#666">=</span>{startPan}
         <span style="color:#7d9029">ref</span><span style="color:#666">=</span>{canvasRef}
-        <span style="color:#7d9029">width</span><span style="color:#666">=</span>{props.canvasWidth}
-        <span style="color:#7d9029">height</span><span style="color:#666">=</span>{props.canvasHeight}
+        <span style="color:#7d9029">width</span><span style="color:#666">=</span>{props.canvasWidth <span style="color:#666">*</span> <span style="color:#666">2</span>}
+        <span style="color:#7d9029">height</span><span style="color:#666">=</span>{props.canvasHeight <span style="color:#666">*</span> <span style="color:#666">2</span>}
         <span style="color:#7d9029">style</span><span style="color:#666">=</span>{{
-          border<span style="color:#666">:</span> <span style="color:#ba2121">&#34;2px solid #000&#34;</span>
+          border<span style="color:#666">:</span> <span style="color:#ba2121">&#34;2px solid #000&#34;</span>,
+          width<span style="color:#666">:</span> <span style="color:#ba2121">`</span><span style="color:#b68;font-weight:bold">${</span>props.canvasWidth<span style="color:#b68;font-weight:bold">}</span><span style="color:#ba2121">px`</span>,
+          height<span style="color:#666">:</span> <span style="color:#ba2121">`</span><span style="color:#b68;font-weight:bold">${</span>props.canvasHeight<span style="color:#b68;font-weight:bold">}</span><span style="color:#ba2121">px`</span>
         }}
       &gt;&lt;/<span style="color:#008000;font-weight:bold">canvas</span>&gt;
     &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
