@@ -334,12 +334,11 @@
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">239
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">240
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">241
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">242
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">243
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#408080;font-style:italic">// sandbox here: https://codesandbox.io/s/p3itj?file=/src/Canvas.tsx:0-6785
-</span><span style="color:#408080;font-style:italic">// gist for comments here: https://gist.github.com/robinovitch61/483190546bf8f0617d2cd510f3b4b86d
-</span><span style="color:#408080;font-style:italic"></span>
-<span style="color:#008000;font-weight:bold">import</span> {
+<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#008000;font-weight:bold">import</span> {
   useEffect,
   useCallback,
   useLayoutEffect,
@@ -380,36 +379,41 @@
   <span style="color:#008000;font-weight:bold">const</span> [scale, setScale] <span style="color:#666">=</span> useState&lt;<span style="color:#008000;font-weight:bold">number</span>&gt;(<span style="color:#666">1</span>);
   <span style="color:#008000;font-weight:bold">const</span> [offset, setOffset] <span style="color:#666">=</span> useState&lt;<span style="color:#008000;font-weight:bold">Point</span>&gt;(ORIGIN);
   <span style="color:#008000;font-weight:bold">const</span> [mousePos, setMousePos] <span style="color:#666">=</span> useState&lt;<span style="color:#008000;font-weight:bold">Point</span>&gt;(ORIGIN);
-  <span style="color:#008000;font-weight:bold">const</span> [isReset, setIsReset] <span style="color:#666">=</span> useState(<span style="color:#008000;font-weight:bold">false</span>);
-  <span style="color:#008000;font-weight:bold">const</span> viewportTopLeftRef <span style="color:#666">=</span> useRef&lt;<span style="color:#008000;font-weight:bold">Point</span>&gt;(ORIGIN);
+  <span style="color:#008000;font-weight:bold">const</span> [viewportTopLeft, setViewportTopLeft] <span style="color:#666">=</span> useState&lt;<span style="color:#008000;font-weight:bold">Point</span>&gt;(ORIGIN);
+  <span style="color:#008000;font-weight:bold">const</span> isResetRef <span style="color:#666">=</span> useRef&lt;<span style="color:#008000;font-weight:bold">boolean</span>&gt;(<span style="color:#008000;font-weight:bold">false</span>);
   <span style="color:#008000;font-weight:bold">const</span> lastMousePosRef <span style="color:#666">=</span> useRef&lt;<span style="color:#008000;font-weight:bold">Point</span>&gt;(ORIGIN);
   <span style="color:#008000;font-weight:bold">const</span> lastOffsetRef <span style="color:#666">=</span> useRef&lt;<span style="color:#008000;font-weight:bold">Point</span>&gt;(ORIGIN);
 
-  <span style="color:#408080;font-style:italic">// reset at start and on button click
-</span><span style="color:#408080;font-style:italic"></span>  <span style="color:#008000;font-weight:bold">const</span> reset <span style="color:#666">=</span> useCallback(() <span style="color:#666">=&gt;</span> {
-    <span style="color:#008000;font-weight:bold">if</span> (canvasRef.current) {
-      <span style="color:#408080;font-style:italic">// get new drawing context
-</span><span style="color:#408080;font-style:italic"></span>      <span style="color:#008000;font-weight:bold">const</span> renderCtx <span style="color:#666">=</span> canvasRef.current.getContext(<span style="color:#ba2121">&#34;2d&#34;</span>);
+  <span style="color:#408080;font-style:italic">// update last offset
+</span><span style="color:#408080;font-style:italic"></span>  useEffect(() <span style="color:#666">=&gt;</span> {
+    lastOffsetRef.current <span style="color:#666">=</span> offset;
+  }, [offset]);
 
-      <span style="color:#008000;font-weight:bold">if</span> (renderCtx <span style="color:#666">&amp;&amp;</span> <span style="color:#666">!</span>isReset) {
-        <span style="color:#408080;font-style:italic">// scale for pixels
+  <span style="color:#408080;font-style:italic">// reset
+</span><span style="color:#408080;font-style:italic"></span>  <span style="color:#008000;font-weight:bold">const</span> reset <span style="color:#666">=</span> useCallback(
+    (context: <span style="color:#b00040">CanvasRenderingContext2D</span>) <span style="color:#666">=&gt;</span> {
+      <span style="color:#008000;font-weight:bold">if</span> (context <span style="color:#666">&amp;&amp;</span> <span style="color:#666">!</span>isResetRef.current) {
+        <span style="color:#408080;font-style:italic">// adjust for device pixel density
 </span><span style="color:#408080;font-style:italic"></span>        <span style="color:#008000;font-weight:bold">const</span> { devicePixelRatio: <span style="color:#b00040">ratio</span> <span style="color:#666">=</span> <span style="color:#666">1</span> } <span style="color:#666">=</span> <span style="color:#008000">window</span>;
-        renderCtx.canvas.width <span style="color:#666">=</span> props.canvasWidth <span style="color:#666">*</span> ratio;
-        renderCtx.canvas.height <span style="color:#666">=</span> props.canvasHeight <span style="color:#666">*</span> ratio;
-        renderCtx.scale(ratio, ratio);
+        context.canvas.width <span style="color:#666">=</span> props.canvasWidth <span style="color:#666">*</span> ratio;
+        context.canvas.height <span style="color:#666">=</span> props.canvasHeight <span style="color:#666">*</span> ratio;
+        context.scale(ratio, ratio);
         setScale(ratio);
 
-        <span style="color:#408080;font-style:italic">// reset other values
-</span><span style="color:#408080;font-style:italic"></span>        setContext(renderCtx);
+        <span style="color:#408080;font-style:italic">// reset state and refs
+</span><span style="color:#408080;font-style:italic"></span>        setContext(context);
         setOffset(ORIGIN);
         setMousePos(ORIGIN);
+        setViewportTopLeft(ORIGIN);
         lastOffsetRef.current <span style="color:#666">=</span> ORIGIN;
-        viewportTopLeftRef.current <span style="color:#666">=</span> ORIGIN;
         lastMousePosRef.current <span style="color:#666">=</span> ORIGIN;
-        setIsReset(<span style="color:#008000;font-weight:bold">true</span>);
+
+        <span style="color:#408080;font-style:italic">// this thing is so multiple resets in a row don&#39;t clear canvas
+</span><span style="color:#408080;font-style:italic"></span>        isResetRef.current <span style="color:#666">=</span> <span style="color:#008000;font-weight:bold">true</span>;
       }
-    }
-  }, [props.canvasHeight, props.canvasWidth, isReset]);
+    },
+    [props.canvasWidth, props.canvasHeight]
+  );
 
   <span style="color:#408080;font-style:italic">// functions for panning
 </span><span style="color:#408080;font-style:italic"></span>  <span style="color:#008000;font-weight:bold">const</span> mouseMove <span style="color:#666">=</span> useCallback(
@@ -441,11 +445,18 @@
   );
 
   <span style="color:#408080;font-style:italic">// setup canvas and set context
-</span><span style="color:#408080;font-style:italic"></span>  useEffect(() <span style="color:#666">=&gt;</span> {
-    reset();
-  }, []);
+</span><span style="color:#408080;font-style:italic"></span>  useLayoutEffect(() <span style="color:#666">=&gt;</span> {
+    <span style="color:#008000;font-weight:bold">if</span> (canvasRef.current) {
+      <span style="color:#408080;font-style:italic">// get new drawing context
+</span><span style="color:#408080;font-style:italic"></span>      <span style="color:#008000;font-weight:bold">const</span> renderCtx <span style="color:#666">=</span> canvasRef.current.getContext(<span style="color:#ba2121">&#34;2d&#34;</span>);
 
-  <span style="color:#408080;font-style:italic">// pan when offset changes
+      <span style="color:#008000;font-weight:bold">if</span> (renderCtx) {
+        reset(renderCtx);
+      }
+    }
+  }, [reset, props.canvasHeight, props.canvasWidth]);
+
+  <span style="color:#408080;font-style:italic">// pan when offset or scale changes
 </span><span style="color:#408080;font-style:italic"></span>  useLayoutEffect(() <span style="color:#666">=&gt;</span> {
     <span style="color:#008000;font-weight:bold">if</span> (context <span style="color:#666">&amp;&amp;</span> lastOffsetRef.current) {
       <span style="color:#008000;font-weight:bold">const</span> offsetDiff <span style="color:#666">=</span> scalePoint(
@@ -453,18 +464,10 @@
         scale
       );
       context.translate(offsetDiff.x, offsetDiff.y);
-      viewportTopLeftRef.current <span style="color:#666">=</span> diffPoints(
-        viewportTopLeftRef.current,
-        offsetDiff
-      );
-      setIsReset(<span style="color:#008000;font-weight:bold">false</span>);
+      setViewportTopLeft((prevVal) <span style="color:#666">=&gt;</span> diffPoints(prevVal, offsetDiff));
+      isResetRef.current <span style="color:#666">=</span> <span style="color:#008000;font-weight:bold">false</span>;
     }
   }, [context, offset, scale]);
-
-  <span style="color:#408080;font-style:italic">// update last offset
-</span><span style="color:#408080;font-style:italic"></span>  useEffect(() <span style="color:#666">=&gt;</span> {
-    lastOffsetRef.current <span style="color:#666">=</span> offset;
-  }, [offset]);
 
   <span style="color:#408080;font-style:italic">// draw
 </span><span style="color:#408080;font-style:italic"></span>  useLayoutEffect(() <span style="color:#666">=&gt;</span> {
@@ -482,17 +485,18 @@
         squareSize,
         squareSize
       );
-      context.arc(
-        viewportTopLeftRef.current.x,
-        viewportTopLeftRef.current.y,
-        <span style="color:#666">5</span>,
-        <span style="color:#666">0</span>,
-        <span style="color:#666">2</span> <span style="color:#666">*</span> <span style="color:#008000">Math</span>.PI
-      );
+      context.arc(viewportTopLeft.x, viewportTopLeft.y, <span style="color:#666">5</span>, <span style="color:#666">0</span>, <span style="color:#666">2</span> <span style="color:#666">*</span> <span style="color:#008000">Math</span>.PI);
       context.fillStyle <span style="color:#666">=</span> <span style="color:#ba2121">&#34;red&#34;</span>;
       context.fill();
     }
-  }, [props.canvasWidth, props.canvasHeight, context, isReset, scale, offset]);
+  }, [
+    props.canvasWidth,
+    props.canvasHeight,
+    context,
+    scale,
+    offset,
+    viewportTopLeft
+  ]);
 
   <span style="color:#408080;font-style:italic">// add event listener on canvas for mouse position
 </span><span style="color:#408080;font-style:italic"></span>  useEffect(() <span style="color:#666">=&gt;</span> {
@@ -528,7 +532,9 @@
       <span style="color:#008000;font-weight:bold">return</span>;
     }
 
-    <span style="color:#408080;font-style:italic">// this is really tricky
+    <span style="color:#408080;font-style:italic">// this is tricky. Update the viewport&#39;s &#34;origin&#34; such that
+</span><span style="color:#408080;font-style:italic"></span>    <span style="color:#408080;font-style:italic">// the mouse doesn&#39;t move during scale - the &#39;zoom point&#39; of the mouse
+</span><span style="color:#408080;font-style:italic"></span>    <span style="color:#408080;font-style:italic">// before and after zoom is relatively the same position on the viewport
 </span><span style="color:#408080;font-style:italic"></span>    <span style="color:#008000;font-weight:bold">function</span> handleWheel(event: <span style="color:#b00040">WheelEvent</span>) {
       event.preventDefault();
       <span style="color:#008000;font-weight:bold">if</span> (context) {
@@ -538,32 +544,30 @@
           y<span style="color:#666">:</span> (mousePos.y <span style="color:#666">/</span> scale) <span style="color:#666">*</span> (<span style="color:#666">1</span> <span style="color:#666">-</span> <span style="color:#666">1</span> <span style="color:#666">/</span> zoom)
         };
         <span style="color:#008000;font-weight:bold">const</span> newViewportTopLeft <span style="color:#666">=</span> addPoints(
-          viewportTopLeftRef.current,
+          viewportTopLeft,
           viewportTopLeftDelta
         );
 
-        context.translate(
-          viewportTopLeftRef.current.x,
-          viewportTopLeftRef.current.y
-        );
+        context.translate(viewportTopLeft.x, viewportTopLeft.y);
         context.scale(zoom, zoom);
         context.translate(<span style="color:#666">-</span>newViewportTopLeft.x, <span style="color:#666">-</span>newViewportTopLeft.y);
 
-        viewportTopLeftRef.current <span style="color:#666">=</span> newViewportTopLeft;
+        setViewportTopLeft(newViewportTopLeft);
         setScale(scale <span style="color:#666">*</span> zoom);
-        setIsReset(<span style="color:#008000;font-weight:bold">false</span>);
+        isResetRef.current <span style="color:#666">=</span> <span style="color:#008000;font-weight:bold">false</span>;
       }
     }
 
     canvasElem.addEventListener(<span style="color:#ba2121">&#34;wheel&#34;</span>, handleWheel);
     <span style="color:#008000;font-weight:bold">return</span> () <span style="color:#666">=&gt;</span> canvasElem.removeEventListener(<span style="color:#ba2121">&#34;wheel&#34;</span>, handleWheel);
-  }, [context, mousePos.x, mousePos.y, scale]);
+  }, [context, mousePos.x, mousePos.y, viewportTopLeft, scale]);
 
   <span style="color:#008000;font-weight:bold">return</span> (
     &lt;<span style="color:#008000;font-weight:bold">div</span>&gt;
-      &lt;<span style="color:#008000;font-weight:bold">button</span> <span style="color:#7d9029">onClick</span><span style="color:#666">=</span>{reset}&gt;Reset&lt;/<span style="color:#008000;font-weight:bold">button</span>&gt;
+      &lt;<span style="color:#008000;font-weight:bold">button</span> <span style="color:#7d9029">onClick</span><span style="color:#666">=</span>{() <span style="color:#666">=&gt;</span> context <span style="color:#666">&amp;&amp;</span> reset(context)}&gt;Reset&lt;/<span style="color:#008000;font-weight:bold">button</span>&gt;
       &lt;<span style="color:#008000;font-weight:bold">pre</span>&gt;scale<span style="color:#666">:</span> {scale}&lt;/<span style="color:#008000;font-weight:bold">pre</span>&gt;
       &lt;<span style="color:#008000;font-weight:bold">pre</span>&gt;offset<span style="color:#666">:</span> {JSON.stringify(offset)}&lt;/<span style="color:#008000;font-weight:bold">pre</span>&gt;
+      &lt;<span style="color:#008000;font-weight:bold">pre</span>&gt;viewportTopLeft<span style="color:#666">:</span> {JSON.stringify(viewportTopLeft)}&lt;/<span style="color:#008000;font-weight:bold">pre</span>&gt;
       &lt;<span style="color:#008000;font-weight:bold">canvas</span>
         <span style="color:#7d9029">id</span><span style="color:#666">=</span><span style="color:#ba2121">&#34;canvas&#34;</span>
         <span style="color:#7d9029">onMouseDown</span><span style="color:#666">=</span>{startPan}
