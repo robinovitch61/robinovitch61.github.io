@@ -533,13 +533,13 @@
       event.preventDefault();
       <span style="color:#008000;font-weight:bold">if</span> (context) {
         <span style="color:#008000;font-weight:bold">const</span> zoom <span style="color:#666">=</span> <span style="color:#666">1</span> <span style="color:#666">-</span> event.deltaY <span style="color:#666">/</span> ZOOM_SENSITIVITY;
-        <span style="color:#008000;font-weight:bold">const</span> adjustedOriginDelta <span style="color:#666">=</span> {
+        <span style="color:#008000;font-weight:bold">const</span> viewportTopLeftDelta <span style="color:#666">=</span> {
           x<span style="color:#666">:</span> (mousePos.x <span style="color:#666">/</span> scale) <span style="color:#666">*</span> (<span style="color:#666">1</span> <span style="color:#666">-</span> <span style="color:#666">1</span> <span style="color:#666">/</span> zoom),
           y<span style="color:#666">:</span> (mousePos.y <span style="color:#666">/</span> scale) <span style="color:#666">*</span> (<span style="color:#666">1</span> <span style="color:#666">-</span> <span style="color:#666">1</span> <span style="color:#666">/</span> zoom)
         };
         <span style="color:#008000;font-weight:bold">const</span> newViewportTopLeft <span style="color:#666">=</span> addPoints(
           viewportTopLeftRef.current,
-          adjustedOriginDelta
+          viewportTopLeftDelta
         );
 
         context.translate(
