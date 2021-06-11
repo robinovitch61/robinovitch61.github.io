@@ -339,6 +339,7 @@ May 02, 2021 &ndash; Leo Robinovitch
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">243
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">244
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">245
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">246
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#008000;font-weight:bold">import</span> {
@@ -361,6 +362,9 @@ May 02, 2021 &ndash; Leo Robinovitch
 };
 
 <span style="color:#008000;font-weight:bold">const</span> ORIGIN <span style="color:#666">=</span> <span style="color:#008000">Object</span>.freeze({ x: <span style="color:#b00040">0</span>, y: <span style="color:#b00040">0</span> });
+
+<span style="color:#408080;font-style:italic">// adjust to device to avoid blur
+</span><span style="color:#408080;font-style:italic"></span><span style="color:#008000;font-weight:bold">const</span> { devicePixelRatio: <span style="color:#b00040">ratio</span> <span style="color:#666">=</span> <span style="color:#666">1</span> } <span style="color:#666">=</span> <span style="color:#008000">window</span>;
 
 <span style="color:#008000;font-weight:bold">function</span> diffPoints(p1: <span style="color:#b00040">Point</span>, p2: <span style="color:#b00040">Point</span>) {
   <span style="color:#008000;font-weight:bold">return</span> { x: <span style="color:#b00040">p1.x</span> <span style="color:#666">-</span> p2.x, y: <span style="color:#b00040">p1.y</span> <span style="color:#666">-</span> p2.y };
@@ -397,8 +401,7 @@ May 02, 2021 &ndash; Leo Robinovitch
     (context: <span style="color:#b00040">CanvasRenderingContext2D</span>) <span style="color:#666">=&gt;</span> {
       <span style="color:#008000;font-weight:bold">if</span> (context <span style="color:#666">&amp;&amp;</span> <span style="color:#666">!</span>isResetRef.current) {
         <span style="color:#408080;font-style:italic">// adjust for device pixel density
-</span><span style="color:#408080;font-style:italic"></span>        <span style="color:#008000;font-weight:bold">const</span> { devicePixelRatio: <span style="color:#b00040">ratio</span> <span style="color:#666">=</span> <span style="color:#666">1</span> } <span style="color:#666">=</span> <span style="color:#008000">window</span>;
-        context.canvas.width <span style="color:#666">=</span> props.canvasWidth <span style="color:#666">*</span> ratio;
+</span><span style="color:#408080;font-style:italic"></span>        context.canvas.width <span style="color:#666">=</span> props.canvasWidth <span style="color:#666">*</span> ratio;
         context.canvas.height <span style="color:#666">=</span> props.canvasHeight <span style="color:#666">*</span> ratio;
         context.scale(ratio, ratio);
         setScale(<span style="color:#666">1</span>);
@@ -572,11 +575,10 @@ May 02, 2021 &ndash; Leo Robinovitch
       &lt;<span style="color:#008000;font-weight:bold">pre</span>&gt;offset<span style="color:#666">:</span> {JSON.stringify(offset)}&lt;/<span style="color:#008000;font-weight:bold">pre</span>&gt;
       &lt;<span style="color:#008000;font-weight:bold">pre</span>&gt;viewportTopLeft<span style="color:#666">:</span> {JSON.stringify(viewportTopLeft)}&lt;/<span style="color:#008000;font-weight:bold">pre</span>&gt;
       &lt;<span style="color:#008000;font-weight:bold">canvas</span>
-        <span style="color:#7d9029">id</span><span style="color:#666">=</span><span style="color:#ba2121">&#34;canvas&#34;</span>
         <span style="color:#7d9029">onMouseDown</span><span style="color:#666">=</span>{startPan}
         <span style="color:#7d9029">ref</span><span style="color:#666">=</span>{canvasRef}
-        <span style="color:#7d9029">width</span><span style="color:#666">=</span>{props.canvasWidth <span style="color:#666">*</span> <span style="color:#666">2</span>}
-        <span style="color:#7d9029">height</span><span style="color:#666">=</span>{props.canvasHeight <span style="color:#666">*</span> <span style="color:#666">2</span>}
+        <span style="color:#7d9029">width</span><span style="color:#666">=</span>{props.canvasWidth <span style="color:#666">*</span> ratio}
+        <span style="color:#7d9029">height</span><span style="color:#666">=</span>{props.canvasHeight <span style="color:#666">*</span> ratio}
         <span style="color:#7d9029">style</span><span style="color:#666">=</span>{{
           border<span style="color:#666">:</span> <span style="color:#ba2121">&#34;2px solid #000&#34;</span>,
           width<span style="color:#666">:</span> <span style="color:#ba2121">`</span><span style="color:#b68;font-weight:bold">${</span>props.canvasWidth<span style="color:#b68;font-weight:bold">}</span><span style="color:#ba2121">px`</span>,
