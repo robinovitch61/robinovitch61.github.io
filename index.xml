@@ -6,7 +6,19 @@
     <description>Recent content in i like computers, surfing, and friendship on The Leo Zone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 May 2021 21:47:48 -0700</lastBuildDate><atom:link href="https://robinovitch61.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Jun 2021 22:36:07 -0700</lastBuildDate><atom:link href="https://robinovitch61.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>verbify your arrows</title>
+      <link>https://robinovitch61.github.io/posts/verbify-your-arrows/</link>
+      <pubDate>Thu, 10 Jun 2021 22:36:07 -0700</pubDate>
+      
+      <guid>https://robinovitch61.github.io/posts/verbify-your-arrows/</guid>
+      <description>This is a diagram from an open source project I was evaluating at work recently, and the subsequent conversations I had:
+  Me: So their solution is push based?
+Coworker: No, I think they just specify the general protocol.
+Me: But those lines from the squares at the top to the central circle sort of look like arrows, don&amp;rsquo;t they? And their client pushes data&amp;hellip;I think maybe it&amp;rsquo;s push based?</description>
+    </item>
+    
     <item>
       <title>react html5 zoom/pan canvas</title>
       <link>https://robinovitch61.github.io/posts/html-canvas-pan-zoom-react/</link>

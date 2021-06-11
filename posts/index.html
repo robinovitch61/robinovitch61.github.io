@@ -80,6 +80,64 @@
 <h1>DEFAULT LIST</h1>
 
   <article>
+    <h2>verbify your arrows</h2>
+    <p>This is a diagram from an open source project I was evaluating at work recently, and the subsequent conversations I had:</p>
+
+<figure>
+  <img style="max-width: 60%;" src="/img/noarrows.png" alt="noarrows.png" />
+  
+  
+</figure>
+<p>Me: So their solution is push based?</p>
+<p>Coworker: No, I think they just specify the general protocol.</p>
+<p>Me: But those lines from the squares at the top to the central circle sort of look like arrows, don&rsquo;t they? And their client pushes data&hellip;I think maybe it&rsquo;s push based?</p>
+<p>Coworker: Yea, it&rsquo;s unclear&hellip;</p>
+<p>Me on Slack channel of project: Hi! I&rsquo;m a n00b to this project. Is this only push based?</p>
+<p>Project maintainers: No, our reference implementation is push based but we&rsquo;re not opinionated about it. We just specify the protocol.</p>
+<p>Me: Cool, thanks!</p>
+<p>&hellip;</p>
+<p>Here are some results from googling &ldquo;architecture diagram&rdquo;:</p>
+
+<figure>
+  <img style="max-width: 100%;" src="/img/manynoarrows.png" alt="manynoarrows.png" />
+  
+  
+</figure>
+<p>Cool. These things point to each other. I don&rsquo;t know how they relate, just apparently there&rsquo;s a directionality to their relationships.</p>
+<p>Another one:</p>
+
+<figure>
+  <img style="max-width: 100%;" src="/img/somearrows.png" alt="somearrows.png" />
+  
+  
+</figure>
+<p>This is a bit better. I know the Gateway transfers JSON over HTTP. Does it POST a JSON body from the Gateway to the arrow targets, or does the Gateway send a GET request to the arrow targets and receive a JSON response? Maybe both?</p>
+<p>Both of these use Gateway TO arrow targets, just like the direction of the arrows, but have very different implications. If both occur, why not say so?</p>
+<p>If I knew the domain specific context of the relationships of these entities, maybe it&rsquo;s obvious. Maybe if I thought about it more, it would become obvious. But the diagram would ideally communicate the relationships clearly without a lot of thought or inference required.</p>
+<p>I think the best way to do this is to label your arrows, preferably with verbs and prepositions. For example:</p>
+<ul>
+<li>depends on</li>
+<li>transfers to</li>
+<li>receives from</li>
+<li>communicates with</li>
+<li>scrapes from</li>
+<li>uploads to</li>
+<li>child of</li>
+</ul>
+<p><strong>This is incredibly helpful, and most diagrams with arrows don&rsquo;t do this</strong>. It&rsquo;s not a revolutionary idea, but I think it can be more widely proliferated.</p>
+<p>In the <a href="https://graphviz.gitlab.io/gallery/">graphviz gallery</a> - open source software built for making diagrams of blobs with arrows between them - almost none of the examples contain labeled arrows, despite this being a <a href="https://graphviz.org/doc/info/attrs.html#d:label">first class feature in graphviz</a>.</p>
+<p>Here is a decent example, ~10 images into the &ldquo;architecture diagram&rdquo; image search:</p>
+
+<figure>
+  <img style="max-width: 100%;" src="/img/goodarrows.png" alt="goodarrows.png" />
+  
+  
+</figure>
+<p>Let&rsquo;s label our arrows more and communicate better, faster.</p>
+
+  </article>
+
+  <article>
     <h2>react html5 zoom/pan canvas</h2>
     <p>A pannable, mouse-centered zoomable, HTML5 canvas template in React + Typescript. You&rsquo;d think this would be a solved problem, but despite the plethora of solutions out there, I couldn&rsquo;t get quite what I wanted for some time. Finally, here it all is in one place for future me and others to use as boilerplate for their embedded interactive canvases in their apps.</p>
 <p>If you see any bugs or possible improvements, please comment on the gist here:</p>
