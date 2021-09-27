@@ -10,7 +10,7 @@ RC 09 (λεξικόν)
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
-    <link rel="stylesheet" href="https://robinovitch61.github.io/sass/main.min.4499f429c2eec8e0db0527551275bce6067ad5ea295ed5cc754bbf39e4fb4a83.css">
+    <link rel="stylesheet" href="https://robinovitch61.github.io/sass/main.min.a52045891891a7be7e3673f5d0bdbf76eef49ffce8c14b35b87c292ac78f3818.css">
 
     
 
@@ -86,24 +86,33 @@ Nov 30, 2019 &ndash; Leo Robinovitch
 <p>Project 10 consists of the first half of the Jack compiler. The overall compiler is split in to tokenization + lexical analysis (project 10) and VM code generation (project 11).</p>
 <p>The first half of the compiler was the most time consuming project of the course so far. It results in a compiler that doesn&rsquo;t yet produce any actual VM code - the output is a <code>.xml</code> file that visualizes the lexical tree for each <code>.jack</code> Jack class. This tree is determined by the language grammar, and demonstrates that the compiler correctly parses the structure of the grammar in a bug-free, recursive pass on the high-level code.</p>
 
-<figure>
-  <img style="max-width: 80%;" src="/img/lexical_tree.png" alt="lexical_tree.png" />
-  <figcaption class="figcaption-text">Example Lexical Tree from the Elements of Computing Systems</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/lexical_tree.png">
+  <figure>
+      <img style="max-width: 80%;" src="/img/lexical_tree.png" alt="lexical_tree.png" />
+      <figcaption class="figcaption-text">Example Lexical Tree from the Elements of Computing Systems</figcaption>
+      
+  </figure>
+</a>
+
 <p>The complete Jack language grammar is shown below. I spent a lot of time staring at it this week. Once I figured out how to structure the recursive calls to my <code>generate_tree</code> function, it became fun to build up the grammar and see how it all works out. Everything is greatly simplified due to things like lack of object inheretence, enforcement of prefix words like <code>do my_function()</code> rather than simply calling <code>my_function()</code> and other idiosyncracies and simplifications made in the design of the Jack language.</p>
 <p>
-<figure>
-  <img style="max-width: 90%;" src="/img/jack_grammar1.png" alt="jack_grammar1.png" />
-  
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/jack_grammar1.png">
+  <figure>
+      <img style="max-width: 90%;" src="/img/jack_grammar1.png" alt="jack_grammar1.png" />
+      
+      
+  </figure>
+</a>
 
-<figure>
-  <img style="max-width: 90%;" src="/img/jack_grammar2.png" alt="jack_grammar2.png" />
-  <figcaption class="figcaption-text">The Complete Grammar of the Jack Language</figcaption>
-  
-</figure></p>
+
+<a class="img-link" target="_blank" href="/img/jack_grammar2.png">
+  <figure>
+      <img style="max-width: 90%;" src="/img/jack_grammar2.png" alt="jack_grammar2.png" />
+      <figcaption class="figcaption-text">The Complete Grammar of the Jack Language</figcaption>
+      
+  </figure>
+</a>
+</p>
 <p>I paired almost every day with my friend and fellow recurser Waj on interview questions. It&rsquo;s really interesting seeing someone else think through a problem, and I&rsquo;ve learned so much from actively practicing together.</p>
 <p>I&rsquo;m currently in JFK flying to SF for some interviews. Stoked. I also started some really great books this week:</p>
 <ul>

@@ -6,7 +6,18 @@
     <description>Recent content in i like computers, surfing, and friendship on The Leo Zone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 Jul 2021 14:11:00 +0000</lastBuildDate><atom:link href="https://robinovitch61.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Sep 2021 17:16:07 -0700</lastBuildDate><atom:link href="https://robinovitch61.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>local typescript sandbox</title>
+      <link>https://robinovitch61.github.io/posts/typescript-sandbox/</link>
+      <pubDate>Sun, 26 Sep 2021 17:16:07 -0700</pubDate>
+      
+      <guid>https://robinovitch61.github.io/posts/typescript-sandbox/</guid>
+      <description>I made a simple live-reloading Typescript sandbox, similar to the Vanilla Typescript CodeSandbox but running locally.
+You can run it with node installed or in a docker container.
+I like having a Typescript-ready environment without having to spinup a new react app or something. CodeSandbox was nice, but got pretty laggy at times and was hard to version control. Gluing together some tooling to scratch my own itch was fun.</description>
+    </item>
+    
     <item>
       <title>rodney mullen and mastery</title>
       <link>https://robinovitch61.github.io/posts/rodney-mullen-and-mastery/</link>
@@ -25,7 +36,7 @@ The podium finishers at the olympics this year in Skateboarding, while insanely 
       
       <guid>https://robinovitch61.github.io/posts/verbify-your-arrows/</guid>
       <description>This is a diagram from an open source project I was evaluating at work recently, and the subsequent conversations I had:
-  Me: So their solution is push based?
+   Me: So their solution is push based?
 Coworker: No, I think they just specify the general protocol.
 Me: But those lines from the squares at the top to the central circle sort of look like arrows, don&amp;rsquo;t they? And their client pushes data&amp;hellip;I think maybe it&amp;rsquo;s push based?</description>
     </item>
@@ -76,7 +87,7 @@ I&amp;rsquo;ve been excited about GiveWell for a while now, and am interested in
       <pubDate>Mon, 09 Nov 2020 09:42:53 -0800</pubDate>
       
       <guid>https://robinovitch61.github.io/posts/color-commentary/</guid>
-      <description>Twitter bird - blue or purple?  About 6 weeks ago, I launched colorcontroversy.com. Since then, the site has collected over 800,000 color judgements and been shared around the web more than I expected.
+      <description>Twitter bird - blue or purple?   About 6 weeks ago, I launched colorcontroversy.com. Since then, the site has collected over 800,000 color judgements and been shared around the web more than I expected.
 A much-simplified version of Randal Monroe of XKCD&amp;rsquo;s color survey, the site shows you a color shade and presents two color choices for that shade. For example, it shows you a dark turquoise and asks you if it&amp;rsquo;s Green or Blue.</description>
     </item>
     
@@ -96,7 +107,7 @@ A much-simplified version of Randal Monroe of XKCD&amp;rsquo;s color survey, the
       
       <guid>https://robinovitch61.github.io/posts/gifting-websites/</guid>
       <description>Over the past year or so, I have gifted friends a few websites. I think the sites are fun, relatively unique gifts. As a bonus serve, they illustrate some of my progression with basic html/css/javascript static websites.
-Site 1: averyrobins.com   I set up an Amazon S3 bucket for static hosting, bought a namecheap domain name, configured the custom DNS, and voila - I now pay $1/month to host this profanity-laden ASCII art.</description>
+Site 1: averyrobins.com    I set up an Amazon S3 bucket for static hosting, bought a namecheap domain name, configured the custom DNS, and voila - I now pay $1/month to host this profanity-laden ASCII art.</description>
     </item>
     
     <item>
@@ -117,7 +128,7 @@ In the end, though, I got as much or more from being around the people at RC as 
       <pubDate>Mon, 09 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://robinovitch61.github.io/recurse/rc-10-work/</guid>
-      <description>&amp;#39;Chad, destroyer of worlds&amp;#39; - circa 2015  My second to last week at RC was first spent in San Francisco at onsite interviews for positions in the city. Interviews went well and I had a nice time seeing some friends while there.
+      <description>&amp;#39;Chad, destroyer of worlds&amp;#39; - circa 2015   My second to last week at RC was first spent in San Francisco at onsite interviews for positions in the city. Interviews went well and I had a nice time seeing some friends while there.
 Unfortunately, there wasn&amp;rsquo;t enough time to finish the compiler of nand2tetris! The first week where I haven&amp;rsquo;t finished my nand2tetris project :&#39;(. I&amp;rsquo;m going to try my best to finish up both the compiler and OS this final week, though!</description>
     </item>
     
@@ -138,7 +149,7 @@ The first half of the compiler was the most time consuming project of the course
       <pubDate>Mon, 25 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://robinovitch61.github.io/recurse/rc-08-mooninites/</guid>
-      <description>Aqua Teen Hunger Force&amp;#39;s Mooninites  This week, I completed Nand2Tetris project 9, wrote about Givewell, and continued interview prep.
+      <description>Aqua Teen Hunger Force&amp;#39;s Mooninites   This week, I completed Nand2Tetris project 9, wrote about Givewell, and continued interview prep.
 Nand2Tetris&#39; gets you used to programming in the high-level &amp;ldquo;Jack&amp;rdquo; programming language. It would be difficult (or at least, less meaningful) to write a compiler for a high level language that you don&amp;rsquo;t really understand.
 I found it useful in that it solidified the rules of Jack and allowed me to project my thoughts of what the compiler would be doing to translate Jack code to VM Code.</description>
     </item>
@@ -193,7 +204,7 @@ Not only does it matter to you, who will be the one living it out every day and 
       <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://robinovitch61.github.io/posts/concurrency-in-python/</guid>
-      <description>Concurrency ! easy is  Concurrency is of paramount importance in modern computing. It is a complex domain in itself, with major contributions from database development, machine learning, distributed application deployment, and academia.
+      <description>Concurrency ! easy is   Concurrency is of paramount importance in modern computing. It is a complex domain in itself, with major contributions from database development, machine learning, distributed application deployment, and academia.
 Python requires a clear and simple concurrency framework as it is commonly used in high-compute settings like training neural networks. Matrix algebra has been made fast with NumPy and related tools, interfacing with C to get large performance improvements.</description>
     </item>
     
@@ -204,7 +215,7 @@ Python requires a clear and simple concurrency framework as it is commonly used 
       
       <guid>https://robinovitch61.github.io/recurse/rc-04-all-the-wrong-type/</guid>
       <description>This week, the hack computer&amp;rsquo;s hardware was completed with project 5 of Nand2Tetris! I decided to write the remaining software portion of the course (projects 6-12) in Rust, feeding two birds with one scone.
- The Mandelbrot set with Rust Source: http://downloads.codecoding.com/rust/Programming%20Rust.pdf  While I started learning Rust with the the O&amp;rsquo;Reilly Book, I&amp;rsquo;ve found The Rust Programming Language and Rustlings to be great resources as well. It was also incredibly helpful when Evan installed Rust Language Server (RLS) in my VSCode environment, making it easy to view source code and highlighting errors before compile time.</description>
+ The Mandelbrot set with Rust Source: http://downloads.codecoding.com/rust/Programming%20Rust.pdf   While I started learning Rust with the the O&amp;rsquo;Reilly Book, I&amp;rsquo;ve found The Rust Programming Language and Rustlings to be great resources as well. It was also incredibly helpful when Evan installed Rust Language Server (RLS) in my VSCode environment, making it easy to view source code and highlighting errors before compile time.</description>
     </item>
     
     <item>
@@ -213,7 +224,7 @@ Python requires a clear and simple concurrency framework as it is commonly used 
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://robinovitch61.github.io/posts/statistical-bias/</guid>
-      <description>Eat my spheres!  You find yourself trapped in a room with Jigsaw, the villain from the Saw movies. There is a wood box of 100 spheres, some of them steel ball bearings and some of them gumballs. Jigsaw tells you that you can leave the room alive if you guess the number of steel ball bearings in the jar correctly. You can pull 10 random spheres out the 100 in the box as many times as you want, but each time you do, you have to eat all of them (yum!</description>
+      <description>Eat my spheres!   You find yourself trapped in a room with Jigsaw, the villain from the Saw movies. There is a wood box of 100 spheres, some of them steel ball bearings and some of them gumballs. Jigsaw tells you that you can leave the room alive if you guess the number of steel ball bearings in the jar correctly. You can pull 10 random spheres out the 100 in the box as many times as you want, but each time you do, you have to eat all of them (yum!</description>
     </item>
     
     <item>
@@ -275,7 +286,7 @@ The premise is that you start with a Nand (&amp;ldquo;Not And&amp;rdquo;) logic 
       
       <guid>https://robinovitch61.github.io/recurse/rc-00-it-begins/</guid>
       <description>It is day 3 at the Recurse Center (RC)!
- Me experimenting with Haskell and Rust  It has been a whirlwind of orientation, meeting awesome people, learning about (and about the existence of) new cool things, setting up and settling in.
+ Me experimenting with Haskell and Rust   It has been a whirlwind of orientation, meeting awesome people, learning about (and about the existence of) new cool things, setting up and settling in.
 This was my second day here:
  8-9am: Research blogging tools to create this very website. Decide on Jekyll + github pages + namecheap domain as a good solution 9-10am: Update MacOS to Mojave after experiencing ruby-related jekyll issues 10-11am: Using this great tutorial, get jekyll and bundler installed.</description>
     </item>
@@ -297,7 +308,7 @@ A human figure squatted near the massive rhino, stroking its head to comfort it 
       
       <guid>https://robinovitch61.github.io/lists/interesting-lynx/</guid>
       <description>Interesting stuff I find on the internet and want to promote or revisit.
-    Deep Learning Comprehensive Article    The Essence of Linear Algebra Youtube Series    Netherlands eScience Software Engineering Guide    Open Source Data Science Masters    Goodfellow, Bengio, Courville Deep Learning Book    Algorithm Design Manual    Open Source Data Sets    Flask Mega Tutorial    FirstCrack Simple Blogging Engine    Interpretable Machine Learning Book    What Every Computer Science Major Should Know    Google SRE Guide    Hackernews Good Tools Discussion    Spotify&amp;#39;s Squad Framework    Data Engineering Cookbook    Algebra, Topology, Differential Calculus, and Optimization Theory For Computer Science and Machine Learning    What Every Programmer Should Know About Memory    Introduction to Racket    Rust Lang Book    A Tour of Go    Programming Algorithms with Lisp    Design Your Own Computer    Learn to Program    Intro to Node.</description>
+     Deep Learning Comprehensive Article    The Essence of Linear Algebra Youtube Series    Netherlands eScience Software Engineering Guide    Open Source Data Science Masters    Goodfellow, Bengio, Courville Deep Learning Book    Algorithm Design Manual    Open Source Data Sets    Flask Mega Tutorial    FirstCrack Simple Blogging Engine    Interpretable Machine Learning Book    What Every Computer Science Major Should Know    Google SRE Guide    Hackernews Good Tools Discussion    Spotify&amp;#39;s Squad Framework    Data Engineering Cookbook    Algebra, Topology, Differential Calculus, and Optimization Theory For Computer Science and Machine Learning    What Every Programmer Should Know About Memory    Introduction to Racket    Rust Lang Book    A Tour of Go    Programming Algorithms with Lisp    Design Your Own Computer    Learn to Program    Intro to Node.</description>
     </item>
     
     <item>

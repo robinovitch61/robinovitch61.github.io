@@ -10,7 +10,7 @@ RC 01 (logic immunity)
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
-    <link rel="stylesheet" href="https://robinovitch61.github.io/sass/main.min.4499f429c2eec8e0db0527551275bce6067ad5ea295ed5cc754bbf39e4fb4a83.css">
+    <link rel="stylesheet" href="https://robinovitch61.github.io/sass/main.min.a52045891891a7be7e3673f5d0bdbf76eef49ffce8c14b35b87c292ac78f3818.css">
 
     
 
@@ -86,26 +86,35 @@ Oct 04, 2019 &ndash; Leo Robinovitch
 <p>Computer architecture work has come from the awesome <a href="https://www.nand2tetris.org/">Nand2Tetris course</a> by Shimon Schocken and Noam Nisan. Shimon has a <a href="https://www.ted.com/talks/shimon_schocken_the_self_organizing_computer_course?language=pt">fantastic Ted Talk about the course</a> and many Recursers have done it in the past. I&rsquo;m 2 projects in to the first half of the course (<a href="https://www.coursera.org/learn/build-a-computer/home/welcome">Coursera link</a>)</p>
 <p>The premise is that you start with a <code>Nand</code> (&ldquo;Not And&rdquo;) logic gate. The first project, you build other elementary logic gates from the <code>Nand</code> gate (e.g. <code>Not(x) = x Nand x</code>, furthermore <code>x And y = Not(x Nand y)</code>; etc.) The 12th and last project, you complete the operating system that you have built up from the <code>Nand</code> gate, with the 10 projects in between filling in all the gaps. You could build tetris (or any similar game) in the completed computer you have built &ldquo;from scratch&rdquo;.</p>
 
-<figure>
-  <img style="max-width: 95%;" src="/img/nand2tetris_overview.png" alt="nand2tetris_overview.png" />
-  <figcaption class="figcaption-text">The Nand2Tetris Overview</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/nand2tetris_overview.png">
+  <figure>
+      <img style="max-width: 95%;" src="/img/nand2tetris_overview.png" alt="nand2tetris_overview.png" />
+      <figcaption class="figcaption-text">The Nand2Tetris Overview</figcaption>
+      
+  </figure>
+</a>
+
 <p>I am excited to keep digging in to the course. At 1 project per week, I&rsquo;ll complete the course just in time! I&rsquo;ve heard the last 6 projects are more time intensive than the first 6, so I&rsquo;m trying to budget time accordingly.</p>
 <p>The other thing I&rsquo;ve been sinking time into is a prototype herd immunity simulation in python. <a href="https://github.com/haack">Alex Haak</a> and I are both excited about interactive data visualization and illustrating concepts through interactive online experiences. Our ultimate goal is to publish something on <a href="https://explorabl.es/">explorabl.es - Explorable Explanations</a>. This site is mind blowing. Don&rsquo;t visit it if you don&rsquo;t have a couple hours to kill.</p>
 <p>Initial results for the simulator are really interesting! I came up with a simplified set of rules that give a certain level of complexity while still massively simplifying the real world. <a href="https://github.com/robinovitch61/herd_immunity">All the code is here.</a></p>
 
-<figure>
-  <img style="max-width: 95%;" src="/img/good_immunity.gif" alt="good_immunity.gif" />
-  <figcaption class="figcaption-text">90% Immunity - Blue Immunity Protec</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/good_immunity.gif">
+  <figure>
+      <img style="max-width: 95%;" src="/img/good_immunity.gif" alt="good_immunity.gif" />
+      <figcaption class="figcaption-text">90% Immunity - Blue Immunity Protec</figcaption>
+      
+  </figure>
+</a>
 
-<figure>
-  <img style="max-width: 95%;" src="/img/bad_immunity.gif" alt="bad_immunity.gif" />
-  <figcaption class="figcaption-text">80% Immunity - Red Sickness Attac</figcaption>
-  
-</figure>
+
+<a class="img-link" target="_blank" href="/img/bad_immunity.gif">
+  <figure>
+      <img style="max-width: 95%;" src="/img/bad_immunity.gif" alt="bad_immunity.gif" />
+      <figcaption class="figcaption-text">80% Immunity - Red Sickness Attac</figcaption>
+      
+  </figure>
+</a>
+
 <p>Alex and I will be working on porting a modified version of this logic in to an awesome interactive data visualization - Alex is great with React, javascript, html, css, and general design so I&rsquo;m excited to learn a lot from him!</p>
 <p>A mostly complete set of rules for the model:</p>
 <ol>

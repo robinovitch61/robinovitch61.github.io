@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
-    <link rel="stylesheet" href="https://robinovitch61.github.io/sass/main.min.4499f429c2eec8e0db0527551275bce6067ad5ea295ed5cc754bbf39e4fb4a83.css">
+    <link rel="stylesheet" href="https://robinovitch61.github.io/sass/main.min.a52045891891a7be7e3673f5d0bdbf76eef49ffce8c14b35b87c292ac78f3818.css">
 
     
 
@@ -100,11 +100,14 @@
   <article>
     <h2>RC 10 (work)</h2>
     
-<figure>
-  <img style="max-width: 60%;" src="/img/work.png" alt="work.png" />
-  <figcaption class="figcaption-text">&#39;Chad, destroyer of worlds&#39; - circa 2015</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/work.png">
+  <figure>
+      <img style="max-width: 60%;" src="/img/work.png" alt="work.png" />
+      <figcaption class="figcaption-text">&#39;Chad, destroyer of worlds&#39; - circa 2015</figcaption>
+      
+  </figure>
+</a>
+
 <p>My second to last week at RC was first spent in San Francisco at onsite interviews for positions in the city. Interviews went well and I had a nice time seeing some friends while there.</p>
 <p>Unfortunately, there wasn&rsquo;t enough time to finish the compiler of nand2tetris! The first week where I haven&rsquo;t finished my nand2tetris project :'(. I&rsquo;m going to try my best to finish up both the compiler and OS this final week, though!</p>
 <p>I was also focusing on finishing a take-home assignment from another interview process which definitely cut in to my time. As annoying and time consuming it is to generate contrived work to prove you&rsquo;re not lying on your resume, it was sort of fun to develop an application with a relational database and interactive web UI and make it feel smooth and look pretty. Link to the project is <a href="https://github.com/robinovitch61/impossible_app">here on github</a>.</p>
@@ -118,24 +121,33 @@
 <p>Project 10 consists of the first half of the Jack compiler. The overall compiler is split in to tokenization + lexical analysis (project 10) and VM code generation (project 11).</p>
 <p>The first half of the compiler was the most time consuming project of the course so far. It results in a compiler that doesn&rsquo;t yet produce any actual VM code - the output is a <code>.xml</code> file that visualizes the lexical tree for each <code>.jack</code> Jack class. This tree is determined by the language grammar, and demonstrates that the compiler correctly parses the structure of the grammar in a bug-free, recursive pass on the high-level code.</p>
 
-<figure>
-  <img style="max-width: 80%;" src="/img/lexical_tree.png" alt="lexical_tree.png" />
-  <figcaption class="figcaption-text">Example Lexical Tree from the Elements of Computing Systems</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/lexical_tree.png">
+  <figure>
+      <img style="max-width: 80%;" src="/img/lexical_tree.png" alt="lexical_tree.png" />
+      <figcaption class="figcaption-text">Example Lexical Tree from the Elements of Computing Systems</figcaption>
+      
+  </figure>
+</a>
+
 <p>The complete Jack language grammar is shown below. I spent a lot of time staring at it this week. Once I figured out how to structure the recursive calls to my <code>generate_tree</code> function, it became fun to build up the grammar and see how it all works out. Everything is greatly simplified due to things like lack of object inheretence, enforcement of prefix words like <code>do my_function()</code> rather than simply calling <code>my_function()</code> and other idiosyncracies and simplifications made in the design of the Jack language.</p>
 <p>
-<figure>
-  <img style="max-width: 90%;" src="/img/jack_grammar1.png" alt="jack_grammar1.png" />
-  
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/jack_grammar1.png">
+  <figure>
+      <img style="max-width: 90%;" src="/img/jack_grammar1.png" alt="jack_grammar1.png" />
+      
+      
+  </figure>
+</a>
 
-<figure>
-  <img style="max-width: 90%;" src="/img/jack_grammar2.png" alt="jack_grammar2.png" />
-  <figcaption class="figcaption-text">The Complete Grammar of the Jack Language</figcaption>
-  
-</figure></p>
+
+<a class="img-link" target="_blank" href="/img/jack_grammar2.png">
+  <figure>
+      <img style="max-width: 90%;" src="/img/jack_grammar2.png" alt="jack_grammar2.png" />
+      <figcaption class="figcaption-text">The Complete Grammar of the Jack Language</figcaption>
+      
+  </figure>
+</a>
+</p>
 <p>I paired almost every day with my friend and fellow recurser Waj on interview questions. It&rsquo;s really interesting seeing someone else think through a problem, and I&rsquo;ve learned so much from actively practicing together.</p>
 <p>I&rsquo;m currently in JFK flying to SF for some interviews. Stoked. I also started some really great books this week:</p>
 <ul>
@@ -148,21 +160,27 @@
   <article>
     <h2>RC 08 (mooninites)</h2>
     
-<figure>
-  <img style="max-width: 60%;" src="/img/mooninites.png" alt="mooninites.png" />
-  <figcaption class="figcaption-text">Aqua Teen Hunger Force&#39;s Mooninites</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/mooninites.png">
+  <figure>
+      <img style="max-width: 60%;" src="/img/mooninites.png" alt="mooninites.png" />
+      <figcaption class="figcaption-text">Aqua Teen Hunger Force&#39;s Mooninites</figcaption>
+      
+  </figure>
+</a>
+
 <p>This week, I completed Nand2Tetris project 9, <a href="https://robinovitch61.github.io/posts/givewell-is-awesome/">wrote about Givewell</a>, and continued interview prep.</p>
 <p>Nand2Tetris' gets you used to programming in the high-level &ldquo;Jack&rdquo; programming language. It would be difficult (or at least, less meaningful) to write a compiler for a high level language that you don&rsquo;t really understand.</p>
 <p>I found it useful in that it solidified the rules of Jack and allowed me to project my thoughts of what the compiler would be doing to translate Jack code to VM Code.</p>
 <p>The &ldquo;game&rdquo; I wrote was just enough to feel like I understood the syntax of the language, and isn&rsquo;t really a game at all. I did make a Mooninite from Aqua Teen Hunger Force fire rockets in to a guys mouth, though! No winning or losing criteria were defined but it sure was fun.</p>
 
-<figure>
-  <img style="max-width: 90%;" src="/img/mooninite_game.gif" alt="mooninite_game.gif" />
-  
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/mooninite_game.gif">
+  <figure>
+      <img style="max-width: 90%;" src="/img/mooninite_game.gif" alt="mooninite_game.gif" />
+      
+      
+  </figure>
+</a>
+
 <p>Code for the game <a href="https://github.com/robinovitch61/nand2tetris/tree/master/projects/09/SpaceTetris">here</a>.</p>
 
   </article>
@@ -229,11 +247,14 @@ recursive_fib(<span style="color:#666">10</span>)
 </div>
 </div><p>Note that this gets realllly slow as time goes on, and it isn&rsquo;t very space efficient either. Each progressive call to the function adds a frame to the call stack that uses up some memory. Additionally, repeat operations occur - note how Fib(3) shows up twice in the tree below.</p>
 
-<figure>
-  <img style="max-width: 60%;" src="/img/recursive_fib.png" alt="recursive_fib.png" />
-  <figcaption class="figcaption-text">Recursive Fibonacci &#39;touches&#39; about $ \phi^{n} $ Nodes</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/recursive_fib.png">
+  <figure>
+      <img style="max-width: 60%;" src="/img/recursive_fib.png" alt="recursive_fib.png" />
+      <figcaption class="figcaption-text">Recursive Fibonacci &#39;touches&#39; about $ \phi^{n} $ Nodes</figcaption>
+      
+  </figure>
+</a>
+
 <p>In <a href="https://en.wikipedia.org/wiki/Big_O_notation">Big-O notation</a>, this algorithm is O(~2^n) in time and O(n) in space, both not ideal.</p>
 <h2 id="method-2-dynamic-programming---top-down">Method 2: Dynamic Programming - Top Down</h2>
 <p>This method, sometimes also called &ldquo;Memoization&rdquo;, confusingly references &ldquo;Dynamic Programming&rdquo;. Note that Dynamic Programming has nothing to do with the concept of a Dynamic Programming Language. Dynamic Programming is a method for solving complex problems by breaking them in to smaller sub problems and solving each of these problems once, storing the answer for possible reuse. A Dynamic Programming Language like Python or Javascript can execute code at <a href="https://en.wikipedia.org/wiki/Runtime_(program_lifecycle_phase)">runtime</a> that would require compilation in a Static Programming Language.</p>
@@ -742,11 +763,14 @@ etc.
 <p>Project 7 outlined the idea of multi-stage compilation. Take a high level language and compile it to a &ldquo;Virtual Machine Code&rdquo;, with readable but lower level syntax. This &ldquo;intermediate representation&rdquo; can then be compiled further through assembly to machine code (the 1s and 0s) for a specific hardware platform (e.g. MacOS x86-64). Writing a compiler that does things in a few steps like this (high level programming language -&gt; VM code -&gt; assembly -&gt; machine code) allows parts of the compiler to stay the same across hardware platforms!</p>
 <p>For example, there is some program written in Rust. <a href="https://doc.rust-lang.org/rustc/what-is-rustc.html">The rustc compiler</a> will take it through multiple compilation steps (more than the simplified version outlined by nand2tetris above), only the lower levels of which deal with the specifics of the hardware platform. On the way to machine code, Rust compiles to LLVM IR (low-level virtual machine intermediate representation), which is analogous to the VM code outlined in nand2tetris.</p>
 
-<figure>
-  <img style="max-width: 30%;" src="/img/rust_compilation.png" alt="rust_compilation.png" />
-  
-  <figcaption class="figcaption-text">Source: <a href="https://blog.rust-lang.org/2016/04/19/MIR.html">https://blog.rust-lang.org/2016/04/19/MIR.html</a></figcaption>
-</figure>
+<a class="img-link" target="_blank" href="/img/rust_compilation.png">
+  <figure>
+      <img style="max-width: 30%;" src="/img/rust_compilation.png" alt="rust_compilation.png" />
+      
+      <figcaption class="figcaption-text">Source: <a href="https://blog.rust-lang.org/2016/04/19/MIR.html">https://blog.rust-lang.org/2016/04/19/MIR.html</a></figcaption>
+  </figure>
+</a>
+
 <p>Facilitated by this multi-step approach, <a href="https://github.com/japaric/rust-cross">cross compilation</a> is supported, where code is compiled for a hardware platform different than the one the compiler runs on.</p>
 <p>Project 7 and 8 involve writing the VM code translator (VM code -&gt; assembly for the hack computer). I wrote it in Rust. So my VM code translator is itself compiled in to an analogous intermediate representation before becoming machine code on my Mac. This compiled Rust program is then used to translate another intermediate representation (VM code) to assembly for a non-physical hardware platform (hack)! Wild stuff.</p>
 <p>Other than Nand2Tetris, I continued with interview prep stuff, implementing linked lists, tries, and hash tables from scratch and grinding away at Leetcode style problems. I feel very conflicted by the whole software interview process. Interviewing at Tesla, I was asked highly specific questions about mechanical design (what are the considerations in designing this bolted joint, estimate the pressure in a scuba diver&rsquo;s tank, etc.). I did quite well at these since I took MechE for 5 years in school. But i the end, I did no Mechanical Design during my 2 years at Tesla, primarily contributing through applications of software and data. Similarly, algorithm and system design questions may not be the best indicator of my future job performance. Nonetheless, it&rsquo;s part of the game, and I&rsquo;ll continue the grind, learning along the way!</p>
@@ -759,11 +783,14 @@ etc.
     <p><a href="https://80000hours.org/key-ideas/">80,000 Hours</a> is a non-profit that researches the world&rsquo;s most pressing problems and provides guidance on how to make an impact on them with your career. Apart from the whole &ldquo;saving the world&rdquo; focus, what I love about their basic premise is that <em>your career matters</em>.</p>
 <p>Not only does it matter to you, who will be the one living it out every day and week and month for approximately 80,000 hours, but it matters to the world what you do. The world will be affected by our existence. We can choose how we effect it - did we make some company money serving ads, or did we meaningfully contribute to improving wellbeing in our world?</p>
 
-<figure>
-  <img style="max-width: 70%;" src="/img/shareholders.png" alt="shareholders.png" />
-  
-  <figcaption class="figcaption-text">Source: <a href="http://tomtoro.com/">http://tomtoro.com/</a></figcaption>
-</figure>
+<a class="img-link" target="_blank" href="/img/shareholders.png">
+  <figure>
+      <img style="max-width: 70%;" src="/img/shareholders.png" alt="shareholders.png" />
+      
+      <figcaption class="figcaption-text">Source: <a href="http://tomtoro.com/">http://tomtoro.com/</a></figcaption>
+  </figure>
+</a>
+
 <p>All this to say, it&rsquo;s important that each of us spend a lot of time thinking about who and what we&rsquo;re working for. This thought process prominently plays out during the interview process, when we actually have to decide between competing priorities. How much do we care about impact, culture, money, balance, benefits, and location? These decisions get made by and for us during the interview process.</p>
 <p>Why RC is the best place to go through an interview process:</p>
 <ul>
@@ -788,11 +815,14 @@ INTERESTING THINGS!!!</li>
 Nand2Tetris! I decided to write the remaining software portion of the course
 (projects 6-12) in Rust, feeding two birds with one scone.</p>
 
-<figure>
-  <img style="max-width: 95%;" src="/img/mandel.png" alt="mandel.png" />
-  <figcaption class="figcaption-text">The Mandelbrot set with Rust</figcaption>
-  <figcaption class="figcaption-text">Source: <a href="http://downloads.codecoding.com/rust/Programming%20Rust.pdf">http://downloads.codecoding.com/rust/Programming%20Rust.pdf</a></figcaption>
-</figure>
+<a class="img-link" target="_blank" href="/img/mandel.png">
+  <figure>
+      <img style="max-width: 95%;" src="/img/mandel.png" alt="mandel.png" />
+      <figcaption class="figcaption-text">The Mandelbrot set with Rust</figcaption>
+      <figcaption class="figcaption-text">Source: <a href="http://downloads.codecoding.com/rust/Programming%20Rust.pdf">http://downloads.codecoding.com/rust/Programming%20Rust.pdf</a></figcaption>
+  </figure>
+</a>
+
 <p>While I started learning Rust with the <a href="http://downloads.codecoding.com/rust/Programming%20Rust.pdf">the O&rsquo;Reilly Book</a>, I&rsquo;ve found <a href="https://doc.rust-lang.org/book/">The Rust Programming Language</a> and <a href="https://github.com/rust-lang/rustlings">Rustlings</a> to be great resources as well. It was also incredibly helpful when Evan installed Rust Language Server (RLS) in my VSCode environment, making it easy to view source code and highlighting errors before compile time. This had to have increased the learning rate 3x or so. Rust is incredibly strict in comparison to the dynamic programming that I&rsquo;m used to. This quote sums it up and keeps me going:</p>
 <blockquote>
 <p>I’ve found that Rust has forced me to learn many of the things that I was slowly learning as ‘good practice’ in C/C++ before I could even compile my code. &hellip;I want to stress that Rust isn’t the kind of language you can learn in a couple days and just deal with the hard/technical/good-practice stuff later. You will be forced to learn strict safety immediately and it will probably feel uncomfortable at first. However in my own experience, this has led me towards feeling like compiling my code actually means something to me again. —Mitchell Nordine</p>
@@ -815,11 +845,14 @@ Nand2Tetris! I decided to write the remaining software portion of the course
 <p>Nand2Tetris project 4 breaks away from the Hardware Description Language of the first three projects and moves in to a pseudo assembly code. This assembly language is specifically written for the &ldquo;Hack&rdquo; computer that the class builds up through the first six projects. Writing in &ldquo;assembly&rdquo; is one step down from writing in something like C - there is no automatic memory management, only a couple registers to play with, lots of referencing addresses with pointers and semi-roundabout ways of doing things.</p>
 <p>It is super cool to see how assembly actually translates directly to binary to operate at the hardware level. I&rsquo;ve included my solution to &ldquo;making a screen black if a key is pushed and white if no key is pushed&rdquo; at the bottom of this post. I&rsquo;m looking forward to finishing the Hack computer and the first half of the course (!) over the next couple weeks.</p>
 
-<figure>
-  <img style="max-width: 95%;" src="/img/project4.gif" alt="project4.gif" />
-  <figcaption class="figcaption-text">Push button, screen goes black</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/project4.gif">
+  <figure>
+      <img style="max-width: 95%;" src="/img/project4.gif" alt="project4.gif" />
+      <figcaption class="figcaption-text">Push button, screen goes black</figcaption>
+      
+  </figure>
+</a>
+
 <p>The resume update was necessary and a fun application of my responsive web dev Scrimba course. I&rsquo;m continuing to slowly work through that and have found it very clear and satisfying. Fall 1&rsquo;ers are ramping up their interview frequencies and proportion of time dedicated towards the job hunt. It makes me nervous and excited for the last month of my time at Recurse where I&rsquo;ll probably be doing the same.</p>
 <p>After last week&rsquo;s frustration with the statistics textbook, I decided to slow down and zoom in on linear regression. While it&rsquo;s an &ldquo;introductory&rdquo; modeling technique in practice, I&rsquo;ve never fully understood the underpinings of it! I&rsquo;m realizing you truly can&rsquo;t understand the foundation of linear regression without understanding a TON of foundational statistics. Additionally, many models can be seen as direct or indirect extensions of linear regression, making it a good thing to start with. It has been a very good exercise to go through everything thoroughly and summarize it in a <a href="https://robinovitch61.github.io/posts/linear-regression/">big ol' plog bost</a>, which I will continue to update as I delve deeper into the topic.</p>
 <p>I hope to write more actual code next week and keep the learning rolling.</p>
@@ -1205,11 +1238,14 @@ D;JEQ // <span style="color:#008000;font-weight:bold">if</span> paintword is 0, 
     <p>This week, I completed project 3 of Nand2Tetris, learned some deeper fundamentals of statistical learning in R, and wrote my first interactive thing in D3.</p>
 <p><a href="https://d3js.org/">D3.js</a> is a widely used javascript library for creating beautiful, interactive visualizations on the web. I made quite a simple interactive sine wave plotter, but the exercise took hours and really helped me gain insight in to D3&rsquo;s declarative approach to data-centric object manipulation. Code for the thing <a href="https://gist.githubusercontent.com/robinovitch61/5b61f550b3b0cd279c6e8a3679a9623e/raw/d8dfa4ee588339bae1ae60d0f0e60be68f4d3ba6/d3_sine_wave.html">here</a>. Play with it <a href="https://jsfiddle.net/robinovitch61/3nwjzkdx/">here</a>.</p>
 
-<figure>
-  <img style="max-width: 95%;" src="/img/d3-sine.gif" alt="d3-sine.gif" />
-  <figcaption class="figcaption-text">D3 Makin&#39; Waves</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/d3-sine.gif">
+  <figure>
+      <img style="max-width: 95%;" src="/img/d3-sine.gif" alt="d3-sine.gif" />
+      <figcaption class="figcaption-text">D3 Makin&#39; Waves</figcaption>
+      
+  </figure>
+</a>
+
 <p>R is a tool for statistical computing and visualization. It is often used in research and many awesome data scientists work in both python or R depending on the application. Much like python, there have been a huge number of tools and packages built for and on top of R (matplotlib = ggplot2, Plotly&rsquo;s Dash = Rstudio&rsquo;s Shiny, Jupyter Notebooks = R Markdown, etc.)</p>
 <p>I was hesitant on learning R because so much of the language has a python analog and I&rsquo;m already proficient in python. After some conversation and reflection though, it does seem like a good thing to learn. The language of R is geared explicitly towards statistics. As a basic example, here is how to get 100 samples from a normal distribution with zero mean and unity variance in each language:</p>
 <div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">
@@ -1236,11 +1272,14 @@ np<span style="color:#666">.</span>random<span style="color:#666">.</span>normal
 </div>
 </div><p>It&rsquo;s not just that it&rsquo;s 2 lines of code versus 1. It&rsquo;s that <code>rnorm</code> is built in to the standard library in R whereas in python you have to import a package like <code>numpy</code> or <code>scipy</code>. I use these packages so much in python that I sometimes forget they&rsquo;re not in the standard library! This reinforces the premise that <em>python is the second best language for everything</em>. R should help me think statistically as it is a language primarily written for statistical thinking.</p>
 
-<figure>
-  <img style="max-width: 95%;" src="/img/r-bane.png" alt="r-bane.png" />
-  <figcaption class="figcaption-text">In response to PythonMan</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/r-bane.png">
+  <figure>
+      <img style="max-width: 95%;" src="/img/r-bane.png" alt="r-bane.png" />
+      <figcaption class="figcaption-text">In response to PythonMan</figcaption>
+      
+  </figure>
+</a>
+
 <p>I was alternatingly enthralled by and so frustrated with the textbook <a href="http://faculty.marshall.usc.edu/gareth-james/ISL/">An Introduction to Statistical Learning</a> this week. The second chapter is so methodical in describing intuition for general model fitting, the bias-variance tradeoff, what model flexibility implies - all these great fundamental concepts! Then the third chapter seems to try to summarize all of mankind&rsquo;s theory on linear regression in 60 quite dense, sometimes incomprehensible pages&hellip;enter the frustration.</p>
 <p>In our Machine Learning meetup group, the group was split on the textbook. I&rsquo;ve come to the conclusion that I&rsquo;ll just have to take it slower and reference outside resources when required. Two chapters/week is way too ambitious. I&rsquo;ll take the R exercises seriously and try to do derivations and note taking myself as required.</p>
 <p>The way I&rsquo;m seeing things is the interactive data viz/web dev stuff is fun and lighter, the stats fundamentals is hard and necessary, and Nand2Tetris is perfectly balanced between the two. There&rsquo;s definitely the ongoing struggle with wanting to learn more, faster, but someone referenced this quote in their technical presentation this week and it was quite helpful:</p>
@@ -1257,26 +1296,35 @@ np<span style="color:#666">.</span>random<span style="color:#666">.</span>normal
 <p>Computer architecture work has come from the awesome <a href="https://www.nand2tetris.org/">Nand2Tetris course</a> by Shimon Schocken and Noam Nisan. Shimon has a <a href="https://www.ted.com/talks/shimon_schocken_the_self_organizing_computer_course?language=pt">fantastic Ted Talk about the course</a> and many Recursers have done it in the past. I&rsquo;m 2 projects in to the first half of the course (<a href="https://www.coursera.org/learn/build-a-computer/home/welcome">Coursera link</a>)</p>
 <p>The premise is that you start with a <code>Nand</code> (&ldquo;Not And&rdquo;) logic gate. The first project, you build other elementary logic gates from the <code>Nand</code> gate (e.g. <code>Not(x) = x Nand x</code>, furthermore <code>x And y = Not(x Nand y)</code>; etc.) The 12th and last project, you complete the operating system that you have built up from the <code>Nand</code> gate, with the 10 projects in between filling in all the gaps. You could build tetris (or any similar game) in the completed computer you have built &ldquo;from scratch&rdquo;.</p>
 
-<figure>
-  <img style="max-width: 95%;" src="/img/nand2tetris_overview.png" alt="nand2tetris_overview.png" />
-  <figcaption class="figcaption-text">The Nand2Tetris Overview</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/nand2tetris_overview.png">
+  <figure>
+      <img style="max-width: 95%;" src="/img/nand2tetris_overview.png" alt="nand2tetris_overview.png" />
+      <figcaption class="figcaption-text">The Nand2Tetris Overview</figcaption>
+      
+  </figure>
+</a>
+
 <p>I am excited to keep digging in to the course. At 1 project per week, I&rsquo;ll complete the course just in time! I&rsquo;ve heard the last 6 projects are more time intensive than the first 6, so I&rsquo;m trying to budget time accordingly.</p>
 <p>The other thing I&rsquo;ve been sinking time into is a prototype herd immunity simulation in python. <a href="https://github.com/haack">Alex Haak</a> and I are both excited about interactive data visualization and illustrating concepts through interactive online experiences. Our ultimate goal is to publish something on <a href="https://explorabl.es/">explorabl.es - Explorable Explanations</a>. This site is mind blowing. Don&rsquo;t visit it if you don&rsquo;t have a couple hours to kill.</p>
 <p>Initial results for the simulator are really interesting! I came up with a simplified set of rules that give a certain level of complexity while still massively simplifying the real world. <a href="https://github.com/robinovitch61/herd_immunity">All the code is here.</a></p>
 
-<figure>
-  <img style="max-width: 95%;" src="/img/good_immunity.gif" alt="good_immunity.gif" />
-  <figcaption class="figcaption-text">90% Immunity - Blue Immunity Protec</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/good_immunity.gif">
+  <figure>
+      <img style="max-width: 95%;" src="/img/good_immunity.gif" alt="good_immunity.gif" />
+      <figcaption class="figcaption-text">90% Immunity - Blue Immunity Protec</figcaption>
+      
+  </figure>
+</a>
 
-<figure>
-  <img style="max-width: 95%;" src="/img/bad_immunity.gif" alt="bad_immunity.gif" />
-  <figcaption class="figcaption-text">80% Immunity - Red Sickness Attac</figcaption>
-  
-</figure>
+
+<a class="img-link" target="_blank" href="/img/bad_immunity.gif">
+  <figure>
+      <img style="max-width: 95%;" src="/img/bad_immunity.gif" alt="bad_immunity.gif" />
+      <figcaption class="figcaption-text">80% Immunity - Red Sickness Attac</figcaption>
+      
+  </figure>
+</a>
+
 <p>Alex and I will be working on porting a modified version of this logic in to an awesome interactive data visualization - Alex is great with React, javascript, html, css, and general design so I&rsquo;m excited to learn a lot from him!</p>
 <p>A mostly complete set of rules for the model:</p>
 <ol>
@@ -1330,11 +1378,14 @@ change later accounting for imperfect vaccination success rate).</p>
     <h2>RC 00 (it begins)</h2>
     <p>It is day 3 at the Recurse Center (RC)!</p>
 
-<figure>
-  <img style="max-width: 95%;" src="/img/me-rust-haskell.gif" alt="me-rust-haskell.gif" />
-  <figcaption class="figcaption-text">Me experimenting with Haskell and Rust</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/me-rust-haskell.gif">
+  <figure>
+      <img style="max-width: 95%;" src="/img/me-rust-haskell.gif" alt="me-rust-haskell.gif" />
+      <figcaption class="figcaption-text">Me experimenting with Haskell and Rust</figcaption>
+      
+  </figure>
+</a>
+
 <p>It has been a whirlwind of orientation, meeting awesome people, learning about (and about the existence of) new cool things, setting up and settling in.</p>
 <p>This was my second day here:</p>
 <ul>

@@ -10,7 +10,7 @@ RC 07 (fib 5 ways)
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
-    <link rel="stylesheet" href="https://robinovitch61.github.io/sass/main.min.4499f429c2eec8e0db0527551275bce6067ad5ea295ed5cc754bbf39e4fb4a83.css">
+    <link rel="stylesheet" href="https://robinovitch61.github.io/sass/main.min.a52045891891a7be7e3673f5d0bdbf76eef49ffce8c14b35b87c292ac78f3818.css">
 
     
 
@@ -142,11 +142,14 @@ recursive_fib(<span style="color:#666">10</span>)
 </div>
 </div><p>Note that this gets realllly slow as time goes on, and it isn&rsquo;t very space efficient either. Each progressive call to the function adds a frame to the call stack that uses up some memory. Additionally, repeat operations occur - note how Fib(3) shows up twice in the tree below.</p>
 
-<figure>
-  <img style="max-width: 60%;" src="/img/recursive_fib.png" alt="recursive_fib.png" />
-  <figcaption class="figcaption-text">Recursive Fibonacci &#39;touches&#39; about $ \phi^{n} $ Nodes</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/recursive_fib.png">
+  <figure>
+      <img style="max-width: 60%;" src="/img/recursive_fib.png" alt="recursive_fib.png" />
+      <figcaption class="figcaption-text">Recursive Fibonacci &#39;touches&#39; about $ \phi^{n} $ Nodes</figcaption>
+      
+  </figure>
+</a>
+
 <p>In <a href="https://en.wikipedia.org/wiki/Big_O_notation">Big-O notation</a>, this algorithm is O(~2^n) in time and O(n) in space, both not ideal.</p>
 <h2 id="method-2-dynamic-programming---top-down">Method 2: Dynamic Programming - Top Down</h2>
 <p>This method, sometimes also called &ldquo;Memoization&rdquo;, confusingly references &ldquo;Dynamic Programming&rdquo;. Note that Dynamic Programming has nothing to do with the concept of a Dynamic Programming Language. Dynamic Programming is a method for solving complex problems by breaking them in to smaller sub problems and solving each of these problems once, storing the answer for possible reuse. A Dynamic Programming Language like Python or Javascript can execute code at <a href="https://en.wikipedia.org/wiki/Runtime_(program_lifecycle_phase)">runtime</a> that would require compilation in a Static Programming Language.</p>

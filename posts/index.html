@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
-    <link rel="stylesheet" href="https://robinovitch61.github.io/sass/main.min.4499f429c2eec8e0db0527551275bce6067ad5ea295ed5cc754bbf39e4fb4a83.css">
+    <link rel="stylesheet" href="https://robinovitch61.github.io/sass/main.min.a52045891891a7be7e3673f5d0bdbf76eef49ffce8c14b35b87c292ac78f3818.css">
 
     
 
@@ -78,6 +78,26 @@
     <div class="container">
       
 <h1>DEFAULT LIST</h1>
+
+  <article>
+    <h2>local typescript sandbox</h2>
+    <p>I made a simple live-reloading Typescript sandbox, similar to the <a href="https://codesandbox.io/s/vanilla-typescript-vanilla-ts">Vanilla Typescript CodeSandbox</a>
+but running locally.</p>
+<p>You can run it with <code>node</code> installed or in a docker container.</p>
+<p>I like having a Typescript-ready environment without having to spinup a new react app or something. CodeSandbox was nice, but got pretty laggy at times
+and was hard to version control. Gluing together some tooling to scratch my own itch was fun.</p>
+<p><a href="https://github.com/robinovitch61/typescript-sandbox">Source code</a></p>
+
+<a class="img-link" target="_blank" href="/img/typescript-sandbox.gif">
+  <figure>
+      <img style="max-width: 95%;" src="/img/typescript-sandbox.gif" alt="typescript-sandbox.gif" />
+      
+      
+  </figure>
+</a>
+
+
+  </article>
 
   <article>
     <h2>rodney mullen and mastery</h2>
@@ -155,11 +175,14 @@ for progression in any discipline can help carry me to where I&rsquo;d like to b
     <h2>verbify your arrows</h2>
     <p>This is a diagram from an open source project I was evaluating at work recently, and the subsequent conversations I had:</p>
 
-<figure>
-  <img style="max-width: 60%;" src="/img/noarrows.png" alt="noarrows.png" />
-  
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/noarrows.png">
+  <figure>
+      <img style="max-width: 60%;" src="/img/noarrows.png" alt="noarrows.png" />
+      
+      
+  </figure>
+</a>
+
 <p>Me: So their solution is push based?</p>
 <p>Coworker: No, I think they just specify the general protocol.</p>
 <p>Me: But those lines from the squares at the top to the central circle sort of look like arrows, don&rsquo;t they? And their client pushes data&hellip;I think maybe it&rsquo;s push based?</p>
@@ -170,19 +193,25 @@ for progression in any discipline can help carry me to where I&rsquo;d like to b
 <p>&hellip;</p>
 <p>Here are some results from googling &ldquo;architecture diagram&rdquo;:</p>
 
-<figure>
-  <img style="max-width: 100%;" src="/img/manynoarrows.png" alt="manynoarrows.png" />
-  
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/manynoarrows.png">
+  <figure>
+      <img style="max-width: 100%;" src="/img/manynoarrows.png" alt="manynoarrows.png" />
+      
+      
+  </figure>
+</a>
+
 <p>Cool. These things point to each other. I don&rsquo;t know how they relate, just apparently there&rsquo;s a directionality to their relationships.</p>
 <p>Another one:</p>
 
-<figure>
-  <img style="max-width: 100%;" src="/img/somearrows.png" alt="somearrows.png" />
-  
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/somearrows.png">
+  <figure>
+      <img style="max-width: 100%;" src="/img/somearrows.png" alt="somearrows.png" />
+      
+      
+  </figure>
+</a>
+
 <p>This is a bit better. I know the Gateway transfers JSON over HTTP. Does it POST a JSON body from the Gateway to the arrow targets, or does the Gateway send a GET request to the arrow targets and receive a JSON response? Maybe both?</p>
 <p>Both of these use Gateway TO arrow targets, just like the direction of the arrows, but have very different implications. If both occur, why not say so?</p>
 <p>If I knew the domain specific context of the relationships of these entities, maybe it&rsquo;s obvious. Maybe if I thought about it more, it would become obvious. But the diagram would ideally communicate the relationships clearly without a lot of thought or inference required.</p>
@@ -200,11 +229,14 @@ for progression in any discipline can help carry me to where I&rsquo;d like to b
 <p>In the <a href="https://graphviz.gitlab.io/gallery/">graphviz gallery</a> - open source software built for making diagrams of blobs with arrows between them - almost none of the examples contain labeled arrows, despite this being a <a href="https://graphviz.org/doc/info/attrs.html#d:label">first class feature in graphviz</a>.</p>
 <p>Here is a decent example, ~10 images into the &ldquo;architecture diagram&rdquo; image search:</p>
 
-<figure>
-  <img style="max-width: 100%;" src="/img/goodarrows.png" alt="goodarrows.png" />
-  
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/goodarrows.png">
+  <figure>
+      <img style="max-width: 100%;" src="/img/goodarrows.png" alt="goodarrows.png" />
+      
+      
+  </figure>
+</a>
+
 <p>Let&rsquo;s label our arrows more and communicate better, faster.</p>
 
   </article>
@@ -746,11 +778,14 @@ for progression in any discipline can help carry me to where I&rsquo;d like to b
 <p>I got my friend Matt&rsquo;s name out of a hat. Matt primarily loves bikes and plants, and I went with plants.</p>
 <p>The result is <a href="https://matt.garden">matt.garden</a>, an interactive, animated, svg-laden 10 day advent calendar of plants, many of which Matt has in his real garden.</p>
 
-<figure>
-  <img style="max-width: 100%;" src="/img/matt-garden.png" alt="matt-garden.png" />
-  
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/matt-garden.png">
+  <figure>
+      <img style="max-width: 100%;" src="/img/matt-garden.png" alt="matt-garden.png" />
+      
+      
+  </figure>
+</a>
+
 <p>It was super fun to build, and involved way more art than code in the end. An artiste, I am not, so I watched a lot of Inkscape and design tutorials on youtube and did my best to keep things simple and cute.</p>
 <p><a href="https://inkscape.org/">Inkscape</a> is awesome - free and open source software, quite capable and performant, XML editor for adding <code>class</code> and <code>id</code> to groups and elements for easy css animation, and generally just a pleasure to work with.</p>
 <p>It was fun to learn css animation more in depth too! I may have gone a bit overboard with it - things look a bit janky on my Brave browser in desktop, but Safari on mobile seems to take it all in stride.</p>
@@ -1354,28 +1389,37 @@ for progression in any discipline can help carry me to where I&rsquo;d like to b
   <article>
     <h2>color commentary</h2>
     
-<figure>
-  <img style="max-width: 120%;" src="/img/cc_collage.png" alt="cc_collage.png" />
-  <figcaption class="figcaption-text">Twitter bird - blue or purple?</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/cc_collage.png">
+  <figure>
+      <img style="max-width: 120%;" src="/img/cc_collage.png" alt="cc_collage.png" />
+      <figcaption class="figcaption-text">Twitter bird - blue or purple?</figcaption>
+      
+  </figure>
+</a>
+
 <p>About 6 weeks ago, I launched <a href="https://colorcontroversy.com">colorcontroversy.com</a>. Since then, the site has collected over 800,000 color judgements and been shared around the web more than I expected.</p>
 <p>A much-simplified version of Randal Monroe of XKCD&rsquo;s <a href="https://blog.xkcd.com/2010/05/03/color-survey-results/">color survey</a>, the site shows you a color shade and presents two color choices for that shade. For example, it shows you a <span style="color: #00878e;">dark turquoise</span> and asks you if it&rsquo;s <span style="color: limegreen;">Green</span> or <span style="color: #547cff;">Blue</span>. Then it shows you what other people thought it was.</p>
 
-<figure>
-  <img style="max-width: 70%;" src="/img/turquoise-result.png" alt="turquoise-result.png" />
-  
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/turquoise-result.png">
+  <figure>
+      <img style="max-width: 70%;" src="/img/turquoise-result.png" alt="turquoise-result.png" />
+      
+      
+  </figure>
+</a>
+
 <p>This the first thing I&rsquo;ve put out there that I wanted lots of random people to use and enjoy. I learned a lot from building it, some of which is discussed below.</p>
 <h2 id="dont-design-in-htmlcss">don&rsquo;t design in html/css</h2>
 <p>Unless you&rsquo;re <a href="https://lynnandtonic.com/">Lynn Fisher</a>, it can be pretty difficult to translate designs from your head immediately into code. This is obvious to any designer or artistic person, but these things I am not.</p>
 
-<figure>
-  <img style="max-width: 70%;" src="/img/figma-cc-mobile.png" alt="figma-cc-mobile.png" />
-  <figcaption class="figcaption-text">Note the original skull logo</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/figma-cc-mobile.png">
+  <figure>
+      <img style="max-width: 70%;" src="/img/figma-cc-mobile.png" alt="figma-cc-mobile.png" />
+      <figcaption class="figcaption-text">Note the original skull logo</figcaption>
+      
+  </figure>
+</a>
+
 <p>Turns out clicking and dragging is a lot easier than CSS when in ideation. The mocks were mostly done before I wrote a line of code. I was able to get feedback from friends on a real-looking site without any serious up-front investment.</p>
 <h2 id="sign-up-isnt-just-for-data-collection">sign up isn&rsquo;t just for data collection</h2>
 <p>The things that take my breath away on the internet almost always load and immerse quickly. A <a href="https://paveldogreat.github.io/WebGL-Fluid-Simulation/">fluid simulation</a> or a <a href="https://www.pixelthoughts.co/">peaceful meditation</a> - no sign up flow, no pop ups or ads, no cookie consent required, nothing between you and the experience.</p>
@@ -1427,11 +1471,14 @@ for progression in any discipline can help carry me to where I&rsquo;d like to b
     <p>I have been very fortunate to remain employed during this global pandemic. My productivity working from home has been about on par with what I had in the office, although my learning rate has gone down a bit due to the lack of water-cooler style chats about the product and software in general. We use Slack for remote chat and it feels a bit too formal to trigger notifications for offhand questions.</p>
 <p>My free time has been sometimes well-spent, sometimes less so. One of the efforts I&rsquo;m proud of is <a href="https://covid19medstudents.ca/">covid19medstudents.ca</a>. In the spirit <a href="https://robinovitch61.github.io/posts/gifting-websites/">gifting websites</a> and leveraging tech to help the COVID relief effort in some way, I collaborated with a good friend from home to make this site. My friend is president of his medical student&rsquo;s society, and along with a talented designer on his team (<a href="http://www.nancyduanart.com/">Nancy Duan</a>, <a href="https://www.instagram.com/nancyduanart/?hl=en">@nancyduanart</a>), we created an online index of volunteer opportunities and resources aimed at medical students and physicians in Western Canada. It has connected physicians and med students to ~50 projects across 3 provinces over the last couple months.</p>
 
-<figure>
-  <img style="max-width: 95%;" src="/img/covid19medstudentshome.png" alt="covid19medstudentshome.png" />
-  <figcaption class="figcaption-text">The landing page is very pretty IMO</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/covid19medstudentshome.png">
+  <figure>
+      <img style="max-width: 95%;" src="/img/covid19medstudentshome.png" alt="covid19medstudentshome.png" />
+      <figcaption class="figcaption-text">The landing page is very pretty IMO</figcaption>
+      
+  </figure>
+</a>
+
 <p>It was a satisfying effort. I was feeling quite useless during the early stages of the pandemic, being neither essential nor truly negatively effected. I enjoyed working with a friendly client to fulfill a vision, working with a skilled designer to make things look great, and hearing about volunteers getting connected to projects through the site.</p>
 <p>I&rsquo;ve also had the chance to be a Section Leader for Stanford&rsquo;s online &ldquo;Code In Place&rdquo; class. The instructors of CS106A, a relatively well-known intro to programming course offered by Stanford, decided to run a remote &ldquo;first half of the course&rdquo; over 6 weeks of instruction during COVID. Over 5 of those weeks, I met up with ~8 students via zoom as a teaching assistant and we worked through Python challenges together. Participants were brand new to programming and from a huge variety of backgrounds. Seeing them grow and progress over the 5 weeks from learning what a variable was to writing their own text parsers was so very cool.</p>
 <p>Another fun project has been taking on the semi-famous <a href="https://cryptopals.com/">cryptopals cryptography challenges</a>. Many sharp folks at the <a href="https://www.recurse.com/">Recurse Center</a> were working on these during my time there and I had heard it was a good way to learn a new programming language. I&rsquo;m <a href="https://github.com/robinovitch61/cryptopals/tree/master/src">solving them in Scala</a> as that&rsquo;s the primary language used at my work, and I&rsquo;ve also taken the opportunity to encorporate a test driven development approach to the challenges. My tests vary in quality, from <code>&quot;frequencyScore&quot; should &quot;be smaller for more englishey things&quot;</code> to <code>&quot;encodeToHexWithXorVigenere&quot; should &quot;encode correctly&quot;</code>.</p>
@@ -1468,11 +1515,14 @@ cymbal</p>
 <p>I&rsquo;ve also been playing a good amount of Zelda: Breath of the Wild, Rocket
 League, and Super Smash Bros. Finally, I&rsquo;m now a plant Dad.</p>
 
-<figure>
-  <img style="max-width: 95%;" src="/img/plontz.JPG" alt="plontz.JPG" />
-  <figcaption class="figcaption-text">Proud of my lil&#39; guys!</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/plontz.JPG">
+  <figure>
+      <img style="max-width: 95%;" src="/img/plontz.JPG" alt="plontz.JPG" />
+      <figcaption class="figcaption-text">Proud of my lil&#39; guys!</figcaption>
+      
+  </figure>
+</a>
+
 
   </article>
 
@@ -1481,31 +1531,40 @@ League, and Super Smash Bros. Finally, I&rsquo;m now a plant Dad.</p>
     <p>Over the past year or so, I have gifted friends a few websites. I think the sites are fun, relatively unique gifts. As a bonus serve, they illustrate some of my progression with basic html/css/javascript static websites.</p>
 <h2 id="site-1-averyrobinscomhttpswwwaveryrobinscom">Site 1: <a href="https://www.averyrobins.com">averyrobins.com</a></h2>
 
-<figure>
-  <img style="max-width: 100%;" src="/img/averyrobins.png" alt="averyrobins.png" />
-  
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/averyrobins.png">
+  <figure>
+      <img style="max-width: 100%;" src="/img/averyrobins.png" alt="averyrobins.png" />
+      
+      
+  </figure>
+</a>
+
 <p>I set up an Amazon S3 bucket for static hosting, bought a namecheap domain name, configured the custom DNS, and voila - I now pay $1/month to host this profanity-laden ASCII art. 90% of the time went to setting up, hosting and routing the content - I spent about 20mins on the actual index.html file.</p>
 <p>When my content first appeared when I typed <a href="https://averyrobins.com">averyrobins.com</a></a> in to my browser, I was so stoked. I was suddenly a contributor to the previously untouchable monolith of public knowledge, beauty and idiocy that is the internet.</p>
 <p>Avery was a fan! Much as I felt when this site went live, it&rsquo;s generally pretty cool to have a public URI that points out your existence. Anyone can see it anywhere from any connected device. For me, this also brings a healthy level of discomfort.</p>
 <h2 id="site-2-lettikittelcomhttpslettikittelcom">Site 2: <a href="https://lettikittel.com">lettikittel.com</a></h2>
 
-<figure>
-  <img style="max-width: 100%;" src="/img/lettikittel.png" alt="lettikittel.png" />
-  
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/lettikittel.png">
+  <figure>
+      <img style="max-width: 100%;" src="/img/lettikittel.png" alt="lettikittel.png" />
+      
+      
+  </figure>
+</a>
+
 <p>A similar gift exchange with the same group of friends rolled around this year, this time for Valentine&rsquo;s Day - a &ldquo;sexy&rdquo; gift exchange. I decided to step up my website gifting game with some basic interactivity. What&rsquo;s a sexier gift than a static website with some basic javascript?</p>
 <p>Since the days of averyrobins.com, I had taken a few courses on <a href="https://scrimba.com/">scrimba.com</a> and learned how to style up a mostly-responsive site by building this one you&rsquo;re on now. My site is currently hosted through <a href="https://pages.github.com/">Github Pages</a> connected to a namecheap domain. I realized I could save the $1/month AWS fee (and a bunch of setup time) by creating a github account for Letti and doing the same thing there for her site.</p>
 <p>Since the setup was so quick, I was actually able to focus on the styling and content of the site a lot more. It was fun to mess around with something that ended up pretty much looking like a customized MySpace page.</p>
 <h2 id="site-3-katerinejimenezcomhttpskaterinejimenezcom">Site 3: <a href="https://katerinejimenez.com">katerinejimenez.com</a></h2>
 
-<figure>
-  <img style="max-width: 100%;" src="/img/katjimenez.png" alt="katjimenez.png" />
-  
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/katjimenez.png">
+  <figure>
+      <img style="max-width: 100%;" src="/img/katjimenez.png" alt="katjimenez.png" />
+      
+      
+  </figure>
+</a>
+
 <p>Kat was hosting her blog on wix.com, and without paying the annual fee, the wixsite.com subdomain was displayed in the URI. How could anyone take the content seriously with such a subdomain!? It was absolutely necessary for me to invest hours into porting the content to an entirely new platform.</p>
 <p>I made Kat buy the domain name on namecheap and gave her a list of Jekyll themes. She picked one she liked and I emulated the layout and style, again hosting it on Github Pages. I think it looks quite nice.</p>
 <p>In conclusion, websites can make a great gift for any occasion. These little projects taught me a lot about how the web works&ndash;I started from quite an unknowledgeable place&ndash;and I enjoyed making them a lot!</p>
@@ -1532,37 +1591,49 @@ League, and Super Smash Bros. Finally, I&rsquo;m now a plant Dad.</p>
 </blockquote>
 <p>Unfortunately, research often only measures income, as consumption is more difficult to reliably quantify. A reasonable approximation is to assume that consumption and income are equivalent:</p>
 
-<figure>
-  <img style="max-width: 80%;" src="/img/income_consumption.png" alt="income_consumption.png" />
-  
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/income_consumption.png">
+  <figure>
+      <img style="max-width: 80%;" src="/img/income_consumption.png" alt="income_consumption.png" />
+      
+      
+  </figure>
+</a>
+
 <p>From this point forward in my discussion and in all Givewell documentation, it is reasonable to think of income and consumption as equivalent unless otherwise stated. I will arbitrarily choose to use the term consumption to represent both.</p>
 <p>When examining consumption in relation to well-being (well-being representing self-reported happiness, decrease in suffering, hope for the future, etc.), it&rsquo;s intuitively true that increasing consumption linearly would yield diminishing returns in well-being. At low levels of consumption, an extra \$10/day may result in a doubling or tripling of one&rsquo;s well being! At high levels of consumption, an extra \$10/day may feel almost like an insult if its meant to measurably increase ones well-being - the economic equivalent of <a href="https://www.youtube.com/watch?v=cW-wTkUBBeo">&ldquo;you want a cookie or something?&quot;</a>.</p>
 <p>For each base on the plot below, it can be said that &ldquo;well-being increases an equivalent amount (one unit) each time consumption is multiplied by {the base}&rdquo;.</p>
 
-<figure>
-  <img style="max-width: 80%;" src="/img/consumption_dim.png" alt="consumption_dim.png" />
-  
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/consumption_dim.png">
+  <figure>
+      <img style="max-width: 80%;" src="/img/consumption_dim.png" alt="consumption_dim.png" />
+      
+      
+  </figure>
+</a>
+
 <p>Another idea: rather than a linear increase in consumption increasing well-being a proportional amount, a doubling in consumption increases well-being a proportional amount. So \$10/day to \$20/day increases well-being an equivalent amount as \$5,000/day to \$10,000/day. This is a logarithmic relationship, in this case base 2 for a doubling. In practice, Givewell uses base $e \approx 2.72$, which isn&rsquo;t much different.</p>
 
-<figure>
-  <img style="max-width: 80%;" src="/img/log_consumption_lin.png" alt="log_consumption_lin.png" />
-  
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/log_consumption_lin.png">
+  <figure>
+      <img style="max-width: 80%;" src="/img/log_consumption_lin.png" alt="log_consumption_lin.png" />
+      
+      
+  </figure>
+</a>
+
 <p>This is assumption is supported in <a href="http://users.nber.org/~jwolfers/papers/Satiation(AER).pdf">this paper</a> which provides the plot shown below. Givewell recognizes the uncertainty here:</p>
 <blockquote>
 <p>&ldquo;The actual relationship between well-being and wealth is hotly debated.&rdquo; (<a href="https://docs.google.com/document/d/1ZKq-MNU-xtn_48uN33L6VvBEZRAduvjwWMeaEffL4K4/edit#">source</a>)</p>
 </blockquote>
 
-<figure>
-  <img style="max-width: 80%;" src="/img/wellbeing_gdp.png" alt="wellbeing_gdp.png" />
-  
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/wellbeing_gdp.png">
+  <figure>
+      <img style="max-width: 80%;" src="/img/wellbeing_gdp.png" alt="wellbeing_gdp.png" />
+      
+      
+  </figure>
+</a>
+
 <p>The above research shows one measure on the y-axis: the satisfaction ladder, a measure of self-reported happiness. Givewell extrapolates this research such that the y-axis can just represent well-being of any metric. This is reasonable as long as the assumption that a linear-logarithmic relationship exists between consumption and the metric serving as a proxy for well-being.</p>
 <p>The constant slope of the linear-logarithmic between well-being and consumption is something useful. It represents the <em>increase in well-being per unit increase in $ln(consumption)$</em>.</p>
 <p>Givewell asks &ldquo;what would be the increase in well-being per a doubling of consumption from $c_1$ to $2c_1$?&rdquo;. This doubling of consumption is chosen arbitrarily and doesn&rsquo;t have anything to do with the base of the model - logarithmic base remains $e$.</p>
@@ -1586,22 +1657,28 @@ $$ \Delta WB = 2x $$</p>
   <article>
     <h2>concurrency in python</h2>
     
-<figure>
-  <img style="max-width: 70%;" src="/img/concurrency.png" alt="concurrency.png" />
-  <figcaption class="figcaption-text">Concurrency ! easy is</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/concurrency.png">
+  <figure>
+      <img style="max-width: 70%;" src="/img/concurrency.png" alt="concurrency.png" />
+      <figcaption class="figcaption-text">Concurrency ! easy is</figcaption>
+      
+  </figure>
+</a>
+
 <p>Concurrency is of paramount importance in modern computing. It is a complex domain in itself, with major contributions from database development, machine learning, distributed application deployment, and academia.</p>
 <p>Python requires a clear and simple concurrency framework as it is commonly used in high-compute settings like training neural networks. Matrix algebra has been made fast with NumPy and related tools, interfacing with C to get large performance improvements. In the machine learning context, Python often combines concurrency with this efficient toolset to yield readable, easily iterated-upon, and rapid results.</p>
 <p>Modern computers already use concurrency for almost everything. It is likely that the machine you&rsquo;re reading this on has multiple cores/CPUs, each of which runs multiple processes (multiprocessing). Processes are just programs given a &ldquo;time chunk&rdquo; in which to run on a CPU, after which their state is cached efficiently while the next program runs. If a process is running and itself needs to do multiple things (e.g. show a loading icon while also actually loading the content), a process gets split in to threads, which themselves get allocated time chunks from the overall process&rsquo;s time chunk. Processes usually run separate from and possibly in parallel with other processes, with strictly defined ways of interacting with one another.</p>
 <p>Underlying the original CPython interpreter is the Global Interpreter Lock (GIL). This ensures that the Python interpreter is controlled by only one thread at a time. This is mainly because Python cleans up memory by &ldquo;reference counting&rdquo; instead of other means like garbage collection, ownership, etc. If the reference count for an object drops to zero, Python releases the memory allocated for that object. But multiple threads could change the reference count for an object at the same time, possibly causing memory errors and weird bugs. The GIL is a single lock on the Python interpreter, ensuring that memory is properly managed and no <a href="https://en.wikipedia.org/wiki/Deadlock">deadlocks</a> occur. Because Python was designed decades ago and parallel processing wasn&rsquo;t as high priority, this solution to memory management assumption wasn&rsquo;t seen as a big deal back then.</p>
 <p>Unfortunately, this means that multithreading for CPU-intensive tasks in Python doesn&rsquo;t actually expediate computation - you can write code that implies threads are helping to speed up a high CPU task, but the GIL will ensure that only one thread runs at a time anyway! In fact, multithreading on high CPU tasks will actually be SLOWER than a single thread, as the GIL has decently high overhead when locking/unlocking threads. The one place multithreading is advantageous is IO operations, as IO operations <a href="https://stackoverflow.com/questions/29270818/why-is-a-python-i-o-bound-task-not-blocked-by-the-gil">do not require the lock from the GIL</a>.</p>
 
-<figure>
-  <img style="max-width: 70%;" src="/img/cpu_io_bound.png" alt="cpu_io_bound.png" />
-  
-  <figcaption class="figcaption-text">Source: <a href="https://realpython.com/python-concurrency/">https://realpython.com/python-concurrency/</a></figcaption>
-</figure>
+<a class="img-link" target="_blank" href="/img/cpu_io_bound.png">
+  <figure>
+      <img style="max-width: 70%;" src="/img/cpu_io_bound.png" alt="cpu_io_bound.png" />
+      
+      <figcaption class="figcaption-text">Source: <a href="https://realpython.com/python-concurrency/">https://realpython.com/python-concurrency/</a></figcaption>
+  </figure>
+</a>
+
 <p>The degredation of performance with threaded compute and improvement in performance with threaded IO is demonstrated in the following static notebook:</p>
 <script src="https://gist.github.com/robinovitch61/e9f94dabc8d46b269a279759676596a6.js"></script>
 <p>Race conditions occur when data is modified or dropped in an undesirable manner due to a process switching threads before read-modify-write code sections are complete! Here is a complete example of a race condition and how to fix it using locks:</p>
@@ -1627,29 +1704,38 @@ $$ \Delta WB = 2x $$</p>
   <article>
     <h2>statistical bias</h2>
     
-<figure>
-  <img style="max-width: 70%;" src="/img/jigsaw.png" alt="jigsaw.png" />
-  <figcaption class="figcaption-text">Eat my spheres!</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/jigsaw.png">
+  <figure>
+      <img style="max-width: 70%;" src="/img/jigsaw.png" alt="jigsaw.png" />
+      <figcaption class="figcaption-text">Eat my spheres!</figcaption>
+      
+  </figure>
+</a>
+
 <p>You find yourself trapped in a room with  Jigsaw, the villain from the Saw movies. There is a wood box of 100 spheres, some of them steel ball bearings and some of them gumballs. Jigsaw tells you that you can leave the room alive if you guess the number of steel ball bearings in the jar correctly. You can pull 10 random spheres out the 100 in the box as many times as you want, but each time you do, you have to eat all of them (yum!). Jigsaw will then replace the stuff you pulled out of the box with new ones - if you pulled 7 ball bearings and 3 gumballs, 7 and 3 are replaced respectively. You&rsquo;re like &ldquo;cool, I got this, I&rsquo;m just going to do this a bunch of times and average the number of ball bearings I have to eat each time, then multiply the average by 10 and go home to my family of 12&rdquo;. Little did you know, Jigsaw has implanted magnets in your fingertips, attracting the ball bearings. Your estimate will be biased no matter how many spheres you eat. You will be killed, and your family will mourn.</p>
 <p>Bias, both in common vernacular and in statistics, can be thought of as the difference between the average estimate of some truth and the truth itself. Your cousin is biased because his opinions on the evils of gun control, while varied, are on average far from the truth. A statistical model is biased because the average difference between its fitted and true values are non-zero.</p>
 <p>Say you estimate a model parameter, e.g. $ \hat{\beta} $, based off a sample of data. Assuming the data comes from some underlying distribution with true parameter $ \beta $, your estimate $ \hat{\beta} $ is unbiased if the average estimate of it is equal to the true parameter, i.e. $ E[\hat{\beta}] = \beta $.</p>
 <p>The concept of bias-variance tradeoff is fundamental in modeling. Intuitively, bias is the average difference in model prediction to true value, as discussed above. Variance is how much the model changes when you alter the sample data.</p>
 
-<figure>
-  <img style="max-width: 95%;" src="/img/high_and_low_bias.png" alt="high_and_low_bias.png" />
-  <figcaption class="figcaption-text">High and low model bias</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/high_and_low_bias.png">
+  <figure>
+      <img style="max-width: 95%;" src="/img/high_and_low_bias.png" alt="high_and_low_bias.png" />
+      <figcaption class="figcaption-text">High and low model bias</figcaption>
+      
+  </figure>
+</a>
+
 <p>Say, theoretically, that your goal is to have a good model. You might say &ldquo;I want my model&rsquo;s predictions to be close to reality&rdquo;. Even, &ldquo;I want the average squared-error of my models predictions to be minimized!&rdquo;. That&rsquo;s not a bad idea! But wait - the image on the left above looks great for that, right? Why is that not the best model? Because the points that this model is going through don&rsquo;t represent all the possible points - it&rsquo;s just a data sample. If you got some more data, your model might not perform very well - its mean-squared error (MSE) might go up.</p>
 <p>Demonstrated visually, 3 models fit the data below. They increase in number of predictors, i.e. flexibility of the model. Note how there is always some model error (dashed line on right) - this is the irreducible error, due to things like randomness in the generation of future data and inability to parameterize the universe. The red line represents our test error, our test set being some data we withheld from the model while estimating its parameters. The grey line represents the training error, based on the data we estimated our model parameters with. Training error CAN go to zero, as in the left image above, but we really care about our test error. Test error represents our model&rsquo;s ability to make accurate future predictions.</p>
 
-<figure>
-  <img style="max-width: 95%;" src="/img/bias_variance.png" alt="bias_variance.png" />
-  <figcaption class="figcaption-text">The bias-variance tradeoff</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/bias_variance.png">
+  <figure>
+      <img style="max-width: 95%;" src="/img/bias_variance.png" alt="bias_variance.png" />
+      <figcaption class="figcaption-text">The bias-variance tradeoff</figcaption>
+      
+  </figure>
+</a>
+
 <p>Note that MSE can be mathematically decomposed in to bias and variance terms. Assume for some data sample/training set, it came from same &ldquo;data generating function&rdquo; $y = f(x) + \epsilon $ where $ \epsilon \sim N(0, \sigma^2) $. We want to find the $ \hat{f}(x) $ that results in predictions for $ y $ that minimize MSE for data even outside our sample.</p>
 <p>$$ E[(y - \hat{f}(x))^2] = MSE $$
 $$ = Bias[\hat{f}(x)]^2 + Var(\hat{f}(x)) + \sigma^2 $$</p>
@@ -1657,18 +1743,24 @@ $$ = Bias[\hat{f}(x)]^2 + Var(\hat{f}(x)) + \sigma^2 $$</p>
 <p>The bias-variance tradeoff has an important consequence: it is possible that an increase in bias can actually decrease variance to the point where overall MSE is better! A good model minimizes MSE, not just bias or variance.</p>
 <p>A concrete example of biased estimators exists below. Generating many samples from an underlying function, both MLE and OLS methods result in unbiased estimates of weights:</p>
 
-<figure>
-  <img style="max-width: 95%;" src="/img/unbiased_weights.png" alt="unbiased_weights.png" />
-  <figcaption class="figcaption-text">The mean estimate for each weight is the same as the red true value</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/unbiased_weights.png">
+  <figure>
+      <img style="max-width: 95%;" src="/img/unbiased_weights.png" alt="unbiased_weights.png" />
+      <figcaption class="figcaption-text">The mean estimate for each weight is the same as the red true value</figcaption>
+      
+  </figure>
+</a>
+
 <p>Importantly, the MLE estimate for error variance $ \sigma^2 $ is biased, whereas the OLS estimate is unbiased. Note that the only difference between the MLE and OLS estimates is dividing by $ m - n $, the number of samples minus the number of predictors. Some intuition for how sample variance is biased without this division can be built from <a href="https://proofwiki.org/wiki/Bias_of_Sample_Variance">this proof</a>, while a more involved proof of the unbiased OLS error variance formula <a href="https://stats.stackexchange.com/questions/20227/why-is-rss-distributed-chi-square-times-n-p">lies here</a>.</p>
 
-<figure>
-  <img style="max-width: 95%;" src="/img/biased_mle_error_var.png" alt="biased_mle_error_var.png" />
-  <figcaption class="figcaption-text">MLE (left) mean estimate differs from the true value</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/biased_mle_error_var.png">
+  <figure>
+      <img style="max-width: 95%;" src="/img/biased_mle_error_var.png" alt="biased_mle_error_var.png" />
+      <figcaption class="figcaption-text">MLE (left) mean estimate differs from the true value</figcaption>
+      
+  </figure>
+</a>
+
 <p>Complete code for the simulation can be found in <a href="/ols_vs_mle_bias.html">the static notebook here</a>.</p>
 <p>I hope this helped develop a deeper understanding of statistical bias. If you have any additions or errors to correct, please open an issue on the source of this website <a href="https://github.com/robinovitch61/the-leo-zone/issues">here</a>.</p>
 <h2 id="references">References:</h2>
@@ -1691,11 +1783,14 @@ $$ = Bias[\hat{f}(x)]^2 + Var(\hat{f}(x)) + \sigma^2 $$</p>
 <p>I have learned linear regression a number of times with varying of levels of detail. I&rsquo;m making this document mostly as a reference for myself and any others who may be interested in the technique.</p>
 <p>The concepts and explanations here come either from <a href="http://faculty.marshall.usc.edu/gareth-james/ISL/">An Introduction to Statistical Learning (ISLR)</a> or <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">The Elements of Statistical Learning (ESLR)</a>. Other sources are listed at the bottom.</p>
 
-<figure>
-  <img style="max-width: 95%;" src="/img/linreg.png" alt="linreg.png" />
-  <figcaption class="figcaption-text">Good ol&#39; linear regression</figcaption>
-  <figcaption class="figcaption-text">Source: <a href="https://en.wikipedia.org/wiki/Linear_regression">https://en.wikipedia.org/wiki/Linear_regression</a></figcaption>
-</figure>
+<a class="img-link" target="_blank" href="/img/linreg.png">
+  <figure>
+      <img style="max-width: 95%;" src="/img/linreg.png" alt="linreg.png" />
+      <figcaption class="figcaption-text">Good ol&#39; linear regression</figcaption>
+      <figcaption class="figcaption-text">Source: <a href="https://en.wikipedia.org/wiki/Linear_regression">https://en.wikipedia.org/wiki/Linear_regression</a></figcaption>
+  </figure>
+</a>
+
 <p>Note that I will put most everything in multiple linear regression matrix format as it extends to any number of predictors, including the $ y = mx+b $ (i.e. $ y = \beta_1x_1 + \beta_0x_0 $) classic simple linear regression.</p>
 <h2 id="notation-and-terminology">Notation and Terminology</h2>
 <ul>
@@ -1719,89 +1814,122 @@ The &ldquo;true&rdquo; relationship or &ldquo;population regression line&rdquo; 
 <h2 id="indicators-that-linear-regression-model-is-lacking">Indicators that Linear Regression Model is Lacking</h2>
 <p>After coming up with a linear regression model, there are various required checks in order to validate that the model is acceptable as a description of the data. If any of the following are true, it is necessary to either improve the data, model or accept linear regression is insufficient as a modeling technique under the given conditions.</p>
 <p>
-<figure>
-  <img style="max-width: 95%;" src="/img/anscombe.png" alt="anscombe.png" />
-  
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/anscombe.png">
+  <figure>
+      <img style="max-width: 95%;" src="/img/anscombe.png" alt="anscombe.png" />
+      
+      
+  </figure>
+</a>
 
-<figure>
-  <img style="max-width: 95%;" src="/img/anscombetable.png" alt="anscombetable.png" />
-  <figcaption class="figcaption-text">The need for checking assumptions</figcaption>
-  <figcaption class="figcaption-text">Source: <a href="https://en.wikipedia.org/wiki/Anscombe%27s_quartet">https://en.wikipedia.org/wiki/Anscombe%27s_quartet</a></figcaption>
-</figure></p>
+
+<a class="img-link" target="_blank" href="/img/anscombetable.png">
+  <figure>
+      <img style="max-width: 95%;" src="/img/anscombetable.png" alt="anscombetable.png" />
+      <figcaption class="figcaption-text">The need for checking assumptions</figcaption>
+      <figcaption class="figcaption-text">Source: <a href="https://en.wikipedia.org/wiki/Anscombe%27s_quartet">https://en.wikipedia.org/wiki/Anscombe%27s_quartet</a></figcaption>
+  </figure>
+</a>
+</p>
 <h3 id="non-linearity-of-the-response-predictor-relationships">Non-linearity of the response-predictor relationships</h3>
 
-<figure>
-  <img style="max-width: 95%;" src="/img/residualvsfit.png" alt="residualvsfit.png" />
-  <figcaption class="figcaption-text">Left plot shows trend in residuals while right plot indicates better fit</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/residualvsfit.png">
+  <figure>
+      <img style="max-width: 95%;" src="/img/residualvsfit.png" alt="residualvsfit.png" />
+      <figcaption class="figcaption-text">Left plot shows trend in residuals while right plot indicates better fit</figcaption>
+      
+  </figure>
+</a>
+
 <p>There should be a linear relationship between the predictors and the response. This can be confirmed or denied by plotting the residuals $ e_i = y_i - \hat{y}_i $ versus the fitted values $ \hat{y}_i $. If the residuals look evenly dispersed about the horizontal access, the model is reasonable. Note that a poor residual plot may just be an indicator of poor predictor selection, e.g. non-linear predictors ($ x^2, \sqrt{x} $, etc.) should be fed in to the model.</p>
 <h3 id="correlation-of-error-terms">Correlation of error terms</h3>
 
-<figure>
-  <img style="max-width: 95%;" src="/img/correlatederrors.png" alt="correlatederrors.png" />
-  <figcaption class="figcaption-text">Correlated errors: adjacent errors tend to be of similar sign and magnitude</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/correlatederrors.png">
+  <figure>
+      <img style="max-width: 95%;" src="/img/correlatederrors.png" alt="correlatederrors.png" />
+      <figcaption class="figcaption-text">Correlated errors: adjacent errors tend to be of similar sign and magnitude</figcaption>
+      
+  </figure>
+</a>
+
 <p>Given ordered data (e.g. time series), plot the residuals in order of time. If patterns arise, it is likely your data has correlated error terms. In time series data, this is also called <a href="https://en.wikipedia.org/wiki/Autocorrelation">autocorrelation</a>. This could occur, for example, if you duplicated your time series dataset - looking at error terms in order, each one would have perfect correlation with the next or previous value! You would get the same parameter fits but drastically different confidence bounds. Other real world examples include sampling biological metrics from the same family or the stock market doing well during certain time periods and poorly in others. At times adding predictors to the model can solve this problem. There are also techniques for removal of autocorrelation with transformation.</p>
 <h3 id="non-constant-variance-of-error-terms">Non-constant variance of error terms</h3>
 <p>
-<figure>
-  <img style="max-width: 95%;" src="/img/heteroscedasticity.png" alt="heteroscedasticity.png" />
-  
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/heteroscedasticity.png">
+  <figure>
+      <img style="max-width: 95%;" src="/img/heteroscedasticity.png" alt="heteroscedasticity.png" />
+      
+      
+  </figure>
+</a>
 
-<figure>
-  <img style="max-width: 95%;" src="/img/heteroscedasticity2.png" alt="heteroscedasticity2.png" />
-  <figcaption class="figcaption-text">Heteroscedasticity can sometimes be removed by transforming the response</figcaption>
-  
-</figure></p>
+
+<a class="img-link" target="_blank" href="/img/heteroscedasticity2.png">
+  <figure>
+      <img style="max-width: 95%;" src="/img/heteroscedasticity2.png" alt="heteroscedasticity2.png" />
+      <figcaption class="figcaption-text">Heteroscedasticity can sometimes be removed by transforming the response</figcaption>
+      
+  </figure>
+</a>
+</p>
 <p>For linear regression&rsquo;s standard errors, confidence bounds, and hypothesis tests, it is assumed that data was generated from a population regression line where the true error $ \epsilon $ is normally distributed with mean 0 and constant variance $ \sigma^2 $, that is $ \epsilon \sim N(0, \sigma^2) $. In reality, it is often the case in that $ \sigma^2 $ varies with the magnitude of the predictors and/or response - this is called heteroscedasticity. Transformation of the response may help the situation. If you have an idea of the variance of error at each response, you can also use weighted least squares.</p>
 <h3 id="data-contain-outliers">Data contain outliers</h3>
 
-<figure>
-  <img style="max-width: 95%;" src="/img/outlier.png" alt="outlier.png" />
-  <figcaption class="figcaption-text">Spot the outlier</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/outlier.png">
+  <figure>
+      <img style="max-width: 95%;" src="/img/outlier.png" alt="outlier.png" />
+      <figcaption class="figcaption-text">Spot the outlier</figcaption>
+      
+  </figure>
+</a>
+
 <p>Outlier points have abnormally high residuals. Methods exist for determining what &ldquo;abnormal&rdquo; means here, including examining the studentized residuals (dividing residuals by their estimated standard error). Outliers may not dramatically affect the weights of a model, but can affect the confidence bounds, hypothesis tests and $ R^2 $ value. Removing outliers is sometimes favorable, especially if they stem from something like measurement error. Before removal, it&rsquo;s important to be sure that outliers aren&rsquo;t actually important pieces of data implying that your model is missing predictors or is somehow otherwise deficient.</p>
 <h3 id="data-contain-high-leverage-points">Data contain high-leverage points</h3>
 
-<figure>
-  <img style="max-width: 95%;" src="/img/leverage.png" alt="leverage.png" />
-  <figcaption class="figcaption-text">Leverage: not just for negotiation anymore</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/leverage.png">
+  <figure>
+      <img style="max-width: 95%;" src="/img/leverage.png" alt="leverage.png" />
+      <figcaption class="figcaption-text">Leverage: not just for negotiation anymore</figcaption>
+      
+  </figure>
+</a>
+
 <p>High leverage points have unusual predictor values, e.g. point 41 on the left plot above. Note that in multiple regression it can appear that high leverage points appear normal if you only examine each predictor value individually (middle graph above). Instead, calculate leverage using the diagonal of the &ldquo;projection matrix&rdquo; $ \mathbf{H} = \mathbf{X}(\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T $. Methods for determining what leverage magnitude is unusual enough to be suspect exist, including the <a href="http://www.lithoguru.com/scientist/statistics/Lecture21.pdf">Williams Graph</a> similar the rightmost plot above.</p>
 <h3 id="collinearity">Collinearity</h3>
 
-<figure>
-  <img style="max-width: 95%;" src="/img/collinearity.png" alt="collinearity.png" />
-  <figcaption class="figcaption-text">Age and limit are not collinear while rating and limit are highly collinear</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/collinearity.png">
+  <figure>
+      <img style="max-width: 95%;" src="/img/collinearity.png" alt="collinearity.png" />
+      <figcaption class="figcaption-text">Age and limit are not collinear while rating and limit are highly collinear</figcaption>
+      
+  </figure>
+</a>
+
 <p>Collinearity occurs when 2 or more predictors are highly related. This reduces the accuracy of the estimates of the weights, as it becomes hard to parse out which predictor is having an effect on the response. Detecting collinearity can be done by calculating the <a href="https://en.wikipedia.org/wiki/Variance_inflation_factor">Variance Inflation Factor</a>, and solved by either removing one of the collinear predictors or combining collinear predictors together.</p>
 <h3 id="endogeneity">Endogeneity</h3>
 <p>Endogeneity occurs when there is correlation between model predictor(s) and the true error term $ \epsilon $. Note that the error term here is NOT the estimated error term $ \hat{\epsilon} $ as a result of the fitted values $ \hat{Y} $, but the true error term in the population regression line $ Y = \mathbf{X}\beta + \epsilon $. An example I found explained it well was the burger regression <a href="https://stats.stackexchange.com/questions/263324/how-can-the-regression-error-term-ever-be-correlated-with-the-explanatory-variab">here</a>. Upon suspicion that a predictor is endogenous, a way to test for it is outlined <a href="https://www.youtube.com/watch?v=61I-8tDgwag">here</a>. Enogeneity is different than heteroscedasticity, as explained <a href="https://stats.stackexchange.com/questions/261329/ols-difference-between-exogeneity-and-homoscedasticity">here</a>.</p>
 <h3 id="notes-on--r2--coefficient-of-determination">Notes on $ R^2 $ (coefficient of determination)</h3>
 
-<figure>
-  <img style="max-width: 95%;" src="/img/rsquared.png" alt="rsquared.png" />
-  <figcaption class="figcaption-text">Increasing $ R^2 $ from left to right</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/rsquared.png">
+  <figure>
+      <img style="max-width: 95%;" src="/img/rsquared.png" alt="rsquared.png" />
+      <figcaption class="figcaption-text">Increasing $ R^2 $ from left to right</figcaption>
+      
+  </figure>
+</a>
+
 <p>$ R^2 $ does nothing except measure the proportion of variability in Y that can be explained using X. It can always be made closer to 1 by adding more features/variables into the linear model, which at a certain point likely results in a too-flexible (overfit) model that fails to minimize test error. Where $ R^2 $ can be useful is in confirming previously held beliefs about what you are modeling. For example, modeling something in physics that theoretically should be extremely linear, an $ R^2 $ much smaller than 1 indicates something may be off with the model or data. Conversely, a low $ R^2 $ would actually be expected when modeling a complex situation with high residual errors due to other factors.</p>
 <h2 id="normal-equation-for-estimated-weights--hatbeta-">Normal Equation for Estimated Weights $ \hat{\beta} $</h2>
 <p>In the Ordinary Least Squares approach, RSS (Residual Sum of Squares) as a function of $ \hat{\beta} $ is the function to minimize:</p>
 
-<figure>
-  <img style="max-width: 95%;" src="/img/residuals.png" alt="residuals.png" />
-  <figcaption class="figcaption-text">Red lines are residuals $ e_i $. RSS is the sum of the square of all residuals</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/residuals.png">
+  <figure>
+      <img style="max-width: 95%;" src="/img/residuals.png" alt="residuals.png" />
+      <figcaption class="figcaption-text">Red lines are residuals $ e_i $. RSS is the sum of the square of all residuals</figcaption>
+      
+  </figure>
+</a>
+
 <p>$$ RSS = \sum_{i=1}^{m}e_i^2 = \sum_{i=1}^{m}(y_i - \hat{y}_i)^2  = \sum_{i=1}^{m}(y_i - x_i^T\hat{\beta})^2$$
 where $y_i$ is the response and $\hat{y}_i = x_i^T\hat{\beta}$ is the fitted value. This is assuming $x_i \in \mathbb{R}^{n \times 1}$ and $\hat{\beta} \in \mathbb{R}^{n \times 1}$ are column vectors and that the first value in each $ x_i $ is 1.</p>
 <p>We can rewrite this in matrix form with $\bf{X} \in \mathbb{R}^{m \times n}$ and $y \in \mathbb{R}^{m \times 1}$ as
@@ -1921,11 +2049,14 @@ $$ \sigma^2_x = E[(x - \mu_x)^2] $$</p>
 <p>(Insert justification for searching for unbiased sigma^2 and variance of beta in the first place here)</p>
 <p>Unfortunately, the MLE variance is actually a biased estimate of the population variance, i.e. $ E[\sigma^{2MLE}] \neq \sigma^2 $! For a discussion around this and empirical proof, see <a href="https://robinovitch61.github.io/posts/statistical-bias/">here</a>.</p>
 
-<figure>
-  <img style="max-width: 95%;" src="/img/biased_mle_error_var.png" alt="biased_mle_error_var.png" />
-  <figcaption class="figcaption-text">MLE (left) mean estimate differs from the true value</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/biased_mle_error_var.png">
+  <figure>
+      <img style="max-width: 95%;" src="/img/biased_mle_error_var.png" alt="biased_mle_error_var.png" />
+      <figcaption class="figcaption-text">MLE (left) mean estimate differs from the true value</figcaption>
+      
+  </figure>
+</a>
+
 <p>The unbiased formula for estimated error variance comes from <a href="http://lukesonnet.com/teaching/inference/200d_standard_errors.pdf">here</a> and the rigorous proof <a href="https://stats.stackexchange.com/questions/20227/why-is-rss-distributed-chi-square-times-n-p">here</a>:
 $$ \sigma^{2OLS} = \frac{1}{m-n} (y-\mathbf{X}\beta)^T (y-\mathbf{X}\beta) $$</p>
 <p>(Variance of beta here)</p>
@@ -1968,11 +2099,14 @@ $$ \sigma^{2OLS} = \frac{1}{m-n} (y-\mathbf{X}\beta)^T (y-\mathbf{X}\beta) $$</p
 </ul>
 <p>Jupyter is a great tool that allows for the creation of nice looking documents consisting of ordered code chunks with inline output. It is a fantastic way to get started with programming, clearly step through your workflow, and/or create stories and presentations out of your work. It runs in the browser after you install it on your machine (i.e. you access it with a URL in your web browser).</p>
 
-<figure>
-  <img style="max-width: 95%;" src="/img/jupyterlab_ex.png" alt="jupyterlab_ex.png" />
-  
-  <figcaption class="figcaption-text">Source: <a href="https://jupyterlab.readthedocs.io/en/stable/">https://jupyterlab.readthedocs.io/en/stable/</a></figcaption>
-</figure>
+<a class="img-link" target="_blank" href="/img/jupyterlab_ex.png">
+  <figure>
+      <img style="max-width: 95%;" src="/img/jupyterlab_ex.png" alt="jupyterlab_ex.png" />
+      
+      <figcaption class="figcaption-text">Source: <a href="https://jupyterlab.readthedocs.io/en/stable/">https://jupyterlab.readthedocs.io/en/stable/</a></figcaption>
+  </figure>
+</a>
+
 <p>This walkthrough will get you set up with a jupyter lab (or jupyter notebooks classic) environment that is fully customizable, isolated, version controllable and portable using docker.</p>
 <p>If you don&rsquo;t want to use docker, you can always <a href="https://jupyter.org/install">install jupyter the classic way</a>. I like docker for the reasons outlined above (isolation, portability, version controllable, easily deployed/discarded).</p>
 <h2 id="1-install-docker">1: Install Docker</h2>
@@ -1986,11 +2120,14 @@ $$ \sigma^{2OLS} = \frac{1}{m-n} (y-\mathbf{X}\beta)^T (y-\mathbf{X}\beta) $$</p
 <p>Docker uses the language of images (<em>recipes for containers</em>) and containers (<em>instances of images</em>). In this specific case, things like <code>jupyter/minimal-notebook</code> and <code>jupyter/pyspark-notebook</code> are <strong>images</strong> while our <strong>container</strong> will just be called <code>juptyer</code>.</p>
 <p>I like to think of a container as an isolated environment that my app/service (in this case, jupyter) will run in, almost entirely isolated from the rest of my host machine.</p>
 
-<figure>
-  <img style="max-width: 95%;" src="/img/docker-infrastructure.png" alt="docker-infrastructure.png" />
-  
-  <figcaption class="figcaption-text">Source: <a href="https://www.docker.com/resources/what-container">https://www.docker.com/resources/what-container</a></figcaption>
-</figure>
+<a class="img-link" target="_blank" href="/img/docker-infrastructure.png">
+  <figure>
+      <img style="max-width: 95%;" src="/img/docker-infrastructure.png" alt="docker-infrastructure.png" />
+      
+      <figcaption class="figcaption-text">Source: <a href="https://www.docker.com/resources/what-container">https://www.docker.com/resources/what-container</a></figcaption>
+  </figure>
+</a>
+
 <h2 id="2-clone-the-docker-stacks-repo">2: Clone the <code>docker-stacks</code> Repo</h2>
 <p>You&rsquo;ll need git for this step, which you can <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">install here</a> if you don&rsquo;t already have it. You can check by typing <code>git</code> in to the terminal and seeing if the command is found.</p>
 <p>What you&rsquo;ll clone is <a href="https://github.com/jupyter/docker-stacks">Project Jupyter&rsquo;s docker-stacks</a>. You can also <a href="https://help.github.com/en/articles/fork-a-repo">fork this</a> repo and clone your fork. We&rsquo;ll go through adding a couple files to this repo that will make deployment and customizing things easy. You can use <a href="https://github.com/robinovitch61/docker-stacks">my fork</a> or this tutorial as a reference. To clone the <code>docker-stacks</code> repo, run the following command in terminal/command prompt:</p>

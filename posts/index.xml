@@ -6,7 +6,18 @@
     <description>Recent content in Posts on The Leo Zone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 Jul 2021 14:11:00 +0000</lastBuildDate><atom:link href="https://robinovitch61.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Sep 2021 17:16:07 -0700</lastBuildDate><atom:link href="https://robinovitch61.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>local typescript sandbox</title>
+      <link>https://robinovitch61.github.io/posts/typescript-sandbox/</link>
+      <pubDate>Sun, 26 Sep 2021 17:16:07 -0700</pubDate>
+      
+      <guid>https://robinovitch61.github.io/posts/typescript-sandbox/</guid>
+      <description>I made a simple live-reloading Typescript sandbox, similar to the Vanilla Typescript CodeSandbox but running locally.
+You can run it with node installed or in a docker container.
+I like having a Typescript-ready environment without having to spinup a new react app or something. CodeSandbox was nice, but got pretty laggy at times and was hard to version control. Gluing together some tooling to scratch my own itch was fun.</description>
+    </item>
+    
     <item>
       <title>rodney mullen and mastery</title>
       <link>https://robinovitch61.github.io/posts/rodney-mullen-and-mastery/</link>
@@ -25,7 +36,7 @@ The podium finishers at the olympics this year in Skateboarding, while insanely 
       
       <guid>https://robinovitch61.github.io/posts/verbify-your-arrows/</guid>
       <description>This is a diagram from an open source project I was evaluating at work recently, and the subsequent conversations I had:
-  Me: So their solution is push based?
+   Me: So their solution is push based?
 Coworker: No, I think they just specify the general protocol.
 Me: But those lines from the squares at the top to the central circle sort of look like arrows, don&amp;rsquo;t they? And their client pushes data&amp;hellip;I think maybe it&amp;rsquo;s push based?</description>
     </item>
@@ -76,7 +87,7 @@ I&amp;rsquo;ve been excited about GiveWell for a while now, and am interested in
       <pubDate>Mon, 09 Nov 2020 09:42:53 -0800</pubDate>
       
       <guid>https://robinovitch61.github.io/posts/color-commentary/</guid>
-      <description>Twitter bird - blue or purple?  About 6 weeks ago, I launched colorcontroversy.com. Since then, the site has collected over 800,000 color judgements and been shared around the web more than I expected.
+      <description>Twitter bird - blue or purple?   About 6 weeks ago, I launched colorcontroversy.com. Since then, the site has collected over 800,000 color judgements and been shared around the web more than I expected.
 A much-simplified version of Randal Monroe of XKCD&amp;rsquo;s color survey, the site shows you a color shade and presents two color choices for that shade. For example, it shows you a dark turquoise and asks you if it&amp;rsquo;s Green or Blue.</description>
     </item>
     
@@ -96,7 +107,7 @@ A much-simplified version of Randal Monroe of XKCD&amp;rsquo;s color survey, the
       
       <guid>https://robinovitch61.github.io/posts/gifting-websites/</guid>
       <description>Over the past year or so, I have gifted friends a few websites. I think the sites are fun, relatively unique gifts. As a bonus serve, they illustrate some of my progression with basic html/css/javascript static websites.
-Site 1: averyrobins.com   I set up an Amazon S3 bucket for static hosting, bought a namecheap domain name, configured the custom DNS, and voila - I now pay $1/month to host this profanity-laden ASCII art.</description>
+Site 1: averyrobins.com    I set up an Amazon S3 bucket for static hosting, bought a namecheap domain name, configured the custom DNS, and voila - I now pay $1/month to host this profanity-laden ASCII art.</description>
     </item>
     
     <item>
@@ -116,7 +127,7 @@ Givewell is one of the most admirable philanthropic organizations out there. The
       <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://robinovitch61.github.io/posts/concurrency-in-python/</guid>
-      <description>Concurrency ! easy is  Concurrency is of paramount importance in modern computing. It is a complex domain in itself, with major contributions from database development, machine learning, distributed application deployment, and academia.
+      <description>Concurrency ! easy is   Concurrency is of paramount importance in modern computing. It is a complex domain in itself, with major contributions from database development, machine learning, distributed application deployment, and academia.
 Python requires a clear and simple concurrency framework as it is commonly used in high-compute settings like training neural networks. Matrix algebra has been made fast with NumPy and related tools, interfacing with C to get large performance improvements.</description>
     </item>
     
@@ -126,7 +137,7 @@ Python requires a clear and simple concurrency framework as it is commonly used 
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://robinovitch61.github.io/posts/statistical-bias/</guid>
-      <description>Eat my spheres!  You find yourself trapped in a room with Jigsaw, the villain from the Saw movies. There is a wood box of 100 spheres, some of them steel ball bearings and some of them gumballs. Jigsaw tells you that you can leave the room alive if you guess the number of steel ball bearings in the jar correctly. You can pull 10 random spheres out the 100 in the box as many times as you want, but each time you do, you have to eat all of them (yum!</description>
+      <description>Eat my spheres!   You find yourself trapped in a room with Jigsaw, the villain from the Saw movies. There is a wood box of 100 spheres, some of them steel ball bearings and some of them gumballs. Jigsaw tells you that you can leave the room alive if you guess the number of steel ball bearings in the jar correctly. You can pull 10 random spheres out the 100 in the box as many times as you want, but each time you do, you have to eat all of them (yum!</description>
     </item>
     
     <item>

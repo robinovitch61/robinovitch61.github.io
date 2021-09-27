@@ -10,7 +10,7 @@ verbify your arrows
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
-    <link rel="stylesheet" href="https://robinovitch61.github.io/sass/main.min.4499f429c2eec8e0db0527551275bce6067ad5ea295ed5cc754bbf39e4fb4a83.css">
+    <link rel="stylesheet" href="https://robinovitch61.github.io/sass/main.min.a52045891891a7be7e3673f5d0bdbf76eef49ffce8c14b35b87c292ac78f3818.css">
 
     
 
@@ -84,11 +84,14 @@ Jun 10, 2021 &ndash; Leo Robinovitch
 <div class="post">
   <p>This is a diagram from an open source project I was evaluating at work recently, and the subsequent conversations I had:</p>
 
-<figure>
-  <img style="max-width: 60%;" src="/img/noarrows.png" alt="noarrows.png" />
-  
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/noarrows.png">
+  <figure>
+      <img style="max-width: 60%;" src="/img/noarrows.png" alt="noarrows.png" />
+      
+      
+  </figure>
+</a>
+
 <p>Me: So their solution is push based?</p>
 <p>Coworker: No, I think they just specify the general protocol.</p>
 <p>Me: But those lines from the squares at the top to the central circle sort of look like arrows, don&rsquo;t they? And their client pushes data&hellip;I think maybe it&rsquo;s push based?</p>
@@ -99,19 +102,25 @@ Jun 10, 2021 &ndash; Leo Robinovitch
 <p>&hellip;</p>
 <p>Here are some results from googling &ldquo;architecture diagram&rdquo;:</p>
 
-<figure>
-  <img style="max-width: 100%;" src="/img/manynoarrows.png" alt="manynoarrows.png" />
-  
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/manynoarrows.png">
+  <figure>
+      <img style="max-width: 100%;" src="/img/manynoarrows.png" alt="manynoarrows.png" />
+      
+      
+  </figure>
+</a>
+
 <p>Cool. These things point to each other. I don&rsquo;t know how they relate, just apparently there&rsquo;s a directionality to their relationships.</p>
 <p>Another one:</p>
 
-<figure>
-  <img style="max-width: 100%;" src="/img/somearrows.png" alt="somearrows.png" />
-  
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/somearrows.png">
+  <figure>
+      <img style="max-width: 100%;" src="/img/somearrows.png" alt="somearrows.png" />
+      
+      
+  </figure>
+</a>
+
 <p>This is a bit better. I know the Gateway transfers JSON over HTTP. Does it POST a JSON body from the Gateway to the arrow targets, or does the Gateway send a GET request to the arrow targets and receive a JSON response? Maybe both?</p>
 <p>Both of these use Gateway TO arrow targets, just like the direction of the arrows, but have very different implications. If both occur, why not say so?</p>
 <p>If I knew the domain specific context of the relationships of these entities, maybe it&rsquo;s obvious. Maybe if I thought about it more, it would become obvious. But the diagram would ideally communicate the relationships clearly without a lot of thought or inference required.</p>
@@ -129,11 +138,14 @@ Jun 10, 2021 &ndash; Leo Robinovitch
 <p>In the <a href="https://graphviz.gitlab.io/gallery/">graphviz gallery</a> - open source software built for making diagrams of blobs with arrows between them - almost none of the examples contain labeled arrows, despite this being a <a href="https://graphviz.org/doc/info/attrs.html#d:label">first class feature in graphviz</a>.</p>
 <p>Here is a decent example, ~10 images into the &ldquo;architecture diagram&rdquo; image search:</p>
 
-<figure>
-  <img style="max-width: 100%;" src="/img/goodarrows.png" alt="goodarrows.png" />
-  
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/goodarrows.png">
+  <figure>
+      <img style="max-width: 100%;" src="/img/goodarrows.png" alt="goodarrows.png" />
+      
+      
+  </figure>
+</a>
+
 <p>Let&rsquo;s label our arrows more and communicate better, faster.</p>
 
 </div>

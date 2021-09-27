@@ -10,7 +10,7 @@ concurrency in python
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
-    <link rel="stylesheet" href="https://robinovitch61.github.io/sass/main.min.4499f429c2eec8e0db0527551275bce6067ad5ea295ed5cc754bbf39e4fb4a83.css">
+    <link rel="stylesheet" href="https://robinovitch61.github.io/sass/main.min.a52045891891a7be7e3673f5d0bdbf76eef49ffce8c14b35b87c292ac78f3818.css">
 
     
 
@@ -83,22 +83,28 @@ Oct 29, 2019 &ndash; Leo Robinovitch
       
 <div class="post">
   
-<figure>
-  <img style="max-width: 70%;" src="/img/concurrency.png" alt="concurrency.png" />
-  <figcaption class="figcaption-text">Concurrency ! easy is</figcaption>
-  
-</figure>
+<a class="img-link" target="_blank" href="/img/concurrency.png">
+  <figure>
+      <img style="max-width: 70%;" src="/img/concurrency.png" alt="concurrency.png" />
+      <figcaption class="figcaption-text">Concurrency ! easy is</figcaption>
+      
+  </figure>
+</a>
+
 <p>Concurrency is of paramount importance in modern computing. It is a complex domain in itself, with major contributions from database development, machine learning, distributed application deployment, and academia.</p>
 <p>Python requires a clear and simple concurrency framework as it is commonly used in high-compute settings like training neural networks. Matrix algebra has been made fast with NumPy and related tools, interfacing with C to get large performance improvements. In the machine learning context, Python often combines concurrency with this efficient toolset to yield readable, easily iterated-upon, and rapid results.</p>
 <p>Modern computers already use concurrency for almost everything. It is likely that the machine you&rsquo;re reading this on has multiple cores/CPUs, each of which runs multiple processes (multiprocessing). Processes are just programs given a &ldquo;time chunk&rdquo; in which to run on a CPU, after which their state is cached efficiently while the next program runs. If a process is running and itself needs to do multiple things (e.g. show a loading icon while also actually loading the content), a process gets split in to threads, which themselves get allocated time chunks from the overall process&rsquo;s time chunk. Processes usually run separate from and possibly in parallel with other processes, with strictly defined ways of interacting with one another.</p>
 <p>Underlying the original CPython interpreter is the Global Interpreter Lock (GIL). This ensures that the Python interpreter is controlled by only one thread at a time. This is mainly because Python cleans up memory by &ldquo;reference counting&rdquo; instead of other means like garbage collection, ownership, etc. If the reference count for an object drops to zero, Python releases the memory allocated for that object. But multiple threads could change the reference count for an object at the same time, possibly causing memory errors and weird bugs. The GIL is a single lock on the Python interpreter, ensuring that memory is properly managed and no <a href="https://en.wikipedia.org/wiki/Deadlock">deadlocks</a> occur. Because Python was designed decades ago and parallel processing wasn&rsquo;t as high priority, this solution to memory management assumption wasn&rsquo;t seen as a big deal back then.</p>
 <p>Unfortunately, this means that multithreading for CPU-intensive tasks in Python doesn&rsquo;t actually expediate computation - you can write code that implies threads are helping to speed up a high CPU task, but the GIL will ensure that only one thread runs at a time anyway! In fact, multithreading on high CPU tasks will actually be SLOWER than a single thread, as the GIL has decently high overhead when locking/unlocking threads. The one place multithreading is advantageous is IO operations, as IO operations <a href="https://stackoverflow.com/questions/29270818/why-is-a-python-i-o-bound-task-not-blocked-by-the-gil">do not require the lock from the GIL</a>.</p>
 
-<figure>
-  <img style="max-width: 70%;" src="/img/cpu_io_bound.png" alt="cpu_io_bound.png" />
-  
-  <figcaption class="figcaption-text">Source: <a href="https://realpython.com/python-concurrency/">https://realpython.com/python-concurrency/</a></figcaption>
-</figure>
+<a class="img-link" target="_blank" href="/img/cpu_io_bound.png">
+  <figure>
+      <img style="max-width: 70%;" src="/img/cpu_io_bound.png" alt="cpu_io_bound.png" />
+      
+      <figcaption class="figcaption-text">Source: <a href="https://realpython.com/python-concurrency/">https://realpython.com/python-concurrency/</a></figcaption>
+  </figure>
+</a>
+
 <p>The degredation of performance with threaded compute and improvement in performance with threaded IO is demonstrated in the following static notebook:</p>
 <script src="https://gist.github.com/robinovitch61/e9f94dabc8d46b269a279759676596a6.js"></script>
 <p>Race conditions occur when data is modified or dropped in an undesirable manner due to a process switching threads before read-modify-write code sections are complete! Here is a complete example of a race condition and how to fix it using locks:</p>
