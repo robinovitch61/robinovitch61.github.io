@@ -92,7 +92,7 @@ I wrote a simple <a href="https://en.wikipedia.org/wiki/Cron">cron</a> job to re
 <li><code>0 * * * *</code>: Run every hour (I use <a href="https://crontab.guru/">https://crontab.guru/</a> to create or parse these schedule expressions)</li>
 <li><code>~/projects/cron/standup.sh</code>: Path to my defined alert script</li>
 <li><code>&gt; /dev/null</code>: Redirect stdout to <a href="https://linuxhint.com/what_is_dev_null/">/dev/null</a>, i.e. discard it</li>
-<li><code>2&gt;&amp;1</code>: Disable cron email. Also redirect stderr to the same place as stdout, in this case <code>/dev/null</code></li>
+<li><code>2&gt;&amp;1</code>: Disable cron email by redirecting stderr to the same place as stdout, in this case <code>/dev/null</code></li>
 </ul>
 
 </div>
