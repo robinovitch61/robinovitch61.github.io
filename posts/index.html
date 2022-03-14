@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
-    <link rel="stylesheet" href="https://robinovitch61.github.io/sass/main.min.a52045891891a7be7e3673f5d0bdbf76eef49ffce8c14b35b87c292ac78f3818.css">
+    <link rel="stylesheet" href="https://robinovitch61.github.io/sass/main.min.2bab0715f7caa83581678077648869f2d556a8625634f5105c99061dae6e2e70.css">
   </head>
 
   <body>
@@ -62,17 +62,17 @@ the spirit of positive nudges for habit building and taking ownership over my no
 I wrote a simple <a href="https://en.wikipedia.org/wiki/Cron">cron</a> job to remind me to stand up every hour.</p>
 <p>Note that this is mac-specific, but a Linux or Windows analog should be fairly easy to implement.</p>
 <p><code>~/projects/cron/standup.sh</code></p>
-<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#bc7a00">#!/usr/bin/env sh
-</span><span style="color:#bc7a00"></span>
-osascript -e <span style="color:#ba2121">&#39;display alert &#34;Stand up and stretch!&#34;&#39;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#bc7a00">#!/usr/bin/env sh
+</span></span></span><span style="display:flex;"><span><span style="color:#bc7a00"></span>
+</span></span><span style="display:flex;"><span>osascript -e <span style="color:#ba2121">&#39;display alert &#34;Stand up and stretch!&#34;&#39;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>When run, a popup will be created in the middle of my screen that looks like:
 
@@ -85,7 +85,7 @@ osascript -e <span style="color:#ba2121">&#39;display alert &#34;Stand up and st
 </a>
 </p>
 <p>In order to run it periodically with , I run <code>crontab -e</code>, then add this line to the file:
-<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#666">0</span> * * * * ~/projects/cron/standup.sh  &gt;/dev/null 2&gt;&amp;<span style="color:#666">1</span></code></pre></div></p>
+<div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#666">0</span> * * * * ~/projects/cron/standup.sh  &gt;/dev/null 2&gt;&amp;<span style="color:#666">1</span></span></span></code></pre></div></p>
 <p>Breakdown:</p>
 <ul>
 <li><code>0 * * * *</code>: Run every hour (I use <a href="https://crontab.guru/">https://crontab.guru/</a> to create or parse these schedule expressions)</li>
@@ -270,503 +270,503 @@ for progression in any discipline can help carry me to where I&rsquo;d like to b
     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
-<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 24
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 25
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 26
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 27
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 28
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 29
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 30
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 31
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 32
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 33
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 34
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 35
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 36
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 37
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 38
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 39
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 40
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 41
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 42
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 43
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 44
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 45
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 46
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 47
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 48
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 49
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 50
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 51
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 52
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 53
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 54
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 55
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 56
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 57
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 58
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 59
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 60
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 61
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 62
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 63
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 64
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 65
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 66
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 67
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 68
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 69
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 70
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 71
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 72
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 73
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 74
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 75
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 76
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 77
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 78
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 79
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 80
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 81
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 82
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 83
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 84
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 85
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 86
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 87
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 88
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 89
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 90
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 91
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 92
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 93
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 94
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 95
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 96
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 97
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 98
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 99
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">100
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">101
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">102
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">103
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">104
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">105
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">106
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">107
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">108
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">109
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">110
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">111
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">112
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">113
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">114
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">115
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">116
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">117
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">118
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">119
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">120
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">121
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">122
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">123
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">124
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">125
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">126
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">127
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">128
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">129
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">130
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">131
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">132
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">133
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">134
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">135
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">136
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">137
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">138
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">139
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">140
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">141
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">142
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">143
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">144
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">145
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">146
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">147
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">148
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">149
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">150
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">151
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">152
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">153
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">154
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">155
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">156
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">157
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">158
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">159
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">160
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">161
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">162
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">163
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">164
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">165
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">166
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">167
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">168
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">169
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">170
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">171
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">172
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">173
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">174
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">175
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">176
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">177
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">178
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">179
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">180
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">181
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">182
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">183
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">184
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">185
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">186
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">187
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">188
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">189
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">190
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">191
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">192
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">193
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">194
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">195
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">196
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">197
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">198
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">199
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">200
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">201
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">202
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">203
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">204
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">205
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">206
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">207
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">208
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">209
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">210
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">211
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">212
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">213
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">214
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">215
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">216
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">217
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">218
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">219
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">220
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">221
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">222
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">223
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">224
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">225
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">226
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">227
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">228
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">229
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">230
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">231
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">232
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">233
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">234
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">235
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">236
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">237
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">238
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">239
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">240
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">241
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">242
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">243
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">244
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">245
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">246
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 29
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 30
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 31
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 32
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 33
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 34
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 35
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 36
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 37
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 38
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 39
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 40
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 41
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 42
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 43
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 44
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 45
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 46
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 47
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 48
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 49
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 50
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 51
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 52
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 53
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 54
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 55
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 56
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 57
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 58
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 59
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 60
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 61
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 62
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 63
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 64
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 65
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 66
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 67
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 68
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 69
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 70
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 71
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 72
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 73
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 74
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 75
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 76
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 77
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 78
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 79
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 80
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 81
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 82
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 83
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 84
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 85
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 86
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 87
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 88
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 89
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 90
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 91
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 92
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 93
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 94
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 95
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 96
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 97
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 98
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 99
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">100
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">101
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">102
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">103
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">104
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">105
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">106
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">107
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">108
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">109
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">110
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">111
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">112
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">113
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">114
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">115
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">116
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">117
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">118
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">119
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">120
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">121
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">122
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">123
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">124
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">125
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">126
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">127
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">128
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">129
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">130
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">131
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">132
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">133
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">134
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">135
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">136
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">137
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">138
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">139
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">140
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">141
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">142
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">143
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">144
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">145
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">146
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">147
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">148
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">149
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">150
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">151
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">152
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">153
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">154
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">155
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">156
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">157
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">158
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">159
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">160
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">161
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">162
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">163
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">164
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">165
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">166
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">167
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">168
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">169
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">170
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">171
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">172
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">173
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">174
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">175
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">176
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">177
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">178
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">179
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">180
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">181
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">182
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">183
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">184
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">185
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">186
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">187
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">188
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">189
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">190
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">191
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">192
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">193
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">194
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">195
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">196
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">197
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">198
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">199
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">200
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">201
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">202
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">203
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">204
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">205
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">206
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">207
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">208
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">209
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">210
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">211
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">212
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">213
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">214
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">215
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">216
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">217
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">218
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">219
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">220
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">221
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">222
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">223
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">224
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">225
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">226
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">227
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">228
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">229
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">230
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">231
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">232
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">233
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">234
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">235
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">236
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">237
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">238
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">239
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">240
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">241
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">242
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">243
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">244
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">245
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">246
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#008000;font-weight:bold">import</span> {
-  useEffect,
-  useCallback,
-  useLayoutEffect,
-  useRef,
-  useState
-} <span style="color:#008000;font-weight:bold">from</span> <span style="color:#ba2121">&#34;react&#34;</span>;
-<span style="color:#008000;font-weight:bold">import</span> <span style="color:#666">*</span> <span style="color:#008000;font-weight:bold">as</span> React <span style="color:#008000;font-weight:bold">from</span> <span style="color:#ba2121">&#34;react&#34;</span>;
-
-<span style="color:#008000;font-weight:bold">type</span> CanvasProps <span style="color:#666">=</span> {
-  canvasWidth: <span style="color:#b00040">number</span>;
-  canvasHeight: <span style="color:#b00040">number</span>;
-};
-
-<span style="color:#008000;font-weight:bold">type</span> Point <span style="color:#666">=</span> {
-  x: <span style="color:#b00040">number</span>;
-  y: <span style="color:#b00040">number</span>;
-};
-
-<span style="color:#008000;font-weight:bold">const</span> ORIGIN <span style="color:#666">=</span> <span style="color:#008000">Object</span>.freeze({ x: <span style="color:#b00040">0</span>, y: <span style="color:#b00040">0</span> });
-
-<span style="color:#408080;font-style:italic">// adjust to device to avoid blur
-</span><span style="color:#408080;font-style:italic"></span><span style="color:#008000;font-weight:bold">const</span> { devicePixelRatio: <span style="color:#b00040">ratio</span> <span style="color:#666">=</span> <span style="color:#666">1</span> } <span style="color:#666">=</span> <span style="color:#008000">window</span>;
-
-<span style="color:#008000;font-weight:bold">function</span> diffPoints(p1: <span style="color:#b00040">Point</span>, p2: <span style="color:#b00040">Point</span>) {
-  <span style="color:#008000;font-weight:bold">return</span> { x: <span style="color:#b00040">p1.x</span> <span style="color:#666">-</span> p2.x, y: <span style="color:#b00040">p1.y</span> <span style="color:#666">-</span> p2.y };
-}
-
-<span style="color:#008000;font-weight:bold">function</span> addPoints(p1: <span style="color:#b00040">Point</span>, p2: <span style="color:#b00040">Point</span>) {
-  <span style="color:#008000;font-weight:bold">return</span> { x: <span style="color:#b00040">p1.x</span> <span style="color:#666">+</span> p2.x, y: <span style="color:#b00040">p1.y</span> <span style="color:#666">+</span> p2.y };
-}
-
-<span style="color:#008000;font-weight:bold">function</span> scalePoint(p1: <span style="color:#b00040">Point</span>, scale: <span style="color:#b00040">number</span>) {
-  <span style="color:#008000;font-weight:bold">return</span> { x: <span style="color:#b00040">p1.x</span> <span style="color:#666">/</span> scale, y: <span style="color:#b00040">p1.y</span> <span style="color:#666">/</span> scale };
-}
-
-<span style="color:#008000;font-weight:bold">const</span> ZOOM_SENSITIVITY <span style="color:#666">=</span> <span style="color:#666">500</span>; <span style="color:#408080;font-style:italic">// bigger for lower zoom per scroll
-</span><span style="color:#408080;font-style:italic"></span>
-<span style="color:#008000;font-weight:bold">export</span> <span style="color:#008000;font-weight:bold">default</span> <span style="color:#008000;font-weight:bold">function</span> Canvas(props: <span style="color:#b00040">CanvasProps</span>) {
-  <span style="color:#008000;font-weight:bold">const</span> canvasRef <span style="color:#666">=</span> useRef&lt;<span style="color:#008000;font-weight:bold">HTMLCanvasElement</span>&gt;(<span style="color:#008000;font-weight:bold">null</span>);
-  <span style="color:#008000;font-weight:bold">const</span> [context, setContext] <span style="color:#666">=</span> useState&lt;<span style="color:#008000;font-weight:bold">CanvasRenderingContext2D</span> <span style="">|</span> <span style="color:#7d9029">null</span>&gt;(<span style="color:#008000;font-weight:bold">null</span>);
-  <span style="color:#008000;font-weight:bold">const</span> [scale, setScale] <span style="color:#666">=</span> useState&lt;<span style="color:#008000;font-weight:bold">number</span>&gt;(<span style="color:#666">1</span>);
-  <span style="color:#008000;font-weight:bold">const</span> [offset, setOffset] <span style="color:#666">=</span> useState&lt;<span style="color:#008000;font-weight:bold">Point</span>&gt;(ORIGIN);
-  <span style="color:#008000;font-weight:bold">const</span> [mousePos, setMousePos] <span style="color:#666">=</span> useState&lt;<span style="color:#008000;font-weight:bold">Point</span>&gt;(ORIGIN);
-  <span style="color:#008000;font-weight:bold">const</span> [viewportTopLeft, setViewportTopLeft] <span style="color:#666">=</span> useState&lt;<span style="color:#008000;font-weight:bold">Point</span>&gt;(ORIGIN);
-  <span style="color:#008000;font-weight:bold">const</span> isResetRef <span style="color:#666">=</span> useRef&lt;<span style="color:#008000;font-weight:bold">boolean</span>&gt;(<span style="color:#008000;font-weight:bold">false</span>);
-  <span style="color:#008000;font-weight:bold">const</span> lastMousePosRef <span style="color:#666">=</span> useRef&lt;<span style="color:#008000;font-weight:bold">Point</span>&gt;(ORIGIN);
-  <span style="color:#008000;font-weight:bold">const</span> lastOffsetRef <span style="color:#666">=</span> useRef&lt;<span style="color:#008000;font-weight:bold">Point</span>&gt;(ORIGIN);
-
-  <span style="color:#408080;font-style:italic">// update last offset
-</span><span style="color:#408080;font-style:italic"></span>  useEffect(() <span style="color:#666">=&gt;</span> {
-    lastOffsetRef.current <span style="color:#666">=</span> offset;
-  }, [offset]);
-
-  <span style="color:#408080;font-style:italic">// reset
-</span><span style="color:#408080;font-style:italic"></span>  <span style="color:#008000;font-weight:bold">const</span> reset <span style="color:#666">=</span> useCallback(
-    (context: <span style="color:#b00040">CanvasRenderingContext2D</span>) <span style="color:#666">=&gt;</span> {
-      <span style="color:#008000;font-weight:bold">if</span> (context <span style="color:#666">&amp;&amp;</span> <span style="color:#666">!</span>isResetRef.current) {
-        <span style="color:#408080;font-style:italic">// adjust for device pixel density
-</span><span style="color:#408080;font-style:italic"></span>        context.canvas.width <span style="color:#666">=</span> props.canvasWidth <span style="color:#666">*</span> ratio;
-        context.canvas.height <span style="color:#666">=</span> props.canvasHeight <span style="color:#666">*</span> ratio;
-        context.scale(ratio, ratio);
-        setScale(<span style="color:#666">1</span>);
-
-        <span style="color:#408080;font-style:italic">// reset state and refs
-</span><span style="color:#408080;font-style:italic"></span>        setContext(context);
-        setOffset(ORIGIN);
-        setMousePos(ORIGIN);
-        setViewportTopLeft(ORIGIN);
-        lastOffsetRef.current <span style="color:#666">=</span> ORIGIN;
-        lastMousePosRef.current <span style="color:#666">=</span> ORIGIN;
-
-        <span style="color:#408080;font-style:italic">// this thing is so multiple resets in a row don&#39;t clear canvas
-</span><span style="color:#408080;font-style:italic"></span>        isResetRef.current <span style="color:#666">=</span> <span style="color:#008000;font-weight:bold">true</span>;
-      }
-    },
-    [props.canvasWidth, props.canvasHeight]
-  );
-
-  <span style="color:#408080;font-style:italic">// functions for panning
-</span><span style="color:#408080;font-style:italic"></span>  <span style="color:#008000;font-weight:bold">const</span> mouseMove <span style="color:#666">=</span> useCallback(
-    (event: <span style="color:#b00040">MouseEvent</span>) <span style="color:#666">=&gt;</span> {
-      <span style="color:#008000;font-weight:bold">if</span> (context) {
-        <span style="color:#008000;font-weight:bold">const</span> lastMousePos <span style="color:#666">=</span> lastMousePosRef.current;
-        <span style="color:#008000;font-weight:bold">const</span> currentMousePos <span style="color:#666">=</span> { x: <span style="color:#b00040">event.pageX</span>, y: <span style="color:#b00040">event.pageY</span> }; <span style="color:#408080;font-style:italic">// use document so can pan off element
-</span><span style="color:#408080;font-style:italic"></span>        lastMousePosRef.current <span style="color:#666">=</span> currentMousePos;
-
-        <span style="color:#008000;font-weight:bold">const</span> mouseDiff <span style="color:#666">=</span> diffPoints(currentMousePos, lastMousePos);
-        setOffset((prevOffset) <span style="color:#666">=&gt;</span> addPoints(prevOffset, mouseDiff));
-      }
-    },
-    [context]
-  );
-
-  <span style="color:#008000;font-weight:bold">const</span> mouseUp <span style="color:#666">=</span> useCallback(() <span style="color:#666">=&gt;</span> {
-    <span style="color:#008000">document</span>.removeEventListener(<span style="color:#ba2121">&#34;mousemove&#34;</span>, mouseMove);
-    <span style="color:#008000">document</span>.removeEventListener(<span style="color:#ba2121">&#34;mouseup&#34;</span>, mouseUp);
-  }, [mouseMove]);
-
-  <span style="color:#008000;font-weight:bold">const</span> startPan <span style="color:#666">=</span> useCallback(
-    (event: <span style="color:#b00040">React.MouseEvent</span>&lt;<span style="color:#008000;font-weight:bold">HTMLCanvasElement</span><span style="">,</span> <span style="color:#7d9029">MouseEvent</span>&gt;) <span style="color:#666">=&gt;</span> {
-      <span style="color:#008000">document</span>.addEventListener(<span style="color:#ba2121">&#34;mousemove&#34;</span>, mouseMove);
-      <span style="color:#008000">document</span>.addEventListener(<span style="color:#ba2121">&#34;mouseup&#34;</span>, mouseUp);
-      lastMousePosRef.current <span style="color:#666">=</span> { x: <span style="color:#b00040">event.pageX</span>, y: <span style="color:#b00040">event.pageY</span> };
-    },
-    [mouseMove, mouseUp]
-  );
-
-  <span style="color:#408080;font-style:italic">// setup canvas and set context
-</span><span style="color:#408080;font-style:italic"></span>  useLayoutEffect(() <span style="color:#666">=&gt;</span> {
-    <span style="color:#008000;font-weight:bold">if</span> (canvasRef.current) {
-      <span style="color:#408080;font-style:italic">// get new drawing context
-</span><span style="color:#408080;font-style:italic"></span>      <span style="color:#008000;font-weight:bold">const</span> renderCtx <span style="color:#666">=</span> canvasRef.current.getContext(<span style="color:#ba2121">&#34;2d&#34;</span>);
-
-      <span style="color:#008000;font-weight:bold">if</span> (renderCtx) {
-        reset(renderCtx);
-      }
-    }
-  }, [reset, props.canvasHeight, props.canvasWidth]);
-
-  <span style="color:#408080;font-style:italic">// pan when offset or scale changes
-</span><span style="color:#408080;font-style:italic"></span>  useLayoutEffect(() <span style="color:#666">=&gt;</span> {
-    <span style="color:#008000;font-weight:bold">if</span> (context <span style="color:#666">&amp;&amp;</span> lastOffsetRef.current) {
-      <span style="color:#008000;font-weight:bold">const</span> offsetDiff <span style="color:#666">=</span> scalePoint(
-        diffPoints(offset, lastOffsetRef.current),
-        scale
-      );
-      context.translate(offsetDiff.x, offsetDiff.y);
-      setViewportTopLeft((prevVal) <span style="color:#666">=&gt;</span> diffPoints(prevVal, offsetDiff));
-      isResetRef.current <span style="color:#666">=</span> <span style="color:#008000;font-weight:bold">false</span>;
-    }
-  }, [context, offset, scale]);
-
-  <span style="color:#408080;font-style:italic">// draw
-</span><span style="color:#408080;font-style:italic"></span>  useLayoutEffect(() <span style="color:#666">=&gt;</span> {
-    <span style="color:#008000;font-weight:bold">if</span> (context) {
-      <span style="color:#008000;font-weight:bold">const</span> squareSize <span style="color:#666">=</span> <span style="color:#666">20</span>;
-
-      <span style="color:#408080;font-style:italic">// clear canvas but maintain transform
-</span><span style="color:#408080;font-style:italic"></span>      <span style="color:#008000;font-weight:bold">const</span> storedTransform <span style="color:#666">=</span> context.getTransform();
-      context.canvas.width <span style="color:#666">=</span> context.canvas.width;
-      context.setTransform(storedTransform);
-
-      context.fillRect(
-        props.canvasWidth <span style="color:#666">/</span> <span style="color:#666">2</span> <span style="color:#666">-</span> squareSize <span style="color:#666">/</span> <span style="color:#666">2</span>,
-        props.canvasHeight <span style="color:#666">/</span> <span style="color:#666">2</span> <span style="color:#666">-</span> squareSize <span style="color:#666">/</span> <span style="color:#666">2</span>,
-        squareSize,
-        squareSize
-      );
-      context.arc(viewportTopLeft.x, viewportTopLeft.y, <span style="color:#666">5</span>, <span style="color:#666">0</span>, <span style="color:#666">2</span> <span style="color:#666">*</span> <span style="color:#008000">Math</span>.PI);
-      context.fillStyle <span style="color:#666">=</span> <span style="color:#ba2121">&#34;red&#34;</span>;
-      context.fill();
-    }
-  }, [
-    props.canvasWidth,
-    props.canvasHeight,
-    context,
-    scale,
-    offset,
-    viewportTopLeft
-  ]);
-
-  <span style="color:#408080;font-style:italic">// add event listener on canvas for mouse position
-</span><span style="color:#408080;font-style:italic"></span>  useEffect(() <span style="color:#666">=&gt;</span> {
-    <span style="color:#008000;font-weight:bold">const</span> canvasElem <span style="color:#666">=</span> canvasRef.current;
-    <span style="color:#008000;font-weight:bold">if</span> (canvasElem <span style="color:#666">===</span> <span style="color:#008000;font-weight:bold">null</span>) {
-      <span style="color:#008000;font-weight:bold">return</span>;
-    }
-
-    <span style="color:#008000;font-weight:bold">function</span> handleUpdateMouse(event: <span style="color:#b00040">MouseEvent</span>) {
-      event.preventDefault();
-      <span style="color:#008000;font-weight:bold">if</span> (canvasRef.current) {
-        <span style="color:#008000;font-weight:bold">const</span> viewportMousePos <span style="color:#666">=</span> { x: <span style="color:#b00040">event.clientX</span>, y: <span style="color:#b00040">event.clientY</span> };
-        <span style="color:#008000;font-weight:bold">const</span> topLeftCanvasPos <span style="color:#666">=</span> {
-          x: <span style="color:#b00040">canvasRef.current.offsetLeft</span>,
-          y: <span style="color:#b00040">canvasRef.current.offsetTop</span>
-        };
-        setMousePos(diffPoints(viewportMousePos, topLeftCanvasPos));
-      }
-    }
-
-    canvasElem.addEventListener(<span style="color:#ba2121">&#34;mousemove&#34;</span>, handleUpdateMouse);
-    canvasElem.addEventListener(<span style="color:#ba2121">&#34;wheel&#34;</span>, handleUpdateMouse);
-    <span style="color:#008000;font-weight:bold">return</span> () <span style="color:#666">=&gt;</span> {
-      canvasElem.removeEventListener(<span style="color:#ba2121">&#34;mousemove&#34;</span>, handleUpdateMouse);
-      canvasElem.removeEventListener(<span style="color:#ba2121">&#34;wheel&#34;</span>, handleUpdateMouse);
-    };
-  }, []);
-
-  <span style="color:#408080;font-style:italic">// add event listener on canvas for zoom
-</span><span style="color:#408080;font-style:italic"></span>  useEffect(() <span style="color:#666">=&gt;</span> {
-    <span style="color:#008000;font-weight:bold">const</span> canvasElem <span style="color:#666">=</span> canvasRef.current;
-    <span style="color:#008000;font-weight:bold">if</span> (canvasElem <span style="color:#666">===</span> <span style="color:#008000;font-weight:bold">null</span>) {
-      <span style="color:#008000;font-weight:bold">return</span>;
-    }
-
-    <span style="color:#408080;font-style:italic">// this is tricky. Update the viewport&#39;s &#34;origin&#34; such that
-</span><span style="color:#408080;font-style:italic"></span>    <span style="color:#408080;font-style:italic">// the mouse doesn&#39;t move during scale - the &#39;zoom point&#39; of the mouse
-</span><span style="color:#408080;font-style:italic"></span>    <span style="color:#408080;font-style:italic">// before and after zoom is relatively the same position on the viewport
-</span><span style="color:#408080;font-style:italic"></span>    <span style="color:#008000;font-weight:bold">function</span> handleWheel(event: <span style="color:#b00040">WheelEvent</span>) {
-      event.preventDefault();
-      <span style="color:#008000;font-weight:bold">if</span> (context) {
-        <span style="color:#008000;font-weight:bold">const</span> zoom <span style="color:#666">=</span> <span style="color:#666">1</span> <span style="color:#666">-</span> event.deltaY <span style="color:#666">/</span> ZOOM_SENSITIVITY;
-        <span style="color:#008000;font-weight:bold">const</span> viewportTopLeftDelta <span style="color:#666">=</span> {
-          x<span style="color:#666">:</span> (mousePos.x <span style="color:#666">/</span> scale) <span style="color:#666">*</span> (<span style="color:#666">1</span> <span style="color:#666">-</span> <span style="color:#666">1</span> <span style="color:#666">/</span> zoom),
-          y<span style="color:#666">:</span> (mousePos.y <span style="color:#666">/</span> scale) <span style="color:#666">*</span> (<span style="color:#666">1</span> <span style="color:#666">-</span> <span style="color:#666">1</span> <span style="color:#666">/</span> zoom)
-        };
-        <span style="color:#008000;font-weight:bold">const</span> newViewportTopLeft <span style="color:#666">=</span> addPoints(
-          viewportTopLeft,
-          viewportTopLeftDelta
-        );
-
-        context.translate(viewportTopLeft.x, viewportTopLeft.y);
-        context.scale(zoom, zoom);
-        context.translate(<span style="color:#666">-</span>newViewportTopLeft.x, <span style="color:#666">-</span>newViewportTopLeft.y);
-
-        setViewportTopLeft(newViewportTopLeft);
-        setScale(scale <span style="color:#666">*</span> zoom);
-        isResetRef.current <span style="color:#666">=</span> <span style="color:#008000;font-weight:bold">false</span>;
-      }
-    }
-
-    canvasElem.addEventListener(<span style="color:#ba2121">&#34;wheel&#34;</span>, handleWheel);
-    <span style="color:#008000;font-weight:bold">return</span> () <span style="color:#666">=&gt;</span> canvasElem.removeEventListener(<span style="color:#ba2121">&#34;wheel&#34;</span>, handleWheel);
-  }, [context, mousePos.x, mousePos.y, viewportTopLeft, scale]);
-
-  <span style="color:#008000;font-weight:bold">return</span> (
-    &lt;<span style="color:#008000;font-weight:bold">div</span>&gt;
-      &lt;<span style="color:#008000;font-weight:bold">button</span> <span style="color:#7d9029">onClick</span><span style="color:#666">=</span>{() <span style="color:#666">=&gt;</span> context <span style="color:#666">&amp;&amp;</span> reset(context)}&gt;Reset&lt;/<span style="color:#008000;font-weight:bold">button</span>&gt;
-      &lt;<span style="color:#008000;font-weight:bold">pre</span>&gt;scale<span style="color:#666">:</span> {scale}&lt;/<span style="color:#008000;font-weight:bold">pre</span>&gt;
-      &lt;<span style="color:#008000;font-weight:bold">pre</span>&gt;offset<span style="color:#666">:</span> {JSON.stringify(offset)}&lt;/<span style="color:#008000;font-weight:bold">pre</span>&gt;
-      &lt;<span style="color:#008000;font-weight:bold">pre</span>&gt;viewportTopLeft<span style="color:#666">:</span> {JSON.stringify(viewportTopLeft)}&lt;/<span style="color:#008000;font-weight:bold">pre</span>&gt;
-      &lt;<span style="color:#008000;font-weight:bold">canvas</span>
-        <span style="color:#7d9029">onMouseDown</span><span style="color:#666">=</span>{startPan}
-        <span style="color:#7d9029">ref</span><span style="color:#666">=</span>{canvasRef}
-        <span style="color:#7d9029">width</span><span style="color:#666">=</span>{props.canvasWidth <span style="color:#666">*</span> ratio}
-        <span style="color:#7d9029">height</span><span style="color:#666">=</span>{props.canvasHeight <span style="color:#666">*</span> ratio}
-        <span style="color:#7d9029">style</span><span style="color:#666">=</span>{{
-          border<span style="color:#666">:</span> <span style="color:#ba2121">&#34;2px solid #000&#34;</span>,
-          width<span style="color:#666">:</span> <span style="color:#ba2121">`</span><span style="color:#b68;font-weight:bold">${</span>props.canvasWidth<span style="color:#b68;font-weight:bold">}</span><span style="color:#ba2121">px`</span>,
-          height<span style="color:#666">:</span> <span style="color:#ba2121">`</span><span style="color:#b68;font-weight:bold">${</span>props.canvasHeight<span style="color:#b68;font-weight:bold">}</span><span style="color:#ba2121">px`</span>
-        }}
-      &gt;&lt;/<span style="color:#008000;font-weight:bold">canvas</span>&gt;
-    &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
-  );
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">import</span> {
+</span></span><span style="display:flex;"><span>  useEffect,
+</span></span><span style="display:flex;"><span>  useCallback,
+</span></span><span style="display:flex;"><span>  useLayoutEffect,
+</span></span><span style="display:flex;"><span>  useRef,
+</span></span><span style="display:flex;"><span>  useState
+</span></span><span style="display:flex;"><span>} <span style="color:#008000;font-weight:bold">from</span> <span style="color:#ba2121">&#34;react&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">import</span> <span style="color:#666">*</span> <span style="color:#008000;font-weight:bold">as</span> React <span style="color:#008000;font-weight:bold">from</span> <span style="color:#ba2121">&#34;react&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">type</span> CanvasProps <span style="color:#666">=</span> {
+</span></span><span style="display:flex;"><span>  canvasWidth: <span style="color:#b00040">number</span>;
+</span></span><span style="display:flex;"><span>  canvasHeight: <span style="color:#b00040">number</span>;
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">type</span> Point <span style="color:#666">=</span> {
+</span></span><span style="display:flex;"><span>  x: <span style="color:#b00040">number</span>;
+</span></span><span style="display:flex;"><span>  y: <span style="color:#b00040">number</span>;
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">const</span> ORIGIN <span style="color:#666">=</span> <span style="color:#008000">Object</span>.freeze({ x: <span style="color:#b00040">0</span>, y: <span style="color:#b00040">0</span> });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic">// adjust to device to avoid blur
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span><span style="color:#008000;font-weight:bold">const</span> { devicePixelRatio: <span style="color:#b00040">ratio</span> <span style="color:#666">=</span> <span style="color:#666">1</span> } <span style="color:#666">=</span> <span style="color:#008000">window</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">function</span> diffPoints(p1: <span style="color:#b00040">Point</span>, p2: <span style="color:#b00040">Point</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">return</span> { x: <span style="color:#b00040">p1.x</span> <span style="color:#666">-</span> p2.x, y: <span style="color:#b00040">p1.y</span> <span style="color:#666">-</span> p2.y };
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">function</span> addPoints(p1: <span style="color:#b00040">Point</span>, p2: <span style="color:#b00040">Point</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">return</span> { x: <span style="color:#b00040">p1.x</span> <span style="color:#666">+</span> p2.x, y: <span style="color:#b00040">p1.y</span> <span style="color:#666">+</span> p2.y };
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">function</span> scalePoint(p1: <span style="color:#b00040">Point</span>, scale: <span style="color:#b00040">number</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">return</span> { x: <span style="color:#b00040">p1.x</span> <span style="color:#666">/</span> scale, y: <span style="color:#b00040">p1.y</span> <span style="color:#666">/</span> scale };
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">const</span> ZOOM_SENSITIVITY <span style="color:#666">=</span> <span style="color:#666">500</span>; <span style="color:#408080;font-style:italic">// bigger for lower zoom per scroll
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">export</span> <span style="color:#008000;font-weight:bold">default</span> <span style="color:#008000;font-weight:bold">function</span> Canvas(props: <span style="color:#b00040">CanvasProps</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">const</span> canvasRef <span style="color:#666">=</span> useRef&lt;<span style="color:#008000;font-weight:bold">HTMLCanvasElement</span>&gt;(<span style="color:#008000;font-weight:bold">null</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">const</span> [context, setContext] <span style="color:#666">=</span> useState&lt;<span style="color:#008000;font-weight:bold">CanvasRenderingContext2D</span> <span style="">|</span> <span style="color:#7d9029">null</span>&gt;(<span style="color:#008000;font-weight:bold">null</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">const</span> [scale, setScale] <span style="color:#666">=</span> useState&lt;<span style="color:#008000;font-weight:bold">number</span>&gt;(<span style="color:#666">1</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">const</span> [offset, setOffset] <span style="color:#666">=</span> useState&lt;<span style="color:#008000;font-weight:bold">Point</span>&gt;(ORIGIN);
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">const</span> [mousePos, setMousePos] <span style="color:#666">=</span> useState&lt;<span style="color:#008000;font-weight:bold">Point</span>&gt;(ORIGIN);
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">const</span> [viewportTopLeft, setViewportTopLeft] <span style="color:#666">=</span> useState&lt;<span style="color:#008000;font-weight:bold">Point</span>&gt;(ORIGIN);
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">const</span> isResetRef <span style="color:#666">=</span> useRef&lt;<span style="color:#008000;font-weight:bold">boolean</span>&gt;(<span style="color:#008000;font-weight:bold">false</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">const</span> lastMousePosRef <span style="color:#666">=</span> useRef&lt;<span style="color:#008000;font-weight:bold">Point</span>&gt;(ORIGIN);
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">const</span> lastOffsetRef <span style="color:#666">=</span> useRef&lt;<span style="color:#008000;font-weight:bold">Point</span>&gt;(ORIGIN);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#408080;font-style:italic">// update last offset
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>  useEffect(() <span style="color:#666">=&gt;</span> {
+</span></span><span style="display:flex;"><span>    lastOffsetRef.current <span style="color:#666">=</span> offset;
+</span></span><span style="display:flex;"><span>  }, [offset]);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#408080;font-style:italic">// reset
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>  <span style="color:#008000;font-weight:bold">const</span> reset <span style="color:#666">=</span> useCallback(
+</span></span><span style="display:flex;"><span>    (context: <span style="color:#b00040">CanvasRenderingContext2D</span>) <span style="color:#666">=&gt;</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#008000;font-weight:bold">if</span> (context <span style="color:#666">&amp;&amp;</span> <span style="color:#666">!</span>isResetRef.current) {
+</span></span><span style="display:flex;"><span>        <span style="color:#408080;font-style:italic">// adjust for device pixel density
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>        context.canvas.width <span style="color:#666">=</span> props.canvasWidth <span style="color:#666">*</span> ratio;
+</span></span><span style="display:flex;"><span>        context.canvas.height <span style="color:#666">=</span> props.canvasHeight <span style="color:#666">*</span> ratio;
+</span></span><span style="display:flex;"><span>        context.scale(ratio, ratio);
+</span></span><span style="display:flex;"><span>        setScale(<span style="color:#666">1</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#408080;font-style:italic">// reset state and refs
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>        setContext(context);
+</span></span><span style="display:flex;"><span>        setOffset(ORIGIN);
+</span></span><span style="display:flex;"><span>        setMousePos(ORIGIN);
+</span></span><span style="display:flex;"><span>        setViewportTopLeft(ORIGIN);
+</span></span><span style="display:flex;"><span>        lastOffsetRef.current <span style="color:#666">=</span> ORIGIN;
+</span></span><span style="display:flex;"><span>        lastMousePosRef.current <span style="color:#666">=</span> ORIGIN;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#408080;font-style:italic">// this thing is so multiple resets in a row don&#39;t clear canvas
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>        isResetRef.current <span style="color:#666">=</span> <span style="color:#008000;font-weight:bold">true</span>;
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    [props.canvasWidth, props.canvasHeight]
+</span></span><span style="display:flex;"><span>  );
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#408080;font-style:italic">// functions for panning
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>  <span style="color:#008000;font-weight:bold">const</span> mouseMove <span style="color:#666">=</span> useCallback(
+</span></span><span style="display:flex;"><span>    (event: <span style="color:#b00040">MouseEvent</span>) <span style="color:#666">=&gt;</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#008000;font-weight:bold">if</span> (context) {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000;font-weight:bold">const</span> lastMousePos <span style="color:#666">=</span> lastMousePosRef.current;
+</span></span><span style="display:flex;"><span>        <span style="color:#008000;font-weight:bold">const</span> currentMousePos <span style="color:#666">=</span> { x: <span style="color:#b00040">event.pageX</span>, y: <span style="color:#b00040">event.pageY</span> }; <span style="color:#408080;font-style:italic">// use document so can pan off element
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>        lastMousePosRef.current <span style="color:#666">=</span> currentMousePos;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000;font-weight:bold">const</span> mouseDiff <span style="color:#666">=</span> diffPoints(currentMousePos, lastMousePos);
+</span></span><span style="display:flex;"><span>        setOffset((prevOffset) <span style="color:#666">=&gt;</span> addPoints(prevOffset, mouseDiff));
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    [context]
+</span></span><span style="display:flex;"><span>  );
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">const</span> mouseUp <span style="color:#666">=</span> useCallback(() <span style="color:#666">=&gt;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#008000">document</span>.removeEventListener(<span style="color:#ba2121">&#34;mousemove&#34;</span>, mouseMove);
+</span></span><span style="display:flex;"><span>    <span style="color:#008000">document</span>.removeEventListener(<span style="color:#ba2121">&#34;mouseup&#34;</span>, mouseUp);
+</span></span><span style="display:flex;"><span>  }, [mouseMove]);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">const</span> startPan <span style="color:#666">=</span> useCallback(
+</span></span><span style="display:flex;"><span>    (event: <span style="color:#b00040">React.MouseEvent</span>&lt;<span style="color:#008000;font-weight:bold">HTMLCanvasElement</span><span style="">,</span> <span style="color:#7d9029">MouseEvent</span>&gt;) <span style="color:#666">=&gt;</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#008000">document</span>.addEventListener(<span style="color:#ba2121">&#34;mousemove&#34;</span>, mouseMove);
+</span></span><span style="display:flex;"><span>      <span style="color:#008000">document</span>.addEventListener(<span style="color:#ba2121">&#34;mouseup&#34;</span>, mouseUp);
+</span></span><span style="display:flex;"><span>      lastMousePosRef.current <span style="color:#666">=</span> { x: <span style="color:#b00040">event.pageX</span>, y: <span style="color:#b00040">event.pageY</span> };
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    [mouseMove, mouseUp]
+</span></span><span style="display:flex;"><span>  );
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#408080;font-style:italic">// setup canvas and set context
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>  useLayoutEffect(() <span style="color:#666">=&gt;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">if</span> (canvasRef.current) {
+</span></span><span style="display:flex;"><span>      <span style="color:#408080;font-style:italic">// get new drawing context
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>      <span style="color:#008000;font-weight:bold">const</span> renderCtx <span style="color:#666">=</span> canvasRef.current.getContext(<span style="color:#ba2121">&#34;2d&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#008000;font-weight:bold">if</span> (renderCtx) {
+</span></span><span style="display:flex;"><span>        reset(renderCtx);
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }, [reset, props.canvasHeight, props.canvasWidth]);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#408080;font-style:italic">// pan when offset or scale changes
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>  useLayoutEffect(() <span style="color:#666">=&gt;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">if</span> (context <span style="color:#666">&amp;&amp;</span> lastOffsetRef.current) {
+</span></span><span style="display:flex;"><span>      <span style="color:#008000;font-weight:bold">const</span> offsetDiff <span style="color:#666">=</span> scalePoint(
+</span></span><span style="display:flex;"><span>        diffPoints(offset, lastOffsetRef.current),
+</span></span><span style="display:flex;"><span>        scale
+</span></span><span style="display:flex;"><span>      );
+</span></span><span style="display:flex;"><span>      context.translate(offsetDiff.x, offsetDiff.y);
+</span></span><span style="display:flex;"><span>      setViewportTopLeft((prevVal) <span style="color:#666">=&gt;</span> diffPoints(prevVal, offsetDiff));
+</span></span><span style="display:flex;"><span>      isResetRef.current <span style="color:#666">=</span> <span style="color:#008000;font-weight:bold">false</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }, [context, offset, scale]);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#408080;font-style:italic">// draw
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>  useLayoutEffect(() <span style="color:#666">=&gt;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">if</span> (context) {
+</span></span><span style="display:flex;"><span>      <span style="color:#008000;font-weight:bold">const</span> squareSize <span style="color:#666">=</span> <span style="color:#666">20</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#408080;font-style:italic">// clear canvas but maintain transform
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>      <span style="color:#008000;font-weight:bold">const</span> storedTransform <span style="color:#666">=</span> context.getTransform();
+</span></span><span style="display:flex;"><span>      context.canvas.width <span style="color:#666">=</span> context.canvas.width;
+</span></span><span style="display:flex;"><span>      context.setTransform(storedTransform);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      context.fillRect(
+</span></span><span style="display:flex;"><span>        props.canvasWidth <span style="color:#666">/</span> <span style="color:#666">2</span> <span style="color:#666">-</span> squareSize <span style="color:#666">/</span> <span style="color:#666">2</span>,
+</span></span><span style="display:flex;"><span>        props.canvasHeight <span style="color:#666">/</span> <span style="color:#666">2</span> <span style="color:#666">-</span> squareSize <span style="color:#666">/</span> <span style="color:#666">2</span>,
+</span></span><span style="display:flex;"><span>        squareSize,
+</span></span><span style="display:flex;"><span>        squareSize
+</span></span><span style="display:flex;"><span>      );
+</span></span><span style="display:flex;"><span>      context.arc(viewportTopLeft.x, viewportTopLeft.y, <span style="color:#666">5</span>, <span style="color:#666">0</span>, <span style="color:#666">2</span> <span style="color:#666">*</span> <span style="color:#008000">Math</span>.PI);
+</span></span><span style="display:flex;"><span>      context.fillStyle <span style="color:#666">=</span> <span style="color:#ba2121">&#34;red&#34;</span>;
+</span></span><span style="display:flex;"><span>      context.fill();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }, [
+</span></span><span style="display:flex;"><span>    props.canvasWidth,
+</span></span><span style="display:flex;"><span>    props.canvasHeight,
+</span></span><span style="display:flex;"><span>    context,
+</span></span><span style="display:flex;"><span>    scale,
+</span></span><span style="display:flex;"><span>    offset,
+</span></span><span style="display:flex;"><span>    viewportTopLeft
+</span></span><span style="display:flex;"><span>  ]);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#408080;font-style:italic">// add event listener on canvas for mouse position
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>  useEffect(() <span style="color:#666">=&gt;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">const</span> canvasElem <span style="color:#666">=</span> canvasRef.current;
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">if</span> (canvasElem <span style="color:#666">===</span> <span style="color:#008000;font-weight:bold">null</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#008000;font-weight:bold">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">function</span> handleUpdateMouse(event: <span style="color:#b00040">MouseEvent</span>) {
+</span></span><span style="display:flex;"><span>      event.preventDefault();
+</span></span><span style="display:flex;"><span>      <span style="color:#008000;font-weight:bold">if</span> (canvasRef.current) {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000;font-weight:bold">const</span> viewportMousePos <span style="color:#666">=</span> { x: <span style="color:#b00040">event.clientX</span>, y: <span style="color:#b00040">event.clientY</span> };
+</span></span><span style="display:flex;"><span>        <span style="color:#008000;font-weight:bold">const</span> topLeftCanvasPos <span style="color:#666">=</span> {
+</span></span><span style="display:flex;"><span>          x: <span style="color:#b00040">canvasRef.current.offsetLeft</span>,
+</span></span><span style="display:flex;"><span>          y: <span style="color:#b00040">canvasRef.current.offsetTop</span>
+</span></span><span style="display:flex;"><span>        };
+</span></span><span style="display:flex;"><span>        setMousePos(diffPoints(viewportMousePos, topLeftCanvasPos));
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    canvasElem.addEventListener(<span style="color:#ba2121">&#34;mousemove&#34;</span>, handleUpdateMouse);
+</span></span><span style="display:flex;"><span>    canvasElem.addEventListener(<span style="color:#ba2121">&#34;wheel&#34;</span>, handleUpdateMouse);
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">return</span> () <span style="color:#666">=&gt;</span> {
+</span></span><span style="display:flex;"><span>      canvasElem.removeEventListener(<span style="color:#ba2121">&#34;mousemove&#34;</span>, handleUpdateMouse);
+</span></span><span style="display:flex;"><span>      canvasElem.removeEventListener(<span style="color:#ba2121">&#34;wheel&#34;</span>, handleUpdateMouse);
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>  }, []);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#408080;font-style:italic">// add event listener on canvas for zoom
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>  useEffect(() <span style="color:#666">=&gt;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">const</span> canvasElem <span style="color:#666">=</span> canvasRef.current;
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">if</span> (canvasElem <span style="color:#666">===</span> <span style="color:#008000;font-weight:bold">null</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#008000;font-weight:bold">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#408080;font-style:italic">// this is tricky. Update the viewport&#39;s &#34;origin&#34; such that
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>    <span style="color:#408080;font-style:italic">// the mouse doesn&#39;t move during scale - the &#39;zoom point&#39; of the mouse
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>    <span style="color:#408080;font-style:italic">// before and after zoom is relatively the same position on the viewport
+</span></span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"></span>    <span style="color:#008000;font-weight:bold">function</span> handleWheel(event: <span style="color:#b00040">WheelEvent</span>) {
+</span></span><span style="display:flex;"><span>      event.preventDefault();
+</span></span><span style="display:flex;"><span>      <span style="color:#008000;font-weight:bold">if</span> (context) {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000;font-weight:bold">const</span> zoom <span style="color:#666">=</span> <span style="color:#666">1</span> <span style="color:#666">-</span> event.deltaY <span style="color:#666">/</span> ZOOM_SENSITIVITY;
+</span></span><span style="display:flex;"><span>        <span style="color:#008000;font-weight:bold">const</span> viewportTopLeftDelta <span style="color:#666">=</span> {
+</span></span><span style="display:flex;"><span>          x<span style="color:#666">:</span> (mousePos.x <span style="color:#666">/</span> scale) <span style="color:#666">*</span> (<span style="color:#666">1</span> <span style="color:#666">-</span> <span style="color:#666">1</span> <span style="color:#666">/</span> zoom),
+</span></span><span style="display:flex;"><span>          y<span style="color:#666">:</span> (mousePos.y <span style="color:#666">/</span> scale) <span style="color:#666">*</span> (<span style="color:#666">1</span> <span style="color:#666">-</span> <span style="color:#666">1</span> <span style="color:#666">/</span> zoom)
+</span></span><span style="display:flex;"><span>        };
+</span></span><span style="display:flex;"><span>        <span style="color:#008000;font-weight:bold">const</span> newViewportTopLeft <span style="color:#666">=</span> addPoints(
+</span></span><span style="display:flex;"><span>          viewportTopLeft,
+</span></span><span style="display:flex;"><span>          viewportTopLeftDelta
+</span></span><span style="display:flex;"><span>        );
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        context.translate(viewportTopLeft.x, viewportTopLeft.y);
+</span></span><span style="display:flex;"><span>        context.scale(zoom, zoom);
+</span></span><span style="display:flex;"><span>        context.translate(<span style="color:#666">-</span>newViewportTopLeft.x, <span style="color:#666">-</span>newViewportTopLeft.y);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        setViewportTopLeft(newViewportTopLeft);
+</span></span><span style="display:flex;"><span>        setScale(scale <span style="color:#666">*</span> zoom);
+</span></span><span style="display:flex;"><span>        isResetRef.current <span style="color:#666">=</span> <span style="color:#008000;font-weight:bold">false</span>;
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    canvasElem.addEventListener(<span style="color:#ba2121">&#34;wheel&#34;</span>, handleWheel);
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">return</span> () <span style="color:#666">=&gt;</span> canvasElem.removeEventListener(<span style="color:#ba2121">&#34;wheel&#34;</span>, handleWheel);
+</span></span><span style="display:flex;"><span>  }, [context, mousePos.x, mousePos.y, viewportTopLeft, scale]);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">return</span> (
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#008000;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#008000;font-weight:bold">button</span> <span style="color:#7d9029">onClick</span><span style="color:#666">=</span>{() <span style="color:#666">=&gt;</span> context <span style="color:#666">&amp;&amp;</span> reset(context)}&gt;Reset&lt;/<span style="color:#008000;font-weight:bold">button</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#008000;font-weight:bold">pre</span>&gt;scale<span style="color:#666">:</span> {scale}&lt;/<span style="color:#008000;font-weight:bold">pre</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#008000;font-weight:bold">pre</span>&gt;offset<span style="color:#666">:</span> {JSON.stringify(offset)}&lt;/<span style="color:#008000;font-weight:bold">pre</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#008000;font-weight:bold">pre</span>&gt;viewportTopLeft<span style="color:#666">:</span> {JSON.stringify(viewportTopLeft)}&lt;/<span style="color:#008000;font-weight:bold">pre</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#008000;font-weight:bold">canvas</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#7d9029">onMouseDown</span><span style="color:#666">=</span>{startPan}
+</span></span><span style="display:flex;"><span>        <span style="color:#7d9029">ref</span><span style="color:#666">=</span>{canvasRef}
+</span></span><span style="display:flex;"><span>        <span style="color:#7d9029">width</span><span style="color:#666">=</span>{props.canvasWidth <span style="color:#666">*</span> ratio}
+</span></span><span style="display:flex;"><span>        <span style="color:#7d9029">height</span><span style="color:#666">=</span>{props.canvasHeight <span style="color:#666">*</span> ratio}
+</span></span><span style="display:flex;"><span>        <span style="color:#7d9029">style</span><span style="color:#666">=</span>{{
+</span></span><span style="display:flex;"><span>          border<span style="color:#666">:</span> <span style="color:#ba2121">&#34;2px solid #000&#34;</span>,
+</span></span><span style="display:flex;"><span>          width<span style="color:#666">:</span> <span style="color:#ba2121">`</span><span style="color:#b68;font-weight:bold">${</span>props.canvasWidth<span style="color:#b68;font-weight:bold">}</span><span style="color:#ba2121">px`</span>,
+</span></span><span style="display:flex;"><span>          height<span style="color:#666">:</span> <span style="color:#ba2121">`</span><span style="color:#b68;font-weight:bold">${</span>props.canvasHeight<span style="color:#b68;font-weight:bold">}</span><span style="color:#ba2121">px`</span>
+</span></span><span style="display:flex;"><span>        }}
+</span></span><span style="display:flex;"><span>      &gt;&lt;/<span style="color:#008000;font-weight:bold">canvas</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>  );
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
 </div>
 </div>
   </article>
@@ -813,10 +813,10 @@ for progression in any discipline can help carry me to where I&rsquo;d like to b
   <article>
     <h2>giving what we can pledge</h2>
     <p>This is a bit of an uncomfortable public post for me. Talking about money in general can be uncomfortable, and talking about <em>giving</em> money can just come off as self-congratulatory. But I think it&rsquo;s an important topic that will have positive impact when talked about more often.</p>
-<p>I&rsquo;ve been excited about <a href="https://www.givewell.org">GiveWell</a> for <a href="https://robinovitch61.github.io/posts/givewell-is-awesome/">a while now</a>, and am interested in exploring the idea of doing the most good with money, time and effort. This post focuses on doing good through giving money. Many of these ideas are ellaborated on in <a href="https://samharris.org/podcasts/228-doing-good/">Sam Harris' recent podcast with Will MacAskill</a>.</p>
+<p>I&rsquo;ve been excited about <a href="https://www.givewell.org">GiveWell</a> for <a href="https://robinovitch61.github.io/posts/givewell-is-awesome/">a while now</a>, and am interested in exploring the idea of doing the most good with money, time and effort. This post focuses on doing good through giving money. Many of these ideas are ellaborated on in <a href="https://samharris.org/podcasts/228-doing-good/">Sam Harris&rsquo; recent podcast with Will MacAskill</a>.</p>
 <p>The discussion of where, how, and how much to give isn&rsquo;t particularly new. The Jewish scholar Maimonides discussed the <a href="https://www.jewishvirtuallibrary.org/eight-levels-of-charitable-giving">levels of charitable giving</a>, assigning moral weight to different classes of giving. Some of his metrics aren&rsquo;t great - donor emotional state, anonymity, and reciprocity don&rsquo;t intuitively seem like reliable indicators of better or worse giving. Other metrics, like amount, context, and necessity seem reasonable.</p>
 <p>Philosophers Peter Singer, Will MacAskill, and others continue the conversation around doing the most good possible these days. While I claim very few of the answers to large and important problems, I tend to skew Utilitarian when thinking about them. <a href="https://www.centreforeffectivealtruism.org/">Effective Altruism&rsquo;s</a> goal of &ldquo;using evidence and reason to figure out how to benefit others as much as possible&rdquo; seems like the right one to me.</p>
-<p>I currently have limited ability to determine the most effective things to throw money at. I don&rsquo;t research it full-time and I&rsquo;m not particularly educated in the field. Lucky for me, people with lots of experience that do work on this full time publish their findings, like <a href="https://www.givingwhatwecan.org/get-involved/myths-about-aid/">myths about aid</a>, <a href="https://www.givewell.org/maximum-impact-fund">&ldquo;index-fund&rdquo; like aggregations of effective charities</a>, and <a href="https://docs.google.com/spreadsheets/d/16XOOB1oWse1ICbF0OVXUYtwWwpvG3mxAAQ6LYAAndQU/edit#gid=1377543212">spreadsheets of cost effective analysis'</a>.</p>
+<p>I currently have limited ability to determine the most effective things to throw money at. I don&rsquo;t research it full-time and I&rsquo;m not particularly educated in the field. Lucky for me, people with lots of experience that do work on this full time publish their findings, like <a href="https://www.givingwhatwecan.org/get-involved/myths-about-aid/">myths about aid</a>, <a href="https://www.givewell.org/maximum-impact-fund">&ldquo;index-fund&rdquo; like aggregations of effective charities</a>, and <a href="https://docs.google.com/spreadsheets/d/16XOOB1oWse1ICbF0OVXUYtwWwpvG3mxAAQ6LYAAndQU/edit#gid=1377543212">spreadsheets of cost effective analysis&rsquo;</a>.</p>
 <p>If this stuff sounds kind of boring, that&rsquo;s because it can be boring. It&rsquo;s genuinely harder to get excited about deworming programs or malaria bed nets than it is about tearing down an evil person or supporting something cute.</p>
 <p>Given that effective stuff can sometimes be unexciting, less effective stuff highly attention grabbing, and the <a href="https://www.givingwhatwecan.org/charity-comparisons/">massive difference</a> the impact your money has depending on where you give, I&rsquo;ve decided to be ok with my giving being boring as long as it&rsquo;s effective.</p>
 <p>My financial situation is good. I&rsquo;ve been working full-time now since 2017 with a brief pause last year. I&rsquo;m making more than enough to take care of my essential needs, undergo financial setbacks without dire consequence, and sock some away for retirement. I&rsquo;m well above the <a href="https://www.washingtonpost.com/magazine/2020/09/23/effective-altruism-charity/?arc404=true">$58k USD/year salary</a> required to be in the top 1% income bracket globally, and have pretty much in every way won the birth location, family, and opportunity lotteries.</p>
@@ -1440,7 +1440,7 @@ for progression in any discipline can help carry me to where I&rsquo;d like to b
 <p>Turns out clicking and dragging is a lot easier than CSS when in ideation. The mocks were mostly done before I wrote a line of code. I was able to get feedback from friends on a real-looking site without any serious up-front investment.</p>
 <h2 id="sign-up-isnt-just-for-data-collection">sign up isn&rsquo;t just for data collection</h2>
 <p>The things that take my breath away on the internet almost always load and immerse quickly. A <a href="https://paveldogreat.github.io/WebGL-Fluid-Simulation/">fluid simulation</a> or a <a href="https://www.pixelthoughts.co/">peaceful meditation</a> - no sign up flow, no pop ups or ads, no cookie consent required, nothing between you and the experience.</p>
-<p>Notably, the examples above deliver the entire content to the users' browser up front, then no further interaction with the internet is required.</p>
+<p>Notably, the examples above deliver the entire content to the users&rsquo; browser up front, then no further interaction with the internet is required.</p>
 <p>Color Controversy does not behave this way. It collects repeated user input and persists it in a far-away server. So what if someone wants to spam the site with repeated requests from an automated script? What if someone wants to DDoS the site just for the LuLz?</p>
 <p>A h4ck3r would have nothing to gain from doing this, but I felt I should operate in the &ldquo;whatever users can do, they will do&rdquo; mindset. I could have embedded a unique token in the browser that the user would automatically include in their data submission when operating the site as intended, but how to obtain the token in a way some script couldn&rsquo;t reproduce fairly easily?</p>
 <p>When it comes down to it, deterrence for malicious action is limited without user-specific identification, i.e. sign up and login. Turns out there&rsquo;s more to sign up than just pernicious data collection for profit!</p>
@@ -1453,17 +1453,17 @@ for progression in any discipline can help carry me to where I&rsquo;d like to b
 <h2 id="design-data-collection-early">design data collection early</h2>
 <p>I did something really smart and/or really dumb in designing the data model for Color Controversy.</p>
 <p>I decided that the database would never grow past its <a href="https://github.com/robinovitch61/color-controversy/blob/master/postgres/init.sql">original number of rows</a> - color submissions simply trigger a SQL query that mutates one of the values in the row of that color:</p>
-<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#008000;font-weight:bold">UPDATE</span><span style="color:#bbb"> </span>color<span style="color:#bbb">
-</span><span style="color:#bbb"></span><span style="color:#008000;font-weight:bold">SET</span><span style="color:#bbb">    </span>n_first<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span><span style="color:#008000;font-weight:bold">CASE</span><span style="color:#bbb"> </span><span style="color:#008000;font-weight:bold">WHEN</span><span style="color:#bbb"> </span>(color.hex<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span><span style="color:#ba2121">&#39;${hexColor}&#39;</span><span style="color:#bbb"> </span><span style="color:#008000;font-weight:bold">AND</span><span style="color:#bbb"> </span>color.first_option<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span><span style="color:#ba2121">&#39;${choice}&#39;</span>)<span style="color:#bbb"> </span><span style="color:#008000;font-weight:bold">THEN</span><span style="color:#bbb"> </span>n_first<span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span><span style="color:#666">1</span><span style="color:#bbb"> </span><span style="color:#008000;font-weight:bold">ELSE</span><span style="color:#bbb"> </span>n_first<span style="color:#bbb"> </span><span style="color:#008000;font-weight:bold">END</span><span style="color:#bbb">
-</span><span style="color:#bbb">     </span>,<span style="color:#bbb"> </span>n_second<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span><span style="color:#008000;font-weight:bold">CASE</span><span style="color:#bbb"> </span><span style="color:#008000;font-weight:bold">WHEN</span><span style="color:#bbb"> </span>(color.hex<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span><span style="color:#ba2121">&#39;${hexColor}&#39;</span><span style="color:#bbb"> </span><span style="color:#008000;font-weight:bold">AND</span><span style="color:#bbb"> </span>color.second_option<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span><span style="color:#ba2121">&#39;${choice}&#39;</span>)<span style="color:#bbb"> </span><span style="color:#008000;font-weight:bold">THEN</span><span style="color:#bbb"> </span>n_second<span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span><span style="color:#666">1</span><span style="color:#bbb"> </span><span style="color:#008000;font-weight:bold">ELSE</span><span style="color:#bbb"> </span>n_second<span style="color:#bbb"> </span><span style="color:#008000;font-weight:bold">END</span><span style="color:#bbb">
-</span></code></pre></td></tr></table>
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">UPDATE</span><span style="color:#bbb"> </span>color<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#008000;font-weight:bold">SET</span><span style="color:#bbb">    </span>n_first<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span><span style="color:#008000;font-weight:bold">CASE</span><span style="color:#bbb"> </span><span style="color:#008000;font-weight:bold">WHEN</span><span style="color:#bbb"> </span>(color.hex<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span><span style="color:#ba2121">&#39;${hexColor}&#39;</span><span style="color:#bbb"> </span><span style="color:#008000;font-weight:bold">AND</span><span style="color:#bbb"> </span>color.first_option<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span><span style="color:#ba2121">&#39;${choice}&#39;</span>)<span style="color:#bbb"> </span><span style="color:#008000;font-weight:bold">THEN</span><span style="color:#bbb"> </span>n_first<span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span><span style="color:#666">1</span><span style="color:#bbb"> </span><span style="color:#008000;font-weight:bold">ELSE</span><span style="color:#bbb"> </span>n_first<span style="color:#bbb"> </span><span style="color:#008000;font-weight:bold">END</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">     </span>,<span style="color:#bbb"> </span>n_second<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span><span style="color:#008000;font-weight:bold">CASE</span><span style="color:#bbb"> </span><span style="color:#008000;font-weight:bold">WHEN</span><span style="color:#bbb"> </span>(color.hex<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span><span style="color:#ba2121">&#39;${hexColor}&#39;</span><span style="color:#bbb"> </span><span style="color:#008000;font-weight:bold">AND</span><span style="color:#bbb"> </span>color.second_option<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span><span style="color:#ba2121">&#39;${choice}&#39;</span>)<span style="color:#bbb"> </span><span style="color:#008000;font-weight:bold">THEN</span><span style="color:#bbb"> </span>n_second<span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span><span style="color:#666">1</span><span style="color:#bbb"> </span><span style="color:#008000;font-weight:bold">ELSE</span><span style="color:#bbb"> </span>n_second<span style="color:#bbb"> </span><span style="color:#008000;font-weight:bold">END</span><span style="color:#bbb">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>I know Postgres will handle this atomically and liked the idea of a database that was basically the same size no matter how large the traffic grew. No indexing or normalization required when you only have ~100 rows of data 😎.</p>
 <p>Unfortunately, someone online pointed out soon after launch that it would have made for some interesting data to collect a little more than just color judgements. Browser usage, mobile/tablet/desktop, general location and time of day along with judgement made makes for some interesting data analysis after the fact.</p>
@@ -1506,27 +1506,27 @@ for progression in any discipline can help carry me to where I&rsquo;d like to b
 <li>Cracking repeating-key XOR is relatively probabilistic. The longer the ciphertext in relation to the key, the better shot at decoding you&rsquo;ve got! It was easy for me to spend too much time optimizing for instantly cracking all future possible key/text combos - I had to say enough was enough and move on at some point.</li>
 </ul>
 <p>Here is some code I cracked:</p>
-<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">0b3637272a2b2e63622c2e69692a23693a2a3c6324202d623d63343c2a26226324272765272a282b2f20430a652e2c652a3124333a653e2b2027630c692b20283165286326302e27282f
-</code></pre></td></tr></table>
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>0b3637272a2b2e63622c2e69692a23693a2a3c6324202d623d63343c2a26226324272765272a282b2f20430a652e2c652a3124333a653e2b2027630c692b20283165286326302e27282f
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>is hex-encoded ciphertext for repeating key XOR of:</p>
 <blockquote>
-<p>Burning &lsquo;em, if you ain&rsquo;t quick and nimble\nI go crazy when I hear a
+<p>Burning &rsquo;em, if you ain&rsquo;t quick and nimble\nI go crazy when I hear a
 cymbal</p>
 </blockquote>
 <p>encoded with</p>
-<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ICE
-</code></pre></td></tr></table>
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ICE
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>😁</p>
 <p>I&rsquo;ve also been playing a good amount of Zelda: Breath of the Wild, Rocket
@@ -1640,7 +1640,7 @@ League, and Super Smash Bros. Finally, I&rsquo;m now a plant Dad.</p>
 </a>
 
 <p>From this point forward in my discussion and in all Givewell documentation, it is reasonable to think of income and consumption as equivalent unless otherwise stated. I will arbitrarily choose to use the term consumption to represent both.</p>
-<p>When examining consumption in relation to well-being (well-being representing self-reported happiness, decrease in suffering, hope for the future, etc.), it&rsquo;s intuitively true that increasing consumption linearly would yield diminishing returns in well-being. At low levels of consumption, an extra \$10/day may result in a doubling or tripling of one&rsquo;s well being! At high levels of consumption, an extra \$10/day may feel almost like an insult if its meant to measurably increase ones well-being - the economic equivalent of <a href="https://www.youtube.com/watch?v=cW-wTkUBBeo">&ldquo;you want a cookie or something?&quot;</a>.</p>
+<p>When examining consumption in relation to well-being (well-being representing self-reported happiness, decrease in suffering, hope for the future, etc.), it&rsquo;s intuitively true that increasing consumption linearly would yield diminishing returns in well-being. At low levels of consumption, an extra \$10/day may result in a doubling or tripling of one&rsquo;s well being! At high levels of consumption, an extra \$10/day may feel almost like an insult if its meant to measurably increase ones well-being - the economic equivalent of <a href="https://www.youtube.com/watch?v=cW-wTkUBBeo">&ldquo;you want a cookie or something?&rdquo;</a>.</p>
 <p>For each base on the plot below, it can be said that &ldquo;well-being increases an equivalent amount (one unit) each time consumption is multiplied by {the base}&rdquo;.</p>
 
 <a class="img-link" target="_blank" href="/img/consumption_dim.png">
@@ -2016,7 +2016,7 @@ The &ldquo;true&rdquo; relationship or &ldquo;population regression line&rdquo; 
   </figure>
 </a>
 
-<p>$$ RSS = \sum_{i=1}^{m}e_i^2 = \sum_{i=1}^{m}(y_i - \hat{y}_i)^2  = \sum_{i=1}^{m}(y_i - x_i^T\hat{\beta})^2$$
+<p>$$ RSS = \sum_{i=1}^{m}e_i^2 = \sum_{i=1}^{m}(y_i - \hat{y}<em>i)^2  = \sum</em>{i=1}^{m}(y_i - x_i^T\hat{\beta})^2$$
 where $y_i$ is the response and $\hat{y}_i = x_i^T\hat{\beta}$ is the fitted value. This is assuming $x_i \in \mathbb{R}^{n \times 1}$ and $\hat{\beta} \in \mathbb{R}^{n \times 1}$ are column vectors and that the first value in each $ x_i $ is 1.</p>
 <p>We can rewrite this in matrix form with $\bf{X} \in \mathbb{R}^{m \times n}$ and $y \in \mathbb{R}^{m \times 1}$ as
 $$RSS(\hat{\beta})=(y - \mathbf{X}\hat{\beta})^T(y - \mathbf{X}\hat{\beta})$$</p>
@@ -2217,144 +2217,144 @@ $$ \sigma^{2OLS} = \frac{1}{m-n} (y-\mathbf{X}\beta)^T (y-\mathbf{X}\beta) $$</p
 <h2 id="2-clone-the-docker-stacks-repo">2: Clone the <code>docker-stacks</code> Repo</h2>
 <p>You&rsquo;ll need git for this step, which you can <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">install here</a> if you don&rsquo;t already have it. You can check by typing <code>git</code> in to the terminal and seeing if the command is found.</p>
 <p>What you&rsquo;ll clone is <a href="https://github.com/jupyter/docker-stacks">Project Jupyter&rsquo;s docker-stacks</a>. You can also <a href="https://help.github.com/en/articles/fork-a-repo">fork this</a> repo and clone your fork. We&rsquo;ll go through adding a couple files to this repo that will make deployment and customizing things easy. You can use <a href="https://github.com/robinovitch61/docker-stacks">my fork</a> or this tutorial as a reference. To clone the <code>docker-stacks</code> repo, run the following command in terminal/command prompt:</p>
-<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#408080;font-style:italic"># run in the desired directory, e.g. ~/projects </span>
-git clone https://github.com/jupyter/docker-stacks.git
-</code></pre></td></tr></table>
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#408080;font-style:italic"># run in the desired directory, e.g. ~/projects </span>
+</span></span><span style="display:flex;"><span>git clone https://github.com/jupyter/docker-stacks.git
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>The <code>docker-stacks</code> directory we just cloned contains a lot of stuff. Open the folder in your favorite editor or just look at the repo <a href="https://github.com/jupyter/docker-stacks">here</a>. We&rsquo;re going to look at just a few bits of a few important files. First, the <code>Dockerfile</code> in the <code>/base-notebook</code> directory:</p>
-<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#408080;font-style:italic">############################################</span>
-<span style="color:#408080;font-style:italic">## docker-stacks/base-notebook/Dockerfile ##</span>
-<span style="color:#408080;font-style:italic">############################################</span>
-
-<span style="color:#408080;font-style:italic"># Copyright (c) Jupyter Development Team.</span>
-<span style="color:#408080;font-style:italic"># Distributed under the terms of the Modified BSD License.</span>
-
-<span style="color:#408080;font-style:italic"># Ubuntu 18.04 (bionic) from 2019-06-12</span>
-<span style="color:#408080;font-style:italic"># https://github.com/tianon/docker-brew-ubuntu-core/commit/3c462555392cb188830b7c91e29311b5fad90cfe</span>
-ARG <span style="color:#19177c">BASE_CONTAINER</span><span style="color:#666">=</span>ubuntu:bionic-20190612@sha256:9b1702dcfe32c873a770a32cfd306dd7fc1c4fd134adfb783db68defc8894b3c
-FROM <span style="color:#19177c">$BASE_CONTAINER</span>
-
-LABEL <span style="color:#19177c">maintainer</span><span style="color:#666">=</span><span style="color:#ba2121">&#34;Jupyter Project&#34;</span>
-ARG <span style="color:#19177c">NB_USER</span><span style="color:#666">=</span><span style="color:#ba2121">&#34;jovyan&#34;</span>
-ARG <span style="color:#19177c">NB_UID</span><span style="color:#666">=</span><span style="color:#ba2121">&#34;1000&#34;</span>
-ARG <span style="color:#19177c">NB_GID</span><span style="color:#666">=</span><span style="color:#ba2121">&#34;100&#34;</span>
-<span style="color:#408080;font-style:italic"># ...</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#408080;font-style:italic">############################################</span>
+</span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic">## docker-stacks/base-notebook/Dockerfile ##</span>
+</span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic">############################################</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"># Copyright (c) Jupyter Development Team.</span>
+</span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"># Distributed under the terms of the Modified BSD License.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"># Ubuntu 18.04 (bionic) from 2019-06-12</span>
+</span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"># https://github.com/tianon/docker-brew-ubuntu-core/commit/3c462555392cb188830b7c91e29311b5fad90cfe</span>
+</span></span><span style="display:flex;"><span>ARG <span style="color:#19177c">BASE_CONTAINER</span><span style="color:#666">=</span>ubuntu:bionic-20190612@sha256:9b1702dcfe32c873a770a32cfd306dd7fc1c4fd134adfb783db68defc8894b3c
+</span></span><span style="display:flex;"><span>FROM <span style="color:#19177c">$BASE_CONTAINER</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>LABEL <span style="color:#19177c">maintainer</span><span style="color:#666">=</span><span style="color:#ba2121">&#34;Jupyter Project&#34;</span>
+</span></span><span style="display:flex;"><span>ARG <span style="color:#19177c">NB_USER</span><span style="color:#666">=</span><span style="color:#ba2121">&#34;jovyan&#34;</span>
+</span></span><span style="display:flex;"><span>ARG <span style="color:#19177c">NB_UID</span><span style="color:#666">=</span><span style="color:#ba2121">&#34;1000&#34;</span>
+</span></span><span style="display:flex;"><span>ARG <span style="color:#19177c">NB_GID</span><span style="color:#666">=</span><span style="color:#ba2121">&#34;100&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"># ...</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>This <code>Dockerfile</code> specifies that all jupyter containers will derive from a Linux Ubuntu &ldquo;bionic&rdquo; OS (<code>BASE_CONTAINER=ubuntu...</code>).</p>
 <p>If you examine the <code>Dockerfile</code>s for other directories, you&rsquo;ll see there&rsquo;s a chain of derivations that end in the base-notebook:</p>
-<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#408080;font-style:italic"># minimal-notebook/Dockerfile, top section:</span>
-ARG <span style="color:#19177c">BASE_CONTAINER</span><span style="color:#666">=</span>jupyter/base-notebook
-
-<span style="color:#408080;font-style:italic"># scipy-notebook/Dockerfile, top section:</span>
-ARG <span style="color:#19177c">BASE_CONTAINER</span><span style="color:#666">=</span>jupyter/minimal-notebook
-
-<span style="color:#408080;font-style:italic"># datascience-notebook/Dockerfile, top section:</span>
-ARG <span style="color:#19177c">BASE_CONTAINER</span><span style="color:#666">=</span>jupyter/scipy-notebook
-
-<span style="color:#408080;font-style:italic"># pyspark-notebook/Dockerfile, top section:</span>
-ARG <span style="color:#19177c">BASE_CONTAINER</span><span style="color:#666">=</span>jupyter/scipy-notebook
-</code></pre></td></tr></table>
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#408080;font-style:italic"># minimal-notebook/Dockerfile, top section:</span>
+</span></span><span style="display:flex;"><span>ARG <span style="color:#19177c">BASE_CONTAINER</span><span style="color:#666">=</span>jupyter/base-notebook
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"># scipy-notebook/Dockerfile, top section:</span>
+</span></span><span style="display:flex;"><span>ARG <span style="color:#19177c">BASE_CONTAINER</span><span style="color:#666">=</span>jupyter/minimal-notebook
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"># datascience-notebook/Dockerfile, top section:</span>
+</span></span><span style="display:flex;"><span>ARG <span style="color:#19177c">BASE_CONTAINER</span><span style="color:#666">=</span>jupyter/scipy-notebook
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"># pyspark-notebook/Dockerfile, top section:</span>
+</span></span><span style="display:flex;"><span>ARG <span style="color:#19177c">BASE_CONTAINER</span><span style="color:#666">=</span>jupyter/scipy-notebook
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>The docker-stacks team has structured the project so you can specify how complicated of a setup you want out of the box based on what image you select. The <code>jupyter/minimal-notebook</code> image will contain the simplest installation you need for jupyter to run at all. The <code>jupyter/pyspark-notebook</code> image will come with a lot more, like a spark installation in the jupyter container file system (likely overkill unless you&rsquo;re using pyspark!). Higher up images in the inheritance tree will include everything below them (e.g. pyspark-notebook contains everything from scipy-notebook, minimal-notebook, and base-notebook).</p>
 <h3 id="custom-file-1-docker-compose">Custom File 1: Docker Compose</h3>
 <p>The first file we add to the <code>docker-stacks</code> base repo is <code>docker-compose.yml</code>. The <code>docker-compose</code> tool is often used for orchestrating many containers (e.g. &ldquo;bring up an nginx container and a jupyter container together so nginx can act as a reverse proxy and make the jupyter URL more user-friendly&rdquo;), but here we only have one container (<code>jupyter</code>). I like to use <code>docker-compose.yml</code> as a way of version controlling a <code>docker run</code> command, which is typically used to bring single containers up. All <code>docker-run</code> commands can be translated into <code>docker-compose</code> files and vice versa.</p>
 <p>You&rsquo;ll create a <code>docker-stacks/docker-compose.yml</code> file that looks something like this (totally up to you to customize!):</p>
-<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#408080;font-style:italic">############################################</span>
-<span style="color:#408080;font-style:italic">## docker-stacks/docker-compose.yml ##</span>
-<span style="color:#408080;font-style:italic">############################################</span>
-version: <span style="color:#ba2121">&#39;3&#39;</span>
-
-services:
-
-    jupyter:
-    container_name: jupyter
-    image: jupyter/minimal-notebook <span style="color:#408080;font-style:italic"># always get `latest` image on docker hub</span>
-    <span style="color:#408080;font-style:italic"># image: jupyter/pyspark-notebook:1386e2046833 # tagged/pinned image example. check for updates here: https://hub.docker.com/r/jupyter/pyspark-notebook/tags.</span>
-    volumes:
-        - ~/:/home/jovyan/work/
-        - ./setup_envs.sh:/usr/local/bin/before-notebook.d/setup_envs.sh
-    ports:
-        - 9999:9999
-    restart: unless-stopped
-    environment:
-        JUPYTER_ENABLE_LAB: <span style="color:#ba2121">&#39;yes&#39;</span>
-    command: &gt;
-        sh -c <span style="color:#ba2121">&#34;bash start-notebook.sh\
-</span><span style="color:#ba2121">                --NotebookApp.token=</span><span style="color:#19177c">$JUPYTER_PASSWORD</span><span style="color:#ba2121">\
-</span><span style="color:#ba2121">                --NotebookApp.notebook_dir=/home/jovyan/work/\
-</span><span style="color:#ba2121">                --port 9999&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#408080;font-style:italic">############################################</span>
+</span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic">## docker-stacks/docker-compose.yml ##</span>
+</span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic">############################################</span>
+</span></span><span style="display:flex;"><span>version: <span style="color:#ba2121">&#39;3&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>services:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    jupyter:
+</span></span><span style="display:flex;"><span>    container_name: jupyter
+</span></span><span style="display:flex;"><span>    image: jupyter/minimal-notebook <span style="color:#408080;font-style:italic"># always get `latest` image on docker hub</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#408080;font-style:italic"># image: jupyter/pyspark-notebook:1386e2046833 # tagged/pinned image example. check for updates here: https://hub.docker.com/r/jupyter/pyspark-notebook/tags.</span>
+</span></span><span style="display:flex;"><span>    volumes:
+</span></span><span style="display:flex;"><span>        - ~/:/home/jovyan/work/
+</span></span><span style="display:flex;"><span>        - ./setup_envs.sh:/usr/local/bin/before-notebook.d/setup_envs.sh
+</span></span><span style="display:flex;"><span>    ports:
+</span></span><span style="display:flex;"><span>        - 9999:9999
+</span></span><span style="display:flex;"><span>    restart: unless-stopped
+</span></span><span style="display:flex;"><span>    environment:
+</span></span><span style="display:flex;"><span>        JUPYTER_ENABLE_LAB: <span style="color:#ba2121">&#39;yes&#39;</span>
+</span></span><span style="display:flex;"><span>    command: &gt;
+</span></span><span style="display:flex;"><span>        sh -c <span style="color:#ba2121">&#34;bash start-notebook.sh\
+</span></span></span><span style="display:flex;"><span><span style="color:#ba2121">                --NotebookApp.token=</span><span style="color:#19177c">$JUPYTER_PASSWORD</span><span style="color:#ba2121">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ba2121">                --NotebookApp.notebook_dir=/home/jovyan/work/\
+</span></span></span><span style="display:flex;"><span><span style="color:#ba2121">                --port 9999&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Meaning of this witchcraft:</p>
 <ul>
@@ -2376,186 +2376,186 @@ services:
 <li>Run other useful commands in the container upon startup (e.g. configure git, install <code>vim</code> or <code>svn</code>, etc.)</li>
 </ul>
 <p>You&rsquo;ll create a <code>docker-stacks/setup_envs.sh</code> file that looks something like this (totally up to you to customize!):</p>
-<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">51
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">52
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">54
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">55
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">56
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">57
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">58
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">59
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">60
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">61
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">62
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">63
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">64
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">51
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">52
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">54
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">55
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">56
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">57
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">58
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">59
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">60
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">61
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">62
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">63
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">64
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#408080;font-style:italic">############################################</span>
-<span style="color:#408080;font-style:italic">## example docker-stacks/setup_envs.sh ##</span>
-<span style="color:#408080;font-style:italic">############################################</span>
-<span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;&#34;</span>
-<span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;Creating useful environment variables...&#34;</span>
-<span style="color:#008000">export</span> <span style="color:#19177c">MYVAR</span><span style="color:#666">=</span><span style="color:#19177c">$MYVAR</span>
-<span style="color:#008000">export</span> <span style="color:#19177c">MYVAR2</span><span style="color:#666">=</span><span style="color:#19177c">$MYVAR2</span>
-<span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;Finished creating useful environment variables!&#34;</span>
-
-<span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;&#34;</span>
-<span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;Adding jupyterlab extensions...&#34;</span>
-rm -rf /home/jovyan/work/extensions
-mkdir /home/jovyan/work/extensions
-
-<span style="color:#408080;font-style:italic"># Great extension by calpoly for better markdown formatting in cells: https://github.com/jupytercalpoly/jupyterlab-richtext-mode</span>
-git clone https://github.com/jupytercalpoly/jupyterlab-richtext-mode.git /home/jovyan/work/extensions/jupyter-scribe <span style="color:#666">&amp;&amp;</span> <span style="color:#b62;font-weight:bold">\
-</span><span style="color:#b62;font-weight:bold"></span><span style="color:#008000">cd</span> /home/jovyan/work/extensions/jupyter-scribe <span style="color:#666">&amp;&amp;</span> <span style="color:#b62;font-weight:bold">\
-</span><span style="color:#b62;font-weight:bold"></span>npm install <span style="color:#666">&amp;&amp;</span> <span style="color:#b62;font-weight:bold">\
-</span><span style="color:#b62;font-weight:bold"></span>npm run build <span style="color:#666">&amp;&amp;</span> <span style="color:#b62;font-weight:bold">\
-</span><span style="color:#b62;font-weight:bold"></span>jupyter labextension link .
-
-<span style="color:#408080;font-style:italic"># Rebuild to get extensions to work</span>
-jlpm build
-jupyter lab build
-<span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;Added jupyterlab extensions!&#34;</span>
-
-<span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;&#34;</span>
-<span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;Creating kernel py37...&#34;</span>
-conda create -n py37 <span style="color:#19177c">python</span><span style="color:#666">=</span>3.7.4 pip -y
-<span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;Finished creating kernel py37!&#34;</span>
-
-<span style="color:#408080;font-style:italic"># Install packages with pip, otherwise conda&#39;s &#34;auto-checking compatibility&#34; algo freaks out (with certain versions of conda)</span>
-<span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;&#34;</span>
-<span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;Installing packages in py37...&#34;</span>
-<span style="color:#008000">source</span> activate py37 <span style="color:#666">&amp;&amp;</span> <span style="color:#b62;font-weight:bold">\
-</span><span style="color:#b62;font-weight:bold"></span>pip install ipykernel <span style="color:#666">&amp;&amp;</span> <span style="color:#b62;font-weight:bold">\
-</span><span style="color:#b62;font-weight:bold"></span>pip install pandas <span style="color:#666">&amp;&amp;</span> <span style="color:#b62;font-weight:bold">\
-</span><span style="color:#b62;font-weight:bold"></span>pip install numpy <span style="color:#666">&amp;&amp;</span> <span style="color:#b62;font-weight:bold">\
-</span><span style="color:#b62;font-weight:bold"></span>pip install scipy <span style="color:#666">&amp;&amp;</span> <span style="color:#b62;font-weight:bold">\
-</span><span style="color:#b62;font-weight:bold"></span>pip install matplotlib <span style="color:#666">&amp;&amp;</span> <span style="color:#b62;font-weight:bold">\
-</span><span style="color:#b62;font-weight:bold"></span>pip install seaborn <span style="color:#666">&amp;&amp;</span> <span style="color:#b62;font-weight:bold">\
-</span><span style="color:#b62;font-weight:bold"></span><span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;Finished installing packages in py37!&#34;</span>
-
-<span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;&#34;</span>
-<span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;Connecting env to kernel...&#34;</span>
-<span style="color:#008000">source</span> activate py37 <span style="color:#666">&amp;&amp;</span> python -m ipykernel install --user --name py37 --display-name <span style="color:#ba2121">&#34;py37&#34;</span>
-<span style="color:#008000">source</span> activate py37 <span style="color:#408080;font-style:italic"># must activate/deactivate once to have changes displayed</span>
-<span style="color:#008000">source</span> activate base
-<span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;Connected env to kernel!&#34;</span>
-
-cat &lt;&lt; <span style="color:#ba2121">&#34;EOF&#34;</span>
-
-WELCOME!
-
-     ██╗██╗   ██╗██████╗ ██╗   ██╗████████╗███████╗██████╗
-     ██║██║   ██║██╔══██╗╚██╗ ██╔╝╚══██╔══╝██╔════╝██╔══██╗
-     ██║██║   ██║██████╔╝ ╚████╔╝    ██║   █████╗  ██████╔╝
-██   ██║██║   ██║██╔═══╝   ╚██╔╝     ██║   ██╔══╝  ██╔══██╗
-╚█████╔╝╚██████╔╝██║        ██║      ██║   ███████╗██║  ██║
- ╚════╝  ╚═════╝ ╚═╝        ╚═╝      ╚═╝   ╚══════╝╚═╝  ╚═╝
-
-Take it from here...
-
-EOF
-</code></pre></td></tr></table>
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#408080;font-style:italic">############################################</span>
+</span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic">## example docker-stacks/setup_envs.sh ##</span>
+</span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic">############################################</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;Creating useful environment variables...&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">export</span> <span style="color:#19177c">MYVAR</span><span style="color:#666">=</span><span style="color:#19177c">$MYVAR</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">export</span> <span style="color:#19177c">MYVAR2</span><span style="color:#666">=</span><span style="color:#19177c">$MYVAR2</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;Finished creating useful environment variables!&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;Adding jupyterlab extensions...&#34;</span>
+</span></span><span style="display:flex;"><span>rm -rf /home/jovyan/work/extensions
+</span></span><span style="display:flex;"><span>mkdir /home/jovyan/work/extensions
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"># Great extension by calpoly for better markdown formatting in cells: https://github.com/jupytercalpoly/jupyterlab-richtext-mode</span>
+</span></span><span style="display:flex;"><span>git clone https://github.com/jupytercalpoly/jupyterlab-richtext-mode.git /home/jovyan/work/extensions/jupyter-scribe <span style="color:#666">&amp;&amp;</span> <span style="color:#b62;font-weight:bold">\
+</span></span></span><span style="display:flex;"><span><span style="color:#b62;font-weight:bold"></span><span style="color:#008000">cd</span> /home/jovyan/work/extensions/jupyter-scribe <span style="color:#666">&amp;&amp;</span> <span style="color:#b62;font-weight:bold">\
+</span></span></span><span style="display:flex;"><span><span style="color:#b62;font-weight:bold"></span>npm install <span style="color:#666">&amp;&amp;</span> <span style="color:#b62;font-weight:bold">\
+</span></span></span><span style="display:flex;"><span><span style="color:#b62;font-weight:bold"></span>npm run build <span style="color:#666">&amp;&amp;</span> <span style="color:#b62;font-weight:bold">\
+</span></span></span><span style="display:flex;"><span><span style="color:#b62;font-weight:bold"></span>jupyter labextension link .
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"># Rebuild to get extensions to work</span>
+</span></span><span style="display:flex;"><span>jlpm build
+</span></span><span style="display:flex;"><span>jupyter lab build
+</span></span><span style="display:flex;"><span><span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;Added jupyterlab extensions!&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;Creating kernel py37...&#34;</span>
+</span></span><span style="display:flex;"><span>conda create -n py37 <span style="color:#19177c">python</span><span style="color:#666">=</span>3.7.4 pip -y
+</span></span><span style="display:flex;"><span><span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;Finished creating kernel py37!&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"># Install packages with pip, otherwise conda&#39;s &#34;auto-checking compatibility&#34; algo freaks out (with certain versions of conda)</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;Installing packages in py37...&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">source</span> activate py37 <span style="color:#666">&amp;&amp;</span> <span style="color:#b62;font-weight:bold">\
+</span></span></span><span style="display:flex;"><span><span style="color:#b62;font-weight:bold"></span>pip install ipykernel <span style="color:#666">&amp;&amp;</span> <span style="color:#b62;font-weight:bold">\
+</span></span></span><span style="display:flex;"><span><span style="color:#b62;font-weight:bold"></span>pip install pandas <span style="color:#666">&amp;&amp;</span> <span style="color:#b62;font-weight:bold">\
+</span></span></span><span style="display:flex;"><span><span style="color:#b62;font-weight:bold"></span>pip install numpy <span style="color:#666">&amp;&amp;</span> <span style="color:#b62;font-weight:bold">\
+</span></span></span><span style="display:flex;"><span><span style="color:#b62;font-weight:bold"></span>pip install scipy <span style="color:#666">&amp;&amp;</span> <span style="color:#b62;font-weight:bold">\
+</span></span></span><span style="display:flex;"><span><span style="color:#b62;font-weight:bold"></span>pip install matplotlib <span style="color:#666">&amp;&amp;</span> <span style="color:#b62;font-weight:bold">\
+</span></span></span><span style="display:flex;"><span><span style="color:#b62;font-weight:bold"></span>pip install seaborn <span style="color:#666">&amp;&amp;</span> <span style="color:#b62;font-weight:bold">\
+</span></span></span><span style="display:flex;"><span><span style="color:#b62;font-weight:bold"></span><span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;Finished installing packages in py37!&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;Connecting env to kernel...&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">source</span> activate py37 <span style="color:#666">&amp;&amp;</span> python -m ipykernel install --user --name py37 --display-name <span style="color:#ba2121">&#34;py37&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">source</span> activate py37 <span style="color:#408080;font-style:italic"># must activate/deactivate once to have changes displayed</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">source</span> activate base
+</span></span><span style="display:flex;"><span><span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;Connected env to kernel!&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cat &lt;&lt; <span style="color:#ba2121">&#34;EOF&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>WELCOME!
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>     ██╗██╗   ██╗██████╗ ██╗   ██╗████████╗███████╗██████╗
+</span></span><span style="display:flex;"><span>     ██║██║   ██║██╔══██╗╚██╗ ██╔╝╚══██╔══╝██╔════╝██╔══██╗
+</span></span><span style="display:flex;"><span>     ██║██║   ██║██████╔╝ ╚████╔╝    ██║   █████╗  ██████╔╝
+</span></span><span style="display:flex;"><span>██   ██║██║   ██║██╔═══╝   ╚██╔╝     ██║   ██╔══╝  ██╔══██╗
+</span></span><span style="display:flex;"><span>╚█████╔╝╚██████╔╝██║        ██║      ██║   ███████╗██║  ██║
+</span></span><span style="display:flex;"><span> ╚════╝  ╚═════╝ ╚═╝        ╚═╝      ╚═╝   ╚══════╝╚═╝  ╚═╝
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Take it from here...
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>EOF
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><em>Dirty details on how this runs just by placing it in the container:</em> the <code>start-notebook.sh</code> script run by the <code>docker-compose</code> command will subsequently run <code>start.sh</code>. Both these shell scripts are in the <code>base-notebook</code> directory. The <code>start.sh</code> script has &ldquo;hooks&rdquo; for running scripts that are in the <code>/usr/local/bin/before-notebook.d</code>. <strong>All this to say that <code>setup_envs.sh</code> will be run as part of your jupyter setup</strong> because we put it in the <code>/usr/local/bin/before-notebook.d</code> directory in the jupyter container!</p>
 <p>Note that you could totally exclude the <code>setup_envs.sh</code> script and volume and your deployment would be fully functioning. I like to use this method as a way of customizing my jupyter setup in a version-controlled manner. Rather than installing a new python package in my base environment or installing a system package every time manually and trying to remember what I did when I port to a new machine, I&rsquo;ll edit the <code>setup_envs.sh</code> script, commit and push to my fork, then redeploy on whatever machine I want and get the exact same setup.</p>
 <h2 id="3-bring-up-the-jupyter-container">3: Bring Up the Jupyter Container</h2>
 <p>If you&rsquo;ve gotten this far, you&rsquo;re basically done! The one thing we&rsquo;re missing is to set a password/token. In terminal, run this command with your custom password. If you don&rsquo;t do this, <code>docker-compose</code> will warn you at the next step.</p>
-<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#008000">export</span> <span style="color:#19177c">JUPYTER_PASSWORD</span><span style="color:#666">=</span><span style="color:#19177c">$MY_CUSTOM_PASSWORD</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#008000">export</span> <span style="color:#19177c">JUPYTER_PASSWORD</span><span style="color:#666">=</span><span style="color:#19177c">$MY_CUSTOM_PASSWORD</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>You can now navigate to the <code>docker-stacks</code> directory in a terminal and run:</p>
-<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker-compose up -d
-</code></pre></td></tr></table>
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker-compose up -d
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>The <code>-d</code> flag stands for &ldquo;detached&rdquo;, and ensures the <code>jupyter</code> container will stay running even if you exit the terminal.</p>
 <p>You can now run:</p>
-<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker logs -f jupyter
-</code></pre></td></tr></table>
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker logs -f jupyter
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>The <code>-f</code> flag standing for &ldquo;follow&rdquo;. Watch the progress in your terminal as your jupyter container is instantiated and your <code>setup_envs.sh</code> script is run (if you made one).</p>
 <p>Once you see something like the following:</p>
-<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#666">[</span>I 16:19:04.574 LabApp<span style="color:#666">]</span> The Jupyter Notebook is running at:
-<span style="color:#666">[</span>I 16:19:04.574 LabApp<span style="color:#666">]</span> http://3204808557f5:9999/?token<span style="color:#666">=</span>...
-<span style="color:#666">[</span>I 16:19:04.575 LabApp<span style="color:#666">]</span>  or http://127.0.0.1:9999/?token<span style="color:#666">=</span>...
-<span style="color:#666">[</span>I 16:19:04.575 LabApp<span style="color:#666">]</span> Use Control-C to stop this server and shut down all kernels <span style="color:#666">(</span>twice to skip confirmation<span style="color:#666">)</span>.
-</code></pre></td></tr></table>
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#666">[</span>I 16:19:04.574 LabApp<span style="color:#666">]</span> The Jupyter Notebook is running at:
+</span></span><span style="display:flex;"><span><span style="color:#666">[</span>I 16:19:04.574 LabApp<span style="color:#666">]</span> http://3204808557f5:9999/?token<span style="color:#666">=</span>...
+</span></span><span style="display:flex;"><span><span style="color:#666">[</span>I 16:19:04.575 LabApp<span style="color:#666">]</span>  or http://127.0.0.1:9999/?token<span style="color:#666">=</span>...
+</span></span><span style="display:flex;"><span><span style="color:#666">[</span>I 16:19:04.575 LabApp<span style="color:#666">]</span> Use Control-C to stop this server and shut down all kernels <span style="color:#666">(</span>twice to skip confirmation<span style="color:#666">)</span>.
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>You&rsquo;re ready to go! Navigate to <a href="http://127.0.0.1:9999">http://127.0.0.1:9999</a> (or whatever port you specified if different than <code>9999</code>) where you should see a page that prompts you for your password (set with the <code>JUPYTER_PASSWORD</code> environment variable earlier).</p>
 <p>You have a fully functioning and replicable jupyter environment, portable to any machine that runs docker! Remember that even though your container has access to your host file system through the volume we created, your file system isn&rsquo;t (and shouldn&rsquo;t be) version controlled with the <code>docker-stacks</code> directory. Version control your projects separately.</p>

@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
-    <link rel="stylesheet" href="https://robinovitch61.github.io/sass/main.min.a52045891891a7be7e3673f5d0bdbf76eef49ffce8c14b35b87c292ac78f3818.css">
+    <link rel="stylesheet" href="https://robinovitch61.github.io/sass/main.min.2bab0715f7caa83581678077648869f2d556a8625634f5105c99061dae6e2e70.css">
   </head>
 
   <body>
@@ -85,7 +85,7 @@
 </a>
 
 <p>My second to last week at RC was first spent in San Francisco at onsite interviews for positions in the city. Interviews went well and I had a nice time seeing some friends while there.</p>
-<p>Unfortunately, there wasn&rsquo;t enough time to finish the compiler of nand2tetris! The first week where I haven&rsquo;t finished my nand2tetris project :'(. I&rsquo;m going to try my best to finish up both the compiler and OS this final week, though!</p>
+<p>Unfortunately, there wasn&rsquo;t enough time to finish the compiler of nand2tetris! The first week where I haven&rsquo;t finished my nand2tetris project :&rsquo;(. I&rsquo;m going to try my best to finish up both the compiler and OS this final week, though!</p>
 <p>I was also focusing on finishing a take-home assignment from another interview process which definitely cut in to my time. As annoying and time consuming it is to generate contrived work to prove you&rsquo;re not lying on your resume, it was sort of fun to develop an application with a relational database and interactive web UI and make it feel smooth and look pretty. Link to the project is <a href="https://github.com/robinovitch61/impossible_app">here on github</a>.</p>
 <p>RC is ending so soon! I&rsquo;m so mixed up about it. 12 weeks flies by, truly. Seeing everyone&rsquo;s demos last week reminded me of how awesome everyone is here and how many cool projects come out of this space. I&rsquo;ve been so fortunate to be a part of it, and I want to squeeze all I can out of my last week here.</p>
 
@@ -145,7 +145,7 @@
 </a>
 
 <p>This week, I completed Nand2Tetris project 9, <a href="https://robinovitch61.github.io/posts/givewell-is-awesome/">wrote about Givewell</a>, and continued interview prep.</p>
-<p>Nand2Tetris' gets you used to programming in the high-level &ldquo;Jack&rdquo; programming language. It would be difficult (or at least, less meaningful) to write a compiler for a high level language that you don&rsquo;t really understand.</p>
+<p>Nand2Tetris&rsquo; gets you used to programming in the high-level &ldquo;Jack&rdquo; programming language. It would be difficult (or at least, less meaningful) to write a compiler for a high level language that you don&rsquo;t really understand.</p>
 <p>I found it useful in that it solidified the rules of Jack and allowed me to project my thoughts of what the compiler would be doing to translate Jack code to VM Code.</p>
 <p>The &ldquo;game&rdquo; I wrote was just enough to feel like I understood the syntax of the language, and isn&rsquo;t really a game at all. I did make a Mooninite from Aqua Teen Hunger Force fire rockets in to a guys mouth, though! No winning or losing criteria were defined but it sure was fun.</p>
 
@@ -171,55 +171,55 @@
 <p>Recursion is when a function calls itself. Intuitively, it&rsquo;s a top down approach to problem solving. Say Charlie is wondering what the fourth number in the Fibonacci Sequence is. She might say, well, the fourth number is the second number plus the third number. The second number is 1 as the sequence starts with 1, 1. The third number is the first number plus the second number, both of which are 1, so the third number is 1 + 1 = 2. So the fourth number is 1 + 2 = 3!</p>
 <p>The idea is to drill down until you get to the base cases (here, the first and second numbers), and then traverse up your nested logic back to the original question. In a computer, each recursive call adds a new &ldquo;frame&rdquo; to the working stack, where a frame includes function arguments, local variables, and relevant pointers that allow restoration of the previous frame. More on this later.</p>
 <p>In python, recursively solving for the Nth Fibonacci Number looks as follows:</p>
-<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#408080;font-style:italic">## Recursive Fibbing</span>
-<span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">recursive_fib</span>(n):
-<span style="color:#008000;font-weight:bold">if</span> n <span style="color:#666">&lt;=</span> <span style="color:#666">0</span>:
-    <span style="color:#008000;font-weight:bold">raise</span> <span style="color:#d2413a;font-weight:bold">ValueError</span>(<span style="color:#ba2121">&#39;Fibonacci sequence starts at first number.&#39;</span>)
-<span style="color:#008000;font-weight:bold">elif</span> n <span style="color:#666">&lt;=</span> <span style="color:#666">2</span>:
-    <span style="color:#008000;font-weight:bold">return</span> n<span style="color:#666">-</span><span style="color:#666">1</span> <span style="color:#408080;font-style:italic"># first = 0, second = 1</span>
-<span style="color:#008000;font-weight:bold">else</span>:
-    <span style="color:#008000;font-weight:bold">return</span> recursive_fib(n<span style="color:#666">-</span><span style="color:#666">2</span>) <span style="color:#666">+</span> recursive_fib(n<span style="color:#666">-</span><span style="color:#666">1</span>)
-
-<span style="color:#408080;font-style:italic"># Timing code included here for reference</span>
-<span style="color:#008000;font-weight:bold">from</span> <span style="color:#00f;font-weight:bold">timeit</span> <span style="color:#008000;font-weight:bold">import</span> timeit
-runs <span style="color:#666">=</span> <span style="color:#666">10000</span>
-time <span style="color:#666">=</span> timeit(
-<span style="color:#ba2121">&#34;recursive_fib(10)&#34;</span>,
-setup<span style="color:#666">=</span><span style="color:#ba2121">&#34;from __main__ import recursive_fib&#34;</span>,
-number<span style="color:#666">=</span>runs)
-<span style="color:#008000;font-weight:bold">print</span>(<span style="color:#ba2121">&#34;recursive_fib took average of {:.2E}s across {} runs&#34;</span>
-<span style="color:#666">.</span>format(time<span style="color:#666">/</span>runs, runs))
-<span style="color:#408080;font-style:italic"># &gt;&gt; recursive_fib took average of 1.82E-05s across 10000 runs</span>
-
-recursive_fib(<span style="color:#666">10</span>)
-<span style="color:#408080;font-style:italic"># &gt;&gt; 34</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#408080;font-style:italic">## Recursive Fibbing</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">recursive_fib</span>(n):
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">if</span> n <span style="color:#666">&lt;=</span> <span style="color:#666">0</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">raise</span> <span style="color:#d2413a;font-weight:bold">ValueError</span>(<span style="color:#ba2121">&#39;Fibonacci sequence starts at first number.&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">elif</span> n <span style="color:#666">&lt;=</span> <span style="color:#666">2</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">return</span> n<span style="color:#666">-</span><span style="color:#666">1</span> <span style="color:#408080;font-style:italic"># first = 0, second = 1</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">return</span> recursive_fib(n<span style="color:#666">-</span><span style="color:#666">2</span>) <span style="color:#666">+</span> recursive_fib(n<span style="color:#666">-</span><span style="color:#666">1</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"># Timing code included here for reference</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">from</span> <span style="color:#00f;font-weight:bold">timeit</span> <span style="color:#008000;font-weight:bold">import</span> timeit
+</span></span><span style="display:flex;"><span>runs <span style="color:#666">=</span> <span style="color:#666">10000</span>
+</span></span><span style="display:flex;"><span>time <span style="color:#666">=</span> timeit(
+</span></span><span style="display:flex;"><span><span style="color:#ba2121">&#34;recursive_fib(10)&#34;</span>,
+</span></span><span style="display:flex;"><span>setup<span style="color:#666">=</span><span style="color:#ba2121">&#34;from __main__ import recursive_fib&#34;</span>,
+</span></span><span style="display:flex;"><span>number<span style="color:#666">=</span>runs)
+</span></span><span style="display:flex;"><span><span style="color:#008000">print</span>(<span style="color:#ba2121">&#34;recursive_fib took average of </span><span style="color:#b68;font-weight:bold">{:.2E}</span><span style="color:#ba2121">s across </span><span style="color:#b68;font-weight:bold">{}</span><span style="color:#ba2121"> runs&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">.</span>format(time<span style="color:#666">/</span>runs, runs))
+</span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"># &gt;&gt; recursive_fib took average of 1.82E-05s across 10000 runs</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>recursive_fib(<span style="color:#666">10</span>)
+</span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"># &gt;&gt; 34</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Note that this gets realllly slow as time goes on, and it isn&rsquo;t very space efficient either. Each progressive call to the function adds a frame to the call stack that uses up some memory. Additionally, repeat operations occur - note how Fib(3) shows up twice in the tree below.</p>
 
@@ -235,499 +235,499 @@ recursive_fib(<span style="color:#666">10</span>)
 <h2 id="method-2-dynamic-programming---top-down">Method 2: Dynamic Programming - Top Down</h2>
 <p>This method, sometimes also called &ldquo;Memoization&rdquo;, confusingly references &ldquo;Dynamic Programming&rdquo;. Note that Dynamic Programming has nothing to do with the concept of a Dynamic Programming Language. Dynamic Programming is a method for solving complex problems by breaking them in to smaller sub problems and solving each of these problems once, storing the answer for possible reuse. A Dynamic Programming Language like Python or Javascript can execute code at <a href="https://en.wikipedia.org/wiki/Runtime_(program_lifecycle_phase)">runtime</a> that would require compilation in a Static Programming Language.</p>
 <p>The simple improvement upon the purely recursive solution above is to save the results of each calculation. In doing so, recalculating prior results multiple times is avoided. The dictionary implementation in Python is a hashmap with constant time insertion and retrieval, so no time complexity is added by the use of a <code>dict</code> below:</p>
-<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#408080;font-style:italic">## Fibbing with Memoization</span>
-<span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">memo_fib</span>(n, memo<span style="color:#666">=</span>None):
-<span style="color:#008000;font-weight:bold">if</span> memo <span style="color:#a2f;font-weight:bold">is</span> None:
-    memo <span style="color:#666">=</span> {}
-<span style="color:#008000;font-weight:bold">if</span> n <span style="color:#666">&lt;=</span> <span style="color:#666">0</span>:
-    <span style="color:#008000;font-weight:bold">raise</span> <span style="color:#d2413a;font-weight:bold">ValueError</span>(<span style="color:#ba2121">&#39;Fibonacci sequence starts at first number.&#39;</span>)
-<span style="color:#008000;font-weight:bold">elif</span> n <span style="color:#666">&lt;=</span> <span style="color:#666">2</span>:
-    <span style="color:#008000;font-weight:bold">return</span> n<span style="color:#666">-</span><span style="color:#666">1</span> <span style="color:#408080;font-style:italic"># first = 0, second = 1</span>
-<span style="color:#008000;font-weight:bold">else</span>:
-    <span style="color:#408080;font-style:italic"># check if already calculated result</span>
-    <span style="color:#008000;font-weight:bold">if</span> n <span style="color:#a2f;font-weight:bold">not</span> <span style="color:#a2f;font-weight:bold">in</span> memo:
-        <span style="color:#408080;font-style:italic"># function calls itself twice w/ same memo</span>
-        memo[n] <span style="color:#666">=</span> memo_fib(n<span style="color:#666">-</span><span style="color:#666">2</span>, memo) <span style="color:#666">+</span> memo_fib(n<span style="color:#666">-</span><span style="color:#666">1</span>, memo)
-    <span style="color:#008000;font-weight:bold">return</span> memo[n]
-
-<span style="color:#408080;font-style:italic"># Similar timing code to above produces:</span>
-<span style="color:#408080;font-style:italic"># &gt;&gt; memo_fib(10) took average of 5.04E-06s across 10000 runs</span>
-
-memo_fib(<span style="color:#666">10</span>)
-<span style="color:#408080;font-style:italic"># &gt;&gt; 34</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#408080;font-style:italic">## Fibbing with Memoization</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">memo_fib</span>(n, memo<span style="color:#666">=</span><span style="color:#008000;font-weight:bold">None</span>):
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">if</span> memo <span style="color:#a2f;font-weight:bold">is</span> <span style="color:#008000;font-weight:bold">None</span>:
+</span></span><span style="display:flex;"><span>    memo <span style="color:#666">=</span> {}
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">if</span> n <span style="color:#666">&lt;=</span> <span style="color:#666">0</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">raise</span> <span style="color:#d2413a;font-weight:bold">ValueError</span>(<span style="color:#ba2121">&#39;Fibonacci sequence starts at first number.&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">elif</span> n <span style="color:#666">&lt;=</span> <span style="color:#666">2</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">return</span> n<span style="color:#666">-</span><span style="color:#666">1</span> <span style="color:#408080;font-style:italic"># first = 0, second = 1</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#408080;font-style:italic"># check if already calculated result</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">if</span> n <span style="color:#a2f;font-weight:bold">not</span> <span style="color:#a2f;font-weight:bold">in</span> memo:
+</span></span><span style="display:flex;"><span>        <span style="color:#408080;font-style:italic"># function calls itself twice w/ same memo</span>
+</span></span><span style="display:flex;"><span>        memo[n] <span style="color:#666">=</span> memo_fib(n<span style="color:#666">-</span><span style="color:#666">2</span>, memo) <span style="color:#666">+</span> memo_fib(n<span style="color:#666">-</span><span style="color:#666">1</span>, memo)
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">return</span> memo[n]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"># Similar timing code to above produces:</span>
+</span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"># &gt;&gt; memo_fib(10) took average of 5.04E-06s across 10000 runs</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>memo_fib(<span style="color:#666">10</span>)
+</span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"># &gt;&gt; 34</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>As per the timing code, memoization produces a much faster calculation - other than the hashtable lookups, no duplicate computation is being done.</p>
 <p>The time complexity is now O(n), with space complexity still at O(n) as the call stack and memo <code>dict</code> both have O(n) space.</p>
 <h2 id="method-3-dynamic-programming---bottom-up">Method 3: Dynamic Programming - Bottom Up</h2>
 <p>Another equivalent and sometimes more intuitive way to look at Dynamic Programming as a solution is to build a &ldquo;table&rdquo; of all the solutions to each little problem that must be solved along the way to solving the more complicated problem. This is sometimes called &ldquo;Tabulation&rdquo; In this case, the &ldquo;table&rdquo; could be a Python list that holds its <code>index+1</code>&lsquo;th Fibonacci number, e.g. the 1st Fibonacci number is at <code>table[0]</code>, 4th at <code>table[3]</code>, etc.</p>
-<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#408080;font-style:italic">## Fibbing with Tabulation</span>
-<span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">table_fib</span>(n):
-<span style="color:#008000;font-weight:bold">if</span> n <span style="color:#666">&lt;=</span> <span style="color:#666">0</span>:
-    <span style="color:#008000;font-weight:bold">raise</span> <span style="color:#d2413a;font-weight:bold">ValueError</span>(<span style="color:#ba2121">&#39;Fibonacci sequence starts at first number.&#39;</span>)
-<span style="color:#008000;font-weight:bold">elif</span> n <span style="color:#666">&lt;=</span> <span style="color:#666">2</span>:
-    <span style="color:#008000;font-weight:bold">return</span> n<span style="color:#666">-</span><span style="color:#666">1</span> <span style="color:#408080;font-style:italic"># first = 0, second = 1</span>
-<span style="color:#008000;font-weight:bold">else</span>:
-    table <span style="color:#666">=</span> [<span style="color:#666">0</span>, <span style="color:#666">1</span>] <span style="color:#666">+</span> [None]<span style="color:#666">*</span>(n<span style="color:#666">-</span><span style="color:#666">2</span>)
-    <span style="color:#008000;font-weight:bold">for</span> idx <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#008000">range</span>(<span style="color:#666">2</span>, <span style="color:#008000">len</span>(table)):
-        table[idx] <span style="color:#666">=</span> table[idx<span style="color:#666">-</span><span style="color:#666">2</span>] <span style="color:#666">+</span> table[idx<span style="color:#666">-</span><span style="color:#666">1</span>]
-    <span style="color:#008000;font-weight:bold">return</span> table[n<span style="color:#666">-</span><span style="color:#666">1</span>]
-
-<span style="color:#408080;font-style:italic"># Similar timing code to above produces:</span>
-<span style="color:#408080;font-style:italic"># &gt;&gt; table_fib(10) took average of 2.18E-06s across 10000 runs</span>
-
-table_fib(<span style="color:#666">10</span>)
-<span style="color:#408080;font-style:italic"># &gt;&gt; 34</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#408080;font-style:italic">## Fibbing with Tabulation</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">table_fib</span>(n):
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">if</span> n <span style="color:#666">&lt;=</span> <span style="color:#666">0</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">raise</span> <span style="color:#d2413a;font-weight:bold">ValueError</span>(<span style="color:#ba2121">&#39;Fibonacci sequence starts at first number.&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">elif</span> n <span style="color:#666">&lt;=</span> <span style="color:#666">2</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">return</span> n<span style="color:#666">-</span><span style="color:#666">1</span> <span style="color:#408080;font-style:italic"># first = 0, second = 1</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>    table <span style="color:#666">=</span> [<span style="color:#666">0</span>, <span style="color:#666">1</span>] <span style="color:#666">+</span> [<span style="color:#008000;font-weight:bold">None</span>]<span style="color:#666">*</span>(n<span style="color:#666">-</span><span style="color:#666">2</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">for</span> idx <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#008000">range</span>(<span style="color:#666">2</span>, <span style="color:#008000">len</span>(table)):
+</span></span><span style="display:flex;"><span>        table[idx] <span style="color:#666">=</span> table[idx<span style="color:#666">-</span><span style="color:#666">2</span>] <span style="color:#666">+</span> table[idx<span style="color:#666">-</span><span style="color:#666">1</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">return</span> table[n<span style="color:#666">-</span><span style="color:#666">1</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"># Similar timing code to above produces:</span>
+</span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"># &gt;&gt; table_fib(10) took average of 2.18E-06s across 10000 runs</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>table_fib(<span style="color:#666">10</span>)
+</span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"># &gt;&gt; 34</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>As discussed in the excellent post <a href="https://programming.guide/dynamic-programming-vs-memoization-vs-tabulation.html">here</a>, tabulation is best when each sub problem is to be solved only once, where memoization is best when not all subproblems have to be solved to get to the answer to the overarching question. Fibonacci is a case where all subproblems must be solved only once, so Tabulation is faster by a constant factor.</p>
 <p>Both Tabulation and Memoization are O(n) in time and O(n) in space.</p>
 <h2 id="method-4-iteration">Method 4: Iteration</h2>
 <p>Note that the tabulation method is actually wasting space. If you were to solve for the n&rsquo;th Fibonacci number in your head, you&rsquo;d likely only keep track of 2 or 3 numbers at a time: &ldquo;0 plus 1 is 1, now 1 plus 1 is 2, now 1 plus 2 is 3&hellip;&rdquo;. Once you&rsquo;ve gotten the n&rsquo;th Fibonacci number there&rsquo;s no need to keep anything before the n-1&rsquo;th number around in memory! This method is called iteration:</p>
-<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#408080;font-style:italic">## Fibbing with Iteration</span>
-<span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">iter_fib</span>(n):
-<span style="color:#008000;font-weight:bold">if</span> n <span style="color:#666">&lt;=</span> <span style="color:#666">0</span>:
-    <span style="color:#008000;font-weight:bold">raise</span> <span style="color:#d2413a;font-weight:bold">ValueError</span>(<span style="color:#ba2121">&#39;Fibonacci sequence starts at first number.&#39;</span>)
-<span style="color:#008000;font-weight:bold">elif</span> n <span style="color:#666">&lt;=</span> <span style="color:#666">2</span>:
-    <span style="color:#008000;font-weight:bold">return</span> n<span style="color:#666">-</span><span style="color:#666">1</span> <span style="color:#408080;font-style:italic"># first = 0, second = 1</span>
-<span style="color:#008000;font-weight:bold">else</span>:
-    prevprev <span style="color:#666">=</span> <span style="color:#666">0</span>
-    new <span style="color:#666">=</span> <span style="color:#666">1</span>
-    <span style="color:#008000;font-weight:bold">for</span> _ <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#008000">range</span>(<span style="color:#666">2</span>, n):
-        prev <span style="color:#666">=</span> new
-        new <span style="color:#666">=</span> prevprev <span style="color:#666">+</span> prev
-        prevprev <span style="color:#666">=</span> prev
-    <span style="color:#008000;font-weight:bold">return</span> new
-
-<span style="color:#408080;font-style:italic"># Similar timing code to above produces:</span>
-<span style="color:#408080;font-style:italic"># &gt;&gt; iter_fib(10) took average of 1.13E-06s across 10000 runs</span>
-
-iter_fib(<span style="color:#666">10</span>)
-<span style="color:#408080;font-style:italic"># &gt;&gt; 34</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#408080;font-style:italic">## Fibbing with Iteration</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">iter_fib</span>(n):
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">if</span> n <span style="color:#666">&lt;=</span> <span style="color:#666">0</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">raise</span> <span style="color:#d2413a;font-weight:bold">ValueError</span>(<span style="color:#ba2121">&#39;Fibonacci sequence starts at first number.&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">elif</span> n <span style="color:#666">&lt;=</span> <span style="color:#666">2</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">return</span> n<span style="color:#666">-</span><span style="color:#666">1</span> <span style="color:#408080;font-style:italic"># first = 0, second = 1</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>    prevprev <span style="color:#666">=</span> <span style="color:#666">0</span>
+</span></span><span style="display:flex;"><span>    new <span style="color:#666">=</span> <span style="color:#666">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">for</span> _ <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#008000">range</span>(<span style="color:#666">2</span>, n):
+</span></span><span style="display:flex;"><span>        prev <span style="color:#666">=</span> new
+</span></span><span style="display:flex;"><span>        new <span style="color:#666">=</span> prevprev <span style="color:#666">+</span> prev
+</span></span><span style="display:flex;"><span>        prevprev <span style="color:#666">=</span> prev
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">return</span> new
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"># Similar timing code to above produces:</span>
+</span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"># &gt;&gt; iter_fib(10) took average of 1.13E-06s across 10000 runs</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>iter_fib(<span style="color:#666">10</span>)
+</span></span><span style="display:flex;"><span><span style="color:#408080;font-style:italic"># &gt;&gt; 34</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>This is as good as it gets: O(n) time and O(1) space.</p>
 <h2 id="method-5-hack-computer-nand2tetris">Method 5: Hack Computer (Nand2Tetris)</h2>
 <p>The Fibonacci sequence also came up in Nand2Tetris as a debugging program for my VM translator in Rust! While I can&rsquo;t show an easy example, it does serve to illustrate the idea for the VM Translator.</p>
 <p>This is the &ldquo;Virtual Machine Code&rdquo; for a Fibonacci sequence. It is much like an <a href="https://robinovitch61.github.io/recurse/rc-06-intermediate-representations/">LLVM intermediate representation</a>, but in the virtual machine language created by the Nand2Tetris team.</p>
-<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">// Main.vm
-// This file is part of www.nand2tetris.org
-// and the book The Elements of Computing Systems
-// by Nisan and Schocken, MIT Press.
-// File name: projects/08/FunctionCalls/FibonacciElement/Main.vm
-
-// Computes the nth element of the Fibonacci series, recursively.
-// n is given in argument<span style="color:#666">[</span>0<span style="color:#666">]</span>.  Called by the Sys.init <span style="color:#008000;font-weight:bold">function</span> 
-// <span style="color:#666">(</span>part of the Sys.vm file<span style="color:#666">)</span>, which also pushes the argument<span style="color:#666">[</span>0<span style="color:#666">]</span> 
-// parameter before this code starts running.
-
-<span style="color:#008000;font-weight:bold">function</span> Main.fibonacci <span style="color:#666">0</span>
-push argument <span style="color:#666">0</span>
-push constant <span style="color:#666">2</span>
-lt                     // checks <span style="color:#008000;font-weight:bold">if</span> n&lt;<span style="color:#666">2</span>
-<span style="color:#008000;font-weight:bold">if</span>-goto IF_TRUE
-goto IF_FALSE
-label IF_TRUE          // <span style="color:#008000;font-weight:bold">if</span> n&lt;2, <span style="color:#008000;font-weight:bold">return</span> n
-push argument <span style="color:#666">0</span>        
-<span style="color:#008000;font-weight:bold">return</span>
-label IF_FALSE         // <span style="color:#008000;font-weight:bold">if</span> n&gt;<span style="color:#666">=</span>2, returns fib<span style="color:#666">(</span>n-2<span style="color:#666">)</span>+fib<span style="color:#666">(</span>n-1<span style="color:#666">)</span>
-push argument <span style="color:#666">0</span>
-push constant <span style="color:#666">2</span>
-sub
-call Main.fibonacci <span style="color:#666">1</span>  // computes fib<span style="color:#666">(</span>n-2<span style="color:#666">)</span>
-push argument <span style="color:#666">0</span>
-push constant <span style="color:#666">1</span>
-sub
-call Main.fibonacci <span style="color:#666">1</span>  // computes fib<span style="color:#666">(</span>n-1<span style="color:#666">)</span>
-add                    // returns fib<span style="color:#666">(</span>n-1<span style="color:#666">)</span> + fib<span style="color:#666">(</span>n-2<span style="color:#666">)</span>
-<span style="color:#008000;font-weight:bold">return</span>
-
-// Sys.vm
-// This file is part of www.nand2tetris.org
-// and the book The Elements of Computing Systems
-// by Nisan and Schocken, MIT Press.
-// File name: projects/08/FunctionCalls/FibonacciElement/Sys.vm
-
-// Pushes a constant, say n, onto the stack, and calls the Main.fibonacii
-// <span style="color:#008000;font-weight:bold">function</span>, which computes the nth element of the Fibonacci series.
-// Note that by convention, the Sys.init <span style="color:#008000;font-weight:bold">function</span> is called <span style="color:#ba2121">&#34;automatically&#34;</span> 
-// by the bootstrap code.
-
-<span style="color:#008000;font-weight:bold">function</span> Sys.init <span style="color:#666">0</span>
-push constant <span style="color:#666">4</span>
-call Main.fibonacci <span style="color:#666">1</span>   // computes the 4<span style="">&#39;</span>th fibonacci element
-label WHILE
-goto WHILE              // loops infinitely
-</code></pre></td></tr></table>
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>// Main.vm
+</span></span><span style="display:flex;"><span>// This file is part of www.nand2tetris.org
+</span></span><span style="display:flex;"><span>// and the book The Elements of Computing Systems
+</span></span><span style="display:flex;"><span>// by Nisan and Schocken, MIT Press.
+</span></span><span style="display:flex;"><span>// File name: projects/08/FunctionCalls/FibonacciElement/Main.vm
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>// Computes the nth element of the Fibonacci series, recursively.
+</span></span><span style="display:flex;"><span>// n is given in argument<span style="color:#666">[</span>0<span style="color:#666">]</span>.  Called by the Sys.init <span style="color:#008000;font-weight:bold">function</span> 
+</span></span><span style="display:flex;"><span>// <span style="color:#666">(</span>part of the Sys.vm file<span style="color:#666">)</span>, which also pushes the argument<span style="color:#666">[</span>0<span style="color:#666">]</span> 
+</span></span><span style="display:flex;"><span>// parameter before this code starts running.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">function</span> Main.fibonacci <span style="color:#666">0</span>
+</span></span><span style="display:flex;"><span>push argument <span style="color:#666">0</span>
+</span></span><span style="display:flex;"><span>push constant <span style="color:#666">2</span>
+</span></span><span style="display:flex;"><span>lt                     // checks <span style="color:#008000;font-weight:bold">if</span> n&lt;<span style="color:#666">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">if</span>-goto IF_TRUE
+</span></span><span style="display:flex;"><span>goto IF_FALSE
+</span></span><span style="display:flex;"><span>label IF_TRUE          // <span style="color:#008000;font-weight:bold">if</span> n&lt;2, <span style="color:#008000;font-weight:bold">return</span> n
+</span></span><span style="display:flex;"><span>push argument <span style="color:#666">0</span>        
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">return</span>
+</span></span><span style="display:flex;"><span>label IF_FALSE         // <span style="color:#008000;font-weight:bold">if</span> n&gt;<span style="color:#666">=</span>2, returns fib<span style="color:#666">(</span>n-2<span style="color:#666">)</span>+fib<span style="color:#666">(</span>n-1<span style="color:#666">)</span>
+</span></span><span style="display:flex;"><span>push argument <span style="color:#666">0</span>
+</span></span><span style="display:flex;"><span>push constant <span style="color:#666">2</span>
+</span></span><span style="display:flex;"><span>sub
+</span></span><span style="display:flex;"><span>call Main.fibonacci <span style="color:#666">1</span>  // computes fib<span style="color:#666">(</span>n-2<span style="color:#666">)</span>
+</span></span><span style="display:flex;"><span>push argument <span style="color:#666">0</span>
+</span></span><span style="display:flex;"><span>push constant <span style="color:#666">1</span>
+</span></span><span style="display:flex;"><span>sub
+</span></span><span style="display:flex;"><span>call Main.fibonacci <span style="color:#666">1</span>  // computes fib<span style="color:#666">(</span>n-1<span style="color:#666">)</span>
+</span></span><span style="display:flex;"><span>add                    // returns fib<span style="color:#666">(</span>n-1<span style="color:#666">)</span> + fib<span style="color:#666">(</span>n-2<span style="color:#666">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">return</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>// Sys.vm
+</span></span><span style="display:flex;"><span>// This file is part of www.nand2tetris.org
+</span></span><span style="display:flex;"><span>// and the book The Elements of Computing Systems
+</span></span><span style="display:flex;"><span>// by Nisan and Schocken, MIT Press.
+</span></span><span style="display:flex;"><span>// File name: projects/08/FunctionCalls/FibonacciElement/Sys.vm
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>// Pushes a constant, say n, onto the stack, and calls the Main.fibonacii
+</span></span><span style="display:flex;"><span>// <span style="color:#008000;font-weight:bold">function</span>, which computes the nth element of the Fibonacci series.
+</span></span><span style="display:flex;"><span>// Note that by convention, the Sys.init <span style="color:#008000;font-weight:bold">function</span> is called <span style="color:#ba2121">&#34;automatically&#34;</span> 
+</span></span><span style="display:flex;"><span>// by the bootstrap code.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">function</span> Sys.init <span style="color:#666">0</span>
+</span></span><span style="display:flex;"><span>push constant <span style="color:#666">4</span>
+</span></span><span style="display:flex;"><span>call Main.fibonacci <span style="color:#666">1</span>   // computes the 4<span style="">&#39;</span>th fibonacci element
+</span></span><span style="display:flex;"><span>label WHILE
+</span></span><span style="display:flex;"><span>goto WHILE              // loops infinitely
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>My VM translator <a href="https://github.com/robinovitch61/nand2tetris/blob/master/projects/08/p08/src/main.rs">here</a> creates a bunch of Hack Computer-specific assembly code (~500 lines) from this that look like this:</p>
-<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">51
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">52
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">54
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">55
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">56
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">57
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">58
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">59
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">60
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">61
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">62
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">63
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">64
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">65
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">66
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">67
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">68
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">69
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">70
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">71
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">72
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">73
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">74
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">75
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">76
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">77
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">78
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">79
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">80
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">51
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">52
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">54
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">55
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">56
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">57
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">58
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">59
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">60
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">61
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">62
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">63
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">64
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">65
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">66
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">67
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">68
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">69
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">70
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">71
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">72
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">73
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">74
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">75
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">76
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">77
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">78
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">79
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">80
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">// Bootstrap
-
-@256
-<span style="color:#19177c">D</span><span style="color:#666">=</span>A
-@SP
-<span style="color:#19177c">M</span><span style="color:#666">=</span>D
-// call Sys.init <span style="color:#666">0</span>
-// push <span style="color:#008000;font-weight:bold">return</span>-address
-@return-address0
-<span style="color:#19177c">D</span><span style="color:#666">=</span>A
-@SP
-<span style="color:#19177c">A</span><span style="color:#666">=</span>M
-<span style="color:#19177c">M</span><span style="color:#666">=</span>D
-@SP
-<span style="color:#19177c">M</span><span style="color:#666">=</span>M+1
-// push LCL
-@LCL
-<span style="color:#19177c">D</span><span style="color:#666">=</span>M
-@SP
-<span style="color:#19177c">A</span><span style="color:#666">=</span>M
-<span style="color:#19177c">M</span><span style="color:#666">=</span>D
-@SP
-<span style="color:#19177c">M</span><span style="color:#666">=</span>M+1
-// push ARG
-@ARG
-<span style="color:#19177c">D</span><span style="color:#666">=</span>M
-@SP
-<span style="color:#19177c">A</span><span style="color:#666">=</span>M
-<span style="color:#19177c">M</span><span style="color:#666">=</span>D
-@SP
-<span style="color:#19177c">M</span><span style="color:#666">=</span>M+1
-// push THIS
-@THIS
-<span style="color:#19177c">D</span><span style="color:#666">=</span>M
-@SP
-<span style="color:#19177c">A</span><span style="color:#666">=</span>M
-<span style="color:#19177c">M</span><span style="color:#666">=</span>D
-@SP
-<span style="color:#19177c">M</span><span style="color:#666">=</span>M+1
-// push THAT
-@THAT
-<span style="color:#19177c">D</span><span style="color:#666">=</span>M
-@SP
-<span style="color:#19177c">A</span><span style="color:#666">=</span>M
-<span style="color:#19177c">M</span><span style="color:#666">=</span>D
-@SP
-<span style="color:#19177c">M</span><span style="color:#666">=</span>M+1
-// <span style="color:#19177c">ARG</span> <span style="color:#666">=</span> SP - n - <span style="color:#666">5</span>
-@SP
-<span style="color:#19177c">D</span><span style="color:#666">=</span>M
-@0
-<span style="color:#19177c">D</span><span style="color:#666">=</span>D-A
-@5
-<span style="color:#19177c">D</span><span style="color:#666">=</span>D-A
-@ARG
-<span style="color:#19177c">M</span><span style="color:#666">=</span>D
-// <span style="color:#19177c">LCL</span> <span style="color:#666">=</span> SP
-@SP
-<span style="color:#19177c">D</span><span style="color:#666">=</span>M
-@LCL
-<span style="color:#19177c">M</span><span style="color:#666">=</span>D
-// goto f
-@Sys.init
-0;JMP
-// <span style="color:#008000">declare</span> <span style="color:#666">(</span><span style="color:#008000;font-weight:bold">return</span>-address<span style="color:#666">)</span>
-<span style="color:#666">(</span><span style="color:#008000;font-weight:bold">return</span>-address0<span style="color:#666">)</span>
-
-// ../FunctionCalls/FibonacciElement/Main.vm
-
-// <span style="color:#008000;font-weight:bold">function</span> Main.fibonacci <span style="color:#666">0</span>
-<span style="color:#666">(</span>Main.fibonacci<span style="color:#666">)</span>
-// push argument <span style="color:#666">0</span>
-@0
-<span style="color:#19177c">D</span><span style="color:#666">=</span>A
-@ARG
-<span style="color:#19177c">A</span><span style="color:#666">=</span>M
-<span style="color:#19177c">A</span><span style="color:#666">=</span>A+D
-<span style="color:#19177c">D</span><span style="color:#666">=</span>M
-@SP
-etc.
-</code></pre></td></tr></table>
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>// Bootstrap
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>@256
+</span></span><span style="display:flex;"><span><span style="color:#19177c">D</span><span style="color:#666">=</span>A
+</span></span><span style="display:flex;"><span>@SP
+</span></span><span style="display:flex;"><span><span style="color:#19177c">M</span><span style="color:#666">=</span>D
+</span></span><span style="display:flex;"><span>// call Sys.init <span style="color:#666">0</span>
+</span></span><span style="display:flex;"><span>// push <span style="color:#008000;font-weight:bold">return</span>-address
+</span></span><span style="display:flex;"><span>@return-address0
+</span></span><span style="display:flex;"><span><span style="color:#19177c">D</span><span style="color:#666">=</span>A
+</span></span><span style="display:flex;"><span>@SP
+</span></span><span style="display:flex;"><span><span style="color:#19177c">A</span><span style="color:#666">=</span>M
+</span></span><span style="display:flex;"><span><span style="color:#19177c">M</span><span style="color:#666">=</span>D
+</span></span><span style="display:flex;"><span>@SP
+</span></span><span style="display:flex;"><span><span style="color:#19177c">M</span><span style="color:#666">=</span>M+1
+</span></span><span style="display:flex;"><span>// push LCL
+</span></span><span style="display:flex;"><span>@LCL
+</span></span><span style="display:flex;"><span><span style="color:#19177c">D</span><span style="color:#666">=</span>M
+</span></span><span style="display:flex;"><span>@SP
+</span></span><span style="display:flex;"><span><span style="color:#19177c">A</span><span style="color:#666">=</span>M
+</span></span><span style="display:flex;"><span><span style="color:#19177c">M</span><span style="color:#666">=</span>D
+</span></span><span style="display:flex;"><span>@SP
+</span></span><span style="display:flex;"><span><span style="color:#19177c">M</span><span style="color:#666">=</span>M+1
+</span></span><span style="display:flex;"><span>// push ARG
+</span></span><span style="display:flex;"><span>@ARG
+</span></span><span style="display:flex;"><span><span style="color:#19177c">D</span><span style="color:#666">=</span>M
+</span></span><span style="display:flex;"><span>@SP
+</span></span><span style="display:flex;"><span><span style="color:#19177c">A</span><span style="color:#666">=</span>M
+</span></span><span style="display:flex;"><span><span style="color:#19177c">M</span><span style="color:#666">=</span>D
+</span></span><span style="display:flex;"><span>@SP
+</span></span><span style="display:flex;"><span><span style="color:#19177c">M</span><span style="color:#666">=</span>M+1
+</span></span><span style="display:flex;"><span>// push THIS
+</span></span><span style="display:flex;"><span>@THIS
+</span></span><span style="display:flex;"><span><span style="color:#19177c">D</span><span style="color:#666">=</span>M
+</span></span><span style="display:flex;"><span>@SP
+</span></span><span style="display:flex;"><span><span style="color:#19177c">A</span><span style="color:#666">=</span>M
+</span></span><span style="display:flex;"><span><span style="color:#19177c">M</span><span style="color:#666">=</span>D
+</span></span><span style="display:flex;"><span>@SP
+</span></span><span style="display:flex;"><span><span style="color:#19177c">M</span><span style="color:#666">=</span>M+1
+</span></span><span style="display:flex;"><span>// push THAT
+</span></span><span style="display:flex;"><span>@THAT
+</span></span><span style="display:flex;"><span><span style="color:#19177c">D</span><span style="color:#666">=</span>M
+</span></span><span style="display:flex;"><span>@SP
+</span></span><span style="display:flex;"><span><span style="color:#19177c">A</span><span style="color:#666">=</span>M
+</span></span><span style="display:flex;"><span><span style="color:#19177c">M</span><span style="color:#666">=</span>D
+</span></span><span style="display:flex;"><span>@SP
+</span></span><span style="display:flex;"><span><span style="color:#19177c">M</span><span style="color:#666">=</span>M+1
+</span></span><span style="display:flex;"><span>// <span style="color:#19177c">ARG</span> <span style="color:#666">=</span> SP - n - <span style="color:#666">5</span>
+</span></span><span style="display:flex;"><span>@SP
+</span></span><span style="display:flex;"><span><span style="color:#19177c">D</span><span style="color:#666">=</span>M
+</span></span><span style="display:flex;"><span>@0
+</span></span><span style="display:flex;"><span><span style="color:#19177c">D</span><span style="color:#666">=</span>D-A
+</span></span><span style="display:flex;"><span>@5
+</span></span><span style="display:flex;"><span><span style="color:#19177c">D</span><span style="color:#666">=</span>D-A
+</span></span><span style="display:flex;"><span>@ARG
+</span></span><span style="display:flex;"><span><span style="color:#19177c">M</span><span style="color:#666">=</span>D
+</span></span><span style="display:flex;"><span>// <span style="color:#19177c">LCL</span> <span style="color:#666">=</span> SP
+</span></span><span style="display:flex;"><span>@SP
+</span></span><span style="display:flex;"><span><span style="color:#19177c">D</span><span style="color:#666">=</span>M
+</span></span><span style="display:flex;"><span>@LCL
+</span></span><span style="display:flex;"><span><span style="color:#19177c">M</span><span style="color:#666">=</span>D
+</span></span><span style="display:flex;"><span>// goto f
+</span></span><span style="display:flex;"><span>@Sys.init
+</span></span><span style="display:flex;"><span>0;JMP
+</span></span><span style="display:flex;"><span>// <span style="color:#008000">declare</span> <span style="color:#666">(</span><span style="color:#008000;font-weight:bold">return</span>-address<span style="color:#666">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">(</span><span style="color:#008000;font-weight:bold">return</span>-address0<span style="color:#666">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>// ../FunctionCalls/FibonacciElement/Main.vm
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>// <span style="color:#008000;font-weight:bold">function</span> Main.fibonacci <span style="color:#666">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">(</span>Main.fibonacci<span style="color:#666">)</span>
+</span></span><span style="display:flex;"><span>// push argument <span style="color:#666">0</span>
+</span></span><span style="display:flex;"><span>@0
+</span></span><span style="display:flex;"><span><span style="color:#19177c">D</span><span style="color:#666">=</span>A
+</span></span><span style="display:flex;"><span>@ARG
+</span></span><span style="display:flex;"><span><span style="color:#19177c">A</span><span style="color:#666">=</span>M
+</span></span><span style="display:flex;"><span><span style="color:#19177c">A</span><span style="color:#666">=</span>A+D
+</span></span><span style="display:flex;"><span><span style="color:#19177c">D</span><span style="color:#666">=</span>M
+</span></span><span style="display:flex;"><span>@SP
+</span></span><span style="display:flex;"><span>etc.
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Which then assembles down to the actual machine code using the assembler I wrote <a href="https://github.com/robinovitch61/nand2tetris/blob/master/projects/06/p06/src/main.rs">here</a>:</p>
-<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#666">0000000100000000</span> // this is @256
-<span style="color:#666">1110110000010000</span> // this is <span style="color:#19177c">D</span><span style="color:#666">=</span>A
-<span style="color:#666">0000000000000000</span> // etc.
-<span style="color:#666">1110001100001000</span>
-<span style="color:#666">0000000000110101</span>
-<span style="color:#666">1110110000010000</span>
-<span style="color:#666">0000000000000000</span>
-<span style="color:#666">1111110000100000</span>
-<span style="color:#666">1110001100001000</span>
-<span style="color:#666">0000000000000000</span>
-<span style="color:#666">1111110111001000</span>
-<span style="color:#666">0000000000000001</span>
-<span style="color:#666">1111110000010000</span>
-<span style="color:#666">0000000000000000</span>
-<span style="color:#666">1111110000100000</span>
-<span style="color:#666">1110001100001000</span>
-<span style="color:#666">0000000000000000</span>
-<span style="color:#666">1111110111001000</span>
-<span style="color:#666">0000000000000010</span>
-<span style="color:#666">1111110000010000</span>
-<span style="color:#666">0000000000000000</span>
-<span style="color:#666">1111110000100000</span>
-<span style="color:#666">1110001100001000</span>
-<span style="color:#666">0000000000000000</span>
-<span style="color:#666">1111110111001000</span>
-<span style="color:#666">0000000000000011</span>
-<span style="color:#666">1111110000010000</span>
-<span style="color:#666">0000000000000000</span>
-<span style="color:#666">1111110000100000</span>
-<span style="color:#666">1110001100001000</span>
-<span style="color:#666">0000000000000000</span>
-<span style="color:#666">1111110111001000</span>
-<span style="color:#666">0000000000000100</span>
-<span style="color:#666">1111110000010000</span>
-<span style="color:#666">0000000000000000</span>
-<span style="color:#666">1111110000100000</span>
-etc.
-</code></pre></td></tr></table>
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#666">0000000100000000</span> // this is @256
+</span></span><span style="display:flex;"><span><span style="color:#666">1110110000010000</span> // this is <span style="color:#19177c">D</span><span style="color:#666">=</span>A
+</span></span><span style="display:flex;"><span><span style="color:#666">0000000000000000</span> // etc.
+</span></span><span style="display:flex;"><span><span style="color:#666">1110001100001000</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">0000000000110101</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">1110110000010000</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">0000000000000000</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">1111110000100000</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">1110001100001000</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">0000000000000000</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">1111110111001000</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">0000000000000001</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">1111110000010000</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">0000000000000000</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">1111110000100000</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">1110001100001000</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">0000000000000000</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">1111110111001000</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">0000000000000010</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">1111110000010000</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">0000000000000000</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">1111110000100000</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">1110001100001000</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">0000000000000000</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">1111110111001000</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">0000000000000011</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">1111110000010000</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">0000000000000000</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">1111110000100000</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">1110001100001000</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">0000000000000000</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">1111110111001000</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">0000000000000100</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">1111110000010000</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">0000000000000000</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">1111110000100000</span>
+</span></span><span style="display:flex;"><span>etc.
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>So there it is. The fifth method - write your recursive Fibonacci code in VM Code and assemble for the hack computer :)!</p>
 
@@ -830,381 +830,381 @@ Nand2Tetris! I decided to write the remaining software portion of the course
 </a>
 
 <p>The resume update was necessary and a fun application of my responsive web dev Scrimba course. I&rsquo;m continuing to slowly work through that and have found it very clear and satisfying. Fall 1&rsquo;ers are ramping up their interview frequencies and proportion of time dedicated towards the job hunt. It makes me nervous and excited for the last month of my time at Recurse where I&rsquo;ll probably be doing the same.</p>
-<p>After last week&rsquo;s frustration with the statistics textbook, I decided to slow down and zoom in on linear regression. While it&rsquo;s an &ldquo;introductory&rdquo; modeling technique in practice, I&rsquo;ve never fully understood the underpinings of it! I&rsquo;m realizing you truly can&rsquo;t understand the foundation of linear regression without understanding a TON of foundational statistics. Additionally, many models can be seen as direct or indirect extensions of linear regression, making it a good thing to start with. It has been a very good exercise to go through everything thoroughly and summarize it in a <a href="https://robinovitch61.github.io/posts/linear-regression/">big ol' plog bost</a>, which I will continue to update as I delve deeper into the topic.</p>
+<p>After last week&rsquo;s frustration with the statistics textbook, I decided to slow down and zoom in on linear regression. While it&rsquo;s an &ldquo;introductory&rdquo; modeling technique in practice, I&rsquo;ve never fully understood the underpinings of it! I&rsquo;m realizing you truly can&rsquo;t understand the foundation of linear regression without understanding a TON of foundational statistics. Additionally, many models can be seen as direct or indirect extensions of linear regression, making it a good thing to start with. It has been a very good exercise to go through everything thoroughly and summarize it in a <a href="https://robinovitch61.github.io/posts/linear-regression/">big ol&rsquo; plog bost</a>, which I will continue to update as I delve deeper into the topic.</p>
 <p>I hope to write more actual code next week and keep the learning rolling.</p>
-<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 24
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 25
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 26
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 27
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 28
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 29
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 30
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 31
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 32
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 33
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 34
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 35
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 36
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 37
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 38
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 39
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 40
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 41
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 42
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 43
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 44
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 45
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 46
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 47
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 48
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 49
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 50
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 51
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 52
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 53
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 54
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 55
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 56
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 57
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 58
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 59
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 60
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 61
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 62
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 63
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 64
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 65
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 66
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 67
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 68
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 69
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 70
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 71
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 72
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 73
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 74
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 75
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 76
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 77
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 78
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 79
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 80
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 81
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 82
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 83
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 84
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 85
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 86
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 87
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 88
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 89
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 90
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 91
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 92
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 93
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 94
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 95
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 96
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 97
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 98
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 99
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">100
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">101
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">102
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">103
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">104
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">105
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">106
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">107
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">108
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">109
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">110
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">111
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">112
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">113
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">114
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">115
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">116
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">117
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">118
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">119
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">120
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">121
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">122
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">123
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">124
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">125
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">126
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">127
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">128
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">129
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">130
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">131
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">132
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">133
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">134
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">135
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">136
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">137
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">138
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">139
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">140
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">141
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">142
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">143
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">144
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">145
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">146
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">147
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">148
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">149
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">150
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">151
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">152
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">153
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">154
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">155
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">156
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">157
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">158
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">159
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">160
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">161
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">162
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">163
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">164
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">165
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">166
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">167
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">168
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">169
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">170
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">171
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">172
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">173
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">174
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">175
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">176
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">177
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">178
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">179
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">180
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">181
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">182
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">183
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">184
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 29
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 30
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 31
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 32
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 33
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 34
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 35
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 36
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 37
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 38
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 39
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 40
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 41
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 42
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 43
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 44
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 45
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 46
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 47
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 48
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 49
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 50
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 51
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 52
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 53
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 54
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 55
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 56
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 57
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 58
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 59
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 60
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 61
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 62
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 63
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 64
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 65
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 66
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 67
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 68
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 69
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 70
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 71
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 72
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 73
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 74
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 75
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 76
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 77
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 78
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 79
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 80
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 81
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 82
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 83
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 84
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 85
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 86
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 87
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 88
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 89
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 90
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 91
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 92
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 93
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 94
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 95
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 96
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 97
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 98
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 99
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">100
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">101
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">102
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">103
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">104
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">105
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">106
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">107
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">108
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">109
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">110
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">111
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">112
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">113
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">114
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">115
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">116
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">117
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">118
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">119
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">120
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">121
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">122
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">123
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">124
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">125
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">126
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">127
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">128
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">129
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">130
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">131
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">132
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">133
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">134
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">135
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">136
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">137
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">138
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">139
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">140
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">141
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">142
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">143
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">144
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">145
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">146
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">147
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">148
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">149
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">150
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">151
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">152
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">153
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">154
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">155
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">156
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">157
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">158
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">159
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">160
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">161
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">162
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">163
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">164
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">165
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">166
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">167
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">168
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">169
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">170
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">171
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">172
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">173
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">174
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">175
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">176
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">177
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">178
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">179
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">180
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">181
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">182
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">183
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">184
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">// This file is part of www.nand2tetris.org
-// and the book <span style="color:#ba2121">&#34;The Elements of Computing Systems&#34;</span>
-// by Nisan and Schocken, MIT Press.
-// File name: projects/04/Fill.asm
-
-// Runs an infinite loop that listens to the keyboard input.
-// When a key is pressed <span style="color:#666">(</span>any key<span style="color:#666">)</span>, the program blackens the screen,
-// i.e. writes <span style="color:#ba2121">&#34;black&#34;</span> in every pixel;
-// the screen should remain fully black as long as the key is pressed. 
-// When no key is pressed, the program clears the screen, i.e. writes
-// <span style="color:#ba2121">&#34;white&#34;</span> in every pixel;
-// the screen should remain fully clear as long as no key is pressed.
-
-// Put your code here.
-
-// *********
-// VARIABLES
-// *********
-
-@512
-<span style="color:#19177c">D</span><span style="color:#666">=</span>A
-@bitswidth
-<span style="color:#19177c">M</span><span style="color:#666">=</span>D // screen width in bits
-
-@255
-<span style="color:#19177c">D</span><span style="color:#666">=</span>A
-@bitsheight
-<span style="color:#19177c">M</span><span style="color:#666">=</span>D // screen height in bits
-
-@16
-<span style="color:#19177c">D</span><span style="color:#666">=</span>A
-@bitsperword
-<span style="color:#19177c">M</span><span style="color:#666">=</span>D // word width in bits
-
-// words per screen, i.e. 512*255/16
-@totalwords
-<span style="color:#19177c">M</span><span style="color:#666">=</span><span style="color:#666">0</span>
-@heightcovered
-<span style="color:#19177c">M</span><span style="color:#666">=</span><span style="color:#666">0</span>
-<span style="color:#666">(</span>MOREROWS<span style="color:#666">)</span>
-@widthcovered
-<span style="color:#19177c">M</span><span style="color:#666">=</span><span style="color:#666">0</span>
-<span style="color:#666">(</span>MOREWORDS<span style="color:#666">)</span>
-    // increment totalwords, widthcovered
-    @totalwords
-    <span style="color:#19177c">M</span><span style="color:#666">=</span>M+1
-    @bitsperword
-    <span style="color:#19177c">D</span><span style="color:#666">=</span>M
-    @widthcovered
-    <span style="color:#19177c">M</span><span style="color:#666">=</span>M+D
-
-    // <span style="color:#008000;font-weight:bold">if</span> not entire width covered, MORE WORDS
-    @widthcovered
-    <span style="color:#19177c">D</span><span style="color:#666">=</span>M
-    @bitswidth
-    <span style="color:#19177c">D</span><span style="color:#666">=</span>M-D
-    @MOREWORDS
-    D;JGT
-
-// increment heightcovered
-@heightcovered
-<span style="color:#19177c">M</span><span style="color:#666">=</span>M+1
-
-// <span style="color:#008000;font-weight:bold">if</span> note entire height covered, MORE ROWS
-@heightcovered
-<span style="color:#19177c">D</span><span style="color:#666">=</span>M
-@bitsheight
-<span style="color:#19177c">D</span><span style="color:#666">=</span>M-D
-@MOREROWS
-D;JGT
-
-// address of end of screen
-@SCREEN
-<span style="color:#19177c">D</span><span style="color:#666">=</span>A
-@totalwords
-<span style="color:#19177c">D</span><span style="color:#666">=</span>D+M
-@scrend
-<span style="color:#19177c">M</span><span style="color:#666">=</span>D
-
-@iswhite
-<span style="color:#19177c">M</span><span style="color:#666">=</span><span style="color:#666">1</span> // <span style="color:#008000;font-weight:bold">if</span> &gt;0, screen white. <span style="color:#008000;font-weight:bold">if</span> 0, screen black. 
-
-// *****
-// LOOPS
-// *****
-
-<span style="color:#666">(</span>KEYUP<span style="color:#666">)</span>
-// <span style="color:#008000;font-weight:bold">if</span> current keyboard value non-zero, jump to KEYDOWN
-@KBD
-<span style="color:#19177c">D</span><span style="color:#666">=</span>M
-@KEYDOWN
-D;JNE
-
-// <span style="color:#008000;font-weight:bold">if</span> black, paint white
-@iswhite
-<span style="color:#19177c">D</span><span style="color:#666">=</span>M
-@MAKEWHITE
-D;JEQ
-
-// keep listening
-@KEYUP
-0;JMP
-
-<span style="color:#666">(</span>KEYDOWN<span style="color:#666">)</span>
-// <span style="color:#008000;font-weight:bold">if</span> current keyboard value zero, jump to KEYUP
-@KBD
-<span style="color:#19177c">D</span><span style="color:#666">=</span>M
-@KEYUP
-D;JEQ
-
-// <span style="color:#008000;font-weight:bold">if</span> white, paint black
-@iswhite
-<span style="color:#19177c">D</span><span style="color:#666">=</span>M
-@MAKEBLACK
-D;JGT
-
-// keep listening
-@KEYDOWN
-0;JMP
-
-<span style="color:#666">(</span>MAKEWHITE<span style="color:#666">)</span>
-@paintword
-<span style="color:#19177c">M</span><span style="color:#666">=</span><span style="color:#666">0</span>
-@PAINTSCREEN
-0;JMP
-
-<span style="color:#666">(</span>PAINTEDWHITE<span style="color:#666">)</span>
-
-// flag screen as white
-@iswhite
-<span style="color:#19177c">M</span><span style="color:#666">=</span><span style="color:#666">1</span>
-
-// go back to keyup loop
-@KEYUP
-0;JMP
-
-<span style="color:#666">(</span>MAKEBLACK<span style="color:#666">)</span>
-@paintword
-<span style="color:#19177c">M</span><span style="color:#666">=</span>-1
-@PAINTSCREEN
-0;JMP
-
-<span style="color:#666">(</span>PAINTEDBLACK<span style="color:#666">)</span>
-
-// flag screen as black
-@iswhite
-<span style="color:#19177c">M</span><span style="color:#666">=</span><span style="color:#666">0</span>
-
-// go back to keydown loop
-@KEYDOWN
-0;JMP
-
-<span style="color:#666">(</span>PAINTSCREEN<span style="color:#666">)</span>
-// paint screen
-@SCREEN
-<span style="color:#19177c">D</span><span style="color:#666">=</span>A
-@scraddr
-<span style="color:#19177c">M</span><span style="color:#666">=</span>D
-<span style="color:#666">(</span>KEEPPAINTING<span style="color:#666">)</span>
-    // paint at scraddr
-    @paintword
-    <span style="color:#19177c">D</span><span style="color:#666">=</span>M
-    @scraddr
-    <span style="color:#19177c">A</span><span style="color:#666">=</span>M
-    <span style="color:#19177c">M</span><span style="color:#666">=</span>D
-
-    // increment scraddr
-    @scraddr
-    <span style="color:#19177c">M</span><span style="color:#666">=</span>M+1
-
-    @scrend
-    <span style="color:#19177c">D</span><span style="color:#666">=</span>M
-    @scraddr
-    <span style="color:#19177c">D</span><span style="color:#666">=</span>D-M // positive <span style="color:#008000;font-weight:bold">until</span> <span style="color:#19177c">scraddr</span><span style="color:#666">=</span>scrend
-    @KEEPPAINTING
-    D;JGT
-
-// jump back
-@paintword
-<span style="color:#19177c">D</span><span style="color:#666">=</span>M
-@PAINTEDWHITE
-D;JEQ // <span style="color:#008000;font-weight:bold">if</span> paintword is 0, painted white
-@PAINTEDBLACK
-0;JMP
-</code></pre></td></tr></table>
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>// This file is part of www.nand2tetris.org
+</span></span><span style="display:flex;"><span>// and the book <span style="color:#ba2121">&#34;The Elements of Computing Systems&#34;</span>
+</span></span><span style="display:flex;"><span>// by Nisan and Schocken, MIT Press.
+</span></span><span style="display:flex;"><span>// File name: projects/04/Fill.asm
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>// Runs an infinite loop that listens to the keyboard input.
+</span></span><span style="display:flex;"><span>// When a key is pressed <span style="color:#666">(</span>any key<span style="color:#666">)</span>, the program blackens the screen,
+</span></span><span style="display:flex;"><span>// i.e. writes <span style="color:#ba2121">&#34;black&#34;</span> in every pixel;
+</span></span><span style="display:flex;"><span>// the screen should remain fully black as long as the key is pressed. 
+</span></span><span style="display:flex;"><span>// When no key is pressed, the program clears the screen, i.e. writes
+</span></span><span style="display:flex;"><span>// <span style="color:#ba2121">&#34;white&#34;</span> in every pixel;
+</span></span><span style="display:flex;"><span>// the screen should remain fully clear as long as no key is pressed.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>// Put your code here.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>// *********
+</span></span><span style="display:flex;"><span>// VARIABLES
+</span></span><span style="display:flex;"><span>// *********
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>@512
+</span></span><span style="display:flex;"><span><span style="color:#19177c">D</span><span style="color:#666">=</span>A
+</span></span><span style="display:flex;"><span>@bitswidth
+</span></span><span style="display:flex;"><span><span style="color:#19177c">M</span><span style="color:#666">=</span>D // screen width in bits
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>@255
+</span></span><span style="display:flex;"><span><span style="color:#19177c">D</span><span style="color:#666">=</span>A
+</span></span><span style="display:flex;"><span>@bitsheight
+</span></span><span style="display:flex;"><span><span style="color:#19177c">M</span><span style="color:#666">=</span>D // screen height in bits
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>@16
+</span></span><span style="display:flex;"><span><span style="color:#19177c">D</span><span style="color:#666">=</span>A
+</span></span><span style="display:flex;"><span>@bitsperword
+</span></span><span style="display:flex;"><span><span style="color:#19177c">M</span><span style="color:#666">=</span>D // word width in bits
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>// words per screen, i.e. 512*255/16
+</span></span><span style="display:flex;"><span>@totalwords
+</span></span><span style="display:flex;"><span><span style="color:#19177c">M</span><span style="color:#666">=</span><span style="color:#666">0</span>
+</span></span><span style="display:flex;"><span>@heightcovered
+</span></span><span style="display:flex;"><span><span style="color:#19177c">M</span><span style="color:#666">=</span><span style="color:#666">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">(</span>MOREROWS<span style="color:#666">)</span>
+</span></span><span style="display:flex;"><span>@widthcovered
+</span></span><span style="display:flex;"><span><span style="color:#19177c">M</span><span style="color:#666">=</span><span style="color:#666">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">(</span>MOREWORDS<span style="color:#666">)</span>
+</span></span><span style="display:flex;"><span>    // increment totalwords, widthcovered
+</span></span><span style="display:flex;"><span>    @totalwords
+</span></span><span style="display:flex;"><span>    <span style="color:#19177c">M</span><span style="color:#666">=</span>M+1
+</span></span><span style="display:flex;"><span>    @bitsperword
+</span></span><span style="display:flex;"><span>    <span style="color:#19177c">D</span><span style="color:#666">=</span>M
+</span></span><span style="display:flex;"><span>    @widthcovered
+</span></span><span style="display:flex;"><span>    <span style="color:#19177c">M</span><span style="color:#666">=</span>M+D
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    // <span style="color:#008000;font-weight:bold">if</span> not entire width covered, MORE WORDS
+</span></span><span style="display:flex;"><span>    @widthcovered
+</span></span><span style="display:flex;"><span>    <span style="color:#19177c">D</span><span style="color:#666">=</span>M
+</span></span><span style="display:flex;"><span>    @bitswidth
+</span></span><span style="display:flex;"><span>    <span style="color:#19177c">D</span><span style="color:#666">=</span>M-D
+</span></span><span style="display:flex;"><span>    @MOREWORDS
+</span></span><span style="display:flex;"><span>    D;JGT
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>// increment heightcovered
+</span></span><span style="display:flex;"><span>@heightcovered
+</span></span><span style="display:flex;"><span><span style="color:#19177c">M</span><span style="color:#666">=</span>M+1
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>// <span style="color:#008000;font-weight:bold">if</span> note entire height covered, MORE ROWS
+</span></span><span style="display:flex;"><span>@heightcovered
+</span></span><span style="display:flex;"><span><span style="color:#19177c">D</span><span style="color:#666">=</span>M
+</span></span><span style="display:flex;"><span>@bitsheight
+</span></span><span style="display:flex;"><span><span style="color:#19177c">D</span><span style="color:#666">=</span>M-D
+</span></span><span style="display:flex;"><span>@MOREROWS
+</span></span><span style="display:flex;"><span>D;JGT
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>// address of end of screen
+</span></span><span style="display:flex;"><span>@SCREEN
+</span></span><span style="display:flex;"><span><span style="color:#19177c">D</span><span style="color:#666">=</span>A
+</span></span><span style="display:flex;"><span>@totalwords
+</span></span><span style="display:flex;"><span><span style="color:#19177c">D</span><span style="color:#666">=</span>D+M
+</span></span><span style="display:flex;"><span>@scrend
+</span></span><span style="display:flex;"><span><span style="color:#19177c">M</span><span style="color:#666">=</span>D
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>@iswhite
+</span></span><span style="display:flex;"><span><span style="color:#19177c">M</span><span style="color:#666">=</span><span style="color:#666">1</span> // <span style="color:#008000;font-weight:bold">if</span> &gt;0, screen white. <span style="color:#008000;font-weight:bold">if</span> 0, screen black. 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>// *****
+</span></span><span style="display:flex;"><span>// LOOPS
+</span></span><span style="display:flex;"><span>// *****
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#666">(</span>KEYUP<span style="color:#666">)</span>
+</span></span><span style="display:flex;"><span>// <span style="color:#008000;font-weight:bold">if</span> current keyboard value non-zero, jump to KEYDOWN
+</span></span><span style="display:flex;"><span>@KBD
+</span></span><span style="display:flex;"><span><span style="color:#19177c">D</span><span style="color:#666">=</span>M
+</span></span><span style="display:flex;"><span>@KEYDOWN
+</span></span><span style="display:flex;"><span>D;JNE
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>// <span style="color:#008000;font-weight:bold">if</span> black, paint white
+</span></span><span style="display:flex;"><span>@iswhite
+</span></span><span style="display:flex;"><span><span style="color:#19177c">D</span><span style="color:#666">=</span>M
+</span></span><span style="display:flex;"><span>@MAKEWHITE
+</span></span><span style="display:flex;"><span>D;JEQ
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>// keep listening
+</span></span><span style="display:flex;"><span>@KEYUP
+</span></span><span style="display:flex;"><span>0;JMP
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#666">(</span>KEYDOWN<span style="color:#666">)</span>
+</span></span><span style="display:flex;"><span>// <span style="color:#008000;font-weight:bold">if</span> current keyboard value zero, jump to KEYUP
+</span></span><span style="display:flex;"><span>@KBD
+</span></span><span style="display:flex;"><span><span style="color:#19177c">D</span><span style="color:#666">=</span>M
+</span></span><span style="display:flex;"><span>@KEYUP
+</span></span><span style="display:flex;"><span>D;JEQ
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>// <span style="color:#008000;font-weight:bold">if</span> white, paint black
+</span></span><span style="display:flex;"><span>@iswhite
+</span></span><span style="display:flex;"><span><span style="color:#19177c">D</span><span style="color:#666">=</span>M
+</span></span><span style="display:flex;"><span>@MAKEBLACK
+</span></span><span style="display:flex;"><span>D;JGT
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>// keep listening
+</span></span><span style="display:flex;"><span>@KEYDOWN
+</span></span><span style="display:flex;"><span>0;JMP
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#666">(</span>MAKEWHITE<span style="color:#666">)</span>
+</span></span><span style="display:flex;"><span>@paintword
+</span></span><span style="display:flex;"><span><span style="color:#19177c">M</span><span style="color:#666">=</span><span style="color:#666">0</span>
+</span></span><span style="display:flex;"><span>@PAINTSCREEN
+</span></span><span style="display:flex;"><span>0;JMP
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#666">(</span>PAINTEDWHITE<span style="color:#666">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>// flag screen as white
+</span></span><span style="display:flex;"><span>@iswhite
+</span></span><span style="display:flex;"><span><span style="color:#19177c">M</span><span style="color:#666">=</span><span style="color:#666">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>// go back to keyup loop
+</span></span><span style="display:flex;"><span>@KEYUP
+</span></span><span style="display:flex;"><span>0;JMP
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#666">(</span>MAKEBLACK<span style="color:#666">)</span>
+</span></span><span style="display:flex;"><span>@paintword
+</span></span><span style="display:flex;"><span><span style="color:#19177c">M</span><span style="color:#666">=</span>-1
+</span></span><span style="display:flex;"><span>@PAINTSCREEN
+</span></span><span style="display:flex;"><span>0;JMP
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#666">(</span>PAINTEDBLACK<span style="color:#666">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>// flag screen as black
+</span></span><span style="display:flex;"><span>@iswhite
+</span></span><span style="display:flex;"><span><span style="color:#19177c">M</span><span style="color:#666">=</span><span style="color:#666">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>// go back to keydown loop
+</span></span><span style="display:flex;"><span>@KEYDOWN
+</span></span><span style="display:flex;"><span>0;JMP
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#666">(</span>PAINTSCREEN<span style="color:#666">)</span>
+</span></span><span style="display:flex;"><span>// paint screen
+</span></span><span style="display:flex;"><span>@SCREEN
+</span></span><span style="display:flex;"><span><span style="color:#19177c">D</span><span style="color:#666">=</span>A
+</span></span><span style="display:flex;"><span>@scraddr
+</span></span><span style="display:flex;"><span><span style="color:#19177c">M</span><span style="color:#666">=</span>D
+</span></span><span style="display:flex;"><span><span style="color:#666">(</span>KEEPPAINTING<span style="color:#666">)</span>
+</span></span><span style="display:flex;"><span>    // paint at scraddr
+</span></span><span style="display:flex;"><span>    @paintword
+</span></span><span style="display:flex;"><span>    <span style="color:#19177c">D</span><span style="color:#666">=</span>M
+</span></span><span style="display:flex;"><span>    @scraddr
+</span></span><span style="display:flex;"><span>    <span style="color:#19177c">A</span><span style="color:#666">=</span>M
+</span></span><span style="display:flex;"><span>    <span style="color:#19177c">M</span><span style="color:#666">=</span>D
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    // increment scraddr
+</span></span><span style="display:flex;"><span>    @scraddr
+</span></span><span style="display:flex;"><span>    <span style="color:#19177c">M</span><span style="color:#666">=</span>M+1
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    @scrend
+</span></span><span style="display:flex;"><span>    <span style="color:#19177c">D</span><span style="color:#666">=</span>M
+</span></span><span style="display:flex;"><span>    @scraddr
+</span></span><span style="display:flex;"><span>    <span style="color:#19177c">D</span><span style="color:#666">=</span>D-M // positive <span style="color:#008000;font-weight:bold">until</span> <span style="color:#19177c">scraddr</span><span style="color:#666">=</span>scrend
+</span></span><span style="display:flex;"><span>    @KEEPPAINTING
+</span></span><span style="display:flex;"><span>    D;JGT
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>// jump back
+</span></span><span style="display:flex;"><span>@paintword
+</span></span><span style="display:flex;"><span><span style="color:#19177c">D</span><span style="color:#666">=</span>M
+</span></span><span style="display:flex;"><span>@PAINTEDWHITE
+</span></span><span style="display:flex;"><span>D;JEQ // <span style="color:#008000;font-weight:bold">if</span> paintword is 0, painted white
+</span></span><span style="display:flex;"><span>@PAINTEDBLACK
+</span></span><span style="display:flex;"><span>0;JMP
+</span></span></code></pre></td></tr></table>
 </div>
 </div>
   </article>
@@ -1224,27 +1224,27 @@ D;JEQ // <span style="color:#008000;font-weight:bold">if</span> paintword is 0, 
 
 <p>R is a tool for statistical computing and visualization. It is often used in research and many awesome data scientists work in both python or R depending on the application. Much like python, there have been a huge number of tools and packages built for and on top of R (matplotlib = ggplot2, Plotly&rsquo;s Dash = Rstudio&rsquo;s Shiny, Jupyter Notebooks = R Markdown, etc.)</p>
 <p>I was hesitant on learning R because so much of the language has a python analog and I&rsquo;m already proficient in python. After some conversation and reflection though, it does seem like a good thing to learn. The language of R is geared explicitly towards statistics. As a basic example, here is how to get 100 samples from a normal distribution with zero mean and unity variance in each language:</p>
-<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#408080;font-style:italic"># python</span>
-<span style="color:#008000;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">numpy</span> <span style="color:#008000;font-weight:bold">as</span> <span style="color:#00f;font-weight:bold">np</span> <span style="color:#408080;font-style:italic"># could also use a scipy function</span>
-np<span style="color:#666">.</span>random<span style="color:#666">.</span>normal(loc<span style="color:#666">=</span><span style="color:#666">0</span>, scale<span style="color:#666">=</span><span style="color:#666">1</span>, size<span style="color:#666">=</span><span style="color:#666">100</span>)
-</code></pre></td></tr></table>
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#408080;font-style:italic"># python</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">numpy</span> <span style="color:#008000;font-weight:bold">as</span> <span style="color:#00f;font-weight:bold">np</span> <span style="color:#408080;font-style:italic"># could also use a scipy function</span>
+</span></span><span style="display:flex;"><span>np<span style="color:#666">.</span>random<span style="color:#666">.</span>normal(loc<span style="color:#666">=</span><span style="color:#666">0</span>, scale<span style="color:#666">=</span><span style="color:#666">1</span>, size<span style="color:#666">=</span><span style="color:#666">100</span>)
+</span></span></code></pre></td></tr></table>
 </div>
-</div><div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</div><div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#408080;font-style:italic"># R</span>
-<span style="color:#00f">rnorm</span>(n<span style="color:#666">=</span><span style="color:#666">100</span>, mean<span style="color:#666">=</span><span style="color:#666">0</span>, sd<span style="color:#666">=</span><span style="color:#666">1</span>)
-</code></pre></td></tr></table>
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#408080;font-style:italic"># R</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">rnorm</span>(n<span style="color:#666">=</span><span style="color:#666">100</span>, mean<span style="color:#666">=</span><span style="color:#666">0</span>, sd<span style="color:#666">=</span><span style="color:#666">1</span>)
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>It&rsquo;s not just that it&rsquo;s 2 lines of code versus 1. It&rsquo;s that <code>rnorm</code> is built in to the standard library in R whereas in python you have to import a package like <code>numpy</code> or <code>scipy</code>. I use these packages so much in python that I sometimes forget they&rsquo;re not in the standard library! This reinforces the premise that <em>python is the second best language for everything</em>. R should help me think statistically as it is a language primarily written for statistical thinking.</p>
 
