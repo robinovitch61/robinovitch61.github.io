@@ -1,40 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">  
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>
 linear regression
 </title>
     <link rel="icon" href="/img/favicon.png" type="image/x-icon">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
     <link rel="stylesheet" href="https://robinovitch61.github.io/sass/main.min.a52045891891a7be7e3673f5d0bdbf76eef49ffce8c14b35b87c292ac78f3818.css">
-
-    
-
-<script>
-  MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$','$$'], ['\\[', '\\]']],
-      processEscapes: true,
-      processEnvironments: true
-    },
-    options: {
-      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
-    }
-  };
-
-  window.addEventListener('load', (event) => {
-      document.querySelectorAll("mjx-container").forEach(function(x){
-        x.parentElement.classList += 'has-jax'})
-  });
-</script>
-
-<script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
   </head>
 
   <body>
@@ -64,7 +40,7 @@ linear regression
   </div>
 </header>
 
-    
+
     <div class="top-title">
       <div class="container">
         <h2>linear regression</h2>
@@ -74,7 +50,7 @@ linear regression
     <div class="post-date">
       <div class="container">
         <p>
-Oct 18, 2019 &ndash; Leo Robinovitch
+Oct 18, 2019
 </p>
       </div>
     </div>
@@ -82,7 +58,30 @@ Oct 18, 2019 &ndash; Leo Robinovitch
     <div class="container">
       
 <div class="post">
-  <p><em>Update 2019-10-25: Added MLE derivation and OLS $ \sigma^2 $</em></p>
+  
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+  });
+</script>
+
+<script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<p><em>Update 2019-10-25: Added MLE derivation and OLS $ \sigma^2 $</em></p>
 <p>I have learned linear regression a number of times with varying of levels of detail. I&rsquo;m making this document mostly as a reference for myself and any others who may be interested in the technique.</p>
 <p>The concepts and explanations here come either from <a href="http://faculty.marshall.usc.edu/gareth-james/ISL/">An Introduction to Statistical Learning (ISLR)</a> or <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">The Elements of Statistical Learning (ESLR)</a>. Other sources are listed at the bottom.</p>
 
@@ -393,7 +392,7 @@ $$ \sigma^{2OLS} = \frac{1}{m-n} (y-\mathbf{X}\beta)^T (y-\mathbf{X}\beta) $$</p
 </div>
 
     </div>
-    
+
     
 
 <footer>

@@ -6,7 +6,19 @@
     <description>Recent content in i like computers, surfing, and friendship on The Leo Zone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Sep 2021 17:16:07 -0700</lastBuildDate><atom:link href="https://robinovitch61.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://robinovitch61.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>cron: for your health</title>
+      <link>https://robinovitch61.github.io/posts/cron-for-your-health/</link>
+      <pubDate>Sun, 13 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://robinovitch61.github.io/posts/cron-for-your-health/</guid>
+      <description>I have a standing desk, but rarely stand. I have probably been sitting about 7 hours a day, which is too much! In the spirit of positive nudges for habit building and taking ownership over my notifications, I wrote a simple cron job to remind me to stand up every hour.
+Note that this is mac-specific, but a Linux or Windows analog should be fairly easy to implement.
+~/projects/cron/standup.sh
+1 2 3  #!</description>
+    </item>
+    
     <item>
       <title>local typescript sandbox</title>
       <link>https://robinovitch61.github.io/posts/typescript-sandbox/</link>
@@ -160,9 +172,8 @@ I found it useful in that it solidified the rules of Jack and allowed me to proj
       <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://robinovitch61.github.io/posts/givewell-is-awesome/</guid>
-      <description>Note: this is my personal commentary and this post is not officially endorsed by Givewell in any way.
-Givewell is one of the most admirable philanthropic organizations out there. They recognize and act upon a number of important truths:
- Money is a super powerful tool for reducing harm in the world Money can be used in more and less effective ways The effectiveness of money can be modeled with finite (possibly wide) uncertainty bounds at a non-trivial confidence level Encouraging those with the means to donate money to effective causes is important and worthwhile Moral judgement is an inseparable part of judging the effectiveness of an outcome  Not only does Givewell maintain an active blog, a Giving 101 section of its site, run free events in the Bay Area every few months and deliver well-curated email updates, but they keep updated copies of their Cost Effectiveness Models and Guide to Cost Effective Analysis available online for everyone to view.</description>
+      <description>MathJax = { tex: { inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]], displayMath: [[&#39;$$&#39;,&#39;$$&#39;], [&#39;\\[&#39;, &#39;\\]&#39;]], processEscapes: true, processEnvironments: true }, options: { skipHtmlTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;] } }; window.addEventListener(&#39;load&#39;, (event) = { document.querySelectorAll(&#34;mjx-container&#34;).forEach(function(x){ x.parentElement.classList += &#39;has-jax&#39;}) });   Note: this is my personal commentary and this post is not officially endorsed by Givewell in any way.
+Givewell is one of the most admirable philanthropic organizations out there.</description>
     </item>
     
     <item>
@@ -224,7 +235,7 @@ Python requires a clear and simple concurrency framework as it is commonly used 
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://robinovitch61.github.io/posts/statistical-bias/</guid>
-      <description>Eat my spheres!   You find yourself trapped in a room with Jigsaw, the villain from the Saw movies. There is a wood box of 100 spheres, some of them steel ball bearings and some of them gumballs. Jigsaw tells you that you can leave the room alive if you guess the number of steel ball bearings in the jar correctly. You can pull 10 random spheres out the 100 in the box as many times as you want, but each time you do, you have to eat all of them (yum!</description>
+      <description>MathJax = { tex: { inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]], displayMath: [[&#39;$$&#39;,&#39;$$&#39;], [&#39;\\[&#39;, &#39;\\]&#39;]], processEscapes: true, processEnvironments: true }, options: { skipHtmlTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;] } }; window.addEventListener(&#39;load&#39;, (event) = { document.querySelectorAll(&#34;mjx-container&#34;).forEach(function(x){ x.parentElement.classList += &#39;has-jax&#39;}) });    Eat my spheres!   You find yourself trapped in a room with Jigsaw, the villain from the Saw movies. There is a wood box of 100 spheres, some of them steel ball bearings and some of them gumballs.</description>
     </item>
     
     <item>
@@ -233,9 +244,8 @@ Python requires a clear and simple concurrency framework as it is commonly used 
       <pubDate>Fri, 18 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://robinovitch61.github.io/posts/linear-regression/</guid>
-      <description>Update 2019-10-25: Added MLE derivation and OLS $ \sigma^2 $
-I have learned linear regression a number of times with varying of levels of detail. I&amp;rsquo;m making this document mostly as a reference for myself and any others who may be interested in the technique.
-The concepts and explanations here come either from An Introduction to Statistical Learning (ISLR) or The Elements of Statistical Learning (ESLR). Other sources are listed at the bottom.</description>
+      <description>MathJax = { tex: { inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]], displayMath: [[&#39;$$&#39;,&#39;$$&#39;], [&#39;\\[&#39;, &#39;\\]&#39;]], processEscapes: true, processEnvironments: true }, options: { skipHtmlTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;] } }; window.addEventListener(&#39;load&#39;, (event) = { document.querySelectorAll(&#34;mjx-container&#34;).forEach(function(x){ x.parentElement.classList += &#39;has-jax&#39;}) });   Update 2019-10-25: Added MLE derivation and OLS $ \sigma^2 $
+I have learned linear regression a number of times with varying of levels of detail. I&amp;rsquo;m making this document mostly as a reference for myself and any others who may be interested in the technique.</description>
     </item>
     
     <item>

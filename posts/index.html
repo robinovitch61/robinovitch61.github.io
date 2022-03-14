@@ -1,38 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">  
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Posts &ndash; The Leo Zone</title>
     <link rel="icon" href="/img/favicon.png" type="image/x-icon">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
     <link rel="stylesheet" href="https://robinovitch61.github.io/sass/main.min.a52045891891a7be7e3673f5d0bdbf76eef49ffce8c14b35b87c292ac78f3818.css">
-
-    
-
-<script>
-  MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$','$$'], ['\\[', '\\]']],
-      processEscapes: true,
-      processEnvironments: true
-    },
-    options: {
-      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
-    }
-  };
-
-  window.addEventListener('load', (event) => {
-      document.querySelectorAll("mjx-container").forEach(function(x){
-        x.parentElement.classList += 'has-jax'})
-  });
-</script>
-
-<script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
   </head>
 
   <body>
@@ -62,7 +38,7 @@
   </div>
 </header>
 
-    
+
     <div class="top-title">
       <div class="container">
         <h2>Posts</h2>
@@ -78,6 +54,47 @@
     <div class="container">
       
 <h1>DEFAULT LIST</h1>
+
+  <article>
+    <h2>cron: for your health</h2>
+    <p>I have a standing desk, but rarely stand. I have probably been sitting about 7 hours a day, which is too much! In
+the spirit of positive nudges for habit building and taking ownership over my notifications,
+I wrote a simple <a href="https://en.wikipedia.org/wiki/Cron">cron</a> job to remind me to stand up every hour.</p>
+<p>Note that this is mac-specific, but a Linux or Windows analog should be fairly easy to implement.</p>
+<p><code>~/projects/cron/standup.sh</code></p>
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#bc7a00">#!/usr/bin/env sh
+</span><span style="color:#bc7a00"></span>
+osascript -e <span style="color:#ba2121">&#39;display alert &#34;Stand up and stretch!&#34;&#39;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>When run, a popup will be created in the middle of my screen that looks like:
+
+<a class="img-link" target="_blank" href="/img/standup.jpg">
+  <figure>
+      <img style="max-width: 200px;" src="/img/standup.jpg" alt="standup.jpg" />
+      
+      
+  </figure>
+</a>
+</p>
+<p>In order to run it periodically with , I run <code>crontab -e</code>, then add this line to the file:
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#666">0</span> * * * * ~/projects/cron/standup.sh  &gt;/dev/null 2&gt;&amp;<span style="color:#666">1</span></code></pre></div></p>
+<p>Breakdown:</p>
+<ul>
+<li><code>0 * * * *</code>: Run every hour (I use <a href="https://crontab.guru/">https://crontab.guru/</a> to create or parse these schedule expressions)</li>
+<li><code>~/projects/cron/standup.sh</code>: Path to my defined alert script</li>
+<li><code>&gt; /dev/null</code>: Redirect stdout to <a href="https://linuxhint.com/what_is_dev_null/">/dev/null</a>, i.e. discard it</li>
+<li><code>2&gt;&amp;1</code>: Disable cron email. Also redirect stderr to the same place as stdout, in this case <code>/dev/null</code></li>
+</ul>
+
+  </article>
 
   <article>
     <h2>local typescript sandbox</h2>
@@ -1573,7 +1590,30 @@ League, and Super Smash Bros. Finally, I&rsquo;m now a plant Dad.</p>
 
   <article>
     <h2>givewell is awesome</h2>
-    <p><em>Note: this is my personal commentary and this post is not officially endorsed by Givewell in any way.</em></p>
+    
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+  });
+</script>
+
+<script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<p><em>Note: this is my personal commentary and this post is not officially endorsed by Givewell in any way.</em></p>
 <p><a href="https://www.givewell.org/">Givewell</a> is one of the most admirable philanthropic organizations out there. They recognize and act upon a number of important truths:</p>
 <ul>
 <li>Money is a super powerful tool for reducing harm in the world</li>
@@ -1704,6 +1744,29 @@ $$ \Delta WB = 2x $$</p>
   <article>
     <h2>statistical bias</h2>
     
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+  });
+</script>
+
+<script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
 <a class="img-link" target="_blank" href="/img/jigsaw.png">
   <figure>
       <img style="max-width: 70%;" src="/img/jigsaw.png" alt="jigsaw.png" />
@@ -1779,7 +1842,30 @@ $$ = Bias[\hat{f}(x)]^2 + Var(\hat{f}(x)) + \sigma^2 $$</p>
 
   <article>
     <h2>linear regression</h2>
-    <p><em>Update 2019-10-25: Added MLE derivation and OLS $ \sigma^2 $</em></p>
+    
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+  });
+</script>
+
+<script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<p><em>Update 2019-10-25: Added MLE derivation and OLS $ \sigma^2 $</em></p>
 <p>I have learned linear regression a number of times with varying of levels of detail. I&rsquo;m making this document mostly as a reference for myself and any others who may be interested in the technique.</p>
 <p>The concepts and explanations here come either from <a href="http://faculty.marshall.usc.edu/gareth-james/ISL/">An Introduction to Statistical Learning (ISLR)</a> or <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">The Elements of Statistical Learning (ESLR)</a>. Other sources are listed at the bottom.</p>
 
@@ -2483,7 +2569,7 @@ EOF
 
 
     </div>
-    
+
     <footer>
   <div class="container">
   </div>
