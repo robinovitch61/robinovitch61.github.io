@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://theleo.zone/posts/cron-for-your-health/</loc>
-    <lastmod>2022-03-13T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://theleo.zone/</loc>
-    <lastmod>2022-03-13T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theleo.zone/posts/</loc>
+    <lastmod>2022-03-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theleo.zone/posts/tidal-cycles-setup/</loc>
+    <lastmod>2022-03-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theleo.zone/posts/cron-for-your-health/</loc>
     <lastmod>2022-03-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theleo.zone/posts/typescript-sandbox/</loc>

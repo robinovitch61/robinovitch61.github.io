@@ -6,7 +6,19 @@
     <description>Recent content in Posts on The Leo Zone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://theleo.zone/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://theleo.zone/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>setting up tidal cycles</title>
+      <link>https://theleo.zone/posts/tidal-cycles-setup/</link>
+      <pubDate>Fri, 25 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://theleo.zone/posts/tidal-cycles-setup/</guid>
+      <description>Tidal Cycles is software that works on top of another piece of software called SuperCollider.
+Together, you can use them to produce music using code.
+Today I set up these tools and made my first sound with them. Setup was a bit tricky, and this post is as much for myself to document what I did as it is for others pursuing their own setup in the future.
+The first step is to install SuperCollider, following the install links for your platform at supercollider.</description>
+    </item>
+    
     <item>
       <title>cron: for your health</title>
       <link>https://theleo.zone/posts/cron-for-your-health/</link>
