@@ -111,7 +111,7 @@ interact (<a href="https://tidalcycles.org/docs/getting-started/tidal_start">sou
 the bottom right).</p>
 </li>
 <li>
-<p>Create a new file called <code>test.tidal</code>.</p>
+<p>Create a new file called <code>test.tidal</code></p>
 </li>
 <li>
 <p>Add the line <code>d1 $ sound &quot;bd sd&quot;</code></p>
@@ -120,11 +120,12 @@ the bottom right).</p>
 <p>Type ctrl-Enter or cmd-Enter with your cursor on the same line. A beat should play!</p>
 </li>
 </ol>
-<p>Now this is the stock setup working. I changed mine a little bit for convenience, but if you&rsquo;d like you can stop here
-and proceed with actually using the software :).</p>
-<p>After this confirmation things were installed and working, I uninstalled Atom.</p>
-<p>I then went to SuperCollider and configured it to start SuperDirt on startup. I did this by clicking File -&gt; Open
-startup file, pasting in the following text, and saving the startup file:</p>
+<p>Now this is the stock setup working. I changed mine a bit for convenience, but if you&rsquo;d like to you can stop here
+and proceed with actually using the software to make music :).</p>
+<p>After this confirmation things were installed and working, I uninstalled Atom, as it&rsquo;s not an editor I use regularly.
+I&rsquo;m a fan of <code>vim</code>.</p>
+<p>I then went to SuperCollider and configured it to start up SuperDirt whenever it is first opened. I did this by clicking
+<code>File -&gt; Open startup file</code>, pasting in the following text, and saving the startup file:</p>
 <div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -205,7 +206,8 @@ startup file, pasting in the following text, and saving the startup file:</p>
 depending on your platform.</p>
 <div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#008000">alias</span> <span style="color:#19177c">sclang</span><span style="color:#666">=</span><span style="color:#ba2121">&#34;/Applications/SuperCollider.app/Contents/MacOS/sclang&#34;</span></span></span></code></pre></div>
 <p>In order to use <code>vim</code> with Tidal Cycles, I installed <a href="https://github.com/tidalcycles/vim-tidal">vim-tidal</a>. Make sure
-you run the <code>make</code> command to symlink the <code>tidalvim</code> and <code>tidal</code> scripts as recommended.</p>
+you run the <code>make</code> command to symlink the <code>tidalvim</code> and <code>tidal</code> scripts as recommended so that you can run <code>tidal</code>
+in a terminal.</p>
 <p>I then created a new <a href="https://github.com/tmuxinator/tmuxinator">tmuxinator</a> project called <code>music</code> with the following
 configuration:</p>
 <div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
@@ -242,17 +244,17 @@ configuration:</p>
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>- tidal<span style="color:#bbb">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>This allows me to run <code>tmuxinator start music</code>, and 2 windows open up:</p>
+</div><p>This allows me to run <code>tmuxinator start music</code> and 2 windows open up:</p>
 <ul>
-<li>a window for vim</li>
-<li>a split window running <code>sclang</code>, a &ldquo;headless&rdquo; version of SuperCollider, and <code>tidal</code>, the vim-tidal plugin script that
-starts the Haskell interpreter with the tidal package</li>
+<li>a main window for vim</li>
+<li>a hidden split window running <code>sclang</code>, a &ldquo;headless&rdquo; version of SuperCollider, and <code>tidal</code>, the vim-tidal plugin
+script that starts the Haskell interpreter including the tidal package</li>
 </ul>
 <p>Finally, by adding the following configuration line to my <code>~/.vimrc</code>, I configure vim-tidal to send commands to the
 correct tmux socket and window + pane (the <code>tidal</code> pane):</p>
 <div class="highlight"><pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span><span style="color:#408080;font-style:italic">&#34; vim-tidal combined with tmuxinator music</span><span style="">
 </span></span></span><span style="display:flex;"><span><span style=""></span><span style="color:#008000;font-weight:bold">let</span> g:tidal_default_config = {<span style="color:#ba2121">&#34;socket_name&#34;</span>: <span style="color:#ba2121">&#34;music&#34;</span>, <span style="color:#ba2121">&#34;target_pane&#34;</span>: <span style="color:#ba2121">&#34;music:2.2&#34;</span>}</span></span></code></pre></div>
-<p>Now, I can fire up vim configured with SuperCollider and Tidal Cycles running with <code>tmuxinator start music</code>. When I&rsquo;m
+<p>Now, I can fire up <code>vim</code> configured with SuperCollider and Tidal Cycles running with <code>tmuxinator start music</code>. When I&rsquo;m
 done, I save my files and run <code>tmuxinator stop music</code>, and everything shuts down.</p>
 
   </article>
