@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pixels on The Leo Zone</title>
+    <link>https://theleo.zone/pixels/</link>
+    <description>Recent content in Pixels on The Leo Zone</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://theleo.zone/pixels/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://theleo.zone/pixels/node_modules/prettier/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://theleo.zone/pixels/node_modules/prettier/readme/</guid>
+      <description>Opinionated Code Formatter  JavaScript · TypeScript · Flow · JSX · JSON   CSS · SCSS · Less   HTML · Vue · Angular   GraphQL · Markdown · YAML   Your favorite language?              Intro Prettier is an opinionated code formatter. It enforces a consistent style by parsing your code and re-printing it with its own rules that take the maximum line length into account, wrapping code when necessary.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://theleo.zone/pixels/node_modules/typescript/authors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://theleo.zone/pixels/node_modules/typescript/authors/</guid>
+      <description>TypeScript is authored by:
+ 0verk1ll Abubaker Bashir Adam Freidin Adam Postma Adi Dahiya Aditya Daflapurkar Adnan Chowdhury Adrian Leonhard Adrien Gibrat Ahmad Farid Ajay Poshak Alan Agius Alan Pierce Alessandro Vergani Alex Chugaev Alex Eagle Alex Khomchenko Alex Ryan Alexander Alexander Kuvaev Alexander Rusakov Alexander Tarasyuk Ali Sabzevari Aluan Haddad amaksimovich2 Anatoly Ressin Anders Hejlsberg Anders Kaseorg Andre Sutherland Andreas Martin Andrej Baran Andrew Andrew Branch Andrew Casey Andrew Faulkner Andrew Ochsner Andrew Stegmaier Andrew Z Allen Andrey Roenko Andrii Dieiev András Parditka Andy Hanson Anil Anar Anix Anton Khlynovskiy Anton Tolmachev Anubha Mathur AnyhowStep Armando Aguirre Arnaud Tournier Arnav Singh Arpad Borsos Artem Tyurin Arthur Ozga Asad Saeeduddin Austin Cummings Avery Morin Aziz Khambati Basarat Ali Syed @begincalendar Ben Duffield Ben Lichtman Ben Mosher Benedikt Meurer Benjamin Bock Benjamin Lichtman Benny Neugebauer BigAru Bill Ticehurst Blaine Bublitz Blake Embrey @bluelovers @bootstraponline Bowden Kelly Bowden Kenny Brad Zacher Brandon Banks Brandon Bloom Brandon Slade Brendan Kenny Brett Mayen Brian Terlson Bryan Forbes Caitlin Potter Caleb Sander Cameron Taggart @cedvdb Charles Charles Pierce Charly POLY Chris Bubernak Chris Patterson christian Christophe Vidal Chuck Jazdzewski Clay Miller Colby Russell Colin Snover Collins Abitekaniza Connor Clark Cotton Hou csigs Cyrus Najmabadi Dafrok Zhang Dahan Gong Daiki Nishikawa Dan Corder Dan Freeman Dan Quirk Dan Rollo Daniel Gooss Daniel Imms Daniel Krom Daniel Król Daniel Lehenbauer Daniel Rosenwasser David Li David Sheldrick David Sherret David Souther David Staheli Denis Nedelyaev Derek P Sifford Dhruv Rajvanshi Dick van den Brink Diogo Franco (Kovensky) Dirk Bäumer Dirk Holtwick Dmitrijs Minajevs Dom Chen Donald Pipowitch Doug Ilijev dreamran43@gmail.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://theleo.zone/pixels/node_modules/typescript/code_of_conduct/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://theleo.zone/pixels/node_modules/typescript/code_of_conduct/</guid>
+      <description>This project has adopted the Microsoft Open Source Code of Conduct. For more information see the Code of Conduct FAQ or contact opencode@microsoft.com with any additional questions or comments.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://theleo.zone/pixels/node_modules/typescript/lib/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://theleo.zone/pixels/node_modules/typescript/lib/readme/</guid>
+      <description>Read This! These files are not meant to be edited by hand. If you need to make modifications, the respective files should be changed within the repository&amp;rsquo;s top-level src directory. Running gulp LKG will then appropriately update the files in this directory.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://theleo.zone/pixels/node_modules/typescript/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://theleo.zone/pixels/node_modules/typescript/readme/</guid>
+      <description>TypeScript    
+TypeScript is a language for application-scale JavaScript. TypeScript adds optional types to JavaScript that support tools for large-scale JavaScript applications for any browser, for any host, on any OS. TypeScript compiles to readable, standards-based JavaScript. Try it out at the playground, and stay up to date via our blog and Twitter account.
+Find others who are using TypeScript at our community page.
+Installing For the latest stable version:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://theleo.zone/pixels/node_modules/typescript/security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://theleo.zone/pixels/node_modules/typescript/security/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

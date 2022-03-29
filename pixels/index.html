@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Pixels &ndash; The Leo Zone</title>
+    <link rel="icon" href="/img/favicon.png" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link rel="stylesheet" href="https://theleo.zone/sass/main.min.2d43c4d15d5c6744c808f0eddbc12aed7cc95aebe01212d38e8064687a81bfed.css">
+  </head>
+
+  <body>
+    <header>
+  <div class="container">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a class="btn-text" href="/"><h1>Leo</h1></a>
+      </div>
+
+      <div class="dropdown">
+        <input class="hamburger menu-btn" type="checkbox" id="menu-btn" />
+        <label class="hamburger menu-icon" for="menu-btn">
+          <span class="navicon-top"></span>
+          <span class="navicon-mid"></span>
+          <span class="navicon-bottom"></span>
+        </label>
+        <div class="menu">
+          <a class="menu-item" href="/">Home</a>
+          <a class="menu-item" href="/about">About</a>
+          <a class="menu-item" href="https://github.com/robinovitch61" target="_blank">
+            <img class="social-media-thumbnail" src="/img/github.png" alt="github" title="github" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    <div class="top-title">
+      <div class="container">
+        <h2>Pixels</h2>
+      </div>
+    </div>
+
+    <div class="post-date">
+      <div class="container">
+        <p></p>
+      </div>
+    </div>
+
+    <div class="container">
+      
+<h1>DEFAULT LIST</h1>
+
+  <article>
+    <h2></h2>
+    <p><img src="https://unpkg.com/prettier-logo@1.0.3/images/prettier-banner-light.svg" alt="Prettier Banner"></p>
+<h2 align="center">Opinionated Code Formatter</h2>
+<p align="center">
+  <em>
+    JavaScript
+    · TypeScript
+    · Flow
+    · JSX
+    · JSON
+  </em>
+  <br />
+  <em>
+    CSS
+    · SCSS
+    · Less
+  </em>
+  <br />
+  <em>
+    HTML
+    · Vue
+    · Angular
+  </em>
+  <br />
+  <em>
+    GraphQL
+    · Markdown
+    · YAML
+  </em>
+  <br />
+  <em>
+    <a href="https://prettier.io/docs/en/plugins.html">
+      Your favorite language?
+    </a>
+  </em>
+</p>
+<p align="center">
+  <a href="https://github.com/prettier/prettier/actions?query=workflow%3AProd+branch%3Amain">
+    <img alt="Github Actions Build Status" src="https://img.shields.io/github/workflow/status/prettier/prettier/Prod?label=Prod&style=flat-square"></a>
+  <a href="https://github.com/prettier/prettier/actions?query=workflow%3ADev+branch%3Amain">
+    <img alt="Github Actions Build Status" src="https://img.shields.io/github/workflow/status/prettier/prettier/Dev?label=Dev&style=flat-square"></a>
+  <a href="https://github.com/prettier/prettier/actions?query=workflow%3ALint+branch%3Amain">
+    <img alt="Github Actions Build Status" src="https://img.shields.io/github/workflow/status/prettier/prettier/Lint?label=Lint&style=flat-square"></a>
+  <a href="https://codecov.io/gh/prettier/prettier">
+    <img alt="Codecov Coverage Status" src="https://img.shields.io/codecov/c/github/prettier/prettier.svg?style=flat-square"></a>
+  <a href="https://twitter.com/acdlite/status/974390255393505280">
+    <img alt="Blazing Fast" src="https://img.shields.io/badge/speed-blazing%20%F0%9F%94%A5-brightgreen.svg?style=flat-square"></a>
+  <br/>
+  <a href="https://www.npmjs.com/package/prettier">
+    <img alt="npm version" src="https://img.shields.io/npm/v/prettier.svg?style=flat-square"></a>
+  <a href="https://www.npmjs.com/package/prettier">
+    <img alt="weekly downloads from npm" src="https://img.shields.io/npm/dw/prettier.svg?style=flat-square"></a>
+  <a href="#badge">
+    <img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square"></a>
+  <a href="https://gitter.im/jlongster/prettier">
+    <img alt="Chat on Gitter" src="https://img.shields.io/gitter/room/jlongster/prettier.svg?style=flat-square"></a>
+  <a href="https://twitter.com/PrettierCode">
+    <img alt="Follow Prettier on Twitter" src="https://img.shields.io/twitter/follow/prettiercode.svg?label=follow+prettier&style=flat-square"></a>
+</p>
+<h2 id="intro">Intro</h2>
+<p>Prettier is an opinionated code formatter. It enforces a consistent style by parsing your code and re-printing it with its own rules that take the maximum line length into account, wrapping code when necessary.</p>
+<h3 id="input">Input</h3>
+<!-- prettier-ignore -->
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>foo(reallyLongArg(), omgSoManyParameters(), IShouldRefactorThis(), isThereSeriouslyAnotherOne());
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="output">Output</h3>
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>foo(
+</span></span><span style="display:flex;"><span>  reallyLongArg(),
+</span></span><span style="display:flex;"><span>  omgSoManyParameters(),
+</span></span><span style="display:flex;"><span>  IShouldRefactorThis(),
+</span></span><span style="display:flex;"><span>  isThereSeriouslyAnotherOne()
+</span></span><span style="display:flex;"><span>);
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Prettier can be run <a href="https://prettier.io/docs/en/editors.html">in your editor</a> on-save, in a <a href="https://prettier.io/docs/en/precommit.html">pre-commit hook</a>, or in <a href="https://prettier.io/docs/en/cli.html#list-different">CI environments</a> to ensure your codebase has a consistent style without devs ever having to post a nit-picky comment on a code review ever again!</p>
+<hr>
+<p><strong><a href="https://prettier.io/docs/en/">Documentation</a></strong></p>
+<!-- prettier-ignore -->
+<p><a href="https://prettier.io/docs/en/install.html">Install</a> ·
+<a href="https://prettier.io/docs/en/options.html">Options</a> ·
+<a href="https://prettier.io/docs/en/cli.html">CLI</a> ·
+<a href="https://prettier.io/docs/en/api.html">API</a></p>
+<p><strong><a href="https://prettier.io/playground/">Playground</a></strong></p>
+<hr>
+<h2 id="badge">Badge</h2>
+<p>Show the world you&rsquo;re using <em>Prettier</em> → <a href="https://github.com/prettier/prettier"><img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square" alt="code style: prettier"></a></p>
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-md" data-lang="md"><span style="display:flex;"><span>[<span style="color:#008000;font-weight:bold">![code style: prettier</span>](<span style="color:#7d9029">https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square</span>)](https://github.com/prettier/prettier)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="contributing">Contributing</h2>
+<p>See <a href="CONTRIBUTING.md">CONTRIBUTING.md</a>.</p>
+
+  </article>
+
+  <article>
+    <h2></h2>
+    <p>TypeScript is authored by:</p>
+<ul>
+<li>0verk1ll</li>
+<li>Abubaker Bashir</li>
+<li>Adam Freidin</li>
+<li>Adam Postma</li>
+<li>Adi Dahiya</li>
+<li>Aditya Daflapurkar</li>
+<li>Adnan Chowdhury</li>
+<li>Adrian Leonhard</li>
+<li>Adrien Gibrat</li>
+<li>Ahmad Farid</li>
+<li>Ajay Poshak</li>
+<li>Alan Agius</li>
+<li>Alan Pierce</li>
+<li>Alessandro Vergani</li>
+<li>Alex Chugaev</li>
+<li>Alex Eagle</li>
+<li>Alex Khomchenko</li>
+<li>Alex Ryan</li>
+<li>Alexander</li>
+<li>Alexander Kuvaev</li>
+<li>Alexander Rusakov</li>
+<li>Alexander Tarasyuk</li>
+<li>Ali Sabzevari</li>
+<li>Aluan Haddad</li>
+<li>amaksimovich2</li>
+<li>Anatoly Ressin</li>
+<li>Anders Hejlsberg</li>
+<li>Anders Kaseorg</li>
+<li>Andre Sutherland</li>
+<li>Andreas Martin</li>
+<li>Andrej Baran</li>
+<li>Andrew</li>
+<li>Andrew Branch</li>
+<li>Andrew Casey</li>
+<li>Andrew Faulkner</li>
+<li>Andrew Ochsner</li>
+<li>Andrew Stegmaier</li>
+<li>Andrew Z Allen</li>
+<li>Andrey Roenko</li>
+<li>Andrii Dieiev</li>
+<li>András Parditka</li>
+<li>Andy Hanson</li>
+<li>Anil Anar</li>
+<li>Anix</li>
+<li>Anton Khlynovskiy</li>
+<li>Anton Tolmachev</li>
+<li>Anubha Mathur</li>
+<li>AnyhowStep</li>
+<li>Armando Aguirre</li>
+<li>Arnaud Tournier</li>
+<li>Arnav Singh</li>
+<li>Arpad Borsos</li>
+<li>Artem Tyurin</li>
+<li>Arthur Ozga</li>
+<li>Asad Saeeduddin</li>
+<li>Austin Cummings</li>
+<li>Avery Morin</li>
+<li>Aziz Khambati</li>
+<li>Basarat Ali Syed</li>
+<li>@begincalendar</li>
+<li>Ben Duffield</li>
+<li>Ben Lichtman</li>
+<li>Ben Mosher</li>
+<li>Benedikt Meurer</li>
+<li>Benjamin Bock</li>
+<li>Benjamin Lichtman</li>
+<li>Benny Neugebauer</li>
+<li>BigAru</li>
+<li>Bill Ticehurst</li>
+<li>Blaine Bublitz</li>
+<li>Blake Embrey</li>
+<li>@bluelovers</li>
+<li>@bootstraponline</li>
+<li>Bowden Kelly</li>
+<li>Bowden Kenny</li>
+<li>Brad Zacher</li>
+<li>Brandon Banks</li>
+<li>Brandon Bloom</li>
+<li>Brandon Slade</li>
+<li>Brendan Kenny</li>
+<li>Brett Mayen</li>
+<li>Brian Terlson</li>
+<li>Bryan Forbes</li>
+<li>Caitlin Potter</li>
+<li>Caleb Sander</li>
+<li>Cameron Taggart</li>
+<li>@cedvdb</li>
+<li>Charles</li>
+<li>Charles Pierce</li>
+<li>Charly POLY</li>
+<li>Chris Bubernak</li>
+<li>Chris Patterson</li>
+<li>christian</li>
+<li>Christophe Vidal</li>
+<li>Chuck Jazdzewski</li>
+<li>Clay Miller</li>
+<li>Colby Russell</li>
+<li>Colin Snover</li>
+<li>Collins Abitekaniza</li>
+<li>Connor Clark</li>
+<li>Cotton Hou</li>
+<li>csigs</li>
+<li>Cyrus Najmabadi</li>
+<li>Dafrok Zhang</li>
+<li>Dahan Gong</li>
+<li>Daiki Nishikawa</li>
+<li>Dan Corder</li>
+<li>Dan Freeman</li>
+<li>Dan Quirk</li>
+<li>Dan Rollo</li>
+<li>Daniel Gooss</li>
+<li>Daniel Imms</li>
+<li>Daniel Krom</li>
+<li>Daniel Król</li>
+<li>Daniel Lehenbauer</li>
+<li>Daniel Rosenwasser</li>
+<li>David Li</li>
+<li>David Sheldrick</li>
+<li>David Sherret</li>
+<li>David Souther</li>
+<li>David Staheli</li>
+<li>Denis Nedelyaev</li>
+<li>Derek P Sifford</li>
+<li>Dhruv Rajvanshi</li>
+<li>Dick van den Brink</li>
+<li>Diogo Franco (Kovensky)</li>
+<li>Dirk Bäumer</li>
+<li>Dirk Holtwick</li>
+<li>Dmitrijs Minajevs</li>
+<li>Dom Chen</li>
+<li>Donald Pipowitch</li>
+<li>Doug Ilijev</li>
+<li><a href="mailto:dreamran43@gmail.com">dreamran43@gmail.com</a></li>
+<li>@e-cloud</li>
+<li>Ecole Keine</li>
+<li>Eddie Jaoude</li>
+<li>Edward Thomson</li>
+<li>EECOLOR</li>
+<li>Eli Barzilay</li>
+<li>Elizabeth Dinella</li>
+<li>Ely Alamillo</li>
+<li>Eric Grube</li>
+<li>Eric Tsang</li>
+<li>Erik Edrosa</li>
+<li>Erik McClenney</li>
+<li>Esakki Raj</li>
+<li>Ethan Resnick</li>
+<li>Ethan Rubio</li>
+<li>Eugene Timokhov</li>
+<li>Evan Cahill</li>
+<li>Evan Martin</li>
+<li>Evan Sebastian</li>
+<li>ExE Boss</li>
+<li>Eyas Sharaiha</li>
+<li>Fabian Cook</li>
+<li>@falsandtru</li>
+<li>Filipe Silva</li>
+<li>@flowmemo</li>
+<li>Forbes Lindesay</li>
+<li>Francois Hendriks</li>
+<li>Francois Wouts</li>
+<li>Frank Wallis</li>
+<li>František Žiacik</li>
+<li>Frederico Bittencourt</li>
+<li>fullheightcoding</li>
+<li>Gabe Moothart</li>
+<li>Gabriel Isenberg</li>
+<li>Gabriela Araujo Britto</li>
+<li>Gabriela Britto</li>
+<li>gb714us</li>
+<li>Gilad Peleg</li>
+<li>Godfrey Chan</li>
+<li>Gorka Hernández Estomba</li>
+<li>Graeme Wicksted</li>
+<li>Guillaume Salles</li>
+<li>Guy Bedford</li>
+<li>hafiz</li>
+<li>Halasi Tamás</li>
+<li>Hendrik Liebau</li>
+<li>Henry Mercer</li>
+<li>Herrington Darkholme</li>
+<li>Hoang Pham</li>
+<li>Holger Jeromin</li>
+<li>Homa Wong</li>
+<li>Hye Sung Jung</li>
+<li>Iain Monro</li>
+<li>@IdeaHunter</li>
+<li>Igor Novozhilov</li>
+<li>Igor Oleinikov</li>
+<li>Ika</li>
+<li>iliashkolyar</li>
+<li>IllusionMH</li>
+<li>Ingvar Stepanyan</li>
+<li>Ingvar Stepanyan</li>
+<li>Isiah Meadows</li>
+<li>ispedals</li>
+<li>Ivan Enderlin</li>
+<li>Ivo Gabe de Wolff</li>
+<li>Iwata Hidetaka</li>
+<li>Jack Bates</li>
+<li>Jack Williams</li>
+<li>Jake Boone</li>
+<li>Jakub Korzeniowski</li>
+<li>Jakub Młokosiewicz</li>
+<li>James Henry</li>
+<li>James Keane</li>
+<li>James Whitney</li>
+<li>Jan Melcher</li>
+<li>Jason Freeman</li>
+<li>Jason Jarrett</li>
+<li>Jason Killian</li>
+<li>Jason Ramsay</li>
+<li>JBerger</li>
+<li>Jean Pierre</li>
+<li>Jed Mao</li>
+<li>Jeff Wilcox</li>
+<li>Jeffrey Morlan</li>
+<li>Jesse Schalken</li>
+<li>Jesse Trinity</li>
+<li>Jing Ma</li>
+<li>Jiri Tobisek</li>
+<li>Joe Calzaretta</li>
+<li>Joe Chung</li>
+<li>Joel Day</li>
+<li>Joey Watts</li>
+<li>Johannes Rieken</li>
+<li>John Doe</li>
+<li>John Vilk</li>
+<li>Jonathan Bond-Caron</li>
+<li>Jonathan Park</li>
+<li>Jonathan Toland</li>
+<li>Jordan Harband</li>
+<li>Jordi Oliveras Rovira</li>
+<li>Joscha Feth</li>
+<li>Joseph Wunderlich</li>
+<li>Josh Abernathy</li>
+<li>Josh Goldberg</li>
+<li>Josh Kalderimis</li>
+<li>Josh Soref</li>
+<li>Juan Luis Boya García</li>
+<li>Julian Williams</li>
+<li>Justin Bay</li>
+<li>Justin Johansson</li>
+<li>jwbay</li>
+<li>K. Preißer</li>
+<li>Kagami Sascha Rosylight</li>
+<li>Kanchalai Tanglertsampan</li>
+<li>karthikkp</li>
+<li>Kate Miháliková</li>
+<li>Keen Yee Liau</li>
+<li>Keith Mashinter</li>
+<li>Ken Howard</li>
+<li>Kenji Imamula</li>
+<li>Kerem Kat</li>
+<li>Kevin Donnelly</li>
+<li>Kevin Gibbons</li>
+<li>Kevin Lang</li>
+<li>Khải</li>
+<li>Kitson Kelly</li>
+<li>Klaus Meinhardt</li>
+<li>Kris Zyp</li>
+<li>Kyle Kelley</li>
+<li>Kārlis Gaņģis</li>
+<li>laoxiong</li>
+<li>Leon Aves</li>
+<li>Limon Monte</li>
+<li>Lorant Pinter</li>
+<li>Lucien Greathouse</li>
+<li>Luka Hartwig</li>
+<li>Lukas Elmer</li>
+<li>M.Yoshimura</li>
+<li>Maarten Sijm</li>
+<li>Magnus Hiie</li>
+<li>Magnus Kulke</li>
+<li>Manish Bansal</li>
+<li>Manish Giri</li>
+<li>Marcus Noble</li>
+<li>Marin Marinov</li>
+<li>Marius Schulz</li>
+<li>Markus Johnsson</li>
+<li>Markus Wolf</li>
+<li>Martin</li>
+<li>Martin Hiller</li>
+<li>Martin Johns</li>
+<li>Martin Probst</li>
+<li>Martin Vseticka</li>
+<li>Martyn Janes</li>
+<li>Masahiro Wakame</li>
+<li>Mateusz Burzyński</li>
+<li>Matt Bierner</li>
+<li>Matt McCutchen</li>
+<li>Matt Mitchell</li>
+<li>Matthew Aynalem</li>
+<li>Matthew Miller</li>
+<li>Mattias Buelens</li>
+<li>Max Heiber</li>
+<li>Maxwell Paul Brickner</li>
+<li>@meyer</li>
+<li>Micah Zoltu</li>
+<li>@micbou</li>
+<li>Michael</li>
+<li>Michael Crane</li>
+<li>Michael Henderson</li>
+<li>Michael Tamm</li>
+<li>Michael Tang</li>
+<li>Michal Przybys</li>
+<li>Mike Busyrev</li>
+<li>Mike Morearty</li>
+<li>Milosz Piechocki</li>
+<li>Mine Starks</li>
+<li>Minh Nguyen</li>
+<li>Mohamed Hegazy</li>
+<li>Mohsen Azimi</li>
+<li>Mukesh Prasad</li>
+<li>Myles Megyesi</li>
+<li>Nathan Day</li>
+<li>Nathan Fenner</li>
+<li>Nathan Shively-Sanders</li>
+<li>Nathan Yee</li>
+<li>ncoley</li>
+<li>Nicholas Yang</li>
+<li>Nicu Micleușanu</li>
+<li>@nieltg</li>
+<li>Nima Zahedi</li>
+<li>Noah Chen</li>
+<li>Noel Varanda</li>
+<li>Noel Yoo</li>
+<li>Noj Vek</li>
+<li>nrcoley</li>
+<li>Nuno Arruda</li>
+<li>Oleg Mihailik</li>
+<li>Oleksandr Chekhovskyi</li>
+<li>Omer Sheikh</li>
+<li>Orta Therox</li>
+<li>Orta Therox</li>
+<li>Oskar Grunning</li>
+<li>Oskar Segersva¨rd</li>
+<li>Oussama Ben Brahim</li>
+<li>Ozair Patel</li>
+<li>Patrick McCartney</li>
+<li>Patrick Zhong</li>
+<li>Paul Koerbitz</li>
+<li>Paul van Brenk</li>
+<li>@pcbro</li>
+<li>Pedro Maltez</li>
+<li>Pete Bacon Darwin</li>
+<li>Peter Burns</li>
+<li>Peter Šándor</li>
+<li>Philip Pesca</li>
+<li>Philippe Voinov</li>
+<li>Pi Lanningham</li>
+<li>Piero Cangianiello</li>
+<li>Pierre-Antoine Mills</li>
+<li>@piloopin</li>
+<li>Pranav Senthilnathan</li>
+<li>Prateek Goel</li>
+<li>Prateek Nayak</li>
+<li>Prayag Verma</li>
+<li>Priyantha Lankapura</li>
+<li>@progre</li>
+<li>Punya Biswal</li>
+<li>r7kamura</li>
+<li>Rado Kirov</li>
+<li>Raj Dosanjh</li>
+<li>rChaser53</li>
+<li>Reiner Dolp</li>
+<li>Remo H. Jansen</li>
+<li>@rflorian</li>
+<li>Rhys van der Waerden</li>
+<li>@rhysd</li>
+<li>Ricardo N Feliciano</li>
+<li>Richard Karmazín</li>
+<li>Richard Knoll</li>
+<li>Roger Spratley</li>
+<li>Ron Buckton</li>
+<li>Rostislav Galimsky</li>
+<li>Rowan Wyborn</li>
+<li>rpgeeganage</li>
+<li>Ruwan Pradeep Geeganage</li>
+<li>Ryan Cavanaugh</li>
+<li>Ryan Clarke</li>
+<li>Ryohei Ikegami</li>
+<li>Salisbury, Tom</li>
+<li>Sam Bostock</li>
+<li>Sam Drugan</li>
+<li>Sam El-Husseini</li>
+<li>Sam Lanning</li>
+<li>Sangmin Lee</li>
+<li>Sanket Mishra</li>
+<li>Sarangan Rajamanickam</li>
+<li>Sasha Joseph</li>
+<li>Sean Barag</li>
+<li>Sergey Rubanov</li>
+<li>Sergey Shandar</li>
+<li>Sergey Tychinin</li>
+<li>Sergii Bezliudnyi</li>
+<li>Sergio Baidon</li>
+<li>Sharon Rolel</li>
+<li>Sheetal Nandi</li>
+<li>Shengping Zhong</li>
+<li>Sheon Han</li>
+<li>Shyyko Serhiy</li>
+<li>Siddharth Singh</li>
+<li>sisisin</li>
+<li>Slawomir Sadziak</li>
+<li>Solal Pirelli</li>
+<li>Soo Jae Hwang</li>
+<li>Stan Thomas</li>
+<li>Stanislav Iliev</li>
+<li>Stanislav Sysoev</li>
+<li>Stas Vilchik</li>
+<li>Stephan Ginthör</li>
+<li>Steve Lucco</li>
+<li>@styfle</li>
+<li>Sudheesh Singanamalla</li>
+<li>Suhas</li>
+<li>Suhas Deshpande</li>
+<li>superkd37</li>
+<li>Sébastien Arod</li>
+<li>@T18970237136</li>
+<li>@t_</li>
+<li>Tan Li Hau</li>
+<li>Tapan Prakash</li>
+<li>Taras Mankovski</li>
+<li>Tarik Ozket</li>
+<li>Tetsuharu Ohzeki</li>
+<li>The Gitter Badger</li>
+<li>Thomas den Hollander</li>
+<li>Thorsten Ball</li>
+<li>Tien Hoanhtien</li>
+<li>Tim Lancina</li>
+<li>Tim Perry</li>
+<li>Tim Schaub</li>
+<li>Tim Suchanek</li>
+<li>Tim Viiding-Spader</li>
+<li>Tingan Ho</li>
+<li>Titian Cernicova-Dragomir</li>
+<li>tkondo</li>
+<li>Todd Thomson</li>
+<li>togru</li>
+<li>Tom J</li>
+<li>Torben Fitschen</li>
+<li>Toxyxer</li>
+<li>@TravCav</li>
+<li>Troy Tae</li>
+<li>TruongSinh Tran-Nguyen</li>
+<li>Tycho Grouwstra</li>
+<li>uhyo</li>
+<li>Vadi Taslim</li>
+<li>Vakhurin Sergey</li>
+<li>Valera Rozuvan</li>
+<li>Vilic Vane</li>
+<li>Vimal Raghubir</li>
+<li>Vladimir Kurchatkin</li>
+<li>Vladimir Matveev</li>
+<li>Vyacheslav Pukhanov</li>
+<li>Wenlu Wang</li>
+<li>Wes Souza</li>
+<li>Wesley Wigham</li>
+<li>William Orr</li>
+<li>Wilson Hobbs</li>
+<li>xiaofa</li>
+<li>xl1</li>
+<li>Yacine Hmito</li>
+<li>Yang Cao</li>
+<li>York Yao</li>
+<li>@yortus</li>
+<li>Yoshiki Shibukawa</li>
+<li>Yuichi Nukiyama</li>
+<li>Yuval Greenfield</li>
+<li>Yuya Tanaka</li>
+<li>Z</li>
+<li>Zeeshan Ahmed</li>
+<li>Zev Spitz</li>
+<li>Zhengbo Li</li>
+<li>Zixiang Li</li>
+<li>@Zzzen</li>
+<li>阿卡琳</li>
+</ul>
+
+  </article>
+
+  <article>
+    <h2></h2>
+    <p>This project has adopted the <a href="https://opensource.microsoft.com/codeofconduct/">Microsoft Open Source Code of Conduct</a>. For more information see the <a href="https://opensource.microsoft.com/codeofconduct/faq/">Code of Conduct FAQ</a> or contact <a href="mailto:opencode@microsoft.com">opencode@microsoft.com</a> with any additional questions or comments.</p>
+
+  </article>
+
+  <article>
+    <h2></h2>
+    <h1 id="read-this">Read This!</h1>
+<p><strong>These files are not meant to be edited by hand.</strong>
+If you need to make modifications, the respective files should be changed within the repository&rsquo;s top-level <code>src</code> directory.
+Running <code>gulp LKG</code> will then appropriately update the files in this directory.</p>
+
+  </article>
+
+  <article>
+    <h2></h2>
+    <h1 id="typescript">TypeScript</h1>
+<p><a href="https://github.com/microsoft/TypeScript/actions?query=workflow%3ACI"><img src="https://github.com/microsoft/TypeScript/workflows/CI/badge.svg" alt="GitHub Actions CI"></a>
+<a href="https://dev.azure.com/typescript/TypeScript/_build?definitionId=7"><img src="https://dev.azure.com/typescript/TypeScript/_apis/build/status/Typescript/node10" alt="Devops Build Status"></a>
+<a href="https://www.npmjs.com/package/typescript"><img src="https://badge.fury.io/js/typescript.svg" alt="npm version"></a>
+<a href="https://www.npmjs.com/package/typescript"><img src="https://img.shields.io/npm/dm/typescript.svg" alt="Downloads"></a></p>
+<p><a href="https://www.typescriptlang.org/">TypeScript</a> is a language for application-scale JavaScript. TypeScript adds optional types to JavaScript that support tools for large-scale JavaScript applications for any browser, for any host, on any OS. TypeScript compiles to readable, standards-based JavaScript. Try it out at the <a href="https://www.typescriptlang.org/play/">playground</a>, and stay up to date via <a href="https://blogs.msdn.microsoft.com/typescript">our blog</a> and <a href="https://twitter.com/typescript">Twitter account</a>.</p>
+<p>Find others who are using TypeScript at <a href="https://www.typescriptlang.org/community/">our community page</a>.</p>
+<h2 id="installing">Installing</h2>
+<p>For the latest stable version:</p>
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm install -g typescript
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>For our nightly builds:</p>
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm install -g typescript@next
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="contribute">Contribute</h2>
+<p>There are many ways to <a href="https://github.com/microsoft/TypeScript/blob/main/CONTRIBUTING.md">contribute</a> to TypeScript.</p>
+<ul>
+<li><a href="https://github.com/microsoft/TypeScript/issues">Submit bugs</a> and help us verify fixes as they are checked in.</li>
+<li>Review the <a href="https://github.com/microsoft/TypeScript/pulls">source code changes</a>.</li>
+<li>Engage with other TypeScript users and developers on <a href="https://stackoverflow.com/questions/tagged/typescript">StackOverflow</a>.</li>
+<li>Help each other in the <a href="https://discord.gg/typescript">TypeScript Community Discord</a>.</li>
+<li>Join the <a href="https://twitter.com/search?q=%23TypeScript">#typescript</a> discussion on Twitter.</li>
+<li><a href="https://github.com/microsoft/TypeScript/blob/main/CONTRIBUTING.md">Contribute bug fixes</a>.</li>
+<li>Read the archived language specification (<a href="https://github.com/microsoft/TypeScript/blob/main/doc/TypeScript%20Language%20Specification%20-%20ARCHIVED.docx?raw=true">docx</a>,
+<a href="https://github.com/microsoft/TypeScript/blob/main/doc/TypeScript%20Language%20Specification%20-%20ARCHIVED.pdf?raw=true">pdf</a>, <a href="https://github.com/microsoft/TypeScript/blob/main/doc/spec-ARCHIVED.md">md</a>).</li>
+</ul>
+<p>This project has adopted the <a href="https://opensource.microsoft.com/codeofconduct/">Microsoft Open Source Code of Conduct</a>. For more information see
+the <a href="https://opensource.microsoft.com/codeofconduct/faq/">Code of Conduct FAQ</a> or contact <a href="mailto:opencode@microsoft.com">opencode@microsoft.com</a>
+with any additional questions or comments.</p>
+<h2 id="documentation">Documentation</h2>
+<ul>
+<li><a href="https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html">TypeScript in 5 minutes</a></li>
+<li><a href="https://www.typescriptlang.org/docs/handbook/intro.html">Programming handbook</a></li>
+<li><a href="https://www.typescriptlang.org/">Homepage</a></li>
+</ul>
+<h2 id="building">Building</h2>
+<p>In order to build the TypeScript compiler, ensure that you have <a href="https://git-scm.com/downloads">Git</a> and <a href="https://nodejs.org/">Node.js</a> installed.</p>
+<p>Clone a copy of the repo:</p>
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/microsoft/TypeScript.git
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Change to the TypeScript directory:</p>
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#008000">cd</span> TypeScript
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Install <a href="https://gulpjs.com/">Gulp</a> tools and dev dependencies:</p>
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm install -g gulp
+</span></span><span style="display:flex;"><span>npm ci
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Use one of the following to build and test:</p>
+<pre tabindex="0"><code>gulp local             # Build the compiler into built/local.
+gulp clean             # Delete the built compiler.
+gulp LKG               # Replace the last known good with the built one.
+                       # Bootstrapping step to be executed when the built compiler reaches a stable state.
+gulp tests             # Build the test infrastructure using the built compiler.
+gulp runtests          # Run tests using the built compiler and test infrastructure.
+                       # You can override the specific suite runner used or specify a test for this command.
+                       # Use --tests=&lt;testPath&gt; for a specific test and/or --runner=&lt;runnerName&gt; for a specific suite.
+                       # Valid runners include conformance, compiler, fourslash, project, user, and docker
+                       # The user and docker runners are extended test suite runners - the user runner
+                       # works on disk in the tests/cases/user directory, while the docker runner works in containers.
+                       # You&#39;ll need to have the docker executable in your system path for the docker runner to work.
+gulp runtests-parallel # Like runtests, but split across multiple threads. Uses a number of threads equal to the system
+                       # core count by default. Use --workers=&lt;number&gt; to adjust this.
+gulp baseline-accept   # This replaces the baseline test results with the results obtained from gulp runtests.
+gulp lint              # Runs eslint on the TypeScript source.
+gulp help              # List the above commands.
+</code></pre><h2 id="usage">Usage</h2>
+<div class="highlight"><div style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>node built/local/tsc.js hello.ts
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="roadmap">Roadmap</h2>
+<p>For details on our planned features and future direction please refer to our <a href="https://github.com/microsoft/TypeScript/wiki/Roadmap">roadmap</a>.</p>
+
+  </article>
+
+  <article>
+    <h2></h2>
+    
+  </article>
+
+
+    </div>
+
+    <footer>
+  <div class="container">
+  </div>
+</footer>
+
+  </body>
+</html>
